@@ -3,14 +3,14 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **int** |  | [optional] 
-**season** | **int** |  | [default to 0]
-**venue** | **str** |  | [default to '']
-**running_series** | **str** |  | [default to '']
-**start_date** | **datetime** |  | [optional] 
-**end_date** | **datetime** |  | [optional] 
-**is_live** | **bool** |  | [optional] 
-**details** | **str** |  | [optional] 
+**id** | **int** | Id | [optional] 
+**season** | **int** | Race season | [default to 0]
+**venue** | **str** | Venue | [default to '']
+**running_series** | **str** | List of series running at this event | [default to '']
+**start_date** | **datetime** | Start of raceweek | [optional] 
+**end_date** | **datetime** | End of raceweek | [optional] 
+**is_live** | **bool** | Is this raceweek currently in progress | [optional] 
+**details** | **str** | URL to raceweek details | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

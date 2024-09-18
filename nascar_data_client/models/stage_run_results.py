@@ -62,6 +62,7 @@ class StageRunResults(object):
     def stage_number(self):
         """Gets the stage_number of this StageRunResults.  # noqa: E501
 
+        Stage number  # noqa: E501
 
         :return: The stage_number of this StageRunResults.  # noqa: E501
         :rtype: int
@@ -72,6 +73,7 @@ class StageRunResults(object):
     def stage_number(self, stage_number):
         """Sets the stage_number of this StageRunResults.
 
+        Stage number  # noqa: E501
 
         :param stage_number: The stage_number of this StageRunResults.  # noqa: E501
         :type: int
@@ -83,6 +85,7 @@ class StageRunResults(object):
     def stage_name(self):
         """Gets the stage_name of this StageRunResults.  # noqa: E501
 
+        Stage name  # noqa: E501
 
         :return: The stage_name of this StageRunResults.  # noqa: E501
         :rtype: str
@@ -93,6 +96,7 @@ class StageRunResults(object):
     def stage_name(self, stage_name):
         """Sets the stage_name of this StageRunResults.
 
+        Stage name  # noqa: E501
 
         :param stage_name: The stage_name of this StageRunResults.  # noqa: E501
         :type: str
@@ -104,6 +108,7 @@ class StageRunResults(object):
     def lap(self):
         """Gets the lap of this StageRunResults.  # noqa: E501
 
+        The lap when the stage occurred  # noqa: E501
 
         :return: The lap of this StageRunResults.  # noqa: E501
         :rtype: int
@@ -114,6 +119,7 @@ class StageRunResults(object):
     def lap(self, lap):
         """Sets the lap of this StageRunResults.
 
+        The lap when the stage occurred  # noqa: E501
 
         :param lap: The lap of this StageRunResults.  # noqa: E501
         :type: int
@@ -125,6 +131,7 @@ class StageRunResults(object):
     def results(self):
         """Gets the results of this StageRunResults.  # noqa: E501
 
+        Stage results  # noqa: E501
 
         :return: The results of this StageRunResults.  # noqa: E501
         :rtype: list[StageResult]
@@ -135,6 +142,7 @@ class StageRunResults(object):
     def results(self, results):
         """Sets the results of this StageRunResults.
 
+        Stage results  # noqa: E501
 
         :param results: The results of this StageRunResults.  # noqa: E501
         :type: list[StageResult]

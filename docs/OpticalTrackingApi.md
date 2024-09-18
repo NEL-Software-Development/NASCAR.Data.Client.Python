@@ -1,13 +1,13 @@
 # nascar_data_client.OpticalTrackingApi
 
-All URIs are relative to */*
+All URIs are relative to */api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**utm_offsets**](OpticalTrackingApi.md#utm_offsets) | **GET** /utm-offsets | 
+[**optical_tracking_utm_offsets_get**](OpticalTrackingApi.md#optical_tracking_utm_offsets_get) | **GET** /optical-tracking/utm-offsets | 
 
-# **utm_offsets**
-> list[OpticalTrackingUTMOffset] utm_offsets()
+# **optical_tracking_utm_offsets_get**
+> list[OpticalTrackingUTMOffset] optical_tracking_utm_offsets_get()
 
 
 
@@ -24,10 +24,10 @@ from pprint import pprint
 api_instance = nascar_data_client.OpticalTrackingApi(nascar_data_client.ApiClient(configuration))
 
 try:
-    api_response = api_instance.utm_offsets()
+    api_response = api_instance.optical_tracking_utm_offsets_get()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling OpticalTrackingApi->utm_offsets: %s\n" % e)
+    print("Exception when calling OpticalTrackingApi->optical_tracking_utm_offsets_get: %s\n" % e)
 ```
 
 ### Parameters

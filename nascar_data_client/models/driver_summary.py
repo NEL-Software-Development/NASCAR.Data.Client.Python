@@ -88,6 +88,7 @@ class DriverSummary(object):
     def summary_by_principal_race_i_ds(self):
         """Gets the summary_by_principal_race_i_ds of this DriverSummary.  # noqa: E501
 
+        Principal race summaries  # noqa: E501
 
         :return: The summary_by_principal_race_i_ds of this DriverSummary.  # noqa: E501
         :rtype: list[DriverSummaryByPrincipalRaceID]
@@ -98,6 +99,7 @@ class DriverSummary(object):
     def summary_by_principal_race_i_ds(self, summary_by_principal_race_i_ds):
         """Sets the summary_by_principal_race_i_ds of this DriverSummary.
 
+        Principal race summaries  # noqa: E501
 
         :param summary_by_principal_race_i_ds: The summary_by_principal_race_i_ds of this DriverSummary.  # noqa: E501
         :type: list[DriverSummaryByPrincipalRaceID]
@@ -130,6 +132,7 @@ class DriverSummary(object):
     def summary_by_tracks(self):
         """Gets the summary_by_tracks of this DriverSummary.  # noqa: E501
 
+        Track summaries  # noqa: E501
 
         :return: The summary_by_tracks of this DriverSummary.  # noqa: E501
         :rtype: list[DriverSummaryByTrack]
@@ -140,6 +143,7 @@ class DriverSummary(object):
     def summary_by_tracks(self, summary_by_tracks):
         """Sets the summary_by_tracks of this DriverSummary.
 
+        Track summaries  # noqa: E501
 
         :param summary_by_tracks: The summary_by_tracks of this DriverSummary.  # noqa: E501
         :type: list[DriverSummaryByTrack]
@@ -151,6 +155,7 @@ class DriverSummary(object):
     def summary_by_track_types(self):
         """Gets the summary_by_track_types of this DriverSummary.  # noqa: E501
 
+        Track type summaries  # noqa: E501
 
         :return: The summary_by_track_types of this DriverSummary.  # noqa: E501
         :rtype: list[DriverSummaryByTrackType]
@@ -161,6 +166,7 @@ class DriverSummary(object):
     def summary_by_track_types(self, summary_by_track_types):
         """Sets the summary_by_track_types of this DriverSummary.
 
+        Track type summaries  # noqa: E501
 
         :param summary_by_track_types: The summary_by_track_types of this DriverSummary.  # noqa: E501
         :type: list[DriverSummaryByTrackType]

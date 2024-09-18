@@ -31,25 +31,30 @@ class RaceRunResults(object):
     swagger_types = {
         'run_name': 'str',
         'run_state': 'str',
+        'flag_state': 'str',
         'results': 'list[RaceResult]'
     }
 
     attribute_map = {
         'run_name': 'run_name',
         'run_state': 'run_state',
+        'flag_state': 'flag_state',
         'results': 'results'
     }
 
-    def __init__(self, run_name=None, run_state=None, results=None):  # noqa: E501
+    def __init__(self, run_name=None, run_state=None, flag_state=None, results=None):  # noqa: E501
         """RaceRunResults - a model defined in Swagger"""  # noqa: E501
         self._run_name = None
         self._run_state = None
+        self._flag_state = None
         self._results = None
         self.discriminator = None
         if run_name is not None:
             self.run_name = run_name
         if run_state is not None:
             self.run_state = run_state
+        if flag_state is not None:
+            self.flag_state = flag_state
         if results is not None:
             self.results = results
 
@@ -57,6 +62,7 @@ class RaceRunResults(object):
     def run_name(self):
         """Gets the run_name of this RaceRunResults.  # noqa: E501
 
+        Run name  # noqa: E501
 
         :return: The run_name of this RaceRunResults.  # noqa: E501
         :rtype: str
@@ -67,6 +73,7 @@ class RaceRunResults(object):
     def run_name(self, run_name):
         """Sets the run_name of this RaceRunResults.
 
+        Run name  # noqa: E501
 
         :param run_name: The run_name of this RaceRunResults.  # noqa: E501
         :type: str
@@ -78,7 +85,7 @@ class RaceRunResults(object):
     def run_state(self):
         """Gets the run_state of this RaceRunResults.  # noqa: E501
 
-        Inactive, Active, Completed  # noqa: E501
+        Run state:  (Inactive, Active, Completed)  # noqa: E501
 
         :return: The run_state of this RaceRunResults.  # noqa: E501
         :rtype: str
@@ -89,7 +96,7 @@ class RaceRunResults(object):
     def run_state(self, run_state):
         """Sets the run_state of this RaceRunResults.
 
-        Inactive, Active, Completed  # noqa: E501
+        Run state:  (Inactive, Active, Completed)  # noqa: E501
 
         :param run_state: The run_state of this RaceRunResults.  # noqa: E501
         :type: str
@@ -98,9 +105,33 @@ class RaceRunResults(object):
         self._run_state = run_state
 
     @property
+    def flag_state(self):
+        """Gets the flag_state of this RaceRunResults.  # noqa: E501
+
+        Flag state:  (NONE, WARMUP, GREEN, YELLOW, RED, WHITE, FINISH, EXTRA)  # noqa: E501
+
+        :return: The flag_state of this RaceRunResults.  # noqa: E501
+        :rtype: str
+        """
+        return self._flag_state
+
+    @flag_state.setter
+    def flag_state(self, flag_state):
+        """Sets the flag_state of this RaceRunResults.
+
+        Flag state:  (NONE, WARMUP, GREEN, YELLOW, RED, WHITE, FINISH, EXTRA)  # noqa: E501
+
+        :param flag_state: The flag_state of this RaceRunResults.  # noqa: E501
+        :type: str
+        """
+
+        self._flag_state = flag_state
+
+    @property
     def results(self):
         """Gets the results of this RaceRunResults.  # noqa: E501
 
+        Race results  # noqa: E501
 
         :return: The results of this RaceRunResults.  # noqa: E501
         :rtype: list[RaceResult]
@@ -111,6 +142,7 @@ class RaceRunResults(object):
     def results(self, results):
         """Sets the results of this RaceRunResults.
 
+        Race results  # noqa: E501
 
         :param results: The results of this RaceRunResults.  # noqa: E501
         :type: list[RaceResult]

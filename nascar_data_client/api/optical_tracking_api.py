@@ -32,12 +32,12 @@ class OpticalTrackingApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def utm_offsets(self, **kwargs):  # noqa: E501
-        """utm_offsets  # noqa: E501
+    def optical_tracking_utm_offsets_get(self, **kwargs):  # noqa: E501
+        """optical_tracking_utm_offsets_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.utm_offsets(async_req=True)
+        >>> thread = api.optical_tracking_utm_offsets_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -47,17 +47,17 @@ class OpticalTrackingApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.utm_offsets_with_http_info(**kwargs)  # noqa: E501
+            return self.optical_tracking_utm_offsets_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.utm_offsets_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.optical_tracking_utm_offsets_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def utm_offsets_with_http_info(self, **kwargs):  # noqa: E501
-        """utm_offsets  # noqa: E501
+    def optical_tracking_utm_offsets_get_with_http_info(self, **kwargs):  # noqa: E501
+        """optical_tracking_utm_offsets_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.utm_offsets_with_http_info(async_req=True)
+        >>> thread = api.optical_tracking_utm_offsets_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -77,7 +77,7 @@ class OpticalTrackingApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method utm_offsets" % key
+                    " to method optical_tracking_utm_offsets_get" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -102,7 +102,7 @@ class OpticalTrackingApi(object):
         auth_settings = ['Bearer']  # noqa: E501
 
         return self.api_client.call_api(
-            '/utm-offsets', 'GET',
+            '/optical-tracking/utm-offsets', 'GET',
             path_params,
             query_params,
             header_params,

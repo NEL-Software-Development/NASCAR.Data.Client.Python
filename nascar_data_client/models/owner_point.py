@@ -177,6 +177,7 @@ class OwnerPoint(object):
     def owner(self):
         """Gets the owner of this OwnerPoint.  # noqa: E501
 
+        Owner name  # noqa: E501
 
         :return: The owner of this OwnerPoint.  # noqa: E501
         :rtype: str
@@ -187,6 +188,7 @@ class OwnerPoint(object):
     def owner(self, owner):
         """Sets the owner of this OwnerPoint.
 
+        Owner name  # noqa: E501
 
         :param owner: The owner of this OwnerPoint.  # noqa: E501
         :type: str
@@ -198,6 +200,7 @@ class OwnerPoint(object):
     def vehicle_number(self):
         """Gets the vehicle_number of this OwnerPoint.  # noqa: E501
 
+        Vehicle number  # noqa: E501
 
         :return: The vehicle_number of this OwnerPoint.  # noqa: E501
         :rtype: str
@@ -208,6 +211,7 @@ class OwnerPoint(object):
     def vehicle_number(self, vehicle_number):
         """Sets the vehicle_number of this OwnerPoint.
 
+        Vehicle number  # noqa: E501
 
         :param vehicle_number: The vehicle_number of this OwnerPoint.  # noqa: E501
         :type: str
@@ -219,6 +223,7 @@ class OwnerPoint(object):
     def position(self):
         """Gets the position of this OwnerPoint.  # noqa: E501
 
+        Points position  # noqa: E501
 
         :return: The position of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -229,6 +234,7 @@ class OwnerPoint(object):
     def position(self, position):
         """Sets the position of this OwnerPoint.
 
+        Points position  # noqa: E501
 
         :param position: The position of this OwnerPoint.  # noqa: E501
         :type: int
@@ -240,6 +246,7 @@ class OwnerPoint(object):
     def points(self):
         """Gets the points of this OwnerPoint.  # noqa: E501
 
+        Total points  # noqa: E501
 
         :return: The points of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -250,6 +257,7 @@ class OwnerPoint(object):
     def points(self, points):
         """Sets the points of this OwnerPoint.
 
+        Total points  # noqa: E501
 
         :param points: The points of this OwnerPoint.  # noqa: E501
         :type: int
@@ -261,6 +269,7 @@ class OwnerPoint(object):
     def playoff_points(self):
         """Gets the playoff_points of this OwnerPoint.  # noqa: E501
 
+        Total playoff points  # noqa: E501
 
         :return: The playoff_points of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -271,6 +280,7 @@ class OwnerPoint(object):
     def playoff_points(self, playoff_points):
         """Sets the playoff_points of this OwnerPoint.
 
+        Total playoff points  # noqa: E501
 
         :param playoff_points: The playoff_points of this OwnerPoint.  # noqa: E501
         :type: int
@@ -282,6 +292,7 @@ class OwnerPoint(object):
     def playoff_rank(self):
         """Gets the playoff_rank of this OwnerPoint.  # noqa: E501
 
+        Current playoff rank  # noqa: E501
 
         :return: The playoff_rank of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -292,6 +303,7 @@ class OwnerPoint(object):
     def playoff_rank(self, playoff_rank):
         """Sets the playoff_rank of this OwnerPoint.
 
+        Current playoff rank  # noqa: E501
 
         :param playoff_rank: The playoff_rank of this OwnerPoint.  # noqa: E501
         :type: int
@@ -303,6 +315,7 @@ class OwnerPoint(object):
     def delta_leader(self):
         """Gets the delta_leader of this OwnerPoint.  # noqa: E501
 
+        Number of points behind the leader  # noqa: E501
 
         :return: The delta_leader of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -313,6 +326,7 @@ class OwnerPoint(object):
     def delta_leader(self, delta_leader):
         """Sets the delta_leader of this OwnerPoint.
 
+        Number of points behind the leader  # noqa: E501
 
         :param delta_leader: The delta_leader of this OwnerPoint.  # noqa: E501
         :type: int
@@ -324,6 +338,7 @@ class OwnerPoint(object):
     def delta_next(self):
         """Gets the delta_next of this OwnerPoint.  # noqa: E501
 
+        Number of points behind the next position  # noqa: E501
 
         :return: The delta_next of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -334,6 +349,7 @@ class OwnerPoint(object):
     def delta_next(self, delta_next):
         """Sets the delta_next of this OwnerPoint.
 
+        Number of points behind the next position  # noqa: E501
 
         :param delta_next: The delta_next of this OwnerPoint.  # noqa: E501
         :type: int
@@ -345,6 +361,7 @@ class OwnerPoint(object):
     def starts(self):
         """Gets the starts of this OwnerPoint.  # noqa: E501
 
+        Number of starts this season  # noqa: E501
 
         :return: The starts of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -355,6 +372,7 @@ class OwnerPoint(object):
     def starts(self, starts):
         """Sets the starts of this OwnerPoint.
 
+        Number of starts this season  # noqa: E501
 
         :param starts: The starts of this OwnerPoint.  # noqa: E501
         :type: int
@@ -366,6 +384,7 @@ class OwnerPoint(object):
     def poles(self):
         """Gets the poles of this OwnerPoint.  # noqa: E501
 
+        Number of times the pole position was earned  # noqa: E501
 
         :return: The poles of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -376,6 +395,7 @@ class OwnerPoint(object):
     def poles(self, poles):
         """Sets the poles of this OwnerPoint.
 
+        Number of times the pole position was earned  # noqa: E501
 
         :param poles: The poles of this OwnerPoint.  # noqa: E501
         :type: int
@@ -387,6 +407,7 @@ class OwnerPoint(object):
     def wins(self):
         """Gets the wins of this OwnerPoint.  # noqa: E501
 
+        Total race wins  # noqa: E501
 
         :return: The wins of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -397,6 +418,7 @@ class OwnerPoint(object):
     def wins(self, wins):
         """Sets the wins of this OwnerPoint.
 
+        Total race wins  # noqa: E501
 
         :param wins: The wins of this OwnerPoint.  # noqa: E501
         :type: int
@@ -408,6 +430,7 @@ class OwnerPoint(object):
     def stage_1_wins(self):
         """Gets the stage_1_wins of this OwnerPoint.  # noqa: E501
 
+        Stage 1 wins  # noqa: E501
 
         :return: The stage_1_wins of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -418,6 +441,7 @@ class OwnerPoint(object):
     def stage_1_wins(self, stage_1_wins):
         """Sets the stage_1_wins of this OwnerPoint.
 
+        Stage 1 wins  # noqa: E501
 
         :param stage_1_wins: The stage_1_wins of this OwnerPoint.  # noqa: E501
         :type: int
@@ -429,6 +453,7 @@ class OwnerPoint(object):
     def stage_2_wins(self):
         """Gets the stage_2_wins of this OwnerPoint.  # noqa: E501
 
+        Stage 2 wins  # noqa: E501
 
         :return: The stage_2_wins of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -439,6 +464,7 @@ class OwnerPoint(object):
     def stage_2_wins(self, stage_2_wins):
         """Sets the stage_2_wins of this OwnerPoint.
 
+        Stage 2 wins  # noqa: E501
 
         :param stage_2_wins: The stage_2_wins of this OwnerPoint.  # noqa: E501
         :type: int
@@ -450,6 +476,7 @@ class OwnerPoint(object):
     def stage_3_wins(self):
         """Gets the stage_3_wins of this OwnerPoint.  # noqa: E501
 
+        Stage 3 wins  # noqa: E501
 
         :return: The stage_3_wins of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -460,6 +487,7 @@ class OwnerPoint(object):
     def stage_3_wins(self, stage_3_wins):
         """Sets the stage_3_wins of this OwnerPoint.
 
+        Stage 3 wins  # noqa: E501
 
         :param stage_3_wins: The stage_3_wins of this OwnerPoint.  # noqa: E501
         :type: int
@@ -471,6 +499,7 @@ class OwnerPoint(object):
     def stage_points(self):
         """Gets the stage_points of this OwnerPoint.  # noqa: E501
 
+        Total stage points  # noqa: E501
 
         :return: The stage_points of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -481,6 +510,7 @@ class OwnerPoint(object):
     def stage_points(self, stage_points):
         """Sets the stage_points of this OwnerPoint.
 
+        Total stage points  # noqa: E501
 
         :param stage_points: The stage_points of this OwnerPoint.  # noqa: E501
         :type: int
@@ -492,6 +522,7 @@ class OwnerPoint(object):
     def playoff_race_wins(self):
         """Gets the playoff_race_wins of this OwnerPoint.  # noqa: E501
 
+        Playoff race wins  # noqa: E501
 
         :return: The playoff_race_wins of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -502,6 +533,7 @@ class OwnerPoint(object):
     def playoff_race_wins(self, playoff_race_wins):
         """Sets the playoff_race_wins of this OwnerPoint.
 
+        Playoff race wins  # noqa: E501
 
         :param playoff_race_wins: The playoff_race_wins of this OwnerPoint.  # noqa: E501
         :type: int
@@ -513,6 +545,7 @@ class OwnerPoint(object):
     def playoff_stage_wins(self):
         """Gets the playoff_stage_wins of this OwnerPoint.  # noqa: E501
 
+        Playoff stage wins  # noqa: E501
 
         :return: The playoff_stage_wins of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -523,6 +556,7 @@ class OwnerPoint(object):
     def playoff_stage_wins(self, playoff_stage_wins):
         """Sets the playoff_stage_wins of this OwnerPoint.
 
+        Playoff stage wins  # noqa: E501
 
         :param playoff_stage_wins: The playoff_stage_wins of this OwnerPoint.  # noqa: E501
         :type: int
@@ -534,6 +568,7 @@ class OwnerPoint(object):
     def points_earned_this_race(self):
         """Gets the points_earned_this_race of this OwnerPoint.  # noqa: E501
 
+        Points earned this race  # noqa: E501
 
         :return: The points_earned_this_race of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -544,6 +579,7 @@ class OwnerPoint(object):
     def points_earned_this_race(self, points_earned_this_race):
         """Sets the points_earned_this_race of this OwnerPoint.
 
+        Points earned this race  # noqa: E501
 
         :param points_earned_this_race: The points_earned_this_race of this OwnerPoint.  # noqa: E501
         :type: int
@@ -555,6 +591,7 @@ class OwnerPoint(object):
     def playoff_points_earned_this_race(self):
         """Gets the playoff_points_earned_this_race of this OwnerPoint.  # noqa: E501
 
+        Playoff points earned this race  # noqa: E501
 
         :return: The playoff_points_earned_this_race of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -565,6 +602,7 @@ class OwnerPoint(object):
     def playoff_points_earned_this_race(self, playoff_points_earned_this_race):
         """Sets the playoff_points_earned_this_race of this OwnerPoint.
 
+        Playoff points earned this race  # noqa: E501
 
         :param playoff_points_earned_this_race: The playoff_points_earned_this_race of this OwnerPoint.  # noqa: E501
         :type: int
@@ -576,6 +614,7 @@ class OwnerPoint(object):
     def stage_points_earned_this_race(self):
         """Gets the stage_points_earned_this_race of this OwnerPoint.  # noqa: E501
 
+        Stage points earned this race  # noqa: E501
 
         :return: The stage_points_earned_this_race of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -586,6 +625,7 @@ class OwnerPoint(object):
     def stage_points_earned_this_race(self, stage_points_earned_this_race):
         """Sets the stage_points_earned_this_race of this OwnerPoint.
 
+        Stage points earned this race  # noqa: E501
 
         :param stage_points_earned_this_race: The stage_points_earned_this_race of this OwnerPoint.  # noqa: E501
         :type: int
@@ -597,6 +637,7 @@ class OwnerPoint(object):
     def top5(self):
         """Gets the top5 of this OwnerPoint.  # noqa: E501
 
+        Number of Top 5 finishes  # noqa: E501
 
         :return: The top5 of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -607,6 +648,7 @@ class OwnerPoint(object):
     def top5(self, top5):
         """Sets the top5 of this OwnerPoint.
 
+        Number of Top 5 finishes  # noqa: E501
 
         :param top5: The top5 of this OwnerPoint.  # noqa: E501
         :type: int
@@ -618,6 +660,7 @@ class OwnerPoint(object):
     def top10(self):
         """Gets the top10 of this OwnerPoint.  # noqa: E501
 
+        Number of Top 10 finishes  # noqa: E501
 
         :return: The top10 of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -628,6 +671,7 @@ class OwnerPoint(object):
     def top10(self, top10):
         """Sets the top10 of this OwnerPoint.
 
+        Number of Top 10 finishes  # noqa: E501
 
         :param top10: The top10 of this OwnerPoint.  # noqa: E501
         :type: int
@@ -639,6 +683,7 @@ class OwnerPoint(object):
     def laps_led(self):
         """Gets the laps_led of this OwnerPoint.  # noqa: E501
 
+        Total laps led  # noqa: E501
 
         :return: The laps_led of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -649,6 +694,7 @@ class OwnerPoint(object):
     def laps_led(self, laps_led):
         """Sets the laps_led of this OwnerPoint.
 
+        Total laps led  # noqa: E501
 
         :param laps_led: The laps_led of this OwnerPoint.  # noqa: E501
         :type: int
@@ -660,6 +706,7 @@ class OwnerPoint(object):
     def dnf(self):
         """Gets the dnf of this OwnerPoint.  # noqa: E501
 
+        Number of times the vehicle did not finish the race  # noqa: E501
 
         :return: The dnf of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -670,6 +717,7 @@ class OwnerPoint(object):
     def dnf(self, dnf):
         """Sets the dnf of this OwnerPoint.
 
+        Number of times the vehicle did not finish the race  # noqa: E501
 
         :param dnf: The dnf of this OwnerPoint.  # noqa: E501
         :type: int
@@ -681,6 +729,7 @@ class OwnerPoint(object):
     def made_playoffs(self):
         """Gets the made_playoffs of this OwnerPoint.  # noqa: E501
 
+        Whether or not the owner made the playoffs  # noqa: E501
 
         :return: The made_playoffs of this OwnerPoint.  # noqa: E501
         :rtype: bool
@@ -691,6 +740,7 @@ class OwnerPoint(object):
     def made_playoffs(self, made_playoffs):
         """Sets the made_playoffs of this OwnerPoint.
 
+        Whether or not the owner made the playoffs  # noqa: E501
 
         :param made_playoffs: The made_playoffs of this OwnerPoint.  # noqa: E501
         :type: bool
@@ -702,6 +752,7 @@ class OwnerPoint(object):
     def in_playoffs(self):
         """Gets the in_playoffs of this OwnerPoint.  # noqa: E501
 
+        Whether or not the owner is still in the playoffs  # noqa: E501
 
         :return: The in_playoffs of this OwnerPoint.  # noqa: E501
         :rtype: bool
@@ -712,6 +763,7 @@ class OwnerPoint(object):
     def in_playoffs(self, in_playoffs):
         """Sets the in_playoffs of this OwnerPoint.
 
+        Whether or not the owner is still in the playoffs  # noqa: E501
 
         :param in_playoffs: The in_playoffs of this OwnerPoint.  # noqa: E501
         :type: bool
@@ -723,6 +775,7 @@ class OwnerPoint(object):
     def highest_round(self):
         """Gets the highest_round of this OwnerPoint.  # noqa: E501
 
+        Highest playoff round earned  # noqa: E501
 
         :return: The highest_round of this OwnerPoint.  # noqa: E501
         :rtype: int
@@ -733,6 +786,7 @@ class OwnerPoint(object):
     def highest_round(self, highest_round):
         """Sets the highest_round of this OwnerPoint.
 
+        Highest playoff round earned  # noqa: E501
 
         :param highest_round: The highest_round of this OwnerPoint.  # noqa: E501
         :type: int

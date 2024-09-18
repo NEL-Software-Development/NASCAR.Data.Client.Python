@@ -67,6 +67,7 @@ class Series(object):
     def id(self):
         """Gets the id of this Series.  # noqa: E501
 
+        The series id  # noqa: E501
 
         :return: The id of this Series.  # noqa: E501
         :rtype: int
@@ -77,6 +78,7 @@ class Series(object):
     def id(self, id):
         """Sets the id of this Series.
 
+        The series id  # noqa: E501
 
         :param id: The id of this Series.  # noqa: E501
         :type: int
@@ -88,6 +90,7 @@ class Series(object):
     def short_name(self):
         """Gets the short_name of this Series.  # noqa: E501
 
+        Series short name  # noqa: E501
 
         :return: The short_name of this Series.  # noqa: E501
         :rtype: str
@@ -98,6 +101,7 @@ class Series(object):
     def short_name(self, short_name):
         """Sets the short_name of this Series.
 
+        Series short name  # noqa: E501
 
         :param short_name: The short_name of this Series.  # noqa: E501
         :type: str
@@ -109,6 +113,7 @@ class Series(object):
     def name(self):
         """Gets the name of this Series.  # noqa: E501
 
+        Series full name  # noqa: E501
 
         :return: The name of this Series.  # noqa: E501
         :rtype: str
@@ -119,6 +124,7 @@ class Series(object):
     def name(self, name):
         """Sets the name of this Series.
 
+        Series full name  # noqa: E501
 
         :param name: The name of this Series.  # noqa: E501
         :type: str
@@ -130,6 +136,7 @@ class Series(object):
     def abbreviation(self):
         """Gets the abbreviation of this Series.  # noqa: E501
 
+        Series abbreviation  # noqa: E501
 
         :return: The abbreviation of this Series.  # noqa: E501
         :rtype: str
@@ -140,6 +147,7 @@ class Series(object):
     def abbreviation(self, abbreviation):
         """Sets the abbreviation of this Series.
 
+        Series abbreviation  # noqa: E501
 
         :param abbreviation: The abbreviation of this Series.  # noqa: E501
         :type: str
@@ -151,6 +159,7 @@ class Series(object):
     def logo(self):
         """Gets the logo of this Series.  # noqa: E501
 
+        URL to series logo  # noqa: E501
 
         :return: The logo of this Series.  # noqa: E501
         :rtype: str
@@ -161,6 +170,7 @@ class Series(object):
     def logo(self, logo):
         """Sets the logo of this Series.
 
+        URL to series logo  # noqa: E501
 
         :param logo: The logo of this Series.  # noqa: E501
         :type: str

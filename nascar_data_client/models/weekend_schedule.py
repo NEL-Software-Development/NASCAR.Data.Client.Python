@@ -57,6 +57,7 @@ class WeekendSchedule(object):
     def activity(self):
         """Gets the activity of this WeekendSchedule.  # noqa: E501
 
+        The name of the activity  # noqa: E501
 
         :return: The activity of this WeekendSchedule.  # noqa: E501
         :rtype: str
@@ -67,6 +68,7 @@ class WeekendSchedule(object):
     def activity(self, activity):
         """Sets the activity of this WeekendSchedule.
 
+        The name of the activity  # noqa: E501
 
         :param activity: The activity of this WeekendSchedule.  # noqa: E501
         :type: str
@@ -78,6 +80,7 @@ class WeekendSchedule(object):
     def start_time(self):
         """Gets the start_time of this WeekendSchedule.  # noqa: E501
 
+        Scheduled start time  # noqa: E501
 
         :return: The start_time of this WeekendSchedule.  # noqa: E501
         :rtype: datetime
@@ -88,6 +91,7 @@ class WeekendSchedule(object):
     def start_time(self, start_time):
         """Sets the start_time of this WeekendSchedule.
 
+        Scheduled start time  # noqa: E501
 
         :param start_time: The start_time of this WeekendSchedule.  # noqa: E501
         :type: datetime
@@ -99,6 +103,7 @@ class WeekendSchedule(object):
     def end_time(self):
         """Gets the end_time of this WeekendSchedule.  # noqa: E501
 
+        Scheduled end time (if any)  # noqa: E501
 
         :return: The end_time of this WeekendSchedule.  # noqa: E501
         :rtype: datetime
@@ -109,6 +114,7 @@ class WeekendSchedule(object):
     def end_time(self, end_time):
         """Sets the end_time of this WeekendSchedule.
 
+        Scheduled end time (if any)  # noqa: E501
 
         :param end_time: The end_time of this WeekendSchedule.  # noqa: E501
         :type: datetime

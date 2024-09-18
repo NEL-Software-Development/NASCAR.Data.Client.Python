@@ -79,6 +79,7 @@ class RaceWeek(object):
     def id(self):
         """Gets the id of this RaceWeek.  # noqa: E501
 
+        Id  # noqa: E501
 
         :return: The id of this RaceWeek.  # noqa: E501
         :rtype: int
@@ -89,6 +90,7 @@ class RaceWeek(object):
     def id(self, id):
         """Sets the id of this RaceWeek.
 
+        Id  # noqa: E501
 
         :param id: The id of this RaceWeek.  # noqa: E501
         :type: int
@@ -100,6 +102,7 @@ class RaceWeek(object):
     def season(self):
         """Gets the season of this RaceWeek.  # noqa: E501
 
+        Race season  # noqa: E501
 
         :return: The season of this RaceWeek.  # noqa: E501
         :rtype: int
@@ -110,6 +113,7 @@ class RaceWeek(object):
     def season(self, season):
         """Sets the season of this RaceWeek.
 
+        Race season  # noqa: E501
 
         :param season: The season of this RaceWeek.  # noqa: E501
         :type: int
@@ -123,6 +127,7 @@ class RaceWeek(object):
     def venue(self):
         """Gets the venue of this RaceWeek.  # noqa: E501
 
+        Venue  # noqa: E501
 
         :return: The venue of this RaceWeek.  # noqa: E501
         :rtype: str
@@ -133,6 +138,7 @@ class RaceWeek(object):
     def venue(self, venue):
         """Sets the venue of this RaceWeek.
 
+        Venue  # noqa: E501
 
         :param venue: The venue of this RaceWeek.  # noqa: E501
         :type: str
@@ -146,6 +152,7 @@ class RaceWeek(object):
     def running_series(self):
         """Gets the running_series of this RaceWeek.  # noqa: E501
 
+        List of series running at this event  # noqa: E501
 
         :return: The running_series of this RaceWeek.  # noqa: E501
         :rtype: str
@@ -156,6 +163,7 @@ class RaceWeek(object):
     def running_series(self, running_series):
         """Sets the running_series of this RaceWeek.
 
+        List of series running at this event  # noqa: E501
 
         :param running_series: The running_series of this RaceWeek.  # noqa: E501
         :type: str
@@ -169,6 +177,7 @@ class RaceWeek(object):
     def start_date(self):
         """Gets the start_date of this RaceWeek.  # noqa: E501
 
+        Start of raceweek  # noqa: E501
 
         :return: The start_date of this RaceWeek.  # noqa: E501
         :rtype: datetime
@@ -179,6 +188,7 @@ class RaceWeek(object):
     def start_date(self, start_date):
         """Sets the start_date of this RaceWeek.
 
+        Start of raceweek  # noqa: E501
 
         :param start_date: The start_date of this RaceWeek.  # noqa: E501
         :type: datetime
@@ -190,6 +200,7 @@ class RaceWeek(object):
     def end_date(self):
         """Gets the end_date of this RaceWeek.  # noqa: E501
 
+        End of raceweek  # noqa: E501
 
         :return: The end_date of this RaceWeek.  # noqa: E501
         :rtype: datetime
@@ -200,6 +211,7 @@ class RaceWeek(object):
     def end_date(self, end_date):
         """Sets the end_date of this RaceWeek.
 
+        End of raceweek  # noqa: E501
 
         :param end_date: The end_date of this RaceWeek.  # noqa: E501
         :type: datetime
@@ -211,6 +223,7 @@ class RaceWeek(object):
     def is_live(self):
         """Gets the is_live of this RaceWeek.  # noqa: E501
 
+        Is this raceweek currently in progress  # noqa: E501
 
         :return: The is_live of this RaceWeek.  # noqa: E501
         :rtype: bool
@@ -221,6 +234,7 @@ class RaceWeek(object):
     def is_live(self, is_live):
         """Sets the is_live of this RaceWeek.
 
+        Is this raceweek currently in progress  # noqa: E501
 
         :param is_live: The is_live of this RaceWeek.  # noqa: E501
         :type: bool
@@ -232,6 +246,7 @@ class RaceWeek(object):
     def details(self):
         """Gets the details of this RaceWeek.  # noqa: E501
 
+        URL to raceweek details  # noqa: E501
 
         :return: The details of this RaceWeek.  # noqa: E501
         :rtype: str
@@ -242,6 +257,7 @@ class RaceWeek(object):
     def details(self, details):
         """Sets the details of this RaceWeek.
 
+        URL to raceweek details  # noqa: E501
 
         :param details: The details of this RaceWeek.  # noqa: E501
         :type: str

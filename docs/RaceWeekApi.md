@@ -1,15 +1,15 @@
 # nascar_data_client.RaceWeekApi
 
-All URIs are relative to */*
+All URIs are relative to */api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**details**](RaceWeekApi.md#details) | **GET** /race-week/details | 
-[**live**](RaceWeekApi.md#live) | **GET** /race-week/live | 
-[**season**](RaceWeekApi.md#season) | **GET** /race-week/season | 
+[**race_week_details_get**](RaceWeekApi.md#race_week_details_get) | **GET** /race-week/details | 
+[**race_week_live_get**](RaceWeekApi.md#race_week_live_get) | **GET** /race-week/live | 
+[**race_week_season_get**](RaceWeekApi.md#race_week_season_get) | **GET** /race-week/season | 
 
-# **details**
-> RaceWeekDetails details(id=id)
+# **race_week_details_get**
+> RaceWeekDetails race_week_details_get(id=id)
 
 
 
@@ -27,10 +27,10 @@ api_instance = nascar_data_client.RaceWeekApi(nascar_data_client.ApiClient(confi
 id = 56 # int |  (optional)
 
 try:
-    api_response = api_instance.details(id=id)
+    api_response = api_instance.race_week_details_get(id=id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling RaceWeekApi->details: %s\n" % e)
+    print("Exception when calling RaceWeekApi->race_week_details_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -54,8 +54,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **live**
-> list[RaceWeek] live()
+# **race_week_live_get**
+> list[RaceWeek] race_week_live_get()
 
 
 
@@ -72,10 +72,10 @@ from pprint import pprint
 api_instance = nascar_data_client.RaceWeekApi(nascar_data_client.ApiClient(configuration))
 
 try:
-    api_response = api_instance.live()
+    api_response = api_instance.race_week_live_get()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling RaceWeekApi->live: %s\n" % e)
+    print("Exception when calling RaceWeekApi->race_week_live_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -96,8 +96,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **season**
-> list[RaceWeek] season(season=season)
+# **race_week_season_get**
+> list[RaceWeek] race_week_season_get(season=season)
 
 
 
@@ -115,10 +115,10 @@ api_instance = nascar_data_client.RaceWeekApi(nascar_data_client.ApiClient(confi
 season = 56 # int |  (optional)
 
 try:
-    api_response = api_instance.season(season=season)
+    api_response = api_instance.race_week_season_get(season=season)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling RaceWeekApi->season: %s\n" % e)
+    print("Exception when calling RaceWeekApi->race_week_season_get: %s\n" % e)
 ```
 
 ### Parameters

@@ -32,12 +32,12 @@ class VehicleApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def vehicle(self, **kwargs):  # noqa: E501
-        """vehicle  # noqa: E501
+    def vehicle_get(self, **kwargs):  # noqa: E501
+        """vehicle_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vehicle(async_req=True)
+        >>> thread = api.vehicle_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -48,17 +48,17 @@ class VehicleApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.vehicle_with_http_info(**kwargs)  # noqa: E501
+            return self.vehicle_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.vehicle_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.vehicle_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def vehicle_with_http_info(self, **kwargs):  # noqa: E501
-        """vehicle  # noqa: E501
+    def vehicle_get_with_http_info(self, **kwargs):  # noqa: E501
+        """vehicle_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vehicle_with_http_info(async_req=True)
+        >>> thread = api.vehicle_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -79,7 +79,7 @@ class VehicleApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method vehicle" % key
+                    " to method vehicle_get" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -121,12 +121,12 @@ class VehicleApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def vehicle_season_finishes(self, **kwargs):  # noqa: E501
-        """vehicle_season_finishes  # noqa: E501
+    def vehicle_season_finishes_get(self, **kwargs):  # noqa: E501
+        """vehicle_season_finishes_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vehicle_season_finishes(async_req=True)
+        >>> thread = api.vehicle_season_finishes_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -139,17 +139,17 @@ class VehicleApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.vehicle_season_finishes_with_http_info(**kwargs)  # noqa: E501
+            return self.vehicle_season_finishes_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.vehicle_season_finishes_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.vehicle_season_finishes_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def vehicle_season_finishes_with_http_info(self, **kwargs):  # noqa: E501
-        """vehicle_season_finishes  # noqa: E501
+    def vehicle_season_finishes_get_with_http_info(self, **kwargs):  # noqa: E501
+        """vehicle_season_finishes_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vehicle_season_finishes_with_http_info(async_req=True)
+        >>> thread = api.vehicle_season_finishes_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -172,7 +172,7 @@ class VehicleApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method vehicle_season_finishes" % key
+                    " to method vehicle_season_finishes_get" % key
                 )
             params[key] = val
         del params['kwargs']

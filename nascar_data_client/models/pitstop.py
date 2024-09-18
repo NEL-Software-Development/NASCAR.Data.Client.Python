@@ -152,6 +152,7 @@ class Pitstop(object):
     def lap(self):
         """Gets the lap of this Pitstop.  # noqa: E501
 
+        Lap  # noqa: E501
 
         :return: The lap of this Pitstop.  # noqa: E501
         :rtype: int
@@ -162,6 +163,7 @@ class Pitstop(object):
     def lap(self, lap):
         """Sets the lap of this Pitstop.
 
+        Lap  # noqa: E501
 
         :param lap: The lap of this Pitstop.  # noqa: E501
         :type: int
@@ -173,6 +175,7 @@ class Pitstop(object):
     def leader_lap(self):
         """Gets the leader_lap of this Pitstop.  # noqa: E501
 
+        Leader lap  # noqa: E501
 
         :return: The leader_lap of this Pitstop.  # noqa: E501
         :rtype: int
@@ -183,6 +186,7 @@ class Pitstop(object):
     def leader_lap(self, leader_lap):
         """Sets the leader_lap of this Pitstop.
 
+        Leader lap  # noqa: E501
 
         :param leader_lap: The leader_lap of this Pitstop.  # noqa: E501
         :type: int
@@ -194,6 +198,7 @@ class Pitstop(object):
     def vehicle_number(self):
         """Gets the vehicle_number of this Pitstop.  # noqa: E501
 
+        Vehicle number  # noqa: E501
 
         :return: The vehicle_number of this Pitstop.  # noqa: E501
         :rtype: str
@@ -204,6 +209,7 @@ class Pitstop(object):
     def vehicle_number(self, vehicle_number):
         """Sets the vehicle_number of this Pitstop.
 
+        Vehicle number  # noqa: E501
 
         :param vehicle_number: The vehicle_number of this Pitstop.  # noqa: E501
         :type: str
@@ -215,6 +221,7 @@ class Pitstop(object):
     def enter_flagstate(self):
         """Gets the enter_flagstate of this Pitstop.  # noqa: E501
 
+        Enter flag state  # noqa: E501
 
         :return: The enter_flagstate of this Pitstop.  # noqa: E501
         :rtype: int
@@ -225,6 +232,7 @@ class Pitstop(object):
     def enter_flagstate(self, enter_flagstate):
         """Sets the enter_flagstate of this Pitstop.
 
+        Enter flag state  # noqa: E501
 
         :param enter_flagstate: The enter_flagstate of this Pitstop.  # noqa: E501
         :type: int
@@ -236,6 +244,7 @@ class Pitstop(object):
     def enter_racetime(self):
         """Gets the enter_racetime of this Pitstop.  # noqa: E501
 
+        Exit flag state  # noqa: E501
 
         :return: The enter_racetime of this Pitstop.  # noqa: E501
         :rtype: float
@@ -246,6 +255,7 @@ class Pitstop(object):
     def enter_racetime(self, enter_racetime):
         """Sets the enter_racetime of this Pitstop.
 
+        Exit flag state  # noqa: E501
 
         :param enter_racetime: The enter_racetime of this Pitstop.  # noqa: E501
         :type: float
@@ -257,6 +267,7 @@ class Pitstop(object):
     def enter_travelduration(self):
         """Gets the enter_travelduration of this Pitstop.  # noqa: E501
 
+        Enter travel duration  # noqa: E501
 
         :return: The enter_travelduration of this Pitstop.  # noqa: E501
         :rtype: float
@@ -267,6 +278,7 @@ class Pitstop(object):
     def enter_travelduration(self, enter_travelduration):
         """Sets the enter_travelduration of this Pitstop.
 
+        Enter travel duration  # noqa: E501
 
         :param enter_travelduration: The enter_travelduration of this Pitstop.  # noqa: E501
         :type: float
@@ -278,6 +290,7 @@ class Pitstop(object):
     def adjustment_left(self):
         """Gets the adjustment_left of this Pitstop.  # noqa: E501
 
+        Adjustment left  # noqa: E501
 
         :return: The adjustment_left of this Pitstop.  # noqa: E501
         :rtype: bool
@@ -288,6 +301,7 @@ class Pitstop(object):
     def adjustment_left(self, adjustment_left):
         """Sets the adjustment_left of this Pitstop.
 
+        Adjustment left  # noqa: E501
 
         :param adjustment_left: The adjustment_left of this Pitstop.  # noqa: E501
         :type: bool
@@ -299,6 +313,7 @@ class Pitstop(object):
     def adjustment_right(self):
         """Gets the adjustment_right of this Pitstop.  # noqa: E501
 
+        Adjustment right  # noqa: E501
 
         :return: The adjustment_right of this Pitstop.  # noqa: E501
         :rtype: bool
@@ -309,6 +324,7 @@ class Pitstop(object):
     def adjustment_right(self, adjustment_right):
         """Sets the adjustment_right of this Pitstop.
 
+        Adjustment right  # noqa: E501
 
         :param adjustment_right: The adjustment_right of this Pitstop.  # noqa: E501
         :type: bool
@@ -320,6 +336,7 @@ class Pitstop(object):
     def body_repairs(self):
         """Gets the body_repairs of this Pitstop.  # noqa: E501
 
+        Body repairs  # noqa: E501
 
         :return: The body_repairs of this Pitstop.  # noqa: E501
         :rtype: bool
@@ -330,6 +347,7 @@ class Pitstop(object):
     def body_repairs(self, body_repairs):
         """Sets the body_repairs of this Pitstop.
 
+        Body repairs  # noqa: E501
 
         :param body_repairs: The body_repairs of this Pitstop.  # noqa: E501
         :type: bool
@@ -341,6 +359,7 @@ class Pitstop(object):
     def fuel_cans(self):
         """Gets the fuel_cans of this Pitstop.  # noqa: E501
 
+        Number of fuel cans  # noqa: E501
 
         :return: The fuel_cans of this Pitstop.  # noqa: E501
         :rtype: int
@@ -351,6 +370,7 @@ class Pitstop(object):
     def fuel_cans(self, fuel_cans):
         """Sets the fuel_cans of this Pitstop.
 
+        Number of fuel cans  # noqa: E501
 
         :param fuel_cans: The fuel_cans of this Pitstop.  # noqa: E501
         :type: int
@@ -362,6 +382,7 @@ class Pitstop(object):
     def leftfront_tirechanged(self):
         """Gets the leftfront_tirechanged of this Pitstop.  # noqa: E501
 
+        Left front tire changed  # noqa: E501
 
         :return: The leftfront_tirechanged of this Pitstop.  # noqa: E501
         :rtype: bool
@@ -372,6 +393,7 @@ class Pitstop(object):
     def leftfront_tirechanged(self, leftfront_tirechanged):
         """Sets the leftfront_tirechanged of this Pitstop.
 
+        Left front tire changed  # noqa: E501
 
         :param leftfront_tirechanged: The leftfront_tirechanged of this Pitstop.  # noqa: E501
         :type: bool
@@ -383,6 +405,7 @@ class Pitstop(object):
     def leftrear_tirechanged(self):
         """Gets the leftrear_tirechanged of this Pitstop.  # noqa: E501
 
+        Left rear tire changed  # noqa: E501
 
         :return: The leftrear_tirechanged of this Pitstop.  # noqa: E501
         :rtype: bool
@@ -393,6 +416,7 @@ class Pitstop(object):
     def leftrear_tirechanged(self, leftrear_tirechanged):
         """Sets the leftrear_tirechanged of this Pitstop.
 
+        Left rear tire changed  # noqa: E501
 
         :param leftrear_tirechanged: The leftrear_tirechanged of this Pitstop.  # noqa: E501
         :type: bool
@@ -404,6 +428,7 @@ class Pitstop(object):
     def rightfront_tirechanged(self):
         """Gets the rightfront_tirechanged of this Pitstop.  # noqa: E501
 
+        Right front tire changed  # noqa: E501
 
         :return: The rightfront_tirechanged of this Pitstop.  # noqa: E501
         :rtype: bool
@@ -414,6 +439,7 @@ class Pitstop(object):
     def rightfront_tirechanged(self, rightfront_tirechanged):
         """Sets the rightfront_tirechanged of this Pitstop.
 
+        Right front tire changed  # noqa: E501
 
         :param rightfront_tirechanged: The rightfront_tirechanged of this Pitstop.  # noqa: E501
         :type: bool
@@ -425,6 +451,7 @@ class Pitstop(object):
     def rightrear_tirechanged(self):
         """Gets the rightrear_tirechanged of this Pitstop.  # noqa: E501
 
+        Right rear tire changed  # noqa: E501
 
         :return: The rightrear_tirechanged of this Pitstop.  # noqa: E501
         :rtype: bool
@@ -435,6 +462,7 @@ class Pitstop(object):
     def rightrear_tirechanged(self, rightrear_tirechanged):
         """Sets the rightrear_tirechanged of this Pitstop.
 
+        Right rear tire changed  # noqa: E501
 
         :param rightrear_tirechanged: The rightrear_tirechanged of this Pitstop.  # noqa: E501
         :type: bool
@@ -446,6 +474,7 @@ class Pitstop(object):
     def infraction(self):
         """Gets the infraction of this Pitstop.  # noqa: E501
 
+        Infraction  # noqa: E501
 
         :return: The infraction of this Pitstop.  # noqa: E501
         :rtype: str
@@ -456,6 +485,7 @@ class Pitstop(object):
     def infraction(self, infraction):
         """Sets the infraction of this Pitstop.
 
+        Infraction  # noqa: E501
 
         :param infraction: The infraction of this Pitstop.  # noqa: E501
         :type: str
@@ -467,6 +497,7 @@ class Pitstop(object):
     def video(self):
         """Gets the video of this Pitstop.  # noqa: E501
 
+        Video  # noqa: E501
 
         :return: The video of this Pitstop.  # noqa: E501
         :rtype: str
@@ -477,6 +508,7 @@ class Pitstop(object):
     def video(self, video):
         """Sets the video of this Pitstop.
 
+        Video  # noqa: E501
 
         :param video: The video of this Pitstop.  # noqa: E501
         :type: str
@@ -488,6 +520,7 @@ class Pitstop(object):
     def pitbox_enter(self):
         """Gets the pitbox_enter of this Pitstop.  # noqa: E501
 
+        Pit box enter  # noqa: E501
 
         :return: The pitbox_enter of this Pitstop.  # noqa: E501
         :rtype: float
@@ -498,6 +531,7 @@ class Pitstop(object):
     def pitbox_enter(self, pitbox_enter):
         """Sets the pitbox_enter of this Pitstop.
 
+        Pit box enter  # noqa: E501
 
         :param pitbox_enter: The pitbox_enter of this Pitstop.  # noqa: E501
         :type: float
@@ -509,6 +543,7 @@ class Pitstop(object):
     def pitbox_exit(self):
         """Gets the pitbox_exit of this Pitstop.  # noqa: E501
 
+        Pit box exit  # noqa: E501
 
         :return: The pitbox_exit of this Pitstop.  # noqa: E501
         :rtype: float
@@ -519,6 +554,7 @@ class Pitstop(object):
     def pitbox_exit(self, pitbox_exit):
         """Sets the pitbox_exit of this Pitstop.
 
+        Pit box exit  # noqa: E501
 
         :param pitbox_exit: The pitbox_exit of this Pitstop.  # noqa: E501
         :type: float
@@ -530,6 +566,7 @@ class Pitstop(object):
     def exit_flagstate(self):
         """Gets the exit_flagstate of this Pitstop.  # noqa: E501
 
+        Exit flag state  # noqa: E501
 
         :return: The exit_flagstate of this Pitstop.  # noqa: E501
         :rtype: int
@@ -540,6 +577,7 @@ class Pitstop(object):
     def exit_flagstate(self, exit_flagstate):
         """Sets the exit_flagstate of this Pitstop.
 
+        Exit flag state  # noqa: E501
 
         :param exit_flagstate: The exit_flagstate of this Pitstop.  # noqa: E501
         :type: int
@@ -551,6 +589,7 @@ class Pitstop(object):
     def exit_racetime(self):
         """Gets the exit_racetime of this Pitstop.  # noqa: E501
 
+        Exit race time  # noqa: E501
 
         :return: The exit_racetime of this Pitstop.  # noqa: E501
         :rtype: float
@@ -561,6 +600,7 @@ class Pitstop(object):
     def exit_racetime(self, exit_racetime):
         """Sets the exit_racetime of this Pitstop.
 
+        Exit race time  # noqa: E501
 
         :param exit_racetime: The exit_racetime of this Pitstop.  # noqa: E501
         :type: float
@@ -572,6 +612,7 @@ class Pitstop(object):
     def exit_travelduration(self):
         """Gets the exit_travelduration of this Pitstop.  # noqa: E501
 
+        Exit travel duration  # noqa: E501
 
         :return: The exit_travelduration of this Pitstop.  # noqa: E501
         :rtype: float
@@ -582,6 +623,7 @@ class Pitstop(object):
     def exit_travelduration(self, exit_travelduration):
         """Sets the exit_travelduration of this Pitstop.
 
+        Exit travel duration  # noqa: E501
 
         :param exit_travelduration: The exit_travelduration of this Pitstop.  # noqa: E501
         :type: float
@@ -593,6 +635,7 @@ class Pitstop(object):
     def total_duration(self):
         """Gets the total_duration of this Pitstop.  # noqa: E501
 
+        Total duration  # noqa: E501
 
         :return: The total_duration of this Pitstop.  # noqa: E501
         :rtype: float
@@ -603,6 +646,7 @@ class Pitstop(object):
     def total_duration(self, total_duration):
         """Sets the total_duration of this Pitstop.
 
+        Total duration  # noqa: E501
 
         :param total_duration: The total_duration of this Pitstop.  # noqa: E501
         :type: float

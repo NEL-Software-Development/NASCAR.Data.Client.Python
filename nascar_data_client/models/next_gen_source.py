@@ -83,6 +83,7 @@ class NextGenSource(object):
     def name(self):
         """Gets the name of this NextGenSource.  # noqa: E501
 
+        Source name  # noqa: E501
 
         :return: The name of this NextGenSource.  # noqa: E501
         :rtype: str
@@ -93,6 +94,7 @@ class NextGenSource(object):
     def name(self, name):
         """Sets the name of this NextGenSource.
 
+        Source name  # noqa: E501
 
         :param name: The name of this NextGenSource.  # noqa: E501
         :type: str
@@ -104,6 +106,7 @@ class NextGenSource(object):
     def description(self):
         """Gets the description of this NextGenSource.  # noqa: E501
 
+        Description  # noqa: E501
 
         :return: The description of this NextGenSource.  # noqa: E501
         :rtype: str
@@ -114,6 +117,7 @@ class NextGenSource(object):
     def description(self, description):
         """Sets the description of this NextGenSource.
 
+        Description  # noqa: E501
 
         :param description: The description of this NextGenSource.  # noqa: E501
         :type: str
@@ -125,6 +129,7 @@ class NextGenSource(object):
     def vehicle_number(self):
         """Gets the vehicle_number of this NextGenSource.  # noqa: E501
 
+        Vehicle Number  # noqa: E501
 
         :return: The vehicle_number of this NextGenSource.  # noqa: E501
         :rtype: str
@@ -135,6 +140,7 @@ class NextGenSource(object):
     def vehicle_number(self, vehicle_number):
         """Sets the vehicle_number of this NextGenSource.
 
+        Vehicle Number  # noqa: E501
 
         :param vehicle_number: The vehicle_number of this NextGenSource.  # noqa: E501
         :type: str

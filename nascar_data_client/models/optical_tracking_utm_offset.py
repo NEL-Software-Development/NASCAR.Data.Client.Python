@@ -72,6 +72,7 @@ class OpticalTrackingUTMOffset(object):
     def track_id(self):
         """Gets the track_id of this OpticalTrackingUTMOffset.  # noqa: E501
 
+        Track Id  # noqa: E501
 
         :return: The track_id of this OpticalTrackingUTMOffset.  # noqa: E501
         :rtype: int
@@ -82,6 +83,7 @@ class OpticalTrackingUTMOffset(object):
     def track_id(self, track_id):
         """Sets the track_id of this OpticalTrackingUTMOffset.
 
+        Track Id  # noqa: E501
 
         :param track_id: The track_id of this OpticalTrackingUTMOffset.  # noqa: E501
         :type: int
@@ -93,6 +95,7 @@ class OpticalTrackingUTMOffset(object):
     def track_name(self):
         """Gets the track_name of this OpticalTrackingUTMOffset.  # noqa: E501
 
+        Track Name  # noqa: E501
 
         :return: The track_name of this OpticalTrackingUTMOffset.  # noqa: E501
         :rtype: str
@@ -103,6 +106,7 @@ class OpticalTrackingUTMOffset(object):
     def track_name(self, track_name):
         """Sets the track_name of this OpticalTrackingUTMOffset.
 
+        Track Name  # noqa: E501
 
         :param track_name: The track_name of this OpticalTrackingUTMOffset.  # noqa: E501
         :type: str
@@ -114,6 +118,7 @@ class OpticalTrackingUTMOffset(object):
     def zone(self):
         """Gets the zone of this OpticalTrackingUTMOffset.  # noqa: E501
 
+        Zone  # noqa: E501
 
         :return: The zone of this OpticalTrackingUTMOffset.  # noqa: E501
         :rtype: str
@@ -124,6 +129,7 @@ class OpticalTrackingUTMOffset(object):
     def zone(self, zone):
         """Sets the zone of this OpticalTrackingUTMOffset.
 
+        Zone  # noqa: E501
 
         :param zone: The zone of this OpticalTrackingUTMOffset.  # noqa: E501
         :type: str
@@ -135,6 +141,7 @@ class OpticalTrackingUTMOffset(object):
     def x(self):
         """Gets the x of this OpticalTrackingUTMOffset.  # noqa: E501
 
+        X Coordinate  # noqa: E501
 
         :return: The x of this OpticalTrackingUTMOffset.  # noqa: E501
         :rtype: float
@@ -145,6 +152,7 @@ class OpticalTrackingUTMOffset(object):
     def x(self, x):
         """Sets the x of this OpticalTrackingUTMOffset.
 
+        X Coordinate  # noqa: E501
 
         :param x: The x of this OpticalTrackingUTMOffset.  # noqa: E501
         :type: float
@@ -156,6 +164,7 @@ class OpticalTrackingUTMOffset(object):
     def y(self):
         """Gets the y of this OpticalTrackingUTMOffset.  # noqa: E501
 
+        Y coordinate  # noqa: E501
 
         :return: The y of this OpticalTrackingUTMOffset.  # noqa: E501
         :rtype: float
@@ -166,6 +175,7 @@ class OpticalTrackingUTMOffset(object):
     def y(self, y):
         """Sets the y of this OpticalTrackingUTMOffset.
 
+        Y coordinate  # noqa: E501
 
         :param y: The y of this OpticalTrackingUTMOffset.  # noqa: E501
         :type: float
@@ -177,6 +187,7 @@ class OpticalTrackingUTMOffset(object):
     def z(self):
         """Gets the z of this OpticalTrackingUTMOffset.  # noqa: E501
 
+        Z coordinate  # noqa: E501
 
         :return: The z of this OpticalTrackingUTMOffset.  # noqa: E501
         :rtype: float
@@ -187,6 +198,7 @@ class OpticalTrackingUTMOffset(object):
     def z(self, z):
         """Sets the z of this OpticalTrackingUTMOffset.
 
+        Z coordinate  # noqa: E501
 
         :param z: The z of this OpticalTrackingUTMOffset.  # noqa: E501
         :type: float

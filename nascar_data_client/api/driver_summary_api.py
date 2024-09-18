@@ -32,12 +32,12 @@ class DriverSummaryApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def driver_summary(self, **kwargs):  # noqa: E501
-        """driver_summary  # noqa: E501
+    def driver_summary_get(self, **kwargs):  # noqa: E501
+        """driver_summary_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.driver_summary(async_req=True)
+        >>> thread = api.driver_summary_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -50,17 +50,17 @@ class DriverSummaryApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.driver_summary_with_http_info(**kwargs)  # noqa: E501
+            return self.driver_summary_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.driver_summary_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.driver_summary_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def driver_summary_with_http_info(self, **kwargs):  # noqa: E501
-        """driver_summary  # noqa: E501
+    def driver_summary_get_with_http_info(self, **kwargs):  # noqa: E501
+        """driver_summary_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.driver_summary_with_http_info(async_req=True)
+        >>> thread = api.driver_summary_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -83,7 +83,7 @@ class DriverSummaryApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method driver_summary" % key
+                    " to method driver_summary_get" % key
                 )
             params[key] = val
         del params['kwargs']

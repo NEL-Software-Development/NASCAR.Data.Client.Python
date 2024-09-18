@@ -67,6 +67,7 @@ class ManufacturerPoint(object):
     def position(self):
         """Gets the position of this ManufacturerPoint.  # noqa: E501
 
+        Points position  # noqa: E501
 
         :return: The position of this ManufacturerPoint.  # noqa: E501
         :rtype: int
@@ -77,6 +78,7 @@ class ManufacturerPoint(object):
     def position(self, position):
         """Sets the position of this ManufacturerPoint.
 
+        Points position  # noqa: E501
 
         :param position: The position of this ManufacturerPoint.  # noqa: E501
         :type: int
@@ -88,6 +90,7 @@ class ManufacturerPoint(object):
     def manufacturer(self):
         """Gets the manufacturer of this ManufacturerPoint.  # noqa: E501
 
+        Manufacturer name  # noqa: E501
 
         :return: The manufacturer of this ManufacturerPoint.  # noqa: E501
         :rtype: str
@@ -98,6 +101,7 @@ class ManufacturerPoint(object):
     def manufacturer(self, manufacturer):
         """Sets the manufacturer of this ManufacturerPoint.
 
+        Manufacturer name  # noqa: E501
 
         :param manufacturer: The manufacturer of this ManufacturerPoint.  # noqa: E501
         :type: str
@@ -109,6 +113,7 @@ class ManufacturerPoint(object):
     def points(self):
         """Gets the points of this ManufacturerPoint.  # noqa: E501
 
+        Number of points earned  # noqa: E501
 
         :return: The points of this ManufacturerPoint.  # noqa: E501
         :rtype: int
@@ -119,6 +124,7 @@ class ManufacturerPoint(object):
     def points(self, points):
         """Sets the points of this ManufacturerPoint.
 
+        Number of points earned  # noqa: E501
 
         :param points: The points of this ManufacturerPoint.  # noqa: E501
         :type: int
@@ -130,6 +136,7 @@ class ManufacturerPoint(object):
     def wins(self):
         """Gets the wins of this ManufacturerPoint.  # noqa: E501
 
+        Total wins in season  # noqa: E501
 
         :return: The wins of this ManufacturerPoint.  # noqa: E501
         :rtype: int
@@ -140,6 +147,7 @@ class ManufacturerPoint(object):
     def wins(self, wins):
         """Sets the wins of this ManufacturerPoint.
 
+        Total wins in season  # noqa: E501
 
         :param wins: The wins of this ManufacturerPoint.  # noqa: E501
         :type: int
@@ -151,6 +159,7 @@ class ManufacturerPoint(object):
     def best_finish(self):
         """Gets the best_finish of this ManufacturerPoint.  # noqa: E501
 
+        Best finish date  # noqa: E501
 
         :return: The best_finish of this ManufacturerPoint.  # noqa: E501
         :rtype: datetime
@@ -161,6 +170,7 @@ class ManufacturerPoint(object):
     def best_finish(self, best_finish):
         """Sets the best_finish of this ManufacturerPoint.
 
+        Best finish date  # noqa: E501
 
         :param best_finish: The best_finish of this ManufacturerPoint.  # noqa: E501
         :type: datetime

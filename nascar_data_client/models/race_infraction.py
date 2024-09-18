@@ -82,6 +82,7 @@ class RaceInfraction(object):
     def flag_state(self):
         """Gets the flag_state of this RaceInfraction.  # noqa: E501
 
+        Flag state at the time of the infraction: (W,G,G/Y,R,Y)  # noqa: E501
 
         :return: The flag_state of this RaceInfraction.  # noqa: E501
         :rtype: str
@@ -92,6 +93,7 @@ class RaceInfraction(object):
     def flag_state(self, flag_state):
         """Sets the flag_state of this RaceInfraction.
 
+        Flag state at the time of the infraction: (W,G,G/Y,R,Y)  # noqa: E501
 
         :param flag_state: The flag_state of this RaceInfraction.  # noqa: E501
         :type: str
@@ -103,6 +105,7 @@ class RaceInfraction(object):
     def infraction(self):
         """Gets the infraction of this RaceInfraction.  # noqa: E501
 
+        Description of the infraction  # noqa: E501
 
         :return: The infraction of this RaceInfraction.  # noqa: E501
         :rtype: str
@@ -113,6 +116,7 @@ class RaceInfraction(object):
     def infraction(self, infraction):
         """Sets the infraction of this RaceInfraction.
 
+        Description of the infraction  # noqa: E501
 
         :param infraction: The infraction of this RaceInfraction.  # noqa: E501
         :type: str
@@ -124,6 +128,7 @@ class RaceInfraction(object):
     def vehicle_number(self):
         """Gets the vehicle_number of this RaceInfraction.  # noqa: E501
 
+        Vehicle number  # noqa: E501
 
         :return: The vehicle_number of this RaceInfraction.  # noqa: E501
         :rtype: str
@@ -134,6 +139,7 @@ class RaceInfraction(object):
     def vehicle_number(self, vehicle_number):
         """Sets the vehicle_number of this RaceInfraction.
 
+        Vehicle number  # noqa: E501
 
         :param vehicle_number: The vehicle_number of this RaceInfraction.  # noqa: E501
         :type: str
@@ -145,6 +151,7 @@ class RaceInfraction(object):
     def lap(self):
         """Gets the lap of this RaceInfraction.  # noqa: E501
 
+        Lap of infraction  # noqa: E501
 
         :return: The lap of this RaceInfraction.  # noqa: E501
         :rtype: int
@@ -155,6 +162,7 @@ class RaceInfraction(object):
     def lap(self, lap):
         """Sets the lap of this RaceInfraction.
 
+        Lap of infraction  # noqa: E501
 
         :param lap: The lap of this RaceInfraction.  # noqa: E501
         :type: int
@@ -166,6 +174,7 @@ class RaceInfraction(object):
     def lap_assessed(self):
         """Gets the lap_assessed of this RaceInfraction.  # noqa: E501
 
+        Lap infraction was assessed  # noqa: E501
 
         :return: The lap_assessed of this RaceInfraction.  # noqa: E501
         :rtype: int
@@ -176,6 +185,7 @@ class RaceInfraction(object):
     def lap_assessed(self, lap_assessed):
         """Sets the lap_assessed of this RaceInfraction.
 
+        Lap infraction was assessed  # noqa: E501
 
         :param lap_assessed: The lap_assessed of this RaceInfraction.  # noqa: E501
         :type: int
@@ -187,6 +197,7 @@ class RaceInfraction(object):
     def time_of_race(self):
         """Gets the time_of_race of this RaceInfraction.  # noqa: E501
 
+        Time of race the infraction occurred  # noqa: E501
 
         :return: The time_of_race of this RaceInfraction.  # noqa: E501
         :rtype: datetime
@@ -197,6 +208,7 @@ class RaceInfraction(object):
     def time_of_race(self, time_of_race):
         """Sets the time_of_race of this RaceInfraction.
 
+        Time of race the infraction occurred  # noqa: E501
 
         :param time_of_race: The time_of_race of this RaceInfraction.  # noqa: E501
         :type: datetime
@@ -208,6 +220,7 @@ class RaceInfraction(object):
     def penalty(self):
         """Gets the penalty of this RaceInfraction.  # noqa: E501
 
+        Penalty assessed  # noqa: E501
 
         :return: The penalty of this RaceInfraction.  # noqa: E501
         :rtype: str
@@ -218,6 +231,7 @@ class RaceInfraction(object):
     def penalty(self, penalty):
         """Sets the penalty of this RaceInfraction.
 
+        Penalty assessed  # noqa: E501
 
         :param penalty: The penalty of this RaceInfraction.  # noqa: E501
         :type: str
@@ -229,6 +243,7 @@ class RaceInfraction(object):
     def notes(self):
         """Gets the notes of this RaceInfraction.  # noqa: E501
 
+        Notes  # noqa: E501
 
         :return: The notes of this RaceInfraction.  # noqa: E501
         :rtype: str
@@ -239,6 +254,7 @@ class RaceInfraction(object):
     def notes(self, notes):
         """Sets the notes of this RaceInfraction.
 
+        Notes  # noqa: E501
 
         :param notes: The notes of this RaceInfraction.  # noqa: E501
         :type: str

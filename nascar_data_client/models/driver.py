@@ -112,6 +112,7 @@ class Driver(object):
     def id(self):
         """Gets the id of this Driver.  # noqa: E501
 
+        Id  # noqa: E501
 
         :return: The id of this Driver.  # noqa: E501
         :rtype: int
@@ -122,6 +123,7 @@ class Driver(object):
     def id(self, id):
         """Sets the id of this Driver.
 
+        Id  # noqa: E501
 
         :param id: The id of this Driver.  # noqa: E501
         :type: int
@@ -133,6 +135,7 @@ class Driver(object):
     def name(self):
         """Gets the name of this Driver.  # noqa: E501
 
+        Name  # noqa: E501
 
         :return: The name of this Driver.  # noqa: E501
         :rtype: str
@@ -143,6 +146,7 @@ class Driver(object):
     def name(self, name):
         """Sets the name of this Driver.
 
+        Name  # noqa: E501
 
         :param name: The name of this Driver.  # noqa: E501
         :type: str
@@ -154,6 +158,7 @@ class Driver(object):
     def date_of_birth(self):
         """Gets the date_of_birth of this Driver.  # noqa: E501
 
+        Date of birth  # noqa: E501
 
         :return: The date_of_birth of this Driver.  # noqa: E501
         :rtype: datetime
@@ -164,6 +169,7 @@ class Driver(object):
     def date_of_birth(self, date_of_birth):
         """Sets the date_of_birth of this Driver.
 
+        Date of birth  # noqa: E501
 
         :param date_of_birth: The date_of_birth of this Driver.  # noqa: E501
         :type: datetime
@@ -175,6 +181,7 @@ class Driver(object):
     def date_of_death(self):
         """Gets the date_of_death of this Driver.  # noqa: E501
 
+        Date of death  # noqa: E501
 
         :return: The date_of_death of this Driver.  # noqa: E501
         :rtype: datetime
@@ -185,6 +192,7 @@ class Driver(object):
     def date_of_death(self, date_of_death):
         """Sets the date_of_death of this Driver.
 
+        Date of death  # noqa: E501
 
         :param date_of_death: The date_of_death of this Driver.  # noqa: E501
         :type: datetime
@@ -196,6 +204,7 @@ class Driver(object):
     def hometown_city(self):
         """Gets the hometown_city of this Driver.  # noqa: E501
 
+        The driver's hometown  # noqa: E501
 
         :return: The hometown_city of this Driver.  # noqa: E501
         :rtype: str
@@ -206,6 +215,7 @@ class Driver(object):
     def hometown_city(self, hometown_city):
         """Sets the hometown_city of this Driver.
 
+        The driver's hometown  # noqa: E501
 
         :param hometown_city: The hometown_city of this Driver.  # noqa: E501
         :type: str
@@ -217,6 +227,7 @@ class Driver(object):
     def hometown_state(self):
         """Gets the hometown_state of this Driver.  # noqa: E501
 
+        The driver's home state  # noqa: E501
 
         :return: The hometown_state of this Driver.  # noqa: E501
         :rtype: str
@@ -227,6 +238,7 @@ class Driver(object):
     def hometown_state(self, hometown_state):
         """Sets the hometown_state of this Driver.
 
+        The driver's home state  # noqa: E501
 
         :param hometown_state: The hometown_state of this Driver.  # noqa: E501
         :type: str
@@ -238,6 +250,7 @@ class Driver(object):
     def hometown_country(self):
         """Gets the hometown_country of this Driver.  # noqa: E501
 
+        The driver's home country  # noqa: E501
 
         :return: The hometown_country of this Driver.  # noqa: E501
         :rtype: str
@@ -248,6 +261,7 @@ class Driver(object):
     def hometown_country(self, hometown_country):
         """Sets the hometown_country of this Driver.
 
+        The driver's home country  # noqa: E501
 
         :param hometown_country: The hometown_country of this Driver.  # noqa: E501
         :type: str
@@ -259,6 +273,7 @@ class Driver(object):
     def resides_city(self):
         """Gets the resides_city of this Driver.  # noqa: E501
 
+        The city where the driver resides  # noqa: E501
 
         :return: The resides_city of this Driver.  # noqa: E501
         :rtype: str
@@ -269,6 +284,7 @@ class Driver(object):
     def resides_city(self, resides_city):
         """Sets the resides_city of this Driver.
 
+        The city where the driver resides  # noqa: E501
 
         :param resides_city: The resides_city of this Driver.  # noqa: E501
         :type: str
@@ -280,6 +296,7 @@ class Driver(object):
     def resides_state(self):
         """Gets the resides_state of this Driver.  # noqa: E501
 
+        The state where the driver resides  # noqa: E501
 
         :return: The resides_state of this Driver.  # noqa: E501
         :rtype: str
@@ -290,6 +307,7 @@ class Driver(object):
     def resides_state(self, resides_state):
         """Sets the resides_state of this Driver.
 
+        The state where the driver resides  # noqa: E501
 
         :param resides_state: The resides_state of this Driver.  # noqa: E501
         :type: str
@@ -301,6 +319,7 @@ class Driver(object):
     def resides_country(self):
         """Gets the resides_country of this Driver.  # noqa: E501
 
+        The country where the driver resides  # noqa: E501
 
         :return: The resides_country of this Driver.  # noqa: E501
         :rtype: str
@@ -311,6 +330,7 @@ class Driver(object):
     def resides_country(self, resides_country):
         """Sets the resides_country of this Driver.
 
+        The country where the driver resides  # noqa: E501
 
         :param resides_country: The resides_country of this Driver.  # noqa: E501
         :type: str
@@ -322,6 +342,7 @@ class Driver(object):
     def series_1_rookie_year(self):
         """Gets the series_1_rookie_year of this Driver.  # noqa: E501
 
+        The driver's rookie year in series 1  # noqa: E501
 
         :return: The series_1_rookie_year of this Driver.  # noqa: E501
         :rtype: int
@@ -332,6 +353,7 @@ class Driver(object):
     def series_1_rookie_year(self, series_1_rookie_year):
         """Sets the series_1_rookie_year of this Driver.
 
+        The driver's rookie year in series 1  # noqa: E501
 
         :param series_1_rookie_year: The series_1_rookie_year of this Driver.  # noqa: E501
         :type: int
@@ -343,6 +365,7 @@ class Driver(object):
     def series_2_rookie_year(self):
         """Gets the series_2_rookie_year of this Driver.  # noqa: E501
 
+        The driver's rookie year in series 2  # noqa: E501
 
         :return: The series_2_rookie_year of this Driver.  # noqa: E501
         :rtype: int
@@ -353,6 +376,7 @@ class Driver(object):
     def series_2_rookie_year(self, series_2_rookie_year):
         """Sets the series_2_rookie_year of this Driver.
 
+        The driver's rookie year in series 2  # noqa: E501
 
         :param series_2_rookie_year: The series_2_rookie_year of this Driver.  # noqa: E501
         :type: int
@@ -364,6 +388,7 @@ class Driver(object):
     def series_3_rookie_year(self):
         """Gets the series_3_rookie_year of this Driver.  # noqa: E501
 
+        The driver's rookie year in series 3  # noqa: E501
 
         :return: The series_3_rookie_year of this Driver.  # noqa: E501
         :rtype: int
@@ -374,6 +399,7 @@ class Driver(object):
     def series_3_rookie_year(self, series_3_rookie_year):
         """Sets the series_3_rookie_year of this Driver.
 
+        The driver's rookie year in series 3  # noqa: E501
 
         :param series_3_rookie_year: The series_3_rookie_year of this Driver.  # noqa: E501
         :type: int
@@ -385,6 +411,7 @@ class Driver(object):
     def hobbies(self):
         """Gets the hobbies of this Driver.  # noqa: E501
 
+        The driver's hobbies  # noqa: E501
 
         :return: The hobbies of this Driver.  # noqa: E501
         :rtype: str
@@ -395,6 +422,7 @@ class Driver(object):
     def hobbies(self, hobbies):
         """Sets the hobbies of this Driver.
 
+        The driver's hobbies  # noqa: E501
 
         :param hobbies: The hobbies of this Driver.  # noqa: E501
         :type: str

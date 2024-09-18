@@ -33,6 +33,7 @@ class RunDetails(object):
         'start_time': 'datetime',
         'run_state': 'RunState',
         'run_type': 'RunType',
+        'duration': 'int',
         'flag_state': 'str',
         'flags': 'list[Flag]'
     }
@@ -42,16 +43,18 @@ class RunDetails(object):
         'start_time': 'start_time',
         'run_state': 'run_state',
         'run_type': 'run_type',
+        'duration': 'duration',
         'flag_state': 'flag_state',
         'flags': 'flags'
     }
 
-    def __init__(self, name=None, start_time=None, run_state=None, run_type=None, flag_state=None, flags=None):  # noqa: E501
+    def __init__(self, name=None, start_time=None, run_state=None, run_type=None, duration=None, flag_state=None, flags=None):  # noqa: E501
         """RunDetails - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._start_time = None
         self._run_state = None
         self._run_type = None
+        self._duration = None
         self._flag_state = None
         self._flags = None
         self.discriminator = None
@@ -63,6 +66,8 @@ class RunDetails(object):
             self.run_state = run_state
         if run_type is not None:
             self.run_type = run_type
+        if duration is not None:
+            self.duration = duration
         if flag_state is not None:
             self.flag_state = flag_state
         if flags is not None:
@@ -72,6 +77,7 @@ class RunDetails(object):
     def name(self):
         """Gets the name of this RunDetails.  # noqa: E501
 
+        The name of the run  # noqa: E501
 
         :return: The name of this RunDetails.  # noqa: E501
         :rtype: str
@@ -82,6 +88,7 @@ class RunDetails(object):
     def name(self, name):
         """Sets the name of this RunDetails.
 
+        The name of the run  # noqa: E501
 
         :param name: The name of this RunDetails.  # noqa: E501
         :type: str
@@ -93,6 +100,7 @@ class RunDetails(object):
     def start_time(self):
         """Gets the start_time of this RunDetails.  # noqa: E501
 
+        Scheduled start time  # noqa: E501
 
         :return: The start_time of this RunDetails.  # noqa: E501
         :rtype: datetime
@@ -103,6 +111,7 @@ class RunDetails(object):
     def start_time(self, start_time):
         """Sets the start_time of this RunDetails.
 
+        Scheduled start time  # noqa: E501
 
         :param start_time: The start_time of this RunDetails.  # noqa: E501
         :type: datetime
@@ -153,9 +162,33 @@ class RunDetails(object):
         self._run_type = run_type
 
     @property
+    def duration(self):
+        """Gets the duration of this RunDetails.  # noqa: E501
+
+        The scheduled duration of the run in seconds  # noqa: E501
+
+        :return: The duration of this RunDetails.  # noqa: E501
+        :rtype: int
+        """
+        return self._duration
+
+    @duration.setter
+    def duration(self, duration):
+        """Sets the duration of this RunDetails.
+
+        The scheduled duration of the run in seconds  # noqa: E501
+
+        :param duration: The duration of this RunDetails.  # noqa: E501
+        :type: int
+        """
+
+        self._duration = duration
+
+    @property
     def flag_state(self):
         """Gets the flag_state of this RunDetails.  # noqa: E501
 
+        Flag state:  (Inactive, Active, Completed)  # noqa: E501
 
         :return: The flag_state of this RunDetails.  # noqa: E501
         :rtype: str
@@ -166,6 +199,7 @@ class RunDetails(object):
     def flag_state(self, flag_state):
         """Sets the flag_state of this RunDetails.
 
+        Flag state:  (Inactive, Active, Completed)  # noqa: E501
 
         :param flag_state: The flag_state of this RunDetails.  # noqa: E501
         :type: str
@@ -177,6 +211,7 @@ class RunDetails(object):
     def flags(self):
         """Gets the flags of this RunDetails.  # noqa: E501
 
+        Flags associated with this run  # noqa: E501
 
         :return: The flags of this RunDetails.  # noqa: E501
         :rtype: list[Flag]
@@ -187,6 +222,7 @@ class RunDetails(object):
     def flags(self, flags):
         """Sets the flags of this RunDetails.
 
+        Flags associated with this run  # noqa: E501
 
         :param flags: The flags of this RunDetails.  # noqa: E501
         :type: list[Flag]

@@ -72,6 +72,7 @@ class Caution(object):
     def lap_start(self):
         """Gets the lap_start of this Caution.  # noqa: E501
 
+        The first lap of the caution  # noqa: E501
 
         :return: The lap_start of this Caution.  # noqa: E501
         :rtype: int
@@ -82,6 +83,7 @@ class Caution(object):
     def lap_start(self, lap_start):
         """Sets the lap_start of this Caution.
 
+        The first lap of the caution  # noqa: E501
 
         :param lap_start: The lap_start of this Caution.  # noqa: E501
         :type: int
@@ -93,6 +95,7 @@ class Caution(object):
     def lap_end(self):
         """Gets the lap_end of this Caution.  # noqa: E501
 
+        The last lap of the caution  # noqa: E501
 
         :return: The lap_end of this Caution.  # noqa: E501
         :rtype: int
@@ -103,6 +106,7 @@ class Caution(object):
     def lap_end(self, lap_end):
         """Sets the lap_end of this Caution.
 
+        The last lap of the caution  # noqa: E501
 
         :param lap_end: The lap_end of this Caution.  # noqa: E501
         :type: int
@@ -114,6 +118,7 @@ class Caution(object):
     def beneficiary(self):
         """Gets the beneficiary of this Caution.  # noqa: E501
 
+        The lap down vehicle put back on the lead lap  # noqa: E501
 
         :return: The beneficiary of this Caution.  # noqa: E501
         :rtype: str
@@ -124,6 +129,7 @@ class Caution(object):
     def beneficiary(self, beneficiary):
         """Sets the beneficiary of this Caution.
 
+        The lap down vehicle put back on the lead lap  # noqa: E501
 
         :param beneficiary: The beneficiary of this Caution.  # noqa: E501
         :type: str
@@ -135,6 +141,7 @@ class Caution(object):
     def comment(self):
         """Gets the comment of this Caution.  # noqa: E501
 
+        Comments about the caution  # noqa: E501
 
         :return: The comment of this Caution.  # noqa: E501
         :rtype: str
@@ -145,6 +152,7 @@ class Caution(object):
     def comment(self, comment):
         """Sets the comment of this Caution.
 
+        Comments about the caution  # noqa: E501
 
         :param comment: The comment of this Caution.  # noqa: E501
         :type: str
@@ -156,6 +164,7 @@ class Caution(object):
     def reason(self):
         """Gets the reason of this Caution.  # noqa: E501
 
+        The reason the caution was thrown  # noqa: E501
 
         :return: The reason of this Caution.  # noqa: E501
         :rtype: str
@@ -166,6 +175,7 @@ class Caution(object):
     def reason(self, reason):
         """Sets the reason of this Caution.
 
+        The reason the caution was thrown  # noqa: E501
 
         :param reason: The reason of this Caution.  # noqa: E501
         :type: str
@@ -177,6 +187,7 @@ class Caution(object):
     def flag_time(self):
         """Gets the flag_time of this Caution.  # noqa: E501
 
+        The time the caution was thrown  # noqa: E501
 
         :return: The flag_time of this Caution.  # noqa: E501
         :rtype: datetime
@@ -187,6 +198,7 @@ class Caution(object):
     def flag_time(self, flag_time):
         """Sets the flag_time of this Caution.
 
+        The time the caution was thrown  # noqa: E501
 
         :param flag_time: The flag_time of this Caution.  # noqa: E501
         :type: datetime

@@ -1,13 +1,13 @@
 # nascar_data_client.CompanyApi
 
-All URIs are relative to */*
+All URIs are relative to */api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**find_company**](CompanyApi.md#find_company) | **GET** /company/search | 
+[**company_search_get**](CompanyApi.md#company_search_get) | **GET** /company/search | 
 
-# **find_company**
-> list[Company] find_company(search_term=search_term)
+# **company_search_get**
+> list[Company] company_search_get(search_term=search_term)
 
 
 
@@ -25,10 +25,10 @@ api_instance = nascar_data_client.CompanyApi(nascar_data_client.ApiClient(config
 search_term = 'search_term_example' # str |  (optional)
 
 try:
-    api_response = api_instance.find_company(search_term=search_term)
+    api_response = api_instance.company_search_get(search_term=search_term)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling CompanyApi->find_company: %s\n" % e)
+    print("Exception when calling CompanyApi->company_search_get: %s\n" % e)
 ```
 
 ### Parameters

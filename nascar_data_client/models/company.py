@@ -72,6 +72,7 @@ class Company(object):
     def id(self):
         """Gets the id of this Company.  # noqa: E501
 
+        Company Id  # noqa: E501
 
         :return: The id of this Company.  # noqa: E501
         :rtype: int
@@ -82,6 +83,7 @@ class Company(object):
     def id(self, id):
         """Sets the id of this Company.
 
+        Company Id  # noqa: E501
 
         :param id: The id of this Company.  # noqa: E501
         :type: int
@@ -93,6 +95,7 @@ class Company(object):
     def name(self):
         """Gets the name of this Company.  # noqa: E501
 
+        The name of the company  # noqa: E501
 
         :return: The name of this Company.  # noqa: E501
         :rtype: str
@@ -103,6 +106,7 @@ class Company(object):
     def name(self, name):
         """Sets the name of this Company.
 
+        The name of the company  # noqa: E501
 
         :param name: The name of this Company.  # noqa: E501
         :type: str
@@ -114,6 +118,7 @@ class Company(object):
     def abbreviation(self):
         """Gets the abbreviation of this Company.  # noqa: E501
 
+        The company's abbreviation  # noqa: E501
 
         :return: The abbreviation of this Company.  # noqa: E501
         :rtype: str
@@ -124,6 +129,7 @@ class Company(object):
     def abbreviation(self, abbreviation):
         """Sets the abbreviation of this Company.
 
+        The company's abbreviation  # noqa: E501
 
         :param abbreviation: The abbreviation of this Company.  # noqa: E501
         :type: str
@@ -135,6 +141,7 @@ class Company(object):
     def alias(self):
         """Gets the alias of this Company.  # noqa: E501
 
+        The company's alias  # noqa: E501
 
         :return: The alias of this Company.  # noqa: E501
         :rtype: str
@@ -145,6 +152,7 @@ class Company(object):
     def alias(self, alias):
         """Sets the alias of this Company.
 
+        The company's alias  # noqa: E501
 
         :param alias: The alias of this Company.  # noqa: E501
         :type: str
@@ -156,6 +164,7 @@ class Company(object):
     def category_id(self):
         """Gets the category_id of this Company.  # noqa: E501
 
+        Company category Id  # noqa: E501
 
         :return: The category_id of this Company.  # noqa: E501
         :rtype: int
@@ -166,6 +175,7 @@ class Company(object):
     def category_id(self, category_id):
         """Sets the category_id of this Company.
 
+        Company category Id  # noqa: E501
 
         :param category_id: The category_id of this Company.  # noqa: E501
         :type: int
@@ -177,6 +187,7 @@ class Company(object):
     def category_name(self):
         """Gets the category_name of this Company.  # noqa: E501
 
+        Category name  # noqa: E501
 
         :return: The category_name of this Company.  # noqa: E501
         :rtype: str
@@ -187,6 +198,7 @@ class Company(object):
     def category_name(self, category_name):
         """Sets the category_name of this Company.
 
+        Category name  # noqa: E501
 
         :param category_name: The category_name of this Company.  # noqa: E501
         :type: str

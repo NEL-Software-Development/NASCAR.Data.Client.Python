@@ -46,8 +46,8 @@ class RaceViewModel(object):
         'qualifying_results': 'list[QualifyingRunResults]',
         'race_results': 'list[RaceRunResults]',
         'runs': 'list[RunDetails]',
-        'schedule': 'list[WeekendSchedule]',
-        'stage_results': 'list[StageRunResults]'
+        'stage_results': 'list[StageRunResults]',
+        'schedule': 'list[WeekendSchedule]'
     }
 
     attribute_map = {
@@ -68,11 +68,11 @@ class RaceViewModel(object):
         'qualifying_results': 'qualifying_results',
         'race_results': 'race_results',
         'runs': 'runs',
-        'schedule': 'schedule',
-        'stage_results': 'stage_results'
+        'stage_results': 'stage_results',
+        'schedule': 'schedule'
     }
 
-    def __init__(self, series_id=None, name=None, promoter=None, laps=None, distance=None, _date=None, comments=None, cautions=None, entries=None, infractions=None, lap_leaders=None, loop_stats=None, pitstops=None, practice_results=None, qualifying_results=None, race_results=None, runs=None, schedule=None, stage_results=None):  # noqa: E501
+    def __init__(self, series_id=None, name=None, promoter=None, laps=None, distance=None, _date=None, comments=None, cautions=None, entries=None, infractions=None, lap_leaders=None, loop_stats=None, pitstops=None, practice_results=None, qualifying_results=None, race_results=None, runs=None, stage_results=None, schedule=None):  # noqa: E501
         """RaceViewModel - a model defined in Swagger"""  # noqa: E501
         self._series_id = None
         self._name = None
@@ -91,8 +91,8 @@ class RaceViewModel(object):
         self._qualifying_results = None
         self._race_results = None
         self._runs = None
-        self._schedule = None
         self._stage_results = None
+        self._schedule = None
         self.discriminator = None
         if series_id is not None:
             self.series_id = series_id
@@ -128,15 +128,16 @@ class RaceViewModel(object):
             self.race_results = race_results
         if runs is not None:
             self.runs = runs
-        if schedule is not None:
-            self.schedule = schedule
         if stage_results is not None:
             self.stage_results = stage_results
+        if schedule is not None:
+            self.schedule = schedule
 
     @property
     def series_id(self):
         """Gets the series_id of this RaceViewModel.  # noqa: E501
 
+        Series Id  # noqa: E501
 
         :return: The series_id of this RaceViewModel.  # noqa: E501
         :rtype: int
@@ -147,6 +148,7 @@ class RaceViewModel(object):
     def series_id(self, series_id):
         """Sets the series_id of this RaceViewModel.
 
+        Series Id  # noqa: E501
 
         :param series_id: The series_id of this RaceViewModel.  # noqa: E501
         :type: int
@@ -158,6 +160,7 @@ class RaceViewModel(object):
     def name(self):
         """Gets the name of this RaceViewModel.  # noqa: E501
 
+        Race name  # noqa: E501
 
         :return: The name of this RaceViewModel.  # noqa: E501
         :rtype: str
@@ -168,6 +171,7 @@ class RaceViewModel(object):
     def name(self, name):
         """Sets the name of this RaceViewModel.
 
+        Race name  # noqa: E501
 
         :param name: The name of this RaceViewModel.  # noqa: E501
         :type: str
@@ -179,6 +183,7 @@ class RaceViewModel(object):
     def promoter(self):
         """Gets the promoter of this RaceViewModel.  # noqa: E501
 
+        Race promoter  # noqa: E501
 
         :return: The promoter of this RaceViewModel.  # noqa: E501
         :rtype: str
@@ -189,6 +194,7 @@ class RaceViewModel(object):
     def promoter(self, promoter):
         """Sets the promoter of this RaceViewModel.
 
+        Race promoter  # noqa: E501
 
         :param promoter: The promoter of this RaceViewModel.  # noqa: E501
         :type: str
@@ -200,6 +206,7 @@ class RaceViewModel(object):
     def laps(self):
         """Gets the laps of this RaceViewModel.  # noqa: E501
 
+        Laps  # noqa: E501
 
         :return: The laps of this RaceViewModel.  # noqa: E501
         :rtype: int
@@ -210,6 +217,7 @@ class RaceViewModel(object):
     def laps(self, laps):
         """Sets the laps of this RaceViewModel.
 
+        Laps  # noqa: E501
 
         :param laps: The laps of this RaceViewModel.  # noqa: E501
         :type: int
@@ -221,6 +229,7 @@ class RaceViewModel(object):
     def distance(self):
         """Gets the distance of this RaceViewModel.  # noqa: E501
 
+        Distance  # noqa: E501
 
         :return: The distance of this RaceViewModel.  # noqa: E501
         :rtype: float
@@ -231,6 +240,7 @@ class RaceViewModel(object):
     def distance(self, distance):
         """Sets the distance of this RaceViewModel.
 
+        Distance  # noqa: E501
 
         :param distance: The distance of this RaceViewModel.  # noqa: E501
         :type: float
@@ -242,6 +252,7 @@ class RaceViewModel(object):
     def _date(self):
         """Gets the _date of this RaceViewModel.  # noqa: E501
 
+        Race date  # noqa: E501
 
         :return: The _date of this RaceViewModel.  # noqa: E501
         :rtype: datetime
@@ -252,6 +263,7 @@ class RaceViewModel(object):
     def _date(self, _date):
         """Sets the _date of this RaceViewModel.
 
+        Race date  # noqa: E501
 
         :param _date: The _date of this RaceViewModel.  # noqa: E501
         :type: datetime
@@ -263,6 +275,7 @@ class RaceViewModel(object):
     def comments(self):
         """Gets the comments of this RaceViewModel.  # noqa: E501
 
+        Comments  # noqa: E501
 
         :return: The comments of this RaceViewModel.  # noqa: E501
         :rtype: str
@@ -273,6 +286,7 @@ class RaceViewModel(object):
     def comments(self, comments):
         """Sets the comments of this RaceViewModel.
 
+        Comments  # noqa: E501
 
         :param comments: The comments of this RaceViewModel.  # noqa: E501
         :type: str
@@ -284,6 +298,7 @@ class RaceViewModel(object):
     def cautions(self):
         """Gets the cautions of this RaceViewModel.  # noqa: E501
 
+        Cautions  # noqa: E501
 
         :return: The cautions of this RaceViewModel.  # noqa: E501
         :rtype: list[Caution]
@@ -294,6 +309,7 @@ class RaceViewModel(object):
     def cautions(self, cautions):
         """Sets the cautions of this RaceViewModel.
 
+        Cautions  # noqa: E501
 
         :param cautions: The cautions of this RaceViewModel.  # noqa: E501
         :type: list[Caution]
@@ -305,6 +321,7 @@ class RaceViewModel(object):
     def entries(self):
         """Gets the entries of this RaceViewModel.  # noqa: E501
 
+        Race entries  # noqa: E501
 
         :return: The entries of this RaceViewModel.  # noqa: E501
         :rtype: list[RunEntry]
@@ -315,6 +332,7 @@ class RaceViewModel(object):
     def entries(self, entries):
         """Sets the entries of this RaceViewModel.
 
+        Race entries  # noqa: E501
 
         :param entries: The entries of this RaceViewModel.  # noqa: E501
         :type: list[RunEntry]
@@ -326,6 +344,7 @@ class RaceViewModel(object):
     def infractions(self):
         """Gets the infractions of this RaceViewModel.  # noqa: E501
 
+        Race infractions  # noqa: E501
 
         :return: The infractions of this RaceViewModel.  # noqa: E501
         :rtype: list[RaceInfraction]
@@ -336,6 +355,7 @@ class RaceViewModel(object):
     def infractions(self, infractions):
         """Sets the infractions of this RaceViewModel.
 
+        Race infractions  # noqa: E501
 
         :param infractions: The infractions of this RaceViewModel.  # noqa: E501
         :type: list[RaceInfraction]
@@ -347,6 +367,7 @@ class RaceViewModel(object):
     def lap_leaders(self):
         """Gets the lap_leaders of this RaceViewModel.  # noqa: E501
 
+        Lap leaders  # noqa: E501
 
         :return: The lap_leaders of this RaceViewModel.  # noqa: E501
         :rtype: list[LapLeader]
@@ -357,6 +378,7 @@ class RaceViewModel(object):
     def lap_leaders(self, lap_leaders):
         """Sets the lap_leaders of this RaceViewModel.
 
+        Lap leaders  # noqa: E501
 
         :param lap_leaders: The lap_leaders of this RaceViewModel.  # noqa: E501
         :type: list[LapLeader]
@@ -368,6 +390,7 @@ class RaceViewModel(object):
     def loop_stats(self):
         """Gets the loop_stats of this RaceViewModel.  # noqa: E501
 
+        Loop stats  # noqa: E501
 
         :return: The loop_stats of this RaceViewModel.  # noqa: E501
         :rtype: list[LoopStat]
@@ -378,6 +401,7 @@ class RaceViewModel(object):
     def loop_stats(self, loop_stats):
         """Sets the loop_stats of this RaceViewModel.
 
+        Loop stats  # noqa: E501
 
         :param loop_stats: The loop_stats of this RaceViewModel.  # noqa: E501
         :type: list[LoopStat]
@@ -389,6 +413,7 @@ class RaceViewModel(object):
     def pitstops(self):
         """Gets the pitstops of this RaceViewModel.  # noqa: E501
 
+        Pitstops  # noqa: E501
 
         :return: The pitstops of this RaceViewModel.  # noqa: E501
         :rtype: list[Pitstop]
@@ -399,6 +424,7 @@ class RaceViewModel(object):
     def pitstops(self, pitstops):
         """Sets the pitstops of this RaceViewModel.
 
+        Pitstops  # noqa: E501
 
         :param pitstops: The pitstops of this RaceViewModel.  # noqa: E501
         :type: list[Pitstop]
@@ -410,6 +436,7 @@ class RaceViewModel(object):
     def practice_results(self):
         """Gets the practice_results of this RaceViewModel.  # noqa: E501
 
+        Practice results  # noqa: E501
 
         :return: The practice_results of this RaceViewModel.  # noqa: E501
         :rtype: list[PracticeRunResults]
@@ -420,6 +447,7 @@ class RaceViewModel(object):
     def practice_results(self, practice_results):
         """Sets the practice_results of this RaceViewModel.
 
+        Practice results  # noqa: E501
 
         :param practice_results: The practice_results of this RaceViewModel.  # noqa: E501
         :type: list[PracticeRunResults]
@@ -431,6 +459,7 @@ class RaceViewModel(object):
     def qualifying_results(self):
         """Gets the qualifying_results of this RaceViewModel.  # noqa: E501
 
+        Qualifying results  # noqa: E501
 
         :return: The qualifying_results of this RaceViewModel.  # noqa: E501
         :rtype: list[QualifyingRunResults]
@@ -441,6 +470,7 @@ class RaceViewModel(object):
     def qualifying_results(self, qualifying_results):
         """Sets the qualifying_results of this RaceViewModel.
 
+        Qualifying results  # noqa: E501
 
         :param qualifying_results: The qualifying_results of this RaceViewModel.  # noqa: E501
         :type: list[QualifyingRunResults]
@@ -452,6 +482,7 @@ class RaceViewModel(object):
     def race_results(self):
         """Gets the race_results of this RaceViewModel.  # noqa: E501
 
+        Race results  # noqa: E501
 
         :return: The race_results of this RaceViewModel.  # noqa: E501
         :rtype: list[RaceRunResults]
@@ -462,6 +493,7 @@ class RaceViewModel(object):
     def race_results(self, race_results):
         """Sets the race_results of this RaceViewModel.
 
+        Race results  # noqa: E501
 
         :param race_results: The race_results of this RaceViewModel.  # noqa: E501
         :type: list[RaceRunResults]
@@ -473,6 +505,7 @@ class RaceViewModel(object):
     def runs(self):
         """Gets the runs of this RaceViewModel.  # noqa: E501
 
+        Runs  # noqa: E501
 
         :return: The runs of this RaceViewModel.  # noqa: E501
         :rtype: list[RunDetails]
@@ -483,6 +516,7 @@ class RaceViewModel(object):
     def runs(self, runs):
         """Sets the runs of this RaceViewModel.
 
+        Runs  # noqa: E501
 
         :param runs: The runs of this RaceViewModel.  # noqa: E501
         :type: list[RunDetails]
@@ -491,30 +525,10 @@ class RaceViewModel(object):
         self._runs = runs
 
     @property
-    def schedule(self):
-        """Gets the schedule of this RaceViewModel.  # noqa: E501
-
-
-        :return: The schedule of this RaceViewModel.  # noqa: E501
-        :rtype: list[WeekendSchedule]
-        """
-        return self._schedule
-
-    @schedule.setter
-    def schedule(self, schedule):
-        """Sets the schedule of this RaceViewModel.
-
-
-        :param schedule: The schedule of this RaceViewModel.  # noqa: E501
-        :type: list[WeekendSchedule]
-        """
-
-        self._schedule = schedule
-
-    @property
     def stage_results(self):
         """Gets the stage_results of this RaceViewModel.  # noqa: E501
 
+        Stage results  # noqa: E501
 
         :return: The stage_results of this RaceViewModel.  # noqa: E501
         :rtype: list[StageRunResults]
@@ -525,12 +539,36 @@ class RaceViewModel(object):
     def stage_results(self, stage_results):
         """Sets the stage_results of this RaceViewModel.
 
+        Stage results  # noqa: E501
 
         :param stage_results: The stage_results of this RaceViewModel.  # noqa: E501
         :type: list[StageRunResults]
         """
 
         self._stage_results = stage_results
+
+    @property
+    def schedule(self):
+        """Gets the schedule of this RaceViewModel.  # noqa: E501
+
+        Weekend schedule  # noqa: E501
+
+        :return: The schedule of this RaceViewModel.  # noqa: E501
+        :rtype: list[WeekendSchedule]
+        """
+        return self._schedule
+
+    @schedule.setter
+    def schedule(self, schedule):
+        """Sets the schedule of this RaceViewModel.
+
+        Weekend schedule  # noqa: E501
+
+        :param schedule: The schedule of this RaceViewModel.  # noqa: E501
+        :type: list[WeekendSchedule]
+        """
+
+        self._schedule = schedule
 
     def to_dict(self):
         """Returns the model properties as a dict"""

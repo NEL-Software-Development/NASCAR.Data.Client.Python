@@ -207,6 +207,7 @@ class LoopStat(object):
     def starting_position(self):
         """Gets the starting_position of this LoopStat.  # noqa: E501
 
+        Starting position  # noqa: E501
 
         :return: The starting_position of this LoopStat.  # noqa: E501
         :rtype: int
@@ -217,6 +218,7 @@ class LoopStat(object):
     def starting_position(self, starting_position):
         """Sets the starting_position of this LoopStat.
 
+        Starting position  # noqa: E501
 
         :param starting_position: The starting_position of this LoopStat.  # noqa: E501
         :type: int
@@ -228,6 +230,7 @@ class LoopStat(object):
     def mid_race_position(self):
         """Gets the mid_race_position of this LoopStat.  # noqa: E501
 
+        Mid race position  # noqa: E501
 
         :return: The mid_race_position of this LoopStat.  # noqa: E501
         :rtype: int
@@ -238,6 +241,7 @@ class LoopStat(object):
     def mid_race_position(self, mid_race_position):
         """Sets the mid_race_position of this LoopStat.
 
+        Mid race position  # noqa: E501
 
         :param mid_race_position: The mid_race_position of this LoopStat.  # noqa: E501
         :type: int
@@ -249,6 +253,7 @@ class LoopStat(object):
     def closing_laps_position(self):
         """Gets the closing_laps_position of this LoopStat.  # noqa: E501
 
+        Closing laps positions  # noqa: E501
 
         :return: The closing_laps_position of this LoopStat.  # noqa: E501
         :rtype: int
@@ -259,6 +264,7 @@ class LoopStat(object):
     def closing_laps_position(self, closing_laps_position):
         """Sets the closing_laps_position of this LoopStat.
 
+        Closing laps positions  # noqa: E501
 
         :param closing_laps_position: The closing_laps_position of this LoopStat.  # noqa: E501
         :type: int
@@ -270,6 +276,7 @@ class LoopStat(object):
     def closing_laps_diff(self):
         """Gets the closing_laps_diff of this LoopStat.  # noqa: E501
 
+        Closing laps differential  # noqa: E501
 
         :return: The closing_laps_diff of this LoopStat.  # noqa: E501
         :rtype: int
@@ -280,6 +287,7 @@ class LoopStat(object):
     def closing_laps_diff(self, closing_laps_diff):
         """Sets the closing_laps_diff of this LoopStat.
 
+        Closing laps differential  # noqa: E501
 
         :param closing_laps_diff: The closing_laps_diff of this LoopStat.  # noqa: E501
         :type: int
@@ -291,6 +299,7 @@ class LoopStat(object):
     def finishing_position(self):
         """Gets the finishing_position of this LoopStat.  # noqa: E501
 
+        Finishing position  # noqa: E501
 
         :return: The finishing_position of this LoopStat.  # noqa: E501
         :rtype: int
@@ -301,6 +310,7 @@ class LoopStat(object):
     def finishing_position(self, finishing_position):
         """Sets the finishing_position of this LoopStat.
 
+        Finishing position  # noqa: E501
 
         :param finishing_position: The finishing_position of this LoopStat.  # noqa: E501
         :type: int
@@ -312,6 +322,7 @@ class LoopStat(object):
     def best_position(self):
         """Gets the best_position of this LoopStat.  # noqa: E501
 
+        Best position  # noqa: E501
 
         :return: The best_position of this LoopStat.  # noqa: E501
         :rtype: int
@@ -322,6 +333,7 @@ class LoopStat(object):
     def best_position(self, best_position):
         """Sets the best_position of this LoopStat.
 
+        Best position  # noqa: E501
 
         :param best_position: The best_position of this LoopStat.  # noqa: E501
         :type: int
@@ -333,6 +345,7 @@ class LoopStat(object):
     def worst_position(self):
         """Gets the worst_position of this LoopStat.  # noqa: E501
 
+        Worst position  # noqa: E501
 
         :return: The worst_position of this LoopStat.  # noqa: E501
         :rtype: int
@@ -343,6 +356,7 @@ class LoopStat(object):
     def worst_position(self, worst_position):
         """Sets the worst_position of this LoopStat.
 
+        Worst position  # noqa: E501
 
         :param worst_position: The worst_position of this LoopStat.  # noqa: E501
         :type: int
@@ -354,6 +368,7 @@ class LoopStat(object):
     def passing_differential(self):
         """Gets the passing_differential of this LoopStat.  # noqa: E501
 
+        Passing differential  # noqa: E501
 
         :return: The passing_differential of this LoopStat.  # noqa: E501
         :rtype: int
@@ -364,6 +379,7 @@ class LoopStat(object):
     def passing_differential(self, passing_differential):
         """Sets the passing_differential of this LoopStat.
 
+        Passing differential  # noqa: E501
 
         :param passing_differential: The passing_differential of this LoopStat.  # noqa: E501
         :type: int
@@ -375,6 +391,7 @@ class LoopStat(object):
     def green_flag_passes(self):
         """Gets the green_flag_passes of this LoopStat.  # noqa: E501
 
+        Green flag passes  # noqa: E501
 
         :return: The green_flag_passes of this LoopStat.  # noqa: E501
         :rtype: int
@@ -385,6 +402,7 @@ class LoopStat(object):
     def green_flag_passes(self, green_flag_passes):
         """Sets the green_flag_passes of this LoopStat.
 
+        Green flag passes  # noqa: E501
 
         :param green_flag_passes: The green_flag_passes of this LoopStat.  # noqa: E501
         :type: int
@@ -396,6 +414,7 @@ class LoopStat(object):
     def green_flag_times_passed(self):
         """Gets the green_flag_times_passed of this LoopStat.  # noqa: E501
 
+        Green flag paused  # noqa: E501
 
         :return: The green_flag_times_passed of this LoopStat.  # noqa: E501
         :rtype: int
@@ -406,6 +425,7 @@ class LoopStat(object):
     def green_flag_times_passed(self, green_flag_times_passed):
         """Sets the green_flag_times_passed of this LoopStat.
 
+        Green flag paused  # noqa: E501
 
         :param green_flag_times_passed: The green_flag_times_passed of this LoopStat.  # noqa: E501
         :type: int
@@ -417,6 +437,7 @@ class LoopStat(object):
     def quality_passes(self):
         """Gets the quality_passes of this LoopStat.  # noqa: E501
 
+        Quality passes  # noqa: E501
 
         :return: The quality_passes of this LoopStat.  # noqa: E501
         :rtype: int
@@ -427,6 +448,7 @@ class LoopStat(object):
     def quality_passes(self, quality_passes):
         """Sets the quality_passes of this LoopStat.
 
+        Quality passes  # noqa: E501
 
         :param quality_passes: The quality_passes of this LoopStat.  # noqa: E501
         :type: int
@@ -438,6 +460,7 @@ class LoopStat(object):
     def average_running_position(self):
         """Gets the average_running_position of this LoopStat.  # noqa: E501
 
+        Average running position  # noqa: E501
 
         :return: The average_running_position of this LoopStat.  # noqa: E501
         :rtype: float
@@ -448,6 +471,7 @@ class LoopStat(object):
     def average_running_position(self, average_running_position):
         """Sets the average_running_position of this LoopStat.
 
+        Average running position  # noqa: E501
 
         :param average_running_position: The average_running_position of this LoopStat.  # noqa: E501
         :type: float
@@ -459,6 +483,7 @@ class LoopStat(object):
     def percentage_quality_passes(self):
         """Gets the percentage_quality_passes of this LoopStat.  # noqa: E501
 
+        Percentage quality passes  # noqa: E501
 
         :return: The percentage_quality_passes of this LoopStat.  # noqa: E501
         :rtype: float
@@ -469,6 +494,7 @@ class LoopStat(object):
     def percentage_quality_passes(self, percentage_quality_passes):
         """Sets the percentage_quality_passes of this LoopStat.
 
+        Percentage quality passes  # noqa: E501
 
         :param percentage_quality_passes: The percentage_quality_passes of this LoopStat.  # noqa: E501
         :type: float
@@ -480,6 +506,7 @@ class LoopStat(object):
     def fastest_lap(self):
         """Gets the fastest_lap of this LoopStat.  # noqa: E501
 
+        Fastest lap  # noqa: E501
 
         :return: The fastest_lap of this LoopStat.  # noqa: E501
         :rtype: int
@@ -490,6 +517,7 @@ class LoopStat(object):
     def fastest_lap(self, fastest_lap):
         """Sets the fastest_lap of this LoopStat.
 
+        Fastest lap  # noqa: E501
 
         :param fastest_lap: The fastest_lap of this LoopStat.  # noqa: E501
         :type: int
@@ -501,6 +529,7 @@ class LoopStat(object):
     def percentage_fastest_laps(self):
         """Gets the percentage_fastest_laps of this LoopStat.  # noqa: E501
 
+        Percentage fastest laps  # noqa: E501
 
         :return: The percentage_fastest_laps of this LoopStat.  # noqa: E501
         :rtype: float
@@ -511,6 +540,7 @@ class LoopStat(object):
     def percentage_fastest_laps(self, percentage_fastest_laps):
         """Sets the percentage_fastest_laps of this LoopStat.
 
+        Percentage fastest laps  # noqa: E501
 
         :param percentage_fastest_laps: The percentage_fastest_laps of this LoopStat.  # noqa: E501
         :type: float
@@ -522,6 +552,7 @@ class LoopStat(object):
     def laps_in_top15(self):
         """Gets the laps_in_top15 of this LoopStat.  # noqa: E501
 
+        Laps in Top15  # noqa: E501
 
         :return: The laps_in_top15 of this LoopStat.  # noqa: E501
         :rtype: int
@@ -532,6 +563,7 @@ class LoopStat(object):
     def laps_in_top15(self, laps_in_top15):
         """Sets the laps_in_top15 of this LoopStat.
 
+        Laps in Top15  # noqa: E501
 
         :param laps_in_top15: The laps_in_top15 of this LoopStat.  # noqa: E501
         :type: int
@@ -543,6 +575,7 @@ class LoopStat(object):
     def percentage_laps_in_top15(self):
         """Gets the percentage_laps_in_top15 of this LoopStat.  # noqa: E501
 
+        Percentage laps in Top15  # noqa: E501
 
         :return: The percentage_laps_in_top15 of this LoopStat.  # noqa: E501
         :rtype: float
@@ -553,6 +586,7 @@ class LoopStat(object):
     def percentage_laps_in_top15(self, percentage_laps_in_top15):
         """Sets the percentage_laps_in_top15 of this LoopStat.
 
+        Percentage laps in Top15  # noqa: E501
 
         :param percentage_laps_in_top15: The percentage_laps_in_top15 of this LoopStat.  # noqa: E501
         :type: float
@@ -564,6 +598,7 @@ class LoopStat(object):
     def laps_led(self):
         """Gets the laps_led of this LoopStat.  # noqa: E501
 
+        Laps led  # noqa: E501
 
         :return: The laps_led of this LoopStat.  # noqa: E501
         :rtype: int
@@ -574,6 +609,7 @@ class LoopStat(object):
     def laps_led(self, laps_led):
         """Sets the laps_led of this LoopStat.
 
+        Laps led  # noqa: E501
 
         :param laps_led: The laps_led of this LoopStat.  # noqa: E501
         :type: int
@@ -585,6 +621,7 @@ class LoopStat(object):
     def percentage_laps_led(self):
         """Gets the percentage_laps_led of this LoopStat.  # noqa: E501
 
+        Percentage laps led  # noqa: E501
 
         :return: The percentage_laps_led of this LoopStat.  # noqa: E501
         :rtype: float
@@ -595,6 +632,7 @@ class LoopStat(object):
     def percentage_laps_led(self, percentage_laps_led):
         """Sets the percentage_laps_led of this LoopStat.
 
+        Percentage laps led  # noqa: E501
 
         :param percentage_laps_led: The percentage_laps_led of this LoopStat.  # noqa: E501
         :type: float
@@ -606,6 +644,7 @@ class LoopStat(object):
     def laps_completed(self):
         """Gets the laps_completed of this LoopStat.  # noqa: E501
 
+        Laps completed  # noqa: E501
 
         :return: The laps_completed of this LoopStat.  # noqa: E501
         :rtype: int
@@ -616,6 +655,7 @@ class LoopStat(object):
     def laps_completed(self, laps_completed):
         """Sets the laps_completed of this LoopStat.
 
+        Laps completed  # noqa: E501
 
         :param laps_completed: The laps_completed of this LoopStat.  # noqa: E501
         :type: int
@@ -627,6 +667,7 @@ class LoopStat(object):
     def fastest_on_restarts(self):
         """Gets the fastest_on_restarts of this LoopStat.  # noqa: E501
 
+        Fastest on restarts  # noqa: E501
 
         :return: The fastest_on_restarts of this LoopStat.  # noqa: E501
         :rtype: float
@@ -637,6 +678,7 @@ class LoopStat(object):
     def fastest_on_restarts(self, fastest_on_restarts):
         """Sets the fastest_on_restarts of this LoopStat.
 
+        Fastest on restarts  # noqa: E501
 
         :param fastest_on_restarts: The fastest_on_restarts of this LoopStat.  # noqa: E501
         :type: float
@@ -648,6 +690,7 @@ class LoopStat(object):
     def average_speed_early_run(self):
         """Gets the average_speed_early_run of this LoopStat.  # noqa: E501
 
+        Average speed early run  # noqa: E501
 
         :return: The average_speed_early_run of this LoopStat.  # noqa: E501
         :rtype: float
@@ -658,6 +701,7 @@ class LoopStat(object):
     def average_speed_early_run(self, average_speed_early_run):
         """Sets the average_speed_early_run of this LoopStat.
 
+        Average speed early run  # noqa: E501
 
         :param average_speed_early_run: The average_speed_early_run of this LoopStat.  # noqa: E501
         :type: float
@@ -669,6 +713,7 @@ class LoopStat(object):
     def average_speed_late_run(self):
         """Gets the average_speed_late_run of this LoopStat.  # noqa: E501
 
+        Average speed late run  # noqa: E501
 
         :return: The average_speed_late_run of this LoopStat.  # noqa: E501
         :rtype: float
@@ -679,6 +724,7 @@ class LoopStat(object):
     def average_speed_late_run(self, average_speed_late_run):
         """Sets the average_speed_late_run of this LoopStat.
 
+        Average speed late run  # noqa: E501
 
         :param average_speed_late_run: The average_speed_late_run of this LoopStat.  # noqa: E501
         :type: float
@@ -690,6 +736,7 @@ class LoopStat(object):
     def average_green_flag_speed(self):
         """Gets the average_green_flag_speed of this LoopStat.  # noqa: E501
 
+        Average green flag speed  # noqa: E501
 
         :return: The average_green_flag_speed of this LoopStat.  # noqa: E501
         :rtype: float
@@ -700,6 +747,7 @@ class LoopStat(object):
     def average_green_flag_speed(self, average_green_flag_speed):
         """Sets the average_green_flag_speed of this LoopStat.
 
+        Average green flag speed  # noqa: E501
 
         :param average_green_flag_speed: The average_green_flag_speed of this LoopStat.  # noqa: E501
         :type: float
@@ -711,6 +759,7 @@ class LoopStat(object):
     def average_speed_in_traffic(self):
         """Gets the average_speed_in_traffic of this LoopStat.  # noqa: E501
 
+        Average speed in traffic  # noqa: E501
 
         :return: The average_speed_in_traffic of this LoopStat.  # noqa: E501
         :rtype: float
@@ -721,6 +770,7 @@ class LoopStat(object):
     def average_speed_in_traffic(self, average_speed_in_traffic):
         """Sets the average_speed_in_traffic of this LoopStat.
 
+        Average speed in traffic  # noqa: E501
 
         :param average_speed_in_traffic: The average_speed_in_traffic of this LoopStat.  # noqa: E501
         :type: float
@@ -732,6 +782,7 @@ class LoopStat(object):
     def driver_rating(self):
         """Gets the driver_rating of this LoopStat.  # noqa: E501
 
+        Driver rating  # noqa: E501
 
         :return: The driver_rating of this LoopStat.  # noqa: E501
         :rtype: float
@@ -742,6 +793,7 @@ class LoopStat(object):
     def driver_rating(self, driver_rating):
         """Sets the driver_rating of this LoopStat.
 
+        Driver rating  # noqa: E501
 
         :param driver_rating: The driver_rating of this LoopStat.  # noqa: E501
         :type: float
@@ -753,6 +805,7 @@ class LoopStat(object):
     def racesegment1_mph_difference(self):
         """Gets the racesegment1_mph_difference of this LoopStat.  # noqa: E501
 
+        Race segment 1 MPH difference  # noqa: E501
 
         :return: The racesegment1_mph_difference of this LoopStat.  # noqa: E501
         :rtype: float
@@ -763,6 +816,7 @@ class LoopStat(object):
     def racesegment1_mph_difference(self, racesegment1_mph_difference):
         """Sets the racesegment1_mph_difference of this LoopStat.
 
+        Race segment 1 MPH difference  # noqa: E501
 
         :param racesegment1_mph_difference: The racesegment1_mph_difference of this LoopStat.  # noqa: E501
         :type: float
@@ -774,6 +828,7 @@ class LoopStat(object):
     def racesegment2_mph_difference(self):
         """Gets the racesegment2_mph_difference of this LoopStat.  # noqa: E501
 
+        Race segment 2 MPH difference  # noqa: E501
 
         :return: The racesegment2_mph_difference of this LoopStat.  # noqa: E501
         :rtype: float
@@ -784,6 +839,7 @@ class LoopStat(object):
     def racesegment2_mph_difference(self, racesegment2_mph_difference):
         """Sets the racesegment2_mph_difference of this LoopStat.
 
+        Race segment 2 MPH difference  # noqa: E501
 
         :param racesegment2_mph_difference: The racesegment2_mph_difference of this LoopStat.  # noqa: E501
         :type: float
@@ -795,6 +851,7 @@ class LoopStat(object):
     def racesegment3_mph_difference(self):
         """Gets the racesegment3_mph_difference of this LoopStat.  # noqa: E501
 
+        Race segment 3 MPH difference  # noqa: E501
 
         :return: The racesegment3_mph_difference of this LoopStat.  # noqa: E501
         :rtype: float
@@ -805,6 +862,7 @@ class LoopStat(object):
     def racesegment3_mph_difference(self, racesegment3_mph_difference):
         """Sets the racesegment3_mph_difference of this LoopStat.
 
+        Race segment 3 MPH difference  # noqa: E501
 
         :param racesegment3_mph_difference: The racesegment3_mph_difference of this LoopStat.  # noqa: E501
         :type: float
@@ -816,6 +874,7 @@ class LoopStat(object):
     def racesegment4_mph_difference(self):
         """Gets the racesegment4_mph_difference of this LoopStat.  # noqa: E501
 
+        Race segment 4 MPH difference  # noqa: E501
 
         :return: The racesegment4_mph_difference of this LoopStat.  # noqa: E501
         :rtype: float
@@ -826,6 +885,7 @@ class LoopStat(object):
     def racesegment4_mph_difference(self, racesegment4_mph_difference):
         """Sets the racesegment4_mph_difference of this LoopStat.
 
+        Race segment 4 MPH difference  # noqa: E501
 
         :param racesegment4_mph_difference: The racesegment4_mph_difference of this LoopStat.  # noqa: E501
         :type: float
@@ -837,6 +897,7 @@ class LoopStat(object):
     def total_mph_difference(self):
         """Gets the total_mph_difference of this LoopStat.  # noqa: E501
 
+        Total MPH difference  # noqa: E501
 
         :return: The total_mph_difference of this LoopStat.  # noqa: E501
         :rtype: float
@@ -847,6 +908,7 @@ class LoopStat(object):
     def total_mph_difference(self, total_mph_difference):
         """Sets the total_mph_difference of this LoopStat.
 
+        Total MPH difference  # noqa: E501
 
         :param total_mph_difference: The total_mph_difference of this LoopStat.  # noqa: E501
         :type: float
@@ -858,6 +920,7 @@ class LoopStat(object):
     def took_lead(self):
         """Gets the took_lead of this LoopStat.  # noqa: E501
 
+        Took lead  # noqa: E501
 
         :return: The took_lead of this LoopStat.  # noqa: E501
         :rtype: float
@@ -868,6 +931,7 @@ class LoopStat(object):
     def took_lead(self, took_lead):
         """Sets the took_lead of this LoopStat.
 
+        Took lead  # noqa: E501
 
         :param took_lead: The took_lead of this LoopStat.  # noqa: E501
         :type: float
@@ -879,6 +943,7 @@ class LoopStat(object):
     def vehicle_number(self):
         """Gets the vehicle_number of this LoopStat.  # noqa: E501
 
+        Vehicle number  # noqa: E501
 
         :return: The vehicle_number of this LoopStat.  # noqa: E501
         :rtype: str
@@ -889,6 +954,7 @@ class LoopStat(object):
     def vehicle_number(self, vehicle_number):
         """Sets the vehicle_number of this LoopStat.
 
+        Vehicle number  # noqa: E501
 
         :param vehicle_number: The vehicle_number of this LoopStat.  # noqa: E501
         :type: str
