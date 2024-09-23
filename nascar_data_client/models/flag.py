@@ -82,6 +82,7 @@ class Flag(object):
     def start_lap(self):
         """Gets the start_lap of this Flag.  # noqa: E501
 
+        The flag's first lap  # noqa: E501
 
         :return: The start_lap of this Flag.  # noqa: E501
         :rtype: int
@@ -92,6 +93,7 @@ class Flag(object):
     def start_lap(self, start_lap):
         """Sets the start_lap of this Flag.
 
+        The flag's first lap  # noqa: E501
 
         :param start_lap: The start_lap of this Flag.  # noqa: E501
         :type: int
@@ -103,6 +105,7 @@ class Flag(object):
     def finish_lap(self):
         """Gets the finish_lap of this Flag.  # noqa: E501
 
+        The flag's last lap  # noqa: E501
 
         :return: The finish_lap of this Flag.  # noqa: E501
         :rtype: int
@@ -113,6 +116,7 @@ class Flag(object):
     def finish_lap(self, finish_lap):
         """Sets the finish_lap of this Flag.
 
+        The flag's last lap  # noqa: E501
 
         :param finish_lap: The finish_lap of this Flag.  # noqa: E501
         :type: int
@@ -124,6 +128,7 @@ class Flag(object):
     def number_of_laps(self):
         """Gets the number_of_laps of this Flag.  # noqa: E501
 
+        Total number of laps  # noqa: E501
 
         :return: The number_of_laps of this Flag.  # noqa: E501
         :rtype: int
@@ -134,6 +139,7 @@ class Flag(object):
     def number_of_laps(self, number_of_laps):
         """Sets the number_of_laps of this Flag.
 
+        Total number of laps  # noqa: E501
 
         :param number_of_laps: The number_of_laps of this Flag.  # noqa: E501
         :type: int
@@ -145,6 +151,7 @@ class Flag(object):
     def elapsed_time(self):
         """Gets the elapsed_time of this Flag.  # noqa: E501
 
+        Elapsed race time in milliseconds  # noqa: E501
 
         :return: The elapsed_time of this Flag.  # noqa: E501
         :rtype: int
@@ -155,6 +162,7 @@ class Flag(object):
     def elapsed_time(self, elapsed_time):
         """Sets the elapsed_time of this Flag.
 
+        Elapsed race time in milliseconds  # noqa: E501
 
         :param elapsed_time: The elapsed_time of this Flag.  # noqa: E501
         :type: int
@@ -166,6 +174,7 @@ class Flag(object):
     def time(self):
         """Gets the time of this Flag.  # noqa: E501
 
+        Time of flag  # noqa: E501
 
         :return: The time of this Flag.  # noqa: E501
         :rtype: datetime
@@ -176,6 +185,7 @@ class Flag(object):
     def time(self, time):
         """Sets the time of this Flag.
 
+        Time of flag  # noqa: E501
 
         :param time: The time of this Flag.  # noqa: E501
         :type: datetime
@@ -187,6 +197,7 @@ class Flag(object):
     def duration(self):
         """Gets the duration of this Flag.  # noqa: E501
 
+        Duration in seconds  # noqa: E501
 
         :return: The duration of this Flag.  # noqa: E501
         :rtype: int
@@ -197,6 +208,7 @@ class Flag(object):
     def duration(self, duration):
         """Sets the duration of this Flag.
 
+        Duration in seconds  # noqa: E501
 
         :param duration: The duration of this Flag.  # noqa: E501
         :type: int
@@ -208,7 +220,7 @@ class Flag(object):
     def flag_state(self):
         """Gets the flag_state of this Flag.  # noqa: E501
 
-        NONE, WARMUP, GREEN, YELLOW, RED, WHITE, FINISH, EXTRA  # noqa: E501
+        Flag stage:  (NONE, WARMUP, GREEN, YELLOW, RED, WHITE, FINISH, EXTRA)  # noqa: E501
 
         :return: The flag_state of this Flag.  # noqa: E501
         :rtype: str
@@ -219,7 +231,7 @@ class Flag(object):
     def flag_state(self, flag_state):
         """Sets the flag_state of this Flag.
 
-        NONE, WARMUP, GREEN, YELLOW, RED, WHITE, FINISH, EXTRA  # noqa: E501
+        Flag stage:  (NONE, WARMUP, GREEN, YELLOW, RED, WHITE, FINISH, EXTRA)  # noqa: E501
 
         :param flag_state: The flag_state of this Flag.  # noqa: E501
         :type: str
@@ -231,6 +243,7 @@ class Flag(object):
     def comment(self):
         """Gets the comment of this Flag.  # noqa: E501
 
+        Comments  # noqa: E501
 
         :return: The comment of this Flag.  # noqa: E501
         :rtype: str
@@ -241,6 +254,7 @@ class Flag(object):
     def comment(self, comment):
         """Sets the comment of this Flag.
 
+        Comments  # noqa: E501
 
         :param comment: The comment of this Flag.  # noqa: E501
         :type: str

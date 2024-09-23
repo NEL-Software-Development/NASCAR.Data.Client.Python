@@ -32,12 +32,12 @@ class RaceWeekApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def details(self, **kwargs):  # noqa: E501
-        """details  # noqa: E501
+    def race_week_details_get(self, **kwargs):  # noqa: E501
+        """race_week_details_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.details(async_req=True)
+        >>> thread = api.race_week_details_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -48,17 +48,17 @@ class RaceWeekApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.details_with_http_info(**kwargs)  # noqa: E501
+            return self.race_week_details_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.details_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.race_week_details_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def details_with_http_info(self, **kwargs):  # noqa: E501
-        """details  # noqa: E501
+    def race_week_details_get_with_http_info(self, **kwargs):  # noqa: E501
+        """race_week_details_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.details_with_http_info(async_req=True)
+        >>> thread = api.race_week_details_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -79,7 +79,7 @@ class RaceWeekApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method details" % key
+                    " to method race_week_details_get" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -121,12 +121,12 @@ class RaceWeekApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def live(self, **kwargs):  # noqa: E501
-        """live  # noqa: E501
+    def race_week_live_get(self, **kwargs):  # noqa: E501
+        """race_week_live_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.live(async_req=True)
+        >>> thread = api.race_week_live_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -136,17 +136,17 @@ class RaceWeekApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.live_with_http_info(**kwargs)  # noqa: E501
+            return self.race_week_live_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.live_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.race_week_live_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def live_with_http_info(self, **kwargs):  # noqa: E501
-        """live  # noqa: E501
+    def race_week_live_get_with_http_info(self, **kwargs):  # noqa: E501
+        """race_week_live_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.live_with_http_info(async_req=True)
+        >>> thread = api.race_week_live_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -166,7 +166,7 @@ class RaceWeekApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method live" % key
+                    " to method race_week_live_get" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -206,12 +206,12 @@ class RaceWeekApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def season(self, **kwargs):  # noqa: E501
-        """season  # noqa: E501
+    def race_week_season_get(self, **kwargs):  # noqa: E501
+        """race_week_season_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.season(async_req=True)
+        >>> thread = api.race_week_season_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -222,17 +222,17 @@ class RaceWeekApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.season_with_http_info(**kwargs)  # noqa: E501
+            return self.race_week_season_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.season_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.race_week_season_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def season_with_http_info(self, **kwargs):  # noqa: E501
-        """season  # noqa: E501
+    def race_week_season_get_with_http_info(self, **kwargs):  # noqa: E501
+        """race_week_season_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.season_with_http_info(async_req=True)
+        >>> thread = api.race_week_season_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -253,7 +253,7 @@ class RaceWeekApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method season" % key
+                    " to method race_week_season_get" % key
                 )
             params[key] = val
         del params['kwargs']

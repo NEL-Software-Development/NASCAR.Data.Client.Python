@@ -1,28 +1,28 @@
 # nascar_data_client.RaceApi
 
-All URIs are relative to */*
+All URIs are relative to */api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**cautions**](RaceApi.md#cautions) | **GET** /race/cautions | 
-[**discipline_updates**](RaceApi.md#discipline_updates) | **GET** /race/discipline-updates | 
-[**entries**](RaceApi.md#entries) | **GET** /race/entries | 
-[**infractions**](RaceApi.md#infractions) | **GET** /race/infractions | 
-[**lap_leaders**](RaceApi.md#lap_leaders) | **GET** /race/lap-leaders | 
-[**loop_stats**](RaceApi.md#loop_stats) | **GET** /race/loop-stats | 
-[**pit_stops**](RaceApi.md#pit_stops) | **GET** /race/pitstops | 
-[**practice_results**](RaceApi.md#practice_results) | **GET** /race/practice-results | 
-[**qualifying_results**](RaceApi.md#qualifying_results) | **GET** /race/qualifying-results | 
-[**race**](RaceApi.md#race) | **GET** /race | 
-[**race_results**](RaceApi.md#race_results) | **GET** /race/race-results | 
-[**race_season**](RaceApi.md#race_season) | **GET** /race/season | 
-[**rosters**](RaceApi.md#rosters) | **GET** /race/rosters | 
-[**stage_results**](RaceApi.md#stage_results) | **GET** /race/stage-results | 
-[**view_model**](RaceApi.md#view_model) | **GET** /race/viewmodel | 
-[**weekend_schedule**](RaceApi.md#weekend_schedule) | **GET** /race/weekend-schedule | 
+[**race_cautions_get**](RaceApi.md#race_cautions_get) | **GET** /race/cautions | 
+[**race_discipline_updates_get**](RaceApi.md#race_discipline_updates_get) | **GET** /race/discipline-updates | 
+[**race_entries_get**](RaceApi.md#race_entries_get) | **GET** /race/entries | 
+[**race_get**](RaceApi.md#race_get) | **GET** /race | 
+[**race_infractions_get**](RaceApi.md#race_infractions_get) | **GET** /race/infractions | 
+[**race_lap_leaders_get**](RaceApi.md#race_lap_leaders_get) | **GET** /race/lap-leaders | 
+[**race_loop_stats_get**](RaceApi.md#race_loop_stats_get) | **GET** /race/loop-stats | 
+[**race_pitstops_get**](RaceApi.md#race_pitstops_get) | **GET** /race/pitstops | 
+[**race_practice_results_get**](RaceApi.md#race_practice_results_get) | **GET** /race/practice-results | 
+[**race_qualifying_results_get**](RaceApi.md#race_qualifying_results_get) | **GET** /race/qualifying-results | 
+[**race_race_results_get**](RaceApi.md#race_race_results_get) | **GET** /race/race-results | 
+[**race_rosters_get**](RaceApi.md#race_rosters_get) | **GET** /race/rosters | 
+[**race_season_get**](RaceApi.md#race_season_get) | **GET** /race/season | 
+[**race_stage_results_get**](RaceApi.md#race_stage_results_get) | **GET** /race/stage-results | 
+[**race_viewmodel_get**](RaceApi.md#race_viewmodel_get) | **GET** /race/viewmodel | 
+[**race_weekend_schedule_get**](RaceApi.md#race_weekend_schedule_get) | **GET** /race/weekend-schedule | 
 
-# **cautions**
-> list[Caution] cautions(race_id=race_id)
+# **race_cautions_get**
+> list[Caution] race_cautions_get(race_id=race_id)
 
 
 
@@ -40,10 +40,10 @@ api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configura
 race_id = 56 # int |  (optional)
 
 try:
-    api_response = api_instance.cautions(race_id=race_id)
+    api_response = api_instance.race_cautions_get(race_id=race_id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling RaceApi->cautions: %s\n" % e)
+    print("Exception when calling RaceApi->race_cautions_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -67,8 +67,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **discipline_updates**
-> list[DisciplineUpdate] discipline_updates(race_id=race_id)
+# **race_discipline_updates_get**
+> list[DisciplineUpdate] race_discipline_updates_get(race_id=race_id)
 
 
 
@@ -86,10 +86,10 @@ api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configura
 race_id = 56 # int |  (optional)
 
 try:
-    api_response = api_instance.discipline_updates(race_id=race_id)
+    api_response = api_instance.race_discipline_updates_get(race_id=race_id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling RaceApi->discipline_updates: %s\n" % e)
+    print("Exception when calling RaceApi->race_discipline_updates_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -113,8 +113,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **entries**
-> list[RunEntry] entries(race_id=race_id)
+# **race_entries_get**
+> list[RunEntry] race_entries_get(race_id=race_id)
 
 
 
@@ -132,10 +132,10 @@ api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configura
 race_id = 56 # int |  (optional)
 
 try:
-    api_response = api_instance.entries(race_id=race_id)
+    api_response = api_instance.race_entries_get(race_id=race_id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling RaceApi->entries: %s\n" % e)
+    print("Exception when calling RaceApi->race_entries_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -159,8 +159,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **infractions**
-> list[RaceInfraction] infractions(race_id=race_id)
+# **race_get**
+> RaceDetails race_get(race_id=race_id)
 
 
 
@@ -178,286 +178,10 @@ api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configura
 race_id = 56 # int |  (optional)
 
 try:
-    api_response = api_instance.infractions(race_id=race_id)
+    api_response = api_instance.race_get(race_id=race_id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling RaceApi->infractions: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **race_id** | **int**|  | [optional] 
-
-### Return type
-
-[**list[RaceInfraction]**](RaceInfraction.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **lap_leaders**
-> list[LapLeader] lap_leaders(race_id=race_id)
-
-
-
-### Example
-```python
-from __future__ import print_function
-import time
-import nascar_data_client
-from nascar_data_client.rest import ApiException
-from pprint import pprint
-
-
-# create an instance of the API class
-api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configuration))
-race_id = 56 # int |  (optional)
-
-try:
-    api_response = api_instance.lap_leaders(race_id=race_id)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling RaceApi->lap_leaders: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **race_id** | **int**|  | [optional] 
-
-### Return type
-
-[**list[LapLeader]**](LapLeader.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **loop_stats**
-> list[LoopStat] loop_stats(race_id=race_id)
-
-
-
-### Example
-```python
-from __future__ import print_function
-import time
-import nascar_data_client
-from nascar_data_client.rest import ApiException
-from pprint import pprint
-
-
-# create an instance of the API class
-api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configuration))
-race_id = 56 # int |  (optional)
-
-try:
-    api_response = api_instance.loop_stats(race_id=race_id)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling RaceApi->loop_stats: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **race_id** | **int**|  | [optional] 
-
-### Return type
-
-[**list[LoopStat]**](LoopStat.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **pit_stops**
-> list[Pitstop] pit_stops(race_id=race_id)
-
-
-
-### Example
-```python
-from __future__ import print_function
-import time
-import nascar_data_client
-from nascar_data_client.rest import ApiException
-from pprint import pprint
-
-
-# create an instance of the API class
-api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configuration))
-race_id = 56 # int |  (optional)
-
-try:
-    api_response = api_instance.pit_stops(race_id=race_id)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling RaceApi->pit_stops: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **race_id** | **int**|  | [optional] 
-
-### Return type
-
-[**list[Pitstop]**](Pitstop.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **practice_results**
-> list[PracticeRunResults] practice_results(race_id=race_id)
-
-
-
-### Example
-```python
-from __future__ import print_function
-import time
-import nascar_data_client
-from nascar_data_client.rest import ApiException
-from pprint import pprint
-
-
-# create an instance of the API class
-api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configuration))
-race_id = 56 # int |  (optional)
-
-try:
-    api_response = api_instance.practice_results(race_id=race_id)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling RaceApi->practice_results: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **race_id** | **int**|  | [optional] 
-
-### Return type
-
-[**list[PracticeRunResults]**](PracticeRunResults.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **qualifying_results**
-> list[QualifyingRunResults] qualifying_results(race_id=race_id)
-
-
-
-### Example
-```python
-from __future__ import print_function
-import time
-import nascar_data_client
-from nascar_data_client.rest import ApiException
-from pprint import pprint
-
-
-# create an instance of the API class
-api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configuration))
-race_id = 56 # int |  (optional)
-
-try:
-    api_response = api_instance.qualifying_results(race_id=race_id)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling RaceApi->qualifying_results: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **race_id** | **int**|  | [optional] 
-
-### Return type
-
-[**list[QualifyingRunResults]**](QualifyingRunResults.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **race**
-> RaceDetails race(race_id=race_id)
-
-
-
-### Example
-```python
-from __future__ import print_function
-import time
-import nascar_data_client
-from nascar_data_client.rest import ApiException
-from pprint import pprint
-
-
-# create an instance of the API class
-api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configuration))
-race_id = 56 # int |  (optional)
-
-try:
-    api_response = api_instance.race(race_id=race_id)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling RaceApi->race: %s\n" % e)
+    print("Exception when calling RaceApi->race_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -481,8 +205,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **race_results**
-> list[RaceRunResults] race_results(race_id=race_id)
+# **race_infractions_get**
+> list[RaceInfraction] race_infractions_get(race_id=race_id)
 
 
 
@@ -500,10 +224,286 @@ api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configura
 race_id = 56 # int |  (optional)
 
 try:
-    api_response = api_instance.race_results(race_id=race_id)
+    api_response = api_instance.race_infractions_get(race_id=race_id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling RaceApi->race_results: %s\n" % e)
+    print("Exception when calling RaceApi->race_infractions_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **race_id** | **int**|  | [optional] 
+
+### Return type
+
+[**list[RaceInfraction]**](RaceInfraction.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **race_lap_leaders_get**
+> list[LapLeader] race_lap_leaders_get(race_id=race_id)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import nascar_data_client
+from nascar_data_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configuration))
+race_id = 56 # int |  (optional)
+
+try:
+    api_response = api_instance.race_lap_leaders_get(race_id=race_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling RaceApi->race_lap_leaders_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **race_id** | **int**|  | [optional] 
+
+### Return type
+
+[**list[LapLeader]**](LapLeader.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **race_loop_stats_get**
+> list[LoopStat] race_loop_stats_get(race_id=race_id)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import nascar_data_client
+from nascar_data_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configuration))
+race_id = 56 # int |  (optional)
+
+try:
+    api_response = api_instance.race_loop_stats_get(race_id=race_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling RaceApi->race_loop_stats_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **race_id** | **int**|  | [optional] 
+
+### Return type
+
+[**list[LoopStat]**](LoopStat.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **race_pitstops_get**
+> list[Pitstop] race_pitstops_get(race_id=race_id)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import nascar_data_client
+from nascar_data_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configuration))
+race_id = 56 # int |  (optional)
+
+try:
+    api_response = api_instance.race_pitstops_get(race_id=race_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling RaceApi->race_pitstops_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **race_id** | **int**|  | [optional] 
+
+### Return type
+
+[**list[Pitstop]**](Pitstop.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **race_practice_results_get**
+> list[PracticeRunResults] race_practice_results_get(race_id=race_id)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import nascar_data_client
+from nascar_data_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configuration))
+race_id = 56 # int |  (optional)
+
+try:
+    api_response = api_instance.race_practice_results_get(race_id=race_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling RaceApi->race_practice_results_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **race_id** | **int**|  | [optional] 
+
+### Return type
+
+[**list[PracticeRunResults]**](PracticeRunResults.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **race_qualifying_results_get**
+> list[QualifyingRunResults] race_qualifying_results_get(race_id=race_id)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import nascar_data_client
+from nascar_data_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configuration))
+race_id = 56 # int |  (optional)
+
+try:
+    api_response = api_instance.race_qualifying_results_get(race_id=race_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling RaceApi->race_qualifying_results_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **race_id** | **int**|  | [optional] 
+
+### Return type
+
+[**list[QualifyingRunResults]**](QualifyingRunResults.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **race_race_results_get**
+> list[RaceRunResults] race_race_results_get(race_id=race_id)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import nascar_data_client
+from nascar_data_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configuration))
+race_id = 56 # int |  (optional)
+
+try:
+    api_response = api_instance.race_race_results_get(race_id=race_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling RaceApi->race_race_results_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -527,8 +527,54 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **race_season**
-> list[list[Race]] race_season(season=season, series_id=series_id)
+# **race_rosters_get**
+> list[TeamRoster] race_rosters_get(race_id=race_id)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import nascar_data_client
+from nascar_data_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configuration))
+race_id = 56 # int |  (optional)
+
+try:
+    api_response = api_instance.race_rosters_get(race_id=race_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling RaceApi->race_rosters_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **race_id** | **int**|  | [optional] 
+
+### Return type
+
+[**list[TeamRoster]**](TeamRoster.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **race_season_get**
+> list[list[Race]] race_season_get(season=season, series_id=series_id)
 
 
 
@@ -547,10 +593,10 @@ season = 56 # int |  (optional)
 series_id = 56 # int |  (optional)
 
 try:
-    api_response = api_instance.race_season(season=season, series_id=series_id)
+    api_response = api_instance.race_season_get(season=season, series_id=series_id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling RaceApi->race_season: %s\n" % e)
+    print("Exception when calling RaceApi->race_season_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -575,8 +621,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **rosters**
-> list[TeamRoster] rosters(race_id=race_id)
+# **race_stage_results_get**
+> list[StageRunResults] race_stage_results_get(race_id=race_id)
 
 
 
@@ -594,56 +640,10 @@ api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configura
 race_id = 56 # int |  (optional)
 
 try:
-    api_response = api_instance.rosters(race_id=race_id)
+    api_response = api_instance.race_stage_results_get(race_id=race_id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling RaceApi->rosters: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **race_id** | **int**|  | [optional] 
-
-### Return type
-
-[**list[TeamRoster]**](TeamRoster.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **stage_results**
-> list[StageRunResults] stage_results(race_id=race_id)
-
-
-
-### Example
-```python
-from __future__ import print_function
-import time
-import nascar_data_client
-from nascar_data_client.rest import ApiException
-from pprint import pprint
-
-
-# create an instance of the API class
-api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configuration))
-race_id = 56 # int |  (optional)
-
-try:
-    api_response = api_instance.stage_results(race_id=race_id)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling RaceApi->stage_results: %s\n" % e)
+    print("Exception when calling RaceApi->race_stage_results_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -667,8 +667,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **view_model**
-> RaceViewModel view_model(race_id=race_id)
+# **race_viewmodel_get**
+> RaceViewModel race_viewmodel_get(race_id=race_id)
 
 
 
@@ -686,10 +686,10 @@ api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configura
 race_id = 56 # int |  (optional)
 
 try:
-    api_response = api_instance.view_model(race_id=race_id)
+    api_response = api_instance.race_viewmodel_get(race_id=race_id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling RaceApi->view_model: %s\n" % e)
+    print("Exception when calling RaceApi->race_viewmodel_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -713,8 +713,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **weekend_schedule**
-> list[WeekendSchedule] weekend_schedule(race_id=race_id)
+# **race_weekend_schedule_get**
+> list[WeekendSchedule] race_weekend_schedule_get(race_id=race_id)
 
 
 
@@ -732,10 +732,10 @@ api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configura
 race_id = 56 # int |  (optional)
 
 try:
-    api_response = api_instance.weekend_schedule(race_id=race_id)
+    api_response = api_instance.race_weekend_schedule_get(race_id=race_id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling RaceApi->weekend_schedule: %s\n" % e)
+    print("Exception when calling RaceApi->race_weekend_schedule_get: %s\n" % e)
 ```
 
 ### Parameters

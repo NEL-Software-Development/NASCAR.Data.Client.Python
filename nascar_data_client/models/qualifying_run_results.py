@@ -31,6 +31,7 @@ class QualifyingRunResults(object):
     swagger_types = {
         'run_name': 'str',
         'run_state': 'str',
+        'flag_state': 'str',
         'round': 'int',
         'group': 'str',
         'results': 'list[RunResult]'
@@ -39,15 +40,17 @@ class QualifyingRunResults(object):
     attribute_map = {
         'run_name': 'run_name',
         'run_state': 'run_state',
+        'flag_state': 'flag_state',
         'round': 'round',
         'group': 'group',
         'results': 'results'
     }
 
-    def __init__(self, run_name=None, run_state=None, round=None, group=None, results=None):  # noqa: E501
+    def __init__(self, run_name=None, run_state=None, flag_state=None, round=None, group=None, results=None):  # noqa: E501
         """QualifyingRunResults - a model defined in Swagger"""  # noqa: E501
         self._run_name = None
         self._run_state = None
+        self._flag_state = None
         self._round = None
         self._group = None
         self._results = None
@@ -56,6 +59,8 @@ class QualifyingRunResults(object):
             self.run_name = run_name
         if run_state is not None:
             self.run_state = run_state
+        if flag_state is not None:
+            self.flag_state = flag_state
         if round is not None:
             self.round = round
         if group is not None:
@@ -67,6 +72,7 @@ class QualifyingRunResults(object):
     def run_name(self):
         """Gets the run_name of this QualifyingRunResults.  # noqa: E501
 
+        Run name  # noqa: E501
 
         :return: The run_name of this QualifyingRunResults.  # noqa: E501
         :rtype: str
@@ -77,6 +83,7 @@ class QualifyingRunResults(object):
     def run_name(self, run_name):
         """Sets the run_name of this QualifyingRunResults.
 
+        Run name  # noqa: E501
 
         :param run_name: The run_name of this QualifyingRunResults.  # noqa: E501
         :type: str
@@ -88,7 +95,7 @@ class QualifyingRunResults(object):
     def run_state(self):
         """Gets the run_state of this QualifyingRunResults.  # noqa: E501
 
-        Inactive, Active, Completed  # noqa: E501
+        Run state:  (Inactive, Active, Completed)  # noqa: E501
 
         :return: The run_state of this QualifyingRunResults.  # noqa: E501
         :rtype: str
@@ -99,7 +106,7 @@ class QualifyingRunResults(object):
     def run_state(self, run_state):
         """Sets the run_state of this QualifyingRunResults.
 
-        Inactive, Active, Completed  # noqa: E501
+        Run state:  (Inactive, Active, Completed)  # noqa: E501
 
         :param run_state: The run_state of this QualifyingRunResults.  # noqa: E501
         :type: str
@@ -108,9 +115,33 @@ class QualifyingRunResults(object):
         self._run_state = run_state
 
     @property
+    def flag_state(self):
+        """Gets the flag_state of this QualifyingRunResults.  # noqa: E501
+
+        Flag state:  (NONE, WARMUP, GREEN, YELLOW, RED, WHITE, FINISH, EXTRA)  # noqa: E501
+
+        :return: The flag_state of this QualifyingRunResults.  # noqa: E501
+        :rtype: str
+        """
+        return self._flag_state
+
+    @flag_state.setter
+    def flag_state(self, flag_state):
+        """Sets the flag_state of this QualifyingRunResults.
+
+        Flag state:  (NONE, WARMUP, GREEN, YELLOW, RED, WHITE, FINISH, EXTRA)  # noqa: E501
+
+        :param flag_state: The flag_state of this QualifyingRunResults.  # noqa: E501
+        :type: str
+        """
+
+        self._flag_state = flag_state
+
+    @property
     def round(self):
         """Gets the round of this QualifyingRunResults.  # noqa: E501
 
+        Qualifying round: 0-3  # noqa: E501
 
         :return: The round of this QualifyingRunResults.  # noqa: E501
         :rtype: int
@@ -121,6 +152,7 @@ class QualifyingRunResults(object):
     def round(self, round):
         """Sets the round of this QualifyingRunResults.
 
+        Qualifying round: 0-3  # noqa: E501
 
         :param round: The round of this QualifyingRunResults.  # noqa: E501
         :type: int
@@ -132,6 +164,7 @@ class QualifyingRunResults(object):
     def group(self):
         """Gets the group of this QualifyingRunResults.  # noqa: E501
 
+        Qualifying group: A, B, (empty)  # noqa: E501
 
         :return: The group of this QualifyingRunResults.  # noqa: E501
         :rtype: str
@@ -142,6 +175,7 @@ class QualifyingRunResults(object):
     def group(self, group):
         """Sets the group of this QualifyingRunResults.
 
+        Qualifying group: A, B, (empty)  # noqa: E501
 
         :param group: The group of this QualifyingRunResults.  # noqa: E501
         :type: str
@@ -153,6 +187,7 @@ class QualifyingRunResults(object):
     def results(self):
         """Gets the results of this QualifyingRunResults.  # noqa: E501
 
+        Qualifying results  # noqa: E501
 
         :return: The results of this QualifyingRunResults.  # noqa: E501
         :rtype: list[RunResult]
@@ -163,6 +198,7 @@ class QualifyingRunResults(object):
     def results(self, results):
         """Sets the results of this QualifyingRunResults.
 
+        Qualifying results  # noqa: E501
 
         :param results: The results of this QualifyingRunResults.  # noqa: E501
         :type: list[RunResult]

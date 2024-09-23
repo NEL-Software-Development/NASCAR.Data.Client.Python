@@ -31,7 +31,7 @@ class Race(object):
     swagger_types = {
         'id': 'int',
         'principal_race_id': 'int',
-        'event_id': 'int',
+        'raceweek_id': 'int',
         'series_id': 'int',
         'name': 'str',
         'promoter': 'str',
@@ -51,7 +51,7 @@ class Race(object):
     attribute_map = {
         'id': 'id',
         'principal_race_id': 'principal_race_id',
-        'event_id': 'event_id',
+        'raceweek_id': 'raceweek_id',
         'series_id': 'series_id',
         'name': 'name',
         'promoter': 'promoter',
@@ -68,11 +68,11 @@ class Race(object):
         'comments': 'comments'
     }
 
-    def __init__(self, id=None, principal_race_id=None, event_id=None, series_id=None, name=None, promoter=None, laps=None, distance=None, practice_results=None, qualifying_results=None, race_results=None, cautions=None, infractions=None, lap_leaders=None, pitstops=None, _date=None, comments=None):  # noqa: E501
+    def __init__(self, id=None, principal_race_id=None, raceweek_id=None, series_id=None, name=None, promoter=None, laps=None, distance=None, practice_results=None, qualifying_results=None, race_results=None, cautions=None, infractions=None, lap_leaders=None, pitstops=None, _date=None, comments=None):  # noqa: E501
         """Race - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._principal_race_id = None
-        self._event_id = None
+        self._raceweek_id = None
         self._series_id = None
         self._name = None
         self._promoter = None
@@ -92,8 +92,8 @@ class Race(object):
             self.id = id
         if principal_race_id is not None:
             self.principal_race_id = principal_race_id
-        if event_id is not None:
-            self.event_id = event_id
+        if raceweek_id is not None:
+            self.raceweek_id = raceweek_id
         if series_id is not None:
             self.series_id = series_id
         if name is not None:
@@ -127,6 +127,7 @@ class Race(object):
     def id(self):
         """Gets the id of this Race.  # noqa: E501
 
+        The id of the race  # noqa: E501
 
         :return: The id of this Race.  # noqa: E501
         :rtype: int
@@ -137,6 +138,7 @@ class Race(object):
     def id(self, id):
         """Sets the id of this Race.
 
+        The id of the race  # noqa: E501
 
         :param id: The id of this Race.  # noqa: E501
         :type: int
@@ -148,6 +150,7 @@ class Race(object):
     def principal_race_id(self):
         """Gets the principal_race_id of this Race.  # noqa: E501
 
+        The principal race id of the race  # noqa: E501
 
         :return: The principal_race_id of this Race.  # noqa: E501
         :rtype: int
@@ -158,6 +161,7 @@ class Race(object):
     def principal_race_id(self, principal_race_id):
         """Sets the principal_race_id of this Race.
 
+        The principal race id of the race  # noqa: E501
 
         :param principal_race_id: The principal_race_id of this Race.  # noqa: E501
         :type: int
@@ -166,30 +170,33 @@ class Race(object):
         self._principal_race_id = principal_race_id
 
     @property
-    def event_id(self):
-        """Gets the event_id of this Race.  # noqa: E501
+    def raceweek_id(self):
+        """Gets the raceweek_id of this Race.  # noqa: E501
 
+        The race  # noqa: E501
 
-        :return: The event_id of this Race.  # noqa: E501
+        :return: The raceweek_id of this Race.  # noqa: E501
         :rtype: int
         """
-        return self._event_id
+        return self._raceweek_id
 
-    @event_id.setter
-    def event_id(self, event_id):
-        """Sets the event_id of this Race.
+    @raceweek_id.setter
+    def raceweek_id(self, raceweek_id):
+        """Sets the raceweek_id of this Race.
 
+        The race  # noqa: E501
 
-        :param event_id: The event_id of this Race.  # noqa: E501
+        :param raceweek_id: The raceweek_id of this Race.  # noqa: E501
         :type: int
         """
 
-        self._event_id = event_id
+        self._raceweek_id = raceweek_id
 
     @property
     def series_id(self):
         """Gets the series_id of this Race.  # noqa: E501
 
+        The series id of the race  # noqa: E501
 
         :return: The series_id of this Race.  # noqa: E501
         :rtype: int
@@ -200,6 +207,7 @@ class Race(object):
     def series_id(self, series_id):
         """Sets the series_id of this Race.
 
+        The series id of the race  # noqa: E501
 
         :param series_id: The series_id of this Race.  # noqa: E501
         :type: int
@@ -211,6 +219,7 @@ class Race(object):
     def name(self):
         """Gets the name of this Race.  # noqa: E501
 
+        The race name  # noqa: E501
 
         :return: The name of this Race.  # noqa: E501
         :rtype: str
@@ -221,6 +230,7 @@ class Race(object):
     def name(self, name):
         """Sets the name of this Race.
 
+        The race name  # noqa: E501
 
         :param name: The name of this Race.  # noqa: E501
         :type: str
@@ -232,6 +242,7 @@ class Race(object):
     def promoter(self):
         """Gets the promoter of this Race.  # noqa: E501
 
+        The promoter of the race  # noqa: E501
 
         :return: The promoter of this Race.  # noqa: E501
         :rtype: str
@@ -242,6 +253,7 @@ class Race(object):
     def promoter(self, promoter):
         """Sets the promoter of this Race.
 
+        The promoter of the race  # noqa: E501
 
         :param promoter: The promoter of this Race.  # noqa: E501
         :type: str
@@ -253,6 +265,7 @@ class Race(object):
     def laps(self):
         """Gets the laps of this Race.  # noqa: E501
 
+        Laps  # noqa: E501
 
         :return: The laps of this Race.  # noqa: E501
         :rtype: int
@@ -263,6 +276,7 @@ class Race(object):
     def laps(self, laps):
         """Sets the laps of this Race.
 
+        Laps  # noqa: E501
 
         :param laps: The laps of this Race.  # noqa: E501
         :type: int
@@ -274,6 +288,7 @@ class Race(object):
     def distance(self):
         """Gets the distance of this Race.  # noqa: E501
 
+        Race distance  # noqa: E501
 
         :return: The distance of this Race.  # noqa: E501
         :rtype: float
@@ -284,6 +299,7 @@ class Race(object):
     def distance(self, distance):
         """Sets the distance of this Race.
 
+        Race distance  # noqa: E501
 
         :param distance: The distance of this Race.  # noqa: E501
         :type: float
@@ -295,6 +311,7 @@ class Race(object):
     def practice_results(self):
         """Gets the practice_results of this Race.  # noqa: E501
 
+        URL to practice results  # noqa: E501
 
         :return: The practice_results of this Race.  # noqa: E501
         :rtype: str
@@ -305,6 +322,7 @@ class Race(object):
     def practice_results(self, practice_results):
         """Sets the practice_results of this Race.
 
+        URL to practice results  # noqa: E501
 
         :param practice_results: The practice_results of this Race.  # noqa: E501
         :type: str
@@ -316,6 +334,7 @@ class Race(object):
     def qualifying_results(self):
         """Gets the qualifying_results of this Race.  # noqa: E501
 
+        URL to Qualifying results  # noqa: E501
 
         :return: The qualifying_results of this Race.  # noqa: E501
         :rtype: str
@@ -326,6 +345,7 @@ class Race(object):
     def qualifying_results(self, qualifying_results):
         """Sets the qualifying_results of this Race.
 
+        URL to Qualifying results  # noqa: E501
 
         :param qualifying_results: The qualifying_results of this Race.  # noqa: E501
         :type: str
@@ -337,6 +357,7 @@ class Race(object):
     def race_results(self):
         """Gets the race_results of this Race.  # noqa: E501
 
+        URL to race results  # noqa: E501
 
         :return: The race_results of this Race.  # noqa: E501
         :rtype: str
@@ -347,6 +368,7 @@ class Race(object):
     def race_results(self, race_results):
         """Sets the race_results of this Race.
 
+        URL to race results  # noqa: E501
 
         :param race_results: The race_results of this Race.  # noqa: E501
         :type: str
@@ -358,6 +380,7 @@ class Race(object):
     def cautions(self):
         """Gets the cautions of this Race.  # noqa: E501
 
+        URL to race cautions  # noqa: E501
 
         :return: The cautions of this Race.  # noqa: E501
         :rtype: str
@@ -368,6 +391,7 @@ class Race(object):
     def cautions(self, cautions):
         """Sets the cautions of this Race.
 
+        URL to race cautions  # noqa: E501
 
         :param cautions: The cautions of this Race.  # noqa: E501
         :type: str
@@ -379,6 +403,7 @@ class Race(object):
     def infractions(self):
         """Gets the infractions of this Race.  # noqa: E501
 
+        URL to race infractions  # noqa: E501
 
         :return: The infractions of this Race.  # noqa: E501
         :rtype: str
@@ -389,6 +414,7 @@ class Race(object):
     def infractions(self, infractions):
         """Sets the infractions of this Race.
 
+        URL to race infractions  # noqa: E501
 
         :param infractions: The infractions of this Race.  # noqa: E501
         :type: str
@@ -400,6 +426,7 @@ class Race(object):
     def lap_leaders(self):
         """Gets the lap_leaders of this Race.  # noqa: E501
 
+        URL to race lap leaders  # noqa: E501
 
         :return: The lap_leaders of this Race.  # noqa: E501
         :rtype: str
@@ -410,6 +437,7 @@ class Race(object):
     def lap_leaders(self, lap_leaders):
         """Sets the lap_leaders of this Race.
 
+        URL to race lap leaders  # noqa: E501
 
         :param lap_leaders: The lap_leaders of this Race.  # noqa: E501
         :type: str
@@ -421,6 +449,7 @@ class Race(object):
     def pitstops(self):
         """Gets the pitstops of this Race.  # noqa: E501
 
+        URL to race pitstops  # noqa: E501
 
         :return: The pitstops of this Race.  # noqa: E501
         :rtype: str
@@ -431,6 +460,7 @@ class Race(object):
     def pitstops(self, pitstops):
         """Sets the pitstops of this Race.
 
+        URL to race pitstops  # noqa: E501
 
         :param pitstops: The pitstops of this Race.  # noqa: E501
         :type: str
@@ -442,6 +472,7 @@ class Race(object):
     def _date(self):
         """Gets the _date of this Race.  # noqa: E501
 
+        Race date  # noqa: E501
 
         :return: The _date of this Race.  # noqa: E501
         :rtype: datetime
@@ -452,6 +483,7 @@ class Race(object):
     def _date(self, _date):
         """Sets the _date of this Race.
 
+        Race date  # noqa: E501
 
         :param _date: The _date of this Race.  # noqa: E501
         :type: datetime
@@ -463,6 +495,7 @@ class Race(object):
     def comments(self):
         """Gets the comments of this Race.  # noqa: E501
 
+        Race comments  # noqa: E501
 
         :return: The comments of this Race.  # noqa: E501
         :rtype: str
@@ -473,6 +506,7 @@ class Race(object):
     def comments(self, comments):
         """Sets the comments of this Race.
 
+        Race comments  # noqa: E501
 
         :param comments: The comments of this Race.  # noqa: E501
         :type: str

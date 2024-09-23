@@ -112,6 +112,7 @@ class VehicleWeight(object):
     def inspection_type(self):
         """Gets the inspection_type of this VehicleWeight.  # noqa: E501
 
+        The type of inspection  # noqa: E501
 
         :return: The inspection_type of this VehicleWeight.  # noqa: E501
         :rtype: str
@@ -122,6 +123,7 @@ class VehicleWeight(object):
     def inspection_type(self, inspection_type):
         """Sets the inspection_type of this VehicleWeight.
 
+        The type of inspection  # noqa: E501
 
         :param inspection_type: The inspection_type of this VehicleWeight.  # noqa: E501
         :type: str
@@ -133,6 +135,7 @@ class VehicleWeight(object):
     def vehicle_number(self):
         """Gets the vehicle_number of this VehicleWeight.  # noqa: E501
 
+        The vehicle number inspected  # noqa: E501
 
         :return: The vehicle_number of this VehicleWeight.  # noqa: E501
         :rtype: str
@@ -143,6 +146,7 @@ class VehicleWeight(object):
     def vehicle_number(self, vehicle_number):
         """Sets the vehicle_number of this VehicleWeight.
 
+        The vehicle number inspected  # noqa: E501
 
         :param vehicle_number: The vehicle_number of this VehicleWeight.  # noqa: E501
         :type: str
@@ -154,6 +158,7 @@ class VehicleWeight(object):
     def adjustment(self):
         """Gets the adjustment of this VehicleWeight.  # noqa: E501
 
+        The weight adjustment  # noqa: E501
 
         :return: The adjustment of this VehicleWeight.  # noqa: E501
         :rtype: int
@@ -164,6 +169,7 @@ class VehicleWeight(object):
     def adjustment(self, adjustment):
         """Sets the adjustment of this VehicleWeight.
 
+        The weight adjustment  # noqa: E501
 
         :param adjustment: The adjustment of this VehicleWeight.  # noqa: E501
         :type: int
@@ -175,6 +181,7 @@ class VehicleWeight(object):
     def cross_weight(self):
         """Gets the cross_weight of this VehicleWeight.  # noqa: E501
 
+        The cross weight of the vehicle  # noqa: E501
 
         :return: The cross_weight of this VehicleWeight.  # noqa: E501
         :rtype: int
@@ -185,6 +192,7 @@ class VehicleWeight(object):
     def cross_weight(self, cross_weight):
         """Sets the cross_weight of this VehicleWeight.
 
+        The cross weight of the vehicle  # noqa: E501
 
         :param cross_weight: The cross_weight of this VehicleWeight.  # noqa: E501
         :type: int
@@ -196,6 +204,7 @@ class VehicleWeight(object):
     def left_front(self):
         """Gets the left_front of this VehicleWeight.  # noqa: E501
 
+        The left front weight of the vehicle  # noqa: E501
 
         :return: The left_front of this VehicleWeight.  # noqa: E501
         :rtype: int
@@ -206,6 +215,7 @@ class VehicleWeight(object):
     def left_front(self, left_front):
         """Sets the left_front of this VehicleWeight.
 
+        The left front weight of the vehicle  # noqa: E501
 
         :param left_front: The left_front of this VehicleWeight.  # noqa: E501
         :type: int
@@ -217,6 +227,7 @@ class VehicleWeight(object):
     def left_rear(self):
         """Gets the left_rear of this VehicleWeight.  # noqa: E501
 
+        The left rear weight of the vehicle  # noqa: E501
 
         :return: The left_rear of this VehicleWeight.  # noqa: E501
         :rtype: int
@@ -227,6 +238,7 @@ class VehicleWeight(object):
     def left_rear(self, left_rear):
         """Sets the left_rear of this VehicleWeight.
 
+        The left rear weight of the vehicle  # noqa: E501
 
         :param left_rear: The left_rear of this VehicleWeight.  # noqa: E501
         :type: int
@@ -238,6 +250,7 @@ class VehicleWeight(object):
     def left_side(self):
         """Gets the left_side of this VehicleWeight.  # noqa: E501
 
+        The weight of the left side of the vehicle  # noqa: E501
 
         :return: The left_side of this VehicleWeight.  # noqa: E501
         :rtype: int
@@ -248,6 +261,7 @@ class VehicleWeight(object):
     def left_side(self, left_side):
         """Sets the left_side of this VehicleWeight.
 
+        The weight of the left side of the vehicle  # noqa: E501
 
         :param left_side: The left_side of this VehicleWeight.  # noqa: E501
         :type: int
@@ -259,6 +273,7 @@ class VehicleWeight(object):
     def nose(self):
         """Gets the nose of this VehicleWeight.  # noqa: E501
 
+        The nose weight of the vehicle  # noqa: E501
 
         :return: The nose of this VehicleWeight.  # noqa: E501
         :rtype: int
@@ -269,6 +284,7 @@ class VehicleWeight(object):
     def nose(self, nose):
         """Sets the nose of this VehicleWeight.
 
+        The nose weight of the vehicle  # noqa: E501
 
         :param nose: The nose of this VehicleWeight.  # noqa: E501
         :type: int
@@ -280,6 +296,7 @@ class VehicleWeight(object):
     def rear(self):
         """Gets the rear of this VehicleWeight.  # noqa: E501
 
+        The rear weight of the vehicle  # noqa: E501
 
         :return: The rear of this VehicleWeight.  # noqa: E501
         :rtype: int
@@ -290,6 +307,7 @@ class VehicleWeight(object):
     def rear(self, rear):
         """Sets the rear of this VehicleWeight.
 
+        The rear weight of the vehicle  # noqa: E501
 
         :param rear: The rear of this VehicleWeight.  # noqa: E501
         :type: int
@@ -301,6 +319,7 @@ class VehicleWeight(object):
     def right_front(self):
         """Gets the right_front of this VehicleWeight.  # noqa: E501
 
+        The right front weight of the vehicle  # noqa: E501
 
         :return: The right_front of this VehicleWeight.  # noqa: E501
         :rtype: int
@@ -311,6 +330,7 @@ class VehicleWeight(object):
     def right_front(self, right_front):
         """Sets the right_front of this VehicleWeight.
 
+        The right front weight of the vehicle  # noqa: E501
 
         :param right_front: The right_front of this VehicleWeight.  # noqa: E501
         :type: int
@@ -322,6 +342,7 @@ class VehicleWeight(object):
     def right_rear(self):
         """Gets the right_rear of this VehicleWeight.  # noqa: E501
 
+        The right rear weight of the vehicle  # noqa: E501
 
         :return: The right_rear of this VehicleWeight.  # noqa: E501
         :rtype: int
@@ -332,6 +353,7 @@ class VehicleWeight(object):
     def right_rear(self, right_rear):
         """Sets the right_rear of this VehicleWeight.
 
+        The right rear weight of the vehicle  # noqa: E501
 
         :param right_rear: The right_rear of this VehicleWeight.  # noqa: E501
         :type: int
@@ -343,6 +365,7 @@ class VehicleWeight(object):
     def right_side(self):
         """Gets the right_side of this VehicleWeight.  # noqa: E501
 
+        The weight of the right side of the vehicle  # noqa: E501
 
         :return: The right_side of this VehicleWeight.  # noqa: E501
         :rtype: int
@@ -353,6 +376,7 @@ class VehicleWeight(object):
     def right_side(self, right_side):
         """Sets the right_side of this VehicleWeight.
 
+        The weight of the right side of the vehicle  # noqa: E501
 
         :param right_side: The right_side of this VehicleWeight.  # noqa: E501
         :type: int
@@ -364,6 +388,7 @@ class VehicleWeight(object):
     def total_weight(self):
         """Gets the total_weight of this VehicleWeight.  # noqa: E501
 
+        The total weight of the vehicle  # noqa: E501
 
         :return: The total_weight of this VehicleWeight.  # noqa: E501
         :rtype: int
@@ -374,6 +399,7 @@ class VehicleWeight(object):
     def total_weight(self, total_weight):
         """Sets the total_weight of this VehicleWeight.
 
+        The total weight of the vehicle  # noqa: E501
 
         :param total_weight: The total_weight of this VehicleWeight.  # noqa: E501
         :type: int
@@ -385,6 +411,7 @@ class VehicleWeight(object):
     def passed(self):
         """Gets the passed of this VehicleWeight.  # noqa: E501
 
+        Whether or not is passed  # noqa: E501
 
         :return: The passed of this VehicleWeight.  # noqa: E501
         :rtype: bool
@@ -395,6 +422,7 @@ class VehicleWeight(object):
     def passed(self, passed):
         """Sets the passed of this VehicleWeight.
 
+        Whether or not is passed  # noqa: E501
 
         :param passed: The passed of this VehicleWeight.  # noqa: E501
         :type: bool

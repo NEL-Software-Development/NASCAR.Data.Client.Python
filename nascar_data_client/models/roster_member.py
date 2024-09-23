@@ -52,6 +52,7 @@ class RosterMember(object):
     def name(self):
         """Gets the name of this RosterMember.  # noqa: E501
 
+        Team member name  # noqa: E501
 
         :return: The name of this RosterMember.  # noqa: E501
         :rtype: str
@@ -62,6 +63,7 @@ class RosterMember(object):
     def name(self, name):
         """Sets the name of this RosterMember.
 
+        Team member name  # noqa: E501
 
         :param name: The name of this RosterMember.  # noqa: E501
         :type: str
@@ -73,6 +75,7 @@ class RosterMember(object):
     def position(self):
         """Gets the position of this RosterMember.  # noqa: E501
 
+        Position  # noqa: E501
 
         :return: The position of this RosterMember.  # noqa: E501
         :rtype: str
@@ -83,6 +86,7 @@ class RosterMember(object):
     def position(self, position):
         """Sets the position of this RosterMember.
 
+        Position  # noqa: E501
 
         :param position: The position of this RosterMember.  # noqa: E501
         :type: str

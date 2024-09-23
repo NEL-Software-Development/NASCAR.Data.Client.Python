@@ -52,6 +52,7 @@ class TeamRoster(object):
     def vehicle_number(self):
         """Gets the vehicle_number of this TeamRoster.  # noqa: E501
 
+        Vehicle number  # noqa: E501
 
         :return: The vehicle_number of this TeamRoster.  # noqa: E501
         :rtype: str
@@ -62,6 +63,7 @@ class TeamRoster(object):
     def vehicle_number(self, vehicle_number):
         """Sets the vehicle_number of this TeamRoster.
 
+        Vehicle number  # noqa: E501
 
         :param vehicle_number: The vehicle_number of this TeamRoster.  # noqa: E501
         :type: str
@@ -73,6 +75,7 @@ class TeamRoster(object):
     def members(self):
         """Gets the members of this TeamRoster.  # noqa: E501
 
+        Team members  # noqa: E501
 
         :return: The members of this TeamRoster.  # noqa: E501
         :rtype: list[RosterMember]
@@ -83,6 +86,7 @@ class TeamRoster(object):
     def members(self, members):
         """Sets the members of this TeamRoster.
 
+        Team members  # noqa: E501
 
         :param members: The members of this TeamRoster.  # noqa: E501
         :type: list[RosterMember]

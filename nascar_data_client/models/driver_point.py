@@ -187,6 +187,7 @@ class DriverPoint(object):
     def driver(self):
         """Gets the driver of this DriverPoint.  # noqa: E501
 
+        Driver name  # noqa: E501
 
         :return: The driver of this DriverPoint.  # noqa: E501
         :rtype: str
@@ -197,6 +198,7 @@ class DriverPoint(object):
     def driver(self, driver):
         """Sets the driver of this DriverPoint.
 
+        Driver name  # noqa: E501
 
         :param driver: The driver of this DriverPoint.  # noqa: E501
         :type: str
@@ -208,6 +210,7 @@ class DriverPoint(object):
     def position(self):
         """Gets the position of this DriverPoint.  # noqa: E501
 
+        Points position  # noqa: E501
 
         :return: The position of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -218,6 +221,7 @@ class DriverPoint(object):
     def position(self, position):
         """Sets the position of this DriverPoint.
 
+        Points position  # noqa: E501
 
         :param position: The position of this DriverPoint.  # noqa: E501
         :type: int
@@ -229,6 +233,7 @@ class DriverPoint(object):
     def points(self):
         """Gets the points of this DriverPoint.  # noqa: E501
 
+        Total points earned  # noqa: E501
 
         :return: The points of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -239,6 +244,7 @@ class DriverPoint(object):
     def points(self, points):
         """Sets the points of this DriverPoint.
 
+        Total points earned  # noqa: E501
 
         :param points: The points of this DriverPoint.  # noqa: E501
         :type: int
@@ -250,6 +256,7 @@ class DriverPoint(object):
     def playoff_points(self):
         """Gets the playoff_points of this DriverPoint.  # noqa: E501
 
+        Total playoff points earned  # noqa: E501
 
         :return: The playoff_points of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -260,6 +267,7 @@ class DriverPoint(object):
     def playoff_points(self, playoff_points):
         """Sets the playoff_points of this DriverPoint.
 
+        Total playoff points earned  # noqa: E501
 
         :param playoff_points: The playoff_points of this DriverPoint.  # noqa: E501
         :type: int
@@ -271,6 +279,7 @@ class DriverPoint(object):
     def playoff_rank(self):
         """Gets the playoff_rank of this DriverPoint.  # noqa: E501
 
+        Playoff Ranking  # noqa: E501
 
         :return: The playoff_rank of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -281,6 +290,7 @@ class DriverPoint(object):
     def playoff_rank(self, playoff_rank):
         """Sets the playoff_rank of this DriverPoint.
 
+        Playoff Ranking  # noqa: E501
 
         :param playoff_rank: The playoff_rank of this DriverPoint.  # noqa: E501
         :type: int
@@ -292,6 +302,7 @@ class DriverPoint(object):
     def delta_leader(self):
         """Gets the delta_leader of this DriverPoint.  # noqa: E501
 
+        Positions behind leader  # noqa: E501
 
         :return: The delta_leader of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -302,6 +313,7 @@ class DriverPoint(object):
     def delta_leader(self, delta_leader):
         """Sets the delta_leader of this DriverPoint.
 
+        Positions behind leader  # noqa: E501
 
         :param delta_leader: The delta_leader of this DriverPoint.  # noqa: E501
         :type: int
@@ -313,6 +325,7 @@ class DriverPoint(object):
     def delta_next(self):
         """Gets the delta_next of this DriverPoint.  # noqa: E501
 
+        Positions behind next  # noqa: E501
 
         :return: The delta_next of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -323,6 +336,7 @@ class DriverPoint(object):
     def delta_next(self, delta_next):
         """Sets the delta_next of this DriverPoint.
 
+        Positions behind next  # noqa: E501
 
         :param delta_next: The delta_next of this DriverPoint.  # noqa: E501
         :type: int
@@ -334,6 +348,7 @@ class DriverPoint(object):
     def delta_playoff(self):
         """Gets the delta_playoff of this DriverPoint.  # noqa: E501
 
+        Points out of the playoffs  # noqa: E501
 
         :return: The delta_playoff of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -344,6 +359,7 @@ class DriverPoint(object):
     def delta_playoff(self, delta_playoff):
         """Sets the delta_playoff of this DriverPoint.
 
+        Points out of the playoffs  # noqa: E501
 
         :param delta_playoff: The delta_playoff of this DriverPoint.  # noqa: E501
         :type: int
@@ -355,6 +371,7 @@ class DriverPoint(object):
     def projected_playoff_points(self):
         """Gets the projected_playoff_points of this DriverPoint.  # noqa: E501
 
+        The projected number of playoff points  # noqa: E501
 
         :return: The projected_playoff_points of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -365,6 +382,7 @@ class DriverPoint(object):
     def projected_playoff_points(self, projected_playoff_points):
         """Sets the projected_playoff_points of this DriverPoint.
 
+        The projected number of playoff points  # noqa: E501
 
         :param projected_playoff_points: The projected_playoff_points of this DriverPoint.  # noqa: E501
         :type: int
@@ -376,6 +394,7 @@ class DriverPoint(object):
     def starts(self):
         """Gets the starts of this DriverPoint.  # noqa: E501
 
+        The number of starts this season  # noqa: E501
 
         :return: The starts of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -386,6 +405,7 @@ class DriverPoint(object):
     def starts(self, starts):
         """Sets the starts of this DriverPoint.
 
+        The number of starts this season  # noqa: E501
 
         :param starts: The starts of this DriverPoint.  # noqa: E501
         :type: int
@@ -397,6 +417,7 @@ class DriverPoint(object):
     def poles(self):
         """Gets the poles of this DriverPoint.  # noqa: E501
 
+        The number of times the driver earned the pole position this season  # noqa: E501
 
         :return: The poles of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -407,6 +428,7 @@ class DriverPoint(object):
     def poles(self, poles):
         """Sets the poles of this DriverPoint.
 
+        The number of times the driver earned the pole position this season  # noqa: E501
 
         :param poles: The poles of this DriverPoint.  # noqa: E501
         :type: int
@@ -418,6 +440,7 @@ class DriverPoint(object):
     def wins(self):
         """Gets the wins of this DriverPoint.  # noqa: E501
 
+        The number of race wins this season  # noqa: E501
 
         :return: The wins of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -428,6 +451,7 @@ class DriverPoint(object):
     def wins(self, wins):
         """Sets the wins of this DriverPoint.
 
+        The number of race wins this season  # noqa: E501
 
         :param wins: The wins of this DriverPoint.  # noqa: E501
         :type: int
@@ -439,6 +463,7 @@ class DriverPoint(object):
     def stage_1_wins(self):
         """Gets the stage_1_wins of this DriverPoint.  # noqa: E501
 
+        The number of stage 1 wins this season  # noqa: E501
 
         :return: The stage_1_wins of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -449,6 +474,7 @@ class DriverPoint(object):
     def stage_1_wins(self, stage_1_wins):
         """Sets the stage_1_wins of this DriverPoint.
 
+        The number of stage 1 wins this season  # noqa: E501
 
         :param stage_1_wins: The stage_1_wins of this DriverPoint.  # noqa: E501
         :type: int
@@ -460,6 +486,7 @@ class DriverPoint(object):
     def stage_2_wins(self):
         """Gets the stage_2_wins of this DriverPoint.  # noqa: E501
 
+        The number of stage 2 wins this season  # noqa: E501
 
         :return: The stage_2_wins of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -470,6 +497,7 @@ class DriverPoint(object):
     def stage_2_wins(self, stage_2_wins):
         """Sets the stage_2_wins of this DriverPoint.
 
+        The number of stage 2 wins this season  # noqa: E501
 
         :param stage_2_wins: The stage_2_wins of this DriverPoint.  # noqa: E501
         :type: int
@@ -481,6 +509,7 @@ class DriverPoint(object):
     def stage_3_wins(self):
         """Gets the stage_3_wins of this DriverPoint.  # noqa: E501
 
+        The number of stage 3 wins this season  # noqa: E501
 
         :return: The stage_3_wins of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -491,6 +520,7 @@ class DriverPoint(object):
     def stage_3_wins(self, stage_3_wins):
         """Sets the stage_3_wins of this DriverPoint.
 
+        The number of stage 3 wins this season  # noqa: E501
 
         :param stage_3_wins: The stage_3_wins of this DriverPoint.  # noqa: E501
         :type: int
@@ -502,6 +532,7 @@ class DriverPoint(object):
     def stage_points(self):
         """Gets the stage_points of this DriverPoint.  # noqa: E501
 
+        The number of stage points earned this season  # noqa: E501
 
         :return: The stage_points of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -512,6 +543,7 @@ class DriverPoint(object):
     def stage_points(self, stage_points):
         """Sets the stage_points of this DriverPoint.
 
+        The number of stage points earned this season  # noqa: E501
 
         :param stage_points: The stage_points of this DriverPoint.  # noqa: E501
         :type: int
@@ -523,6 +555,7 @@ class DriverPoint(object):
     def playoff_race_wins(self):
         """Gets the playoff_race_wins of this DriverPoint.  # noqa: E501
 
+        The number of playoff race wins this season  # noqa: E501
 
         :return: The playoff_race_wins of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -533,6 +566,7 @@ class DriverPoint(object):
     def playoff_race_wins(self, playoff_race_wins):
         """Sets the playoff_race_wins of this DriverPoint.
 
+        The number of playoff race wins this season  # noqa: E501
 
         :param playoff_race_wins: The playoff_race_wins of this DriverPoint.  # noqa: E501
         :type: int
@@ -544,6 +578,7 @@ class DriverPoint(object):
     def playoff_stage_wins(self):
         """Gets the playoff_stage_wins of this DriverPoint.  # noqa: E501
 
+        The number of playoff stage wins this season  # noqa: E501
 
         :return: The playoff_stage_wins of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -554,6 +589,7 @@ class DriverPoint(object):
     def playoff_stage_wins(self, playoff_stage_wins):
         """Sets the playoff_stage_wins of this DriverPoint.
 
+        The number of playoff stage wins this season  # noqa: E501
 
         :param playoff_stage_wins: The playoff_stage_wins of this DriverPoint.  # noqa: E501
         :type: int
@@ -565,6 +601,7 @@ class DriverPoint(object):
     def points_earned_this_race(self):
         """Gets the points_earned_this_race of this DriverPoint.  # noqa: E501
 
+        The number of points earned this race  # noqa: E501
 
         :return: The points_earned_this_race of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -575,6 +612,7 @@ class DriverPoint(object):
     def points_earned_this_race(self, points_earned_this_race):
         """Sets the points_earned_this_race of this DriverPoint.
 
+        The number of points earned this race  # noqa: E501
 
         :param points_earned_this_race: The points_earned_this_race of this DriverPoint.  # noqa: E501
         :type: int
@@ -586,6 +624,7 @@ class DriverPoint(object):
     def playoff_points_earned_this_race(self):
         """Gets the playoff_points_earned_this_race of this DriverPoint.  # noqa: E501
 
+        The number of playoff points earned this race  # noqa: E501
 
         :return: The playoff_points_earned_this_race of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -596,6 +635,7 @@ class DriverPoint(object):
     def playoff_points_earned_this_race(self, playoff_points_earned_this_race):
         """Sets the playoff_points_earned_this_race of this DriverPoint.
 
+        The number of playoff points earned this race  # noqa: E501
 
         :param playoff_points_earned_this_race: The playoff_points_earned_this_race of this DriverPoint.  # noqa: E501
         :type: int
@@ -607,6 +647,7 @@ class DriverPoint(object):
     def stage_points_earned_this_race(self):
         """Gets the stage_points_earned_this_race of this DriverPoint.  # noqa: E501
 
+        The number of stage points earned this race  # noqa: E501
 
         :return: The stage_points_earned_this_race of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -617,6 +658,7 @@ class DriverPoint(object):
     def stage_points_earned_this_race(self, stage_points_earned_this_race):
         """Sets the stage_points_earned_this_race of this DriverPoint.
 
+        The number of stage points earned this race  # noqa: E501
 
         :param stage_points_earned_this_race: The stage_points_earned_this_race of this DriverPoint.  # noqa: E501
         :type: int
@@ -628,6 +670,7 @@ class DriverPoint(object):
     def top5(self):
         """Gets the top5 of this DriverPoint.  # noqa: E501
 
+        The number of top 5 finishes this season  # noqa: E501
 
         :return: The top5 of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -638,6 +681,7 @@ class DriverPoint(object):
     def top5(self, top5):
         """Sets the top5 of this DriverPoint.
 
+        The number of top 5 finishes this season  # noqa: E501
 
         :param top5: The top5 of this DriverPoint.  # noqa: E501
         :type: int
@@ -649,6 +693,7 @@ class DriverPoint(object):
     def top10(self):
         """Gets the top10 of this DriverPoint.  # noqa: E501
 
+        The number of top 10 finishes this season  # noqa: E501
 
         :return: The top10 of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -659,6 +704,7 @@ class DriverPoint(object):
     def top10(self, top10):
         """Sets the top10 of this DriverPoint.
 
+        The number of top 10 finishes this season  # noqa: E501
 
         :param top10: The top10 of this DriverPoint.  # noqa: E501
         :type: int
@@ -670,6 +716,7 @@ class DriverPoint(object):
     def laps_led(self):
         """Gets the laps_led of this DriverPoint.  # noqa: E501
 
+        The number of laps led this season  # noqa: E501
 
         :return: The laps_led of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -680,6 +727,7 @@ class DriverPoint(object):
     def laps_led(self, laps_led):
         """Sets the laps_led of this DriverPoint.
 
+        The number of laps led this season  # noqa: E501
 
         :param laps_led: The laps_led of this DriverPoint.  # noqa: E501
         :type: int
@@ -691,6 +739,7 @@ class DriverPoint(object):
     def dnf(self):
         """Gets the dnf of this DriverPoint.  # noqa: E501
 
+        The number of races where the driver did not finish  # noqa: E501
 
         :return: The dnf of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -701,6 +750,7 @@ class DriverPoint(object):
     def dnf(self, dnf):
         """Sets the dnf of this DriverPoint.
 
+        The number of races where the driver did not finish  # noqa: E501
 
         :param dnf: The dnf of this DriverPoint.  # noqa: E501
         :type: int
@@ -712,6 +762,7 @@ class DriverPoint(object):
     def is_clinch(self):
         """Gets the is_clinch of this DriverPoint.  # noqa: E501
 
+        Whether or not the driver has clinched a playoff position  # noqa: E501
 
         :return: The is_clinch of this DriverPoint.  # noqa: E501
         :rtype: bool
@@ -722,6 +773,7 @@ class DriverPoint(object):
     def is_clinch(self, is_clinch):
         """Sets the is_clinch of this DriverPoint.
 
+        Whether or not the driver has clinched a playoff position  # noqa: E501
 
         :param is_clinch: The is_clinch of this DriverPoint.  # noqa: E501
         :type: bool
@@ -733,6 +785,7 @@ class DriverPoint(object):
     def made_playoffs(self):
         """Gets the made_playoffs of this DriverPoint.  # noqa: E501
 
+        Whether or not the driver made the playoffs  # noqa: E501
 
         :return: The made_playoffs of this DriverPoint.  # noqa: E501
         :rtype: bool
@@ -743,6 +796,7 @@ class DriverPoint(object):
     def made_playoffs(self, made_playoffs):
         """Sets the made_playoffs of this DriverPoint.
 
+        Whether or not the driver made the playoffs  # noqa: E501
 
         :param made_playoffs: The made_playoffs of this DriverPoint.  # noqa: E501
         :type: bool
@@ -754,6 +808,7 @@ class DriverPoint(object):
     def in_playoffs(self):
         """Gets the in_playoffs of this DriverPoint.  # noqa: E501
 
+        Whether or not the driver is still in the playoffs  # noqa: E501
 
         :return: The in_playoffs of this DriverPoint.  # noqa: E501
         :rtype: bool
@@ -764,6 +819,7 @@ class DriverPoint(object):
     def in_playoffs(self, in_playoffs):
         """Sets the in_playoffs of this DriverPoint.
 
+        Whether or not the driver is still in the playoffs  # noqa: E501
 
         :param in_playoffs: The in_playoffs of this DriverPoint.  # noqa: E501
         :type: bool
@@ -775,6 +831,7 @@ class DriverPoint(object):
     def highest_round(self):
         """Gets the highest_round of this DriverPoint.  # noqa: E501
 
+        The highest playoff round acheived this season  # noqa: E501
 
         :return: The highest_round of this DriverPoint.  # noqa: E501
         :rtype: int
@@ -785,6 +842,7 @@ class DriverPoint(object):
     def highest_round(self, highest_round):
         """Sets the highest_round of this DriverPoint.
 
+        The highest playoff round acheived this season  # noqa: E501
 
         :param highest_round: The highest_round of this DriverPoint.  # noqa: E501
         :type: int

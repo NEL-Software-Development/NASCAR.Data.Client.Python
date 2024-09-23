@@ -32,12 +32,12 @@ class RaceApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def cautions(self, **kwargs):  # noqa: E501
-        """cautions  # noqa: E501
+    def race_cautions_get(self, **kwargs):  # noqa: E501
+        """race_cautions_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.cautions(async_req=True)
+        >>> thread = api.race_cautions_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -48,17 +48,17 @@ class RaceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.cautions_with_http_info(**kwargs)  # noqa: E501
+            return self.race_cautions_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.cautions_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.race_cautions_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def cautions_with_http_info(self, **kwargs):  # noqa: E501
-        """cautions  # noqa: E501
+    def race_cautions_get_with_http_info(self, **kwargs):  # noqa: E501
+        """race_cautions_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.cautions_with_http_info(async_req=True)
+        >>> thread = api.race_cautions_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -79,7 +79,7 @@ class RaceApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method cautions" % key
+                    " to method race_cautions_get" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -121,12 +121,12 @@ class RaceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def discipline_updates(self, **kwargs):  # noqa: E501
-        """discipline_updates  # noqa: E501
+    def race_discipline_updates_get(self, **kwargs):  # noqa: E501
+        """race_discipline_updates_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.discipline_updates(async_req=True)
+        >>> thread = api.race_discipline_updates_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -137,17 +137,17 @@ class RaceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.discipline_updates_with_http_info(**kwargs)  # noqa: E501
+            return self.race_discipline_updates_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.discipline_updates_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.race_discipline_updates_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def discipline_updates_with_http_info(self, **kwargs):  # noqa: E501
-        """discipline_updates  # noqa: E501
+    def race_discipline_updates_get_with_http_info(self, **kwargs):  # noqa: E501
+        """race_discipline_updates_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.discipline_updates_with_http_info(async_req=True)
+        >>> thread = api.race_discipline_updates_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -168,7 +168,7 @@ class RaceApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method discipline_updates" % key
+                    " to method race_discipline_updates_get" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -210,12 +210,12 @@ class RaceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def entries(self, **kwargs):  # noqa: E501
-        """entries  # noqa: E501
+    def race_entries_get(self, **kwargs):  # noqa: E501
+        """race_entries_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.entries(async_req=True)
+        >>> thread = api.race_entries_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -226,17 +226,17 @@ class RaceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.entries_with_http_info(**kwargs)  # noqa: E501
+            return self.race_entries_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.entries_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.race_entries_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def entries_with_http_info(self, **kwargs):  # noqa: E501
-        """entries  # noqa: E501
+    def race_entries_get_with_http_info(self, **kwargs):  # noqa: E501
+        """race_entries_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.entries_with_http_info(async_req=True)
+        >>> thread = api.race_entries_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -257,7 +257,7 @@ class RaceApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method entries" % key
+                    " to method race_entries_get" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -299,546 +299,12 @@ class RaceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def infractions(self, **kwargs):  # noqa: E501
-        """infractions  # noqa: E501
+    def race_get(self, **kwargs):  # noqa: E501
+        """race_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.infractions(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param int race_id:
-        :return: list[RaceInfraction]
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.infractions_with_http_info(**kwargs)  # noqa: E501
-        else:
-            (data) = self.infractions_with_http_info(**kwargs)  # noqa: E501
-            return data
-
-    def infractions_with_http_info(self, **kwargs):  # noqa: E501
-        """infractions  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.infractions_with_http_info(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param int race_id:
-        :return: list[RaceInfraction]
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['race_id']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method infractions" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'race_id' in params:
-            query_params.append(('race_id', params['race_id']))  # noqa: E501
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['text/plain', 'application/json', 'text/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['Bearer']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/race/infractions', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='list[RaceInfraction]',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def lap_leaders(self, **kwargs):  # noqa: E501
-        """lap_leaders  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.lap_leaders(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param int race_id:
-        :return: list[LapLeader]
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.lap_leaders_with_http_info(**kwargs)  # noqa: E501
-        else:
-            (data) = self.lap_leaders_with_http_info(**kwargs)  # noqa: E501
-            return data
-
-    def lap_leaders_with_http_info(self, **kwargs):  # noqa: E501
-        """lap_leaders  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.lap_leaders_with_http_info(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param int race_id:
-        :return: list[LapLeader]
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['race_id']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method lap_leaders" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'race_id' in params:
-            query_params.append(('race_id', params['race_id']))  # noqa: E501
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['text/plain', 'application/json', 'text/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['Bearer']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/race/lap-leaders', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='list[LapLeader]',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def loop_stats(self, **kwargs):  # noqa: E501
-        """loop_stats  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.loop_stats(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param int race_id:
-        :return: list[LoopStat]
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.loop_stats_with_http_info(**kwargs)  # noqa: E501
-        else:
-            (data) = self.loop_stats_with_http_info(**kwargs)  # noqa: E501
-            return data
-
-    def loop_stats_with_http_info(self, **kwargs):  # noqa: E501
-        """loop_stats  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.loop_stats_with_http_info(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param int race_id:
-        :return: list[LoopStat]
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['race_id']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method loop_stats" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'race_id' in params:
-            query_params.append(('race_id', params['race_id']))  # noqa: E501
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['text/plain', 'application/json', 'text/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['Bearer']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/race/loop-stats', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='list[LoopStat]',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def pit_stops(self, **kwargs):  # noqa: E501
-        """pit_stops  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.pit_stops(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param int race_id:
-        :return: list[Pitstop]
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.pit_stops_with_http_info(**kwargs)  # noqa: E501
-        else:
-            (data) = self.pit_stops_with_http_info(**kwargs)  # noqa: E501
-            return data
-
-    def pit_stops_with_http_info(self, **kwargs):  # noqa: E501
-        """pit_stops  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.pit_stops_with_http_info(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param int race_id:
-        :return: list[Pitstop]
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['race_id']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method pit_stops" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'race_id' in params:
-            query_params.append(('race_id', params['race_id']))  # noqa: E501
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['text/plain', 'application/json', 'text/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['Bearer']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/race/pitstops', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='list[Pitstop]',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def practice_results(self, **kwargs):  # noqa: E501
-        """practice_results  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.practice_results(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param int race_id:
-        :return: list[PracticeRunResults]
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.practice_results_with_http_info(**kwargs)  # noqa: E501
-        else:
-            (data) = self.practice_results_with_http_info(**kwargs)  # noqa: E501
-            return data
-
-    def practice_results_with_http_info(self, **kwargs):  # noqa: E501
-        """practice_results  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.practice_results_with_http_info(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param int race_id:
-        :return: list[PracticeRunResults]
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['race_id']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method practice_results" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'race_id' in params:
-            query_params.append(('race_id', params['race_id']))  # noqa: E501
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['text/plain', 'application/json', 'text/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['Bearer']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/race/practice-results', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='list[PracticeRunResults]',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def qualifying_results(self, **kwargs):  # noqa: E501
-        """qualifying_results  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.qualifying_results(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param int race_id:
-        :return: list[QualifyingRunResults]
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.qualifying_results_with_http_info(**kwargs)  # noqa: E501
-        else:
-            (data) = self.qualifying_results_with_http_info(**kwargs)  # noqa: E501
-            return data
-
-    def qualifying_results_with_http_info(self, **kwargs):  # noqa: E501
-        """qualifying_results  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.qualifying_results_with_http_info(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param int race_id:
-        :return: list[QualifyingRunResults]
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['race_id']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method qualifying_results" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'race_id' in params:
-            query_params.append(('race_id', params['race_id']))  # noqa: E501
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['text/plain', 'application/json', 'text/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['Bearer']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/race/qualifying-results', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='list[QualifyingRunResults]',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def race(self, **kwargs):  # noqa: E501
-        """race  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.race(async_req=True)
+        >>> thread = api.race_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -849,17 +315,17 @@ class RaceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.race_with_http_info(**kwargs)  # noqa: E501
+            return self.race_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.race_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.race_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def race_with_http_info(self, **kwargs):  # noqa: E501
-        """race  # noqa: E501
+    def race_get_with_http_info(self, **kwargs):  # noqa: E501
+        """race_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.race_with_http_info(async_req=True)
+        >>> thread = api.race_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -880,7 +346,7 @@ class RaceApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method race" % key
+                    " to method race_get" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -922,12 +388,546 @@ class RaceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def race_results(self, **kwargs):  # noqa: E501
-        """race_results  # noqa: E501
+    def race_infractions_get(self, **kwargs):  # noqa: E501
+        """race_infractions_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.race_results(async_req=True)
+        >>> thread = api.race_infractions_get(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int race_id:
+        :return: list[RaceInfraction]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.race_infractions_get_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.race_infractions_get_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def race_infractions_get_with_http_info(self, **kwargs):  # noqa: E501
+        """race_infractions_get  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.race_infractions_get_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int race_id:
+        :return: list[RaceInfraction]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['race_id']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method race_infractions_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'race_id' in params:
+            query_params.append(('race_id', params['race_id']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['text/plain', 'application/json', 'text/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/race/infractions', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='list[RaceInfraction]',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def race_lap_leaders_get(self, **kwargs):  # noqa: E501
+        """race_lap_leaders_get  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.race_lap_leaders_get(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int race_id:
+        :return: list[LapLeader]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.race_lap_leaders_get_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.race_lap_leaders_get_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def race_lap_leaders_get_with_http_info(self, **kwargs):  # noqa: E501
+        """race_lap_leaders_get  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.race_lap_leaders_get_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int race_id:
+        :return: list[LapLeader]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['race_id']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method race_lap_leaders_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'race_id' in params:
+            query_params.append(('race_id', params['race_id']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['text/plain', 'application/json', 'text/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/race/lap-leaders', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='list[LapLeader]',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def race_loop_stats_get(self, **kwargs):  # noqa: E501
+        """race_loop_stats_get  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.race_loop_stats_get(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int race_id:
+        :return: list[LoopStat]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.race_loop_stats_get_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.race_loop_stats_get_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def race_loop_stats_get_with_http_info(self, **kwargs):  # noqa: E501
+        """race_loop_stats_get  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.race_loop_stats_get_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int race_id:
+        :return: list[LoopStat]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['race_id']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method race_loop_stats_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'race_id' in params:
+            query_params.append(('race_id', params['race_id']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['text/plain', 'application/json', 'text/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/race/loop-stats', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='list[LoopStat]',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def race_pitstops_get(self, **kwargs):  # noqa: E501
+        """race_pitstops_get  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.race_pitstops_get(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int race_id:
+        :return: list[Pitstop]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.race_pitstops_get_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.race_pitstops_get_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def race_pitstops_get_with_http_info(self, **kwargs):  # noqa: E501
+        """race_pitstops_get  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.race_pitstops_get_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int race_id:
+        :return: list[Pitstop]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['race_id']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method race_pitstops_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'race_id' in params:
+            query_params.append(('race_id', params['race_id']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['text/plain', 'application/json', 'text/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/race/pitstops', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='list[Pitstop]',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def race_practice_results_get(self, **kwargs):  # noqa: E501
+        """race_practice_results_get  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.race_practice_results_get(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int race_id:
+        :return: list[PracticeRunResults]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.race_practice_results_get_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.race_practice_results_get_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def race_practice_results_get_with_http_info(self, **kwargs):  # noqa: E501
+        """race_practice_results_get  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.race_practice_results_get_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int race_id:
+        :return: list[PracticeRunResults]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['race_id']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method race_practice_results_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'race_id' in params:
+            query_params.append(('race_id', params['race_id']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['text/plain', 'application/json', 'text/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/race/practice-results', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='list[PracticeRunResults]',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def race_qualifying_results_get(self, **kwargs):  # noqa: E501
+        """race_qualifying_results_get  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.race_qualifying_results_get(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int race_id:
+        :return: list[QualifyingRunResults]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.race_qualifying_results_get_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.race_qualifying_results_get_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def race_qualifying_results_get_with_http_info(self, **kwargs):  # noqa: E501
+        """race_qualifying_results_get  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.race_qualifying_results_get_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int race_id:
+        :return: list[QualifyingRunResults]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['race_id']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method race_qualifying_results_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'race_id' in params:
+            query_params.append(('race_id', params['race_id']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['text/plain', 'application/json', 'text/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/race/qualifying-results', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='list[QualifyingRunResults]',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def race_race_results_get(self, **kwargs):  # noqa: E501
+        """race_race_results_get  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.race_race_results_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -938,17 +938,17 @@ class RaceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.race_results_with_http_info(**kwargs)  # noqa: E501
+            return self.race_race_results_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.race_results_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.race_race_results_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def race_results_with_http_info(self, **kwargs):  # noqa: E501
-        """race_results  # noqa: E501
+    def race_race_results_get_with_http_info(self, **kwargs):  # noqa: E501
+        """race_race_results_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.race_results_with_http_info(async_req=True)
+        >>> thread = api.race_race_results_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -969,7 +969,7 @@ class RaceApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method race_results" % key
+                    " to method race_race_results_get" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1011,12 +1011,101 @@ class RaceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def race_season(self, **kwargs):  # noqa: E501
-        """race_season  # noqa: E501
+    def race_rosters_get(self, **kwargs):  # noqa: E501
+        """race_rosters_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.race_season(async_req=True)
+        >>> thread = api.race_rosters_get(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int race_id:
+        :return: list[TeamRoster]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.race_rosters_get_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.race_rosters_get_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def race_rosters_get_with_http_info(self, **kwargs):  # noqa: E501
+        """race_rosters_get  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.race_rosters_get_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int race_id:
+        :return: list[TeamRoster]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['race_id']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method race_rosters_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'race_id' in params:
+            query_params.append(('race_id', params['race_id']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['text/plain', 'application/json', 'text/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/race/rosters', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='list[TeamRoster]',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def race_season_get(self, **kwargs):  # noqa: E501
+        """race_season_get  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.race_season_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1028,17 +1117,17 @@ class RaceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.race_season_with_http_info(**kwargs)  # noqa: E501
+            return self.race_season_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.race_season_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.race_season_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def race_season_with_http_info(self, **kwargs):  # noqa: E501
-        """race_season  # noqa: E501
+    def race_season_get_with_http_info(self, **kwargs):  # noqa: E501
+        """race_season_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.race_season_with_http_info(async_req=True)
+        >>> thread = api.race_season_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1060,7 +1149,7 @@ class RaceApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method race_season" % key
+                    " to method race_season_get" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1104,101 +1193,12 @@ class RaceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def rosters(self, **kwargs):  # noqa: E501
-        """rosters  # noqa: E501
+    def race_stage_results_get(self, **kwargs):  # noqa: E501
+        """race_stage_results_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.rosters(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param int race_id:
-        :return: list[TeamRoster]
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.rosters_with_http_info(**kwargs)  # noqa: E501
-        else:
-            (data) = self.rosters_with_http_info(**kwargs)  # noqa: E501
-            return data
-
-    def rosters_with_http_info(self, **kwargs):  # noqa: E501
-        """rosters  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.rosters_with_http_info(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param int race_id:
-        :return: list[TeamRoster]
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['race_id']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method rosters" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'race_id' in params:
-            query_params.append(('race_id', params['race_id']))  # noqa: E501
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['text/plain', 'application/json', 'text/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['Bearer']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/race/rosters', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='list[TeamRoster]',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def stage_results(self, **kwargs):  # noqa: E501
-        """stage_results  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.stage_results(async_req=True)
+        >>> thread = api.race_stage_results_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1209,17 +1209,17 @@ class RaceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.stage_results_with_http_info(**kwargs)  # noqa: E501
+            return self.race_stage_results_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.stage_results_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.race_stage_results_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def stage_results_with_http_info(self, **kwargs):  # noqa: E501
-        """stage_results  # noqa: E501
+    def race_stage_results_get_with_http_info(self, **kwargs):  # noqa: E501
+        """race_stage_results_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.stage_results_with_http_info(async_req=True)
+        >>> thread = api.race_stage_results_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1240,7 +1240,7 @@ class RaceApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method stage_results" % key
+                    " to method race_stage_results_get" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1282,12 +1282,12 @@ class RaceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def view_model(self, **kwargs):  # noqa: E501
-        """view_model  # noqa: E501
+    def race_viewmodel_get(self, **kwargs):  # noqa: E501
+        """race_viewmodel_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.view_model(async_req=True)
+        >>> thread = api.race_viewmodel_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1298,17 +1298,17 @@ class RaceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.view_model_with_http_info(**kwargs)  # noqa: E501
+            return self.race_viewmodel_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.view_model_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.race_viewmodel_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def view_model_with_http_info(self, **kwargs):  # noqa: E501
-        """view_model  # noqa: E501
+    def race_viewmodel_get_with_http_info(self, **kwargs):  # noqa: E501
+        """race_viewmodel_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.view_model_with_http_info(async_req=True)
+        >>> thread = api.race_viewmodel_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1329,7 +1329,7 @@ class RaceApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method view_model" % key
+                    " to method race_viewmodel_get" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -1371,12 +1371,12 @@ class RaceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def weekend_schedule(self, **kwargs):  # noqa: E501
-        """weekend_schedule  # noqa: E501
+    def race_weekend_schedule_get(self, **kwargs):  # noqa: E501
+        """race_weekend_schedule_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.weekend_schedule(async_req=True)
+        >>> thread = api.race_weekend_schedule_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1387,17 +1387,17 @@ class RaceApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.weekend_schedule_with_http_info(**kwargs)  # noqa: E501
+            return self.race_weekend_schedule_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.weekend_schedule_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.race_weekend_schedule_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def weekend_schedule_with_http_info(self, **kwargs):  # noqa: E501
-        """weekend_schedule  # noqa: E501
+    def race_weekend_schedule_get_with_http_info(self, **kwargs):  # noqa: E501
+        """race_weekend_schedule_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.weekend_schedule_with_http_info(async_req=True)
+        >>> thread = api.race_weekend_schedule_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -1418,7 +1418,7 @@ class RaceApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method weekend_schedule" % key
+                    " to method race_weekend_schedule_get" % key
                 )
             params[key] = val
         del params['kwargs']

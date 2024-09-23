@@ -57,6 +57,7 @@ class StageResult(object):
     def finish_position(self):
         """Gets the finish_position of this StageResult.  # noqa: E501
 
+        Finish position in stage  # noqa: E501
 
         :return: The finish_position of this StageResult.  # noqa: E501
         :rtype: int
@@ -67,6 +68,7 @@ class StageResult(object):
     def finish_position(self, finish_position):
         """Sets the finish_position of this StageResult.
 
+        Finish position in stage  # noqa: E501
 
         :param finish_position: The finish_position of this StageResult.  # noqa: E501
         :type: int
@@ -78,6 +80,7 @@ class StageResult(object):
     def driver_name(self):
         """Gets the driver_name of this StageResult.  # noqa: E501
 
+        Driver name  # noqa: E501
 
         :return: The driver_name of this StageResult.  # noqa: E501
         :rtype: str
@@ -88,6 +91,7 @@ class StageResult(object):
     def driver_name(self, driver_name):
         """Sets the driver_name of this StageResult.
 
+        Driver name  # noqa: E501
 
         :param driver_name: The driver_name of this StageResult.  # noqa: E501
         :type: str
@@ -99,6 +103,7 @@ class StageResult(object):
     def vehicle_number(self):
         """Gets the vehicle_number of this StageResult.  # noqa: E501
 
+        Vehicle number  # noqa: E501
 
         :return: The vehicle_number of this StageResult.  # noqa: E501
         :rtype: str
@@ -109,6 +114,7 @@ class StageResult(object):
     def vehicle_number(self, vehicle_number):
         """Sets the vehicle_number of this StageResult.
 
+        Vehicle number  # noqa: E501
 
         :param vehicle_number: The vehicle_number of this StageResult.  # noqa: E501
         :type: str

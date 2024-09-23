@@ -29,7 +29,6 @@ class DriverSummaryByTrack(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'int',
         'average_start': 'float',
         'average_finish': 'float',
         'dnf': 'int',
@@ -51,7 +50,6 @@ class DriverSummaryByTrack(object):
     }
 
     attribute_map = {
-        'id': 'id',
         'average_start': 'average_start',
         'average_finish': 'average_finish',
         'dnf': 'dnf',
@@ -72,9 +70,8 @@ class DriverSummaryByTrack(object):
         'track_name': 'track_name'
     }
 
-    def __init__(self, id=None, average_start=None, average_finish=None, dnf=None, driver_id=None, laps_completed=None, laps_led=None, lead_lap_finish=None, miles_completed=None, poles=None, running_at_finish=None, series_id=None, top5=None, top10=None, total_races=None, wins=None, season=None, track_id=None, track_name=None):  # noqa: E501
+    def __init__(self, average_start=None, average_finish=None, dnf=None, driver_id=None, laps_completed=None, laps_led=None, lead_lap_finish=None, miles_completed=None, poles=None, running_at_finish=None, series_id=None, top5=None, top10=None, total_races=None, wins=None, season=None, track_id=None, track_name=None):  # noqa: E501
         """DriverSummaryByTrack - a model defined in Swagger"""  # noqa: E501
-        self._id = None
         self._average_start = None
         self._average_finish = None
         self._dnf = None
@@ -94,8 +91,6 @@ class DriverSummaryByTrack(object):
         self._track_id = None
         self._track_name = None
         self.discriminator = None
-        if id is not None:
-            self.id = id
         if average_start is not None:
             self.average_start = average_start
         if average_finish is not None:
@@ -134,30 +129,10 @@ class DriverSummaryByTrack(object):
             self.track_name = track_name
 
     @property
-    def id(self):
-        """Gets the id of this DriverSummaryByTrack.  # noqa: E501
-
-
-        :return: The id of this DriverSummaryByTrack.  # noqa: E501
-        :rtype: int
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this DriverSummaryByTrack.
-
-
-        :param id: The id of this DriverSummaryByTrack.  # noqa: E501
-        :type: int
-        """
-
-        self._id = id
-
-    @property
     def average_start(self):
         """Gets the average_start of this DriverSummaryByTrack.  # noqa: E501
 
+        Average start position  # noqa: E501
 
         :return: The average_start of this DriverSummaryByTrack.  # noqa: E501
         :rtype: float
@@ -168,6 +143,7 @@ class DriverSummaryByTrack(object):
     def average_start(self, average_start):
         """Sets the average_start of this DriverSummaryByTrack.
 
+        Average start position  # noqa: E501
 
         :param average_start: The average_start of this DriverSummaryByTrack.  # noqa: E501
         :type: float
@@ -179,6 +155,7 @@ class DriverSummaryByTrack(object):
     def average_finish(self):
         """Gets the average_finish of this DriverSummaryByTrack.  # noqa: E501
 
+        Average finish position  # noqa: E501
 
         :return: The average_finish of this DriverSummaryByTrack.  # noqa: E501
         :rtype: float
@@ -189,6 +166,7 @@ class DriverSummaryByTrack(object):
     def average_finish(self, average_finish):
         """Sets the average_finish of this DriverSummaryByTrack.
 
+        Average finish position  # noqa: E501
 
         :param average_finish: The average_finish of this DriverSummaryByTrack.  # noqa: E501
         :type: float
@@ -200,6 +178,7 @@ class DriverSummaryByTrack(object):
     def dnf(self):
         """Gets the dnf of this DriverSummaryByTrack.  # noqa: E501
 
+        The number of races where the driver did not finish  # noqa: E501
 
         :return: The dnf of this DriverSummaryByTrack.  # noqa: E501
         :rtype: int
@@ -210,6 +189,7 @@ class DriverSummaryByTrack(object):
     def dnf(self, dnf):
         """Sets the dnf of this DriverSummaryByTrack.
 
+        The number of races where the driver did not finish  # noqa: E501
 
         :param dnf: The dnf of this DriverSummaryByTrack.  # noqa: E501
         :type: int
@@ -221,6 +201,7 @@ class DriverSummaryByTrack(object):
     def driver_id(self):
         """Gets the driver_id of this DriverSummaryByTrack.  # noqa: E501
 
+        Driver Id  # noqa: E501
 
         :return: The driver_id of this DriverSummaryByTrack.  # noqa: E501
         :rtype: int
@@ -231,6 +212,7 @@ class DriverSummaryByTrack(object):
     def driver_id(self, driver_id):
         """Sets the driver_id of this DriverSummaryByTrack.
 
+        Driver Id  # noqa: E501
 
         :param driver_id: The driver_id of this DriverSummaryByTrack.  # noqa: E501
         :type: int
@@ -242,6 +224,7 @@ class DriverSummaryByTrack(object):
     def laps_completed(self):
         """Gets the laps_completed of this DriverSummaryByTrack.  # noqa: E501
 
+        The number of laps completed  # noqa: E501
 
         :return: The laps_completed of this DriverSummaryByTrack.  # noqa: E501
         :rtype: int
@@ -252,6 +235,7 @@ class DriverSummaryByTrack(object):
     def laps_completed(self, laps_completed):
         """Sets the laps_completed of this DriverSummaryByTrack.
 
+        The number of laps completed  # noqa: E501
 
         :param laps_completed: The laps_completed of this DriverSummaryByTrack.  # noqa: E501
         :type: int
@@ -263,6 +247,7 @@ class DriverSummaryByTrack(object):
     def laps_led(self):
         """Gets the laps_led of this DriverSummaryByTrack.  # noqa: E501
 
+        The number of laps led  # noqa: E501
 
         :return: The laps_led of this DriverSummaryByTrack.  # noqa: E501
         :rtype: int
@@ -273,6 +258,7 @@ class DriverSummaryByTrack(object):
     def laps_led(self, laps_led):
         """Sets the laps_led of this DriverSummaryByTrack.
 
+        The number of laps led  # noqa: E501
 
         :param laps_led: The laps_led of this DriverSummaryByTrack.  # noqa: E501
         :type: int
@@ -284,6 +270,7 @@ class DriverSummaryByTrack(object):
     def lead_lap_finish(self):
         """Gets the lead_lap_finish of this DriverSummaryByTrack.  # noqa: E501
 
+        The number of finishes where the driver was on the lead lap  # noqa: E501
 
         :return: The lead_lap_finish of this DriverSummaryByTrack.  # noqa: E501
         :rtype: int
@@ -294,6 +281,7 @@ class DriverSummaryByTrack(object):
     def lead_lap_finish(self, lead_lap_finish):
         """Sets the lead_lap_finish of this DriverSummaryByTrack.
 
+        The number of finishes where the driver was on the lead lap  # noqa: E501
 
         :param lead_lap_finish: The lead_lap_finish of this DriverSummaryByTrack.  # noqa: E501
         :type: int
@@ -305,6 +293,7 @@ class DriverSummaryByTrack(object):
     def miles_completed(self):
         """Gets the miles_completed of this DriverSummaryByTrack.  # noqa: E501
 
+        Total miles completed  # noqa: E501
 
         :return: The miles_completed of this DriverSummaryByTrack.  # noqa: E501
         :rtype: float
@@ -315,6 +304,7 @@ class DriverSummaryByTrack(object):
     def miles_completed(self, miles_completed):
         """Sets the miles_completed of this DriverSummaryByTrack.
 
+        Total miles completed  # noqa: E501
 
         :param miles_completed: The miles_completed of this DriverSummaryByTrack.  # noqa: E501
         :type: float
@@ -326,6 +316,7 @@ class DriverSummaryByTrack(object):
     def poles(self):
         """Gets the poles of this DriverSummaryByTrack.  # noqa: E501
 
+        The number of times the driver earned the pole position  # noqa: E501
 
         :return: The poles of this DriverSummaryByTrack.  # noqa: E501
         :rtype: int
@@ -336,6 +327,7 @@ class DriverSummaryByTrack(object):
     def poles(self, poles):
         """Sets the poles of this DriverSummaryByTrack.
 
+        The number of times the driver earned the pole position  # noqa: E501
 
         :param poles: The poles of this DriverSummaryByTrack.  # noqa: E501
         :type: int
@@ -347,6 +339,7 @@ class DriverSummaryByTrack(object):
     def running_at_finish(self):
         """Gets the running_at_finish of this DriverSummaryByTrack.  # noqa: E501
 
+        Running at finish  # noqa: E501
 
         :return: The running_at_finish of this DriverSummaryByTrack.  # noqa: E501
         :rtype: int
@@ -357,6 +350,7 @@ class DriverSummaryByTrack(object):
     def running_at_finish(self, running_at_finish):
         """Sets the running_at_finish of this DriverSummaryByTrack.
 
+        Running at finish  # noqa: E501
 
         :param running_at_finish: The running_at_finish of this DriverSummaryByTrack.  # noqa: E501
         :type: int
@@ -368,6 +362,7 @@ class DriverSummaryByTrack(object):
     def series_id(self):
         """Gets the series_id of this DriverSummaryByTrack.  # noqa: E501
 
+        Series ID  # noqa: E501
 
         :return: The series_id of this DriverSummaryByTrack.  # noqa: E501
         :rtype: int
@@ -378,6 +373,7 @@ class DriverSummaryByTrack(object):
     def series_id(self, series_id):
         """Sets the series_id of this DriverSummaryByTrack.
 
+        Series ID  # noqa: E501
 
         :param series_id: The series_id of this DriverSummaryByTrack.  # noqa: E501
         :type: int
@@ -389,6 +385,7 @@ class DriverSummaryByTrack(object):
     def top5(self):
         """Gets the top5 of this DriverSummaryByTrack.  # noqa: E501
 
+        The number of top 5 finishes  # noqa: E501
 
         :return: The top5 of this DriverSummaryByTrack.  # noqa: E501
         :rtype: int
@@ -399,6 +396,7 @@ class DriverSummaryByTrack(object):
     def top5(self, top5):
         """Sets the top5 of this DriverSummaryByTrack.
 
+        The number of top 5 finishes  # noqa: E501
 
         :param top5: The top5 of this DriverSummaryByTrack.  # noqa: E501
         :type: int
@@ -410,6 +408,7 @@ class DriverSummaryByTrack(object):
     def top10(self):
         """Gets the top10 of this DriverSummaryByTrack.  # noqa: E501
 
+        The number of top 10 finishes  # noqa: E501
 
         :return: The top10 of this DriverSummaryByTrack.  # noqa: E501
         :rtype: int
@@ -420,6 +419,7 @@ class DriverSummaryByTrack(object):
     def top10(self, top10):
         """Sets the top10 of this DriverSummaryByTrack.
 
+        The number of top 10 finishes  # noqa: E501
 
         :param top10: The top10 of this DriverSummaryByTrack.  # noqa: E501
         :type: int
@@ -431,6 +431,7 @@ class DriverSummaryByTrack(object):
     def total_races(self):
         """Gets the total_races of this DriverSummaryByTrack.  # noqa: E501
 
+        The total number of races  # noqa: E501
 
         :return: The total_races of this DriverSummaryByTrack.  # noqa: E501
         :rtype: int
@@ -441,6 +442,7 @@ class DriverSummaryByTrack(object):
     def total_races(self, total_races):
         """Sets the total_races of this DriverSummaryByTrack.
 
+        The total number of races  # noqa: E501
 
         :param total_races: The total_races of this DriverSummaryByTrack.  # noqa: E501
         :type: int
@@ -452,6 +454,7 @@ class DriverSummaryByTrack(object):
     def wins(self):
         """Gets the wins of this DriverSummaryByTrack.  # noqa: E501
 
+        Race wins  # noqa: E501
 
         :return: The wins of this DriverSummaryByTrack.  # noqa: E501
         :rtype: int
@@ -462,6 +465,7 @@ class DriverSummaryByTrack(object):
     def wins(self, wins):
         """Sets the wins of this DriverSummaryByTrack.
 
+        Race wins  # noqa: E501
 
         :param wins: The wins of this DriverSummaryByTrack.  # noqa: E501
         :type: int
@@ -473,6 +477,7 @@ class DriverSummaryByTrack(object):
     def season(self):
         """Gets the season of this DriverSummaryByTrack.  # noqa: E501
 
+        Race season  # noqa: E501
 
         :return: The season of this DriverSummaryByTrack.  # noqa: E501
         :rtype: int
@@ -483,6 +488,7 @@ class DriverSummaryByTrack(object):
     def season(self, season):
         """Sets the season of this DriverSummaryByTrack.
 
+        Race season  # noqa: E501
 
         :param season: The season of this DriverSummaryByTrack.  # noqa: E501
         :type: int
@@ -494,6 +500,7 @@ class DriverSummaryByTrack(object):
     def track_id(self):
         """Gets the track_id of this DriverSummaryByTrack.  # noqa: E501
 
+        Track Id  # noqa: E501
 
         :return: The track_id of this DriverSummaryByTrack.  # noqa: E501
         :rtype: int
@@ -504,6 +511,7 @@ class DriverSummaryByTrack(object):
     def track_id(self, track_id):
         """Sets the track_id of this DriverSummaryByTrack.
 
+        Track Id  # noqa: E501
 
         :param track_id: The track_id of this DriverSummaryByTrack.  # noqa: E501
         :type: int
@@ -515,6 +523,7 @@ class DriverSummaryByTrack(object):
     def track_name(self):
         """Gets the track_name of this DriverSummaryByTrack.  # noqa: E501
 
+        Track name  # noqa: E501
 
         :return: The track_name of this DriverSummaryByTrack.  # noqa: E501
         :rtype: str
@@ -525,6 +534,7 @@ class DriverSummaryByTrack(object):
     def track_name(self, track_name):
         """Sets the track_name of this DriverSummaryByTrack.
 
+        Track name  # noqa: E501
 
         :param track_name: The track_name of this DriverSummaryByTrack.  # noqa: E501
         :type: str

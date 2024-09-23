@@ -102,6 +102,7 @@ class RaceResultSummary(object):
     def _date(self):
         """Gets the _date of this RaceResultSummary.  # noqa: E501
 
+        Race date  # noqa: E501
 
         :return: The _date of this RaceResultSummary.  # noqa: E501
         :rtype: datetime
@@ -112,6 +113,7 @@ class RaceResultSummary(object):
     def _date(self, _date):
         """Sets the _date of this RaceResultSummary.
 
+        Race date  # noqa: E501
 
         :param _date: The _date of this RaceResultSummary.  # noqa: E501
         :type: datetime
@@ -123,6 +125,7 @@ class RaceResultSummary(object):
     def race_name(self):
         """Gets the race_name of this RaceResultSummary.  # noqa: E501
 
+        Race name  # noqa: E501
 
         :return: The race_name of this RaceResultSummary.  # noqa: E501
         :rtype: str
@@ -133,6 +136,7 @@ class RaceResultSummary(object):
     def race_name(self, race_name):
         """Sets the race_name of this RaceResultSummary.
 
+        Race name  # noqa: E501
 
         :param race_name: The race_name of this RaceResultSummary.  # noqa: E501
         :type: str
@@ -144,6 +148,7 @@ class RaceResultSummary(object):
     def vehicle_number(self):
         """Gets the vehicle_number of this RaceResultSummary.  # noqa: E501
 
+        Vehicle number  # noqa: E501
 
         :return: The vehicle_number of this RaceResultSummary.  # noqa: E501
         :rtype: str
@@ -154,6 +159,7 @@ class RaceResultSummary(object):
     def vehicle_number(self, vehicle_number):
         """Sets the vehicle_number of this RaceResultSummary.
 
+        Vehicle number  # noqa: E501
 
         :param vehicle_number: The vehicle_number of this RaceResultSummary.  # noqa: E501
         :type: str
@@ -165,6 +171,7 @@ class RaceResultSummary(object):
     def finish_position(self):
         """Gets the finish_position of this RaceResultSummary.  # noqa: E501
 
+        Finish position  # noqa: E501
 
         :return: The finish_position of this RaceResultSummary.  # noqa: E501
         :rtype: int
@@ -175,6 +182,7 @@ class RaceResultSummary(object):
     def finish_position(self, finish_position):
         """Sets the finish_position of this RaceResultSummary.
 
+        Finish position  # noqa: E501
 
         :param finish_position: The finish_position of this RaceResultSummary.  # noqa: E501
         :type: int
@@ -186,6 +194,7 @@ class RaceResultSummary(object):
     def best_time(self):
         """Gets the best_time of this RaceResultSummary.  # noqa: E501
 
+        Best lap time  # noqa: E501
 
         :return: The best_time of this RaceResultSummary.  # noqa: E501
         :rtype: int
@@ -196,6 +205,7 @@ class RaceResultSummary(object):
     def best_time(self, best_time):
         """Sets the best_time of this RaceResultSummary.
 
+        Best lap time  # noqa: E501
 
         :param best_time: The best_time of this RaceResultSummary.  # noqa: E501
         :type: int
@@ -207,6 +217,7 @@ class RaceResultSummary(object):
     def best_speed(self):
         """Gets the best_speed of this RaceResultSummary.  # noqa: E501
 
+        Best speed  # noqa: E501
 
         :return: The best_speed of this RaceResultSummary.  # noqa: E501
         :rtype: float
@@ -217,6 +228,7 @@ class RaceResultSummary(object):
     def best_speed(self, best_speed):
         """Sets the best_speed of this RaceResultSummary.
 
+        Best speed  # noqa: E501
 
         :param best_speed: The best_speed of this RaceResultSummary.  # noqa: E501
         :type: float
@@ -228,6 +240,7 @@ class RaceResultSummary(object):
     def delta_next_time(self):
         """Gets the delta_next_time of this RaceResultSummary.  # noqa: E501
 
+        The number of milliseconds behind the next entry  # noqa: E501
 
         :return: The delta_next_time of this RaceResultSummary.  # noqa: E501
         :rtype: int
@@ -238,6 +251,7 @@ class RaceResultSummary(object):
     def delta_next_time(self, delta_next_time):
         """Sets the delta_next_time of this RaceResultSummary.
 
+        The number of milliseconds behind the next entry  # noqa: E501
 
         :param delta_next_time: The delta_next_time of this RaceResultSummary.  # noqa: E501
         :type: int
@@ -249,6 +263,7 @@ class RaceResultSummary(object):
     def delta_next_laps(self):
         """Gets the delta_next_laps of this RaceResultSummary.  # noqa: E501
 
+        The number of laps behind the next entry  # noqa: E501
 
         :return: The delta_next_laps of this RaceResultSummary.  # noqa: E501
         :rtype: int
@@ -259,6 +274,7 @@ class RaceResultSummary(object):
     def delta_next_laps(self, delta_next_laps):
         """Sets the delta_next_laps of this RaceResultSummary.
 
+        The number of laps behind the next entry  # noqa: E501
 
         :param delta_next_laps: The delta_next_laps of this RaceResultSummary.  # noqa: E501
         :type: int
@@ -270,6 +286,7 @@ class RaceResultSummary(object):
     def delta_leader_time(self):
         """Gets the delta_leader_time of this RaceResultSummary.  # noqa: E501
 
+        The number of milliseconds behind the leader  # noqa: E501
 
         :return: The delta_leader_time of this RaceResultSummary.  # noqa: E501
         :rtype: int
@@ -280,6 +297,7 @@ class RaceResultSummary(object):
     def delta_leader_time(self, delta_leader_time):
         """Sets the delta_leader_time of this RaceResultSummary.
 
+        The number of milliseconds behind the leader  # noqa: E501
 
         :param delta_leader_time: The delta_leader_time of this RaceResultSummary.  # noqa: E501
         :type: int
@@ -291,6 +309,7 @@ class RaceResultSummary(object):
     def delta_leader_laps(self):
         """Gets the delta_leader_laps of this RaceResultSummary.  # noqa: E501
 
+        The number of laps behind the leader  # noqa: E501
 
         :return: The delta_leader_laps of this RaceResultSummary.  # noqa: E501
         :rtype: int
@@ -301,6 +320,7 @@ class RaceResultSummary(object):
     def delta_leader_laps(self, delta_leader_laps):
         """Sets the delta_leader_laps of this RaceResultSummary.
 
+        The number of laps behind the leader  # noqa: E501
 
         :param delta_leader_laps: The delta_leader_laps of this RaceResultSummary.  # noqa: E501
         :type: int
@@ -312,6 +332,7 @@ class RaceResultSummary(object):
     def best_lap(self):
         """Gets the best_lap of this RaceResultSummary.  # noqa: E501
 
+        The best lap  # noqa: E501
 
         :return: The best_lap of this RaceResultSummary.  # noqa: E501
         :rtype: int
@@ -322,6 +343,7 @@ class RaceResultSummary(object):
     def best_lap(self, best_lap):
         """Sets the best_lap of this RaceResultSummary.
 
+        The best lap  # noqa: E501
 
         :param best_lap: The best_lap of this RaceResultSummary.  # noqa: E501
         :type: int
@@ -333,6 +355,7 @@ class RaceResultSummary(object):
     def laps(self):
         """Gets the laps of this RaceResultSummary.  # noqa: E501
 
+        The number of laps completed  # noqa: E501
 
         :return: The laps of this RaceResultSummary.  # noqa: E501
         :rtype: int
@@ -343,6 +366,7 @@ class RaceResultSummary(object):
     def laps(self, laps):
         """Sets the laps of this RaceResultSummary.
 
+        The number of laps completed  # noqa: E501
 
         :param laps: The laps of this RaceResultSummary.  # noqa: E501
         :type: int

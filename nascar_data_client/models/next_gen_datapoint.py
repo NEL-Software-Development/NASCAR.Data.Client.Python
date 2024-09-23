@@ -57,6 +57,7 @@ class NextGenDatapoint(object):
     def datapoint_id(self):
         """Gets the datapoint_id of this NextGenDatapoint.  # noqa: E501
 
+        Datapoint Id  # noqa: E501
 
         :return: The datapoint_id of this NextGenDatapoint.  # noqa: E501
         :rtype: str
@@ -67,6 +68,7 @@ class NextGenDatapoint(object):
     def datapoint_id(self, datapoint_id):
         """Sets the datapoint_id of this NextGenDatapoint.
 
+        Datapoint Id  # noqa: E501
 
         :param datapoint_id: The datapoint_id of this NextGenDatapoint.  # noqa: E501
         :type: str
@@ -78,6 +80,7 @@ class NextGenDatapoint(object):
     def name(self):
         """Gets the name of this NextGenDatapoint.  # noqa: E501
 
+        Name  # noqa: E501
 
         :return: The name of this NextGenDatapoint.  # noqa: E501
         :rtype: str
@@ -88,6 +91,7 @@ class NextGenDatapoint(object):
     def name(self, name):
         """Sets the name of this NextGenDatapoint.
 
+        Name  # noqa: E501
 
         :param name: The name of this NextGenDatapoint.  # noqa: E501
         :type: str
@@ -99,6 +103,7 @@ class NextGenDatapoint(object):
     def description(self):
         """Gets the description of this NextGenDatapoint.  # noqa: E501
 
+        Description  # noqa: E501
 
         :return: The description of this NextGenDatapoint.  # noqa: E501
         :rtype: str
@@ -109,6 +114,7 @@ class NextGenDatapoint(object):
     def description(self, description):
         """Sets the description of this NextGenDatapoint.
 
+        Description  # noqa: E501
 
         :param description: The description of this NextGenDatapoint.  # noqa: E501
         :type: str

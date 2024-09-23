@@ -32,12 +32,12 @@ class PointsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def driver_points(self, **kwargs):  # noqa: E501
-        """driver_points  # noqa: E501
+    def points_driver_points_get(self, **kwargs):  # noqa: E501
+        """points_driver_points_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.driver_points(async_req=True)
+        >>> thread = api.points_driver_points_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -50,17 +50,17 @@ class PointsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.driver_points_with_http_info(**kwargs)  # noqa: E501
+            return self.points_driver_points_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.driver_points_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.points_driver_points_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def driver_points_with_http_info(self, **kwargs):  # noqa: E501
-        """driver_points  # noqa: E501
+    def points_driver_points_get_with_http_info(self, **kwargs):  # noqa: E501
+        """points_driver_points_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.driver_points_with_http_info(async_req=True)
+        >>> thread = api.points_driver_points_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -83,7 +83,7 @@ class PointsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method driver_points" % key
+                    " to method points_driver_points_get" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -129,12 +129,12 @@ class PointsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def manufacturer_points(self, **kwargs):  # noqa: E501
-        """manufacturer_points  # noqa: E501
+    def points_manufacturer_points_get(self, **kwargs):  # noqa: E501
+        """points_manufacturer_points_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.manufacturer_points(async_req=True)
+        >>> thread = api.points_manufacturer_points_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -147,17 +147,17 @@ class PointsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.manufacturer_points_with_http_info(**kwargs)  # noqa: E501
+            return self.points_manufacturer_points_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.manufacturer_points_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.points_manufacturer_points_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def manufacturer_points_with_http_info(self, **kwargs):  # noqa: E501
-        """manufacturer_points  # noqa: E501
+    def points_manufacturer_points_get_with_http_info(self, **kwargs):  # noqa: E501
+        """points_manufacturer_points_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.manufacturer_points_with_http_info(async_req=True)
+        >>> thread = api.points_manufacturer_points_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -180,7 +180,7 @@ class PointsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method manufacturer_points" % key
+                    " to method points_manufacturer_points_get" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -226,12 +226,12 @@ class PointsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def owner_points(self, **kwargs):  # noqa: E501
-        """owner_points  # noqa: E501
+    def points_owner_points_get(self, **kwargs):  # noqa: E501
+        """points_owner_points_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.owner_points(async_req=True)
+        >>> thread = api.points_owner_points_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -244,17 +244,17 @@ class PointsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.owner_points_with_http_info(**kwargs)  # noqa: E501
+            return self.points_owner_points_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.owner_points_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.points_owner_points_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def owner_points_with_http_info(self, **kwargs):  # noqa: E501
-        """owner_points  # noqa: E501
+    def points_owner_points_get_with_http_info(self, **kwargs):  # noqa: E501
+        """points_owner_points_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.owner_points_with_http_info(async_req=True)
+        >>> thread = api.points_owner_points_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -277,7 +277,7 @@ class PointsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method owner_points" % key
+                    " to method points_owner_points_get" % key
                 )
             params[key] = val
         del params['kwargs']

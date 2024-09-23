@@ -1,13 +1,13 @@
 # nascar_data_client.SeriesApi
 
-All URIs are relative to */*
+All URIs are relative to */api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**series**](SeriesApi.md#series) | **GET** /series | 
+[**series_get**](SeriesApi.md#series_get) | **GET** /series | 
 
-# **series**
-> list[Series] series()
+# **series_get**
+> list[Series] series_get()
 
 
 
@@ -24,10 +24,10 @@ from pprint import pprint
 api_instance = nascar_data_client.SeriesApi(nascar_data_client.ApiClient(configuration))
 
 try:
-    api_response = api_instance.series()
+    api_response = api_instance.series_get()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling SeriesApi->series: %s\n" % e)
+    print("Exception when calling SeriesApi->series_get: %s\n" % e)
 ```
 
 ### Parameters

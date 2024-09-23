@@ -32,12 +32,12 @@ class InspectionsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def o_ss(self, **kwargs):  # noqa: E501
-        """o_ss  # noqa: E501
+    def inspections_oss_get(self, **kwargs):  # noqa: E501
+        """inspections_oss_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.o_ss(async_req=True)
+        >>> thread = api.inspections_oss_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -48,17 +48,17 @@ class InspectionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.o_ss_with_http_info(**kwargs)  # noqa: E501
+            return self.inspections_oss_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.o_ss_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.inspections_oss_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def o_ss_with_http_info(self, **kwargs):  # noqa: E501
-        """o_ss  # noqa: E501
+    def inspections_oss_get_with_http_info(self, **kwargs):  # noqa: E501
+        """inspections_oss_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.o_ss_with_http_info(async_req=True)
+        >>> thread = api.inspections_oss_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -79,7 +79,7 @@ class InspectionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method o_ss" % key
+                    " to method inspections_oss_get" % key
                 )
             params[key] = val
         del params['kwargs']
@@ -121,12 +121,12 @@ class InspectionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def vehicle_weights(self, **kwargs):  # noqa: E501
-        """vehicle_weights  # noqa: E501
+    def inspections_vehicle_weights_get(self, **kwargs):  # noqa: E501
+        """inspections_vehicle_weights_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vehicle_weights(async_req=True)
+        >>> thread = api.inspections_vehicle_weights_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -137,17 +137,17 @@ class InspectionsApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.vehicle_weights_with_http_info(**kwargs)  # noqa: E501
+            return self.inspections_vehicle_weights_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.vehicle_weights_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.inspections_vehicle_weights_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def vehicle_weights_with_http_info(self, **kwargs):  # noqa: E501
-        """vehicle_weights  # noqa: E501
+    def inspections_vehicle_weights_get_with_http_info(self, **kwargs):  # noqa: E501
+        """inspections_vehicle_weights_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.vehicle_weights_with_http_info(async_req=True)
+        >>> thread = api.inspections_vehicle_weights_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -168,7 +168,7 @@ class InspectionsApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method vehicle_weights" % key
+                    " to method inspections_vehicle_weights_get" % key
                 )
             params[key] = val
         del params['kwargs']

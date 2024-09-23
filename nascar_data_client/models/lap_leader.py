@@ -62,6 +62,7 @@ class LapLeader(object):
     def start_lap(self):
         """Gets the start_lap of this LapLeader.  # noqa: E501
 
+        Start lap  # noqa: E501
 
         :return: The start_lap of this LapLeader.  # noqa: E501
         :rtype: int
@@ -72,6 +73,7 @@ class LapLeader(object):
     def start_lap(self, start_lap):
         """Sets the start_lap of this LapLeader.
 
+        Start lap  # noqa: E501
 
         :param start_lap: The start_lap of this LapLeader.  # noqa: E501
         :type: int
@@ -83,6 +85,7 @@ class LapLeader(object):
     def end_lap(self):
         """Gets the end_lap of this LapLeader.  # noqa: E501
 
+        End lap  # noqa: E501
 
         :return: The end_lap of this LapLeader.  # noqa: E501
         :rtype: int
@@ -93,6 +96,7 @@ class LapLeader(object):
     def end_lap(self, end_lap):
         """Sets the end_lap of this LapLeader.
 
+        End lap  # noqa: E501
 
         :param end_lap: The end_lap of this LapLeader.  # noqa: E501
         :type: int
@@ -104,6 +108,7 @@ class LapLeader(object):
     def laps_led(self):
         """Gets the laps_led of this LapLeader.  # noqa: E501
 
+        Total laps led  # noqa: E501
 
         :return: The laps_led of this LapLeader.  # noqa: E501
         :rtype: int
@@ -114,6 +119,7 @@ class LapLeader(object):
     def laps_led(self, laps_led):
         """Sets the laps_led of this LapLeader.
 
+        Total laps led  # noqa: E501
 
         :param laps_led: The laps_led of this LapLeader.  # noqa: E501
         :type: int
@@ -125,6 +131,7 @@ class LapLeader(object):
     def vehicle_number(self):
         """Gets the vehicle_number of this LapLeader.  # noqa: E501
 
+        Vehicle number  # noqa: E501
 
         :return: The vehicle_number of this LapLeader.  # noqa: E501
         :rtype: str
@@ -135,6 +142,7 @@ class LapLeader(object):
     def vehicle_number(self, vehicle_number):
         """Sets the vehicle_number of this LapLeader.
 
+        Vehicle number  # noqa: E501
 
         :param vehicle_number: The vehicle_number of this LapLeader.  # noqa: E501
         :type: str

@@ -32,12 +32,12 @@ class AccountApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def refresh_token(self, **kwargs):  # noqa: E501
-        """refresh_token  # noqa: E501
+    def account_refresh_token_get(self, **kwargs):  # noqa: E501
+        """account_refresh_token_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.refresh_token(async_req=True)
+        >>> thread = api.account_refresh_token_get(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -48,17 +48,17 @@ class AccountApi(object):
         """
         kwargs['_return_http_data_only'] = True
         if kwargs.get('async_req'):
-            return self.refresh_token_with_http_info(**kwargs)  # noqa: E501
+            return self.account_refresh_token_get_with_http_info(**kwargs)  # noqa: E501
         else:
-            (data) = self.refresh_token_with_http_info(**kwargs)  # noqa: E501
+            (data) = self.account_refresh_token_get_with_http_info(**kwargs)  # noqa: E501
             return data
 
-    def refresh_token_with_http_info(self, **kwargs):  # noqa: E501
-        """refresh_token  # noqa: E501
+    def account_refresh_token_get_with_http_info(self, **kwargs):  # noqa: E501
+        """account_refresh_token_get  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.refresh_token_with_http_info(async_req=True)
+        >>> thread = api.account_refresh_token_get_with_http_info(async_req=True)
         >>> result = thread.get()
 
         :param async_req bool
@@ -79,7 +79,7 @@ class AccountApi(object):
             if key not in all_params:
                 raise TypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method refresh_token" % key
+                    " to method account_refresh_token_get" % key
                 )
             params[key] = val
         del params['kwargs']

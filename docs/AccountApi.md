@@ -1,13 +1,13 @@
 # nascar_data_client.AccountApi
 
-All URIs are relative to */*
+All URIs are relative to */api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**refresh_token**](AccountApi.md#refresh_token) | **GET** /account/refresh-token | 
+[**account_refresh_token_get**](AccountApi.md#account_refresh_token_get) | **GET** /account/refresh-token | 
 
-# **refresh_token**
-> TokenResponse refresh_token(refresh_token=refresh_token)
+# **account_refresh_token_get**
+> TokenResponse account_refresh_token_get(refresh_token=refresh_token)
 
 
 
@@ -25,10 +25,10 @@ api_instance = nascar_data_client.AccountApi(nascar_data_client.ApiClient(config
 refresh_token = 'refresh_token_example' # str |  (optional)
 
 try:
-    api_response = api_instance.refresh_token(refresh_token=refresh_token)
+    api_response = api_instance.account_refresh_token_get(refresh_token=refresh_token)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling AccountApi->refresh_token: %s\n" % e)
+    print("Exception when calling AccountApi->account_refresh_token_get: %s\n" % e)
 ```
 
 ### Parameters

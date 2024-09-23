@@ -1,14 +1,14 @@
 # nascar_data_client.VehicleApi
 
-All URIs are relative to */*
+All URIs are relative to */api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**vehicle**](VehicleApi.md#vehicle) | **GET** /vehicle | 
-[**vehicle_season_finishes**](VehicleApi.md#vehicle_season_finishes) | **GET** /vehicle/season-finishes | 
+[**vehicle_get**](VehicleApi.md#vehicle_get) | **GET** /vehicle | 
+[**vehicle_season_finishes_get**](VehicleApi.md#vehicle_season_finishes_get) | **GET** /vehicle/season-finishes | 
 
-# **vehicle**
-> VehicleDetails vehicle(id=id)
+# **vehicle_get**
+> VehicleDetails vehicle_get(id=id)
 
 
 
@@ -26,10 +26,10 @@ api_instance = nascar_data_client.VehicleApi(nascar_data_client.ApiClient(config
 id = 56 # int |  (optional)
 
 try:
-    api_response = api_instance.vehicle(id=id)
+    api_response = api_instance.vehicle_get(id=id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling VehicleApi->vehicle: %s\n" % e)
+    print("Exception when calling VehicleApi->vehicle_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -53,8 +53,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **vehicle_season_finishes**
-> list[RaceResultSummary] vehicle_season_finishes(season=season, series_id=series_id, vehicle=vehicle)
+# **vehicle_season_finishes_get**
+> list[RaceResultSummary] vehicle_season_finishes_get(season=season, series_id=series_id, vehicle=vehicle)
 
 
 
@@ -74,10 +74,10 @@ series_id = 56 # int |  (optional)
 vehicle = 'vehicle_example' # str |  (optional)
 
 try:
-    api_response = api_instance.vehicle_season_finishes(season=season, series_id=series_id, vehicle=vehicle)
+    api_response = api_instance.vehicle_season_finishes_get(season=season, series_id=series_id, vehicle=vehicle)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling VehicleApi->vehicle_season_finishes: %s\n" % e)
+    print("Exception when calling VehicleApi->vehicle_season_finishes_get: %s\n" % e)
 ```
 
 ### Parameters

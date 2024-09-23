@@ -1,14 +1,14 @@
 # nascar_data_client.InspectionsApi
 
-All URIs are relative to */*
+All URIs are relative to */api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**o_ss**](InspectionsApi.md#o_ss) | **GET** /inspections/oss | 
-[**vehicle_weights**](InspectionsApi.md#vehicle_weights) | **GET** /inspections/vehicle-weights | 
+[**inspections_oss_get**](InspectionsApi.md#inspections_oss_get) | **GET** /inspections/oss | 
+[**inspections_vehicle_weights_get**](InspectionsApi.md#inspections_vehicle_weights_get) | **GET** /inspections/vehicle-weights | 
 
-# **o_ss**
-> list[OSSScan] o_ss(race_id=race_id)
+# **inspections_oss_get**
+> list[OSSScan] inspections_oss_get(race_id=race_id)
 
 
 
@@ -26,10 +26,10 @@ api_instance = nascar_data_client.InspectionsApi(nascar_data_client.ApiClient(co
 race_id = 56 # int |  (optional)
 
 try:
-    api_response = api_instance.o_ss(race_id=race_id)
+    api_response = api_instance.inspections_oss_get(race_id=race_id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling InspectionsApi->o_ss: %s\n" % e)
+    print("Exception when calling InspectionsApi->inspections_oss_get: %s\n" % e)
 ```
 
 ### Parameters
@@ -53,8 +53,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **vehicle_weights**
-> list[VehicleWeight] vehicle_weights(race_id=race_id)
+# **inspections_vehicle_weights_get**
+> list[VehicleWeight] inspections_vehicle_weights_get(race_id=race_id)
 
 
 
@@ -72,10 +72,10 @@ api_instance = nascar_data_client.InspectionsApi(nascar_data_client.ApiClient(co
 race_id = 56 # int |  (optional)
 
 try:
-    api_response = api_instance.vehicle_weights(race_id=race_id)
+    api_response = api_instance.inspections_vehicle_weights_get(race_id=race_id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling InspectionsApi->vehicle_weights: %s\n" % e)
+    print("Exception when calling InspectionsApi->inspections_vehicle_weights_get: %s\n" % e)
 ```
 
 ### Parameters

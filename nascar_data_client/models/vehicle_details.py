@@ -67,6 +67,7 @@ class VehicleDetails(object):
     def season(self):
         """Gets the season of this VehicleDetails.  # noqa: E501
 
+        Race season  # noqa: E501
 
         :return: The season of this VehicleDetails.  # noqa: E501
         :rtype: int
@@ -77,6 +78,7 @@ class VehicleDetails(object):
     def season(self, season):
         """Sets the season of this VehicleDetails.
 
+        Race season  # noqa: E501
 
         :param season: The season of this VehicleDetails.  # noqa: E501
         :type: int
@@ -88,6 +90,7 @@ class VehicleDetails(object):
     def series_id(self):
         """Gets the series_id of this VehicleDetails.  # noqa: E501
 
+        Series  # noqa: E501
 
         :return: The series_id of this VehicleDetails.  # noqa: E501
         :rtype: int
@@ -98,6 +101,7 @@ class VehicleDetails(object):
     def series_id(self, series_id):
         """Sets the series_id of this VehicleDetails.
 
+        Series  # noqa: E501
 
         :param series_id: The series_id of this VehicleDetails.  # noqa: E501
         :type: int
@@ -109,6 +113,7 @@ class VehicleDetails(object):
     def vehicle_number(self):
         """Gets the vehicle_number of this VehicleDetails.  # noqa: E501
 
+        Vehicle Number  # noqa: E501
 
         :return: The vehicle_number of this VehicleDetails.  # noqa: E501
         :rtype: str
@@ -119,6 +124,7 @@ class VehicleDetails(object):
     def vehicle_number(self, vehicle_number):
         """Sets the vehicle_number of this VehicleDetails.
 
+        Vehicle Number  # noqa: E501
 
         :param vehicle_number: The vehicle_number of this VehicleDetails.  # noqa: E501
         :type: str
@@ -130,6 +136,7 @@ class VehicleDetails(object):
     def badge(self):
         """Gets the badge of this VehicleDetails.  # noqa: E501
 
+        URL to badge logo  # noqa: E501
 
         :return: The badge of this VehicleDetails.  # noqa: E501
         :rtype: str
@@ -140,6 +147,7 @@ class VehicleDetails(object):
     def badge(self, badge):
         """Sets the badge of this VehicleDetails.
 
+        URL to badge logo  # noqa: E501
 
         :param badge: The badge of this VehicleDetails.  # noqa: E501
         :type: str
@@ -151,6 +159,7 @@ class VehicleDetails(object):
     def results(self):
         """Gets the results of this VehicleDetails.  # noqa: E501
 
+        Season race results  # noqa: E501
 
         :return: The results of this VehicleDetails.  # noqa: E501
         :rtype: list[RaceResultSummary]
@@ -161,6 +170,7 @@ class VehicleDetails(object):
     def results(self, results):
         """Sets the results of this VehicleDetails.
 
+        Season race results  # noqa: E501
 
         :param results: The results of this VehicleDetails.  # noqa: E501
         :type: list[RaceResultSummary]

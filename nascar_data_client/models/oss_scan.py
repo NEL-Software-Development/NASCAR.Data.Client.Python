@@ -437,6 +437,7 @@ class OSSScan(object):
     def vehicle_number(self):
         """Gets the vehicle_number of this OSSScan.  # noqa: E501
 
+        Vehicle number  # noqa: E501
 
         :return: The vehicle_number of this OSSScan.  # noqa: E501
         :rtype: str
@@ -447,6 +448,7 @@ class OSSScan(object):
     def vehicle_number(self, vehicle_number):
         """Sets the vehicle_number of this OSSScan.
 
+        Vehicle number  # noqa: E501
 
         :param vehicle_number: The vehicle_number of this OSSScan.  # noqa: E501
         :type: str
@@ -458,6 +460,7 @@ class OSSScan(object):
     def chassis(self):
         """Gets the chassis of this OSSScan.  # noqa: E501
 
+        Chassis  # noqa: E501
 
         :return: The chassis of this OSSScan.  # noqa: E501
         :rtype: str
@@ -468,6 +471,7 @@ class OSSScan(object):
     def chassis(self, chassis):
         """Sets the chassis of this OSSScan.
 
+        Chassis  # noqa: E501
 
         :param chassis: The chassis of this OSSScan.  # noqa: E501
         :type: str
@@ -479,6 +483,7 @@ class OSSScan(object):
     def limits_bodyoffset_min(self):
         """Gets the limits_bodyoffset_min of this OSSScan.  # noqa: E501
 
+        Body offset minimum  # noqa: E501
 
         :return: The limits_bodyoffset_min of this OSSScan.  # noqa: E501
         :rtype: float
@@ -489,6 +494,7 @@ class OSSScan(object):
     def limits_bodyoffset_min(self, limits_bodyoffset_min):
         """Sets the limits_bodyoffset_min of this OSSScan.
 
+        Body offset minimum  # noqa: E501
 
         :param limits_bodyoffset_min: The limits_bodyoffset_min of this OSSScan.  # noqa: E501
         :type: float
@@ -500,6 +506,7 @@ class OSSScan(object):
     def limits_bodyoffset_max(self):
         """Gets the limits_bodyoffset_max of this OSSScan.  # noqa: E501
 
+        Body offset maximum  # noqa: E501
 
         :return: The limits_bodyoffset_max of this OSSScan.  # noqa: E501
         :rtype: float
@@ -510,6 +517,7 @@ class OSSScan(object):
     def limits_bodyoffset_max(self, limits_bodyoffset_max):
         """Sets the limits_bodyoffset_max of this OSSScan.
 
+        Body offset maximum  # noqa: E501
 
         :param limits_bodyoffset_max: The limits_bodyoffset_max of this OSSScan.  # noqa: E501
         :type: float
@@ -521,6 +529,7 @@ class OSSScan(object):
     def passfails_bodyoffset(self):
         """Gets the passfails_bodyoffset of this OSSScan.  # noqa: E501
 
+        Body offset pass/fails  # noqa: E501
 
         :return: The passfails_bodyoffset of this OSSScan.  # noqa: E501
         :rtype: bool
@@ -531,6 +540,7 @@ class OSSScan(object):
     def passfails_bodyoffset(self, passfails_bodyoffset):
         """Sets the passfails_bodyoffset of this OSSScan.
 
+        Body offset pass/fails  # noqa: E501
 
         :param passfails_bodyoffset: The passfails_bodyoffset of this OSSScan.  # noqa: E501
         :type: bool
@@ -542,6 +552,7 @@ class OSSScan(object):
     def results_bodyoffset(self):
         """Gets the results_bodyoffset of this OSSScan.  # noqa: E501
 
+        Results body offset  # noqa: E501
 
         :return: The results_bodyoffset of this OSSScan.  # noqa: E501
         :rtype: float
@@ -552,6 +563,7 @@ class OSSScan(object):
     def results_bodyoffset(self, results_bodyoffset):
         """Sets the results_bodyoffset of this OSSScan.
 
+        Results body offset  # noqa: E501
 
         :param results_bodyoffset: The results_bodyoffset of this OSSScan.  # noqa: E501
         :type: float
@@ -563,6 +575,7 @@ class OSSScan(object):
     def limits_camber_lf_min(self):
         """Gets the limits_camber_lf_min of this OSSScan.  # noqa: E501
 
+        Left front camber minimum  # noqa: E501
 
         :return: The limits_camber_lf_min of this OSSScan.  # noqa: E501
         :rtype: float
@@ -573,6 +586,7 @@ class OSSScan(object):
     def limits_camber_lf_min(self, limits_camber_lf_min):
         """Sets the limits_camber_lf_min of this OSSScan.
 
+        Left front camber minimum  # noqa: E501
 
         :param limits_camber_lf_min: The limits_camber_lf_min of this OSSScan.  # noqa: E501
         :type: float
@@ -584,6 +598,7 @@ class OSSScan(object):
     def limits_camber_lf_max(self):
         """Gets the limits_camber_lf_max of this OSSScan.  # noqa: E501
 
+        Left front camber maximum  # noqa: E501
 
         :return: The limits_camber_lf_max of this OSSScan.  # noqa: E501
         :rtype: float
@@ -594,6 +609,7 @@ class OSSScan(object):
     def limits_camber_lf_max(self, limits_camber_lf_max):
         """Sets the limits_camber_lf_max of this OSSScan.
 
+        Left front camber maximum  # noqa: E501
 
         :param limits_camber_lf_max: The limits_camber_lf_max of this OSSScan.  # noqa: E501
         :type: float
@@ -605,6 +621,7 @@ class OSSScan(object):
     def passfails_camber_lf(self):
         """Gets the passfails_camber_lf of this OSSScan.  # noqa: E501
 
+        Left front camber pass/fails  # noqa: E501
 
         :return: The passfails_camber_lf of this OSSScan.  # noqa: E501
         :rtype: bool
@@ -615,6 +632,7 @@ class OSSScan(object):
     def passfails_camber_lf(self, passfails_camber_lf):
         """Sets the passfails_camber_lf of this OSSScan.
 
+        Left front camber pass/fails  # noqa: E501
 
         :param passfails_camber_lf: The passfails_camber_lf of this OSSScan.  # noqa: E501
         :type: bool
@@ -626,6 +644,7 @@ class OSSScan(object):
     def results_camber_lf(self):
         """Gets the results_camber_lf of this OSSScan.  # noqa: E501
 
+        Left front camber results  # noqa: E501
 
         :return: The results_camber_lf of this OSSScan.  # noqa: E501
         :rtype: float
@@ -636,6 +655,7 @@ class OSSScan(object):
     def results_camber_lf(self, results_camber_lf):
         """Sets the results_camber_lf of this OSSScan.
 
+        Left front camber results  # noqa: E501
 
         :param results_camber_lf: The results_camber_lf of this OSSScan.  # noqa: E501
         :type: float
@@ -647,6 +667,7 @@ class OSSScan(object):
     def limits_camber_lr_min(self):
         """Gets the limits_camber_lr_min of this OSSScan.  # noqa: E501
 
+        Left rear camber minimum  # noqa: E501
 
         :return: The limits_camber_lr_min of this OSSScan.  # noqa: E501
         :rtype: float
@@ -657,6 +678,7 @@ class OSSScan(object):
     def limits_camber_lr_min(self, limits_camber_lr_min):
         """Sets the limits_camber_lr_min of this OSSScan.
 
+        Left rear camber minimum  # noqa: E501
 
         :param limits_camber_lr_min: The limits_camber_lr_min of this OSSScan.  # noqa: E501
         :type: float
@@ -668,6 +690,7 @@ class OSSScan(object):
     def limits_camber_lr_max(self):
         """Gets the limits_camber_lr_max of this OSSScan.  # noqa: E501
 
+        Left rear camber maximum  # noqa: E501
 
         :return: The limits_camber_lr_max of this OSSScan.  # noqa: E501
         :rtype: float
@@ -678,6 +701,7 @@ class OSSScan(object):
     def limits_camber_lr_max(self, limits_camber_lr_max):
         """Sets the limits_camber_lr_max of this OSSScan.
 
+        Left rear camber maximum  # noqa: E501
 
         :param limits_camber_lr_max: The limits_camber_lr_max of this OSSScan.  # noqa: E501
         :type: float
@@ -689,6 +713,7 @@ class OSSScan(object):
     def passfails_camber_lr(self):
         """Gets the passfails_camber_lr of this OSSScan.  # noqa: E501
 
+        Left rear camber pass/fails  # noqa: E501
 
         :return: The passfails_camber_lr of this OSSScan.  # noqa: E501
         :rtype: bool
@@ -699,6 +724,7 @@ class OSSScan(object):
     def passfails_camber_lr(self, passfails_camber_lr):
         """Sets the passfails_camber_lr of this OSSScan.
 
+        Left rear camber pass/fails  # noqa: E501
 
         :param passfails_camber_lr: The passfails_camber_lr of this OSSScan.  # noqa: E501
         :type: bool
@@ -710,6 +736,7 @@ class OSSScan(object):
     def results_camber_lr(self):
         """Gets the results_camber_lr of this OSSScan.  # noqa: E501
 
+        Left rear camber results  # noqa: E501
 
         :return: The results_camber_lr of this OSSScan.  # noqa: E501
         :rtype: float
@@ -720,6 +747,7 @@ class OSSScan(object):
     def results_camber_lr(self, results_camber_lr):
         """Sets the results_camber_lr of this OSSScan.
 
+        Left rear camber results  # noqa: E501
 
         :param results_camber_lr: The results_camber_lr of this OSSScan.  # noqa: E501
         :type: float
@@ -731,6 +759,7 @@ class OSSScan(object):
     def limits_camber_rf_min(self):
         """Gets the limits_camber_rf_min of this OSSScan.  # noqa: E501
 
+        Right front camber minimum  # noqa: E501
 
         :return: The limits_camber_rf_min of this OSSScan.  # noqa: E501
         :rtype: float
@@ -741,6 +770,7 @@ class OSSScan(object):
     def limits_camber_rf_min(self, limits_camber_rf_min):
         """Sets the limits_camber_rf_min of this OSSScan.
 
+        Right front camber minimum  # noqa: E501
 
         :param limits_camber_rf_min: The limits_camber_rf_min of this OSSScan.  # noqa: E501
         :type: float
@@ -752,6 +782,7 @@ class OSSScan(object):
     def limits_camber_rf_max(self):
         """Gets the limits_camber_rf_max of this OSSScan.  # noqa: E501
 
+        Right front camber maximum  # noqa: E501
 
         :return: The limits_camber_rf_max of this OSSScan.  # noqa: E501
         :rtype: float
@@ -762,6 +793,7 @@ class OSSScan(object):
     def limits_camber_rf_max(self, limits_camber_rf_max):
         """Sets the limits_camber_rf_max of this OSSScan.
 
+        Right front camber maximum  # noqa: E501
 
         :param limits_camber_rf_max: The limits_camber_rf_max of this OSSScan.  # noqa: E501
         :type: float
@@ -773,6 +805,7 @@ class OSSScan(object):
     def passfails_camber_rf(self):
         """Gets the passfails_camber_rf of this OSSScan.  # noqa: E501
 
+        Right front camber pass/fails  # noqa: E501
 
         :return: The passfails_camber_rf of this OSSScan.  # noqa: E501
         :rtype: bool
@@ -783,6 +816,7 @@ class OSSScan(object):
     def passfails_camber_rf(self, passfails_camber_rf):
         """Sets the passfails_camber_rf of this OSSScan.
 
+        Right front camber pass/fails  # noqa: E501
 
         :param passfails_camber_rf: The passfails_camber_rf of this OSSScan.  # noqa: E501
         :type: bool
@@ -794,6 +828,7 @@ class OSSScan(object):
     def results_camber_rf(self):
         """Gets the results_camber_rf of this OSSScan.  # noqa: E501
 
+        Right front camber results  # noqa: E501
 
         :return: The results_camber_rf of this OSSScan.  # noqa: E501
         :rtype: float
@@ -804,6 +839,7 @@ class OSSScan(object):
     def results_camber_rf(self, results_camber_rf):
         """Sets the results_camber_rf of this OSSScan.
 
+        Right front camber results  # noqa: E501
 
         :param results_camber_rf: The results_camber_rf of this OSSScan.  # noqa: E501
         :type: float
@@ -815,6 +851,7 @@ class OSSScan(object):
     def limits_camber_rr_min(self):
         """Gets the limits_camber_rr_min of this OSSScan.  # noqa: E501
 
+        Right rear camber minimum  # noqa: E501
 
         :return: The limits_camber_rr_min of this OSSScan.  # noqa: E501
         :rtype: float
@@ -825,6 +862,7 @@ class OSSScan(object):
     def limits_camber_rr_min(self, limits_camber_rr_min):
         """Sets the limits_camber_rr_min of this OSSScan.
 
+        Right rear camber minimum  # noqa: E501
 
         :param limits_camber_rr_min: The limits_camber_rr_min of this OSSScan.  # noqa: E501
         :type: float
@@ -836,6 +874,7 @@ class OSSScan(object):
     def limits_camber_rr_max(self):
         """Gets the limits_camber_rr_max of this OSSScan.  # noqa: E501
 
+        Right rear camber maximum  # noqa: E501
 
         :return: The limits_camber_rr_max of this OSSScan.  # noqa: E501
         :rtype: float
@@ -846,6 +885,7 @@ class OSSScan(object):
     def limits_camber_rr_max(self, limits_camber_rr_max):
         """Sets the limits_camber_rr_max of this OSSScan.
 
+        Right rear camber maximum  # noqa: E501
 
         :param limits_camber_rr_max: The limits_camber_rr_max of this OSSScan.  # noqa: E501
         :type: float
@@ -857,6 +897,7 @@ class OSSScan(object):
     def passfails_camber_rr(self):
         """Gets the passfails_camber_rr of this OSSScan.  # noqa: E501
 
+        Right rear camber pass/fails  # noqa: E501
 
         :return: The passfails_camber_rr of this OSSScan.  # noqa: E501
         :rtype: bool
@@ -867,6 +908,7 @@ class OSSScan(object):
     def passfails_camber_rr(self, passfails_camber_rr):
         """Sets the passfails_camber_rr of this OSSScan.
 
+        Right rear camber pass/fails  # noqa: E501
 
         :param passfails_camber_rr: The passfails_camber_rr of this OSSScan.  # noqa: E501
         :type: bool
@@ -878,6 +920,7 @@ class OSSScan(object):
     def results_camber_rr(self):
         """Gets the results_camber_rr of this OSSScan.  # noqa: E501
 
+        Right rear camber results  # noqa: E501
 
         :return: The results_camber_rr of this OSSScan.  # noqa: E501
         :rtype: float
@@ -888,6 +931,7 @@ class OSSScan(object):
     def results_camber_rr(self, results_camber_rr):
         """Sets the results_camber_rr of this OSSScan.
 
+        Right rear camber results  # noqa: E501
 
         :param results_camber_rr: The results_camber_rr of this OSSScan.  # noqa: E501
         :type: float
@@ -899,6 +943,7 @@ class OSSScan(object):
     def limits_lf_framerail_min(self):
         """Gets the limits_lf_framerail_min of this OSSScan.  # noqa: E501
 
+        Left front framerail minimum  # noqa: E501
 
         :return: The limits_lf_framerail_min of this OSSScan.  # noqa: E501
         :rtype: float
@@ -909,6 +954,7 @@ class OSSScan(object):
     def limits_lf_framerail_min(self, limits_lf_framerail_min):
         """Sets the limits_lf_framerail_min of this OSSScan.
 
+        Left front framerail minimum  # noqa: E501
 
         :param limits_lf_framerail_min: The limits_lf_framerail_min of this OSSScan.  # noqa: E501
         :type: float
@@ -920,6 +966,7 @@ class OSSScan(object):
     def limits_lf_framerail_max(self):
         """Gets the limits_lf_framerail_max of this OSSScan.  # noqa: E501
 
+        Left front framework maximum  # noqa: E501
 
         :return: The limits_lf_framerail_max of this OSSScan.  # noqa: E501
         :rtype: float
@@ -930,6 +977,7 @@ class OSSScan(object):
     def limits_lf_framerail_max(self, limits_lf_framerail_max):
         """Sets the limits_lf_framerail_max of this OSSScan.
 
+        Left front framework maximum  # noqa: E501
 
         :param limits_lf_framerail_max: The limits_lf_framerail_max of this OSSScan.  # noqa: E501
         :type: float
@@ -941,6 +989,7 @@ class OSSScan(object):
     def passfails_lf_framerail(self):
         """Gets the passfails_lf_framerail of this OSSScan.  # noqa: E501
 
+        Left front framerail pass/fails  # noqa: E501
 
         :return: The passfails_lf_framerail of this OSSScan.  # noqa: E501
         :rtype: bool
@@ -951,6 +1000,7 @@ class OSSScan(object):
     def passfails_lf_framerail(self, passfails_lf_framerail):
         """Sets the passfails_lf_framerail of this OSSScan.
 
+        Left front framerail pass/fails  # noqa: E501
 
         :param passfails_lf_framerail: The passfails_lf_framerail of this OSSScan.  # noqa: E501
         :type: bool
@@ -962,6 +1012,7 @@ class OSSScan(object):
     def results_lf_framerail(self):
         """Gets the results_lf_framerail of this OSSScan.  # noqa: E501
 
+        Left front framework results  # noqa: E501
 
         :return: The results_lf_framerail of this OSSScan.  # noqa: E501
         :rtype: float
@@ -972,6 +1023,7 @@ class OSSScan(object):
     def results_lf_framerail(self, results_lf_framerail):
         """Sets the results_lf_framerail of this OSSScan.
 
+        Left front framework results  # noqa: E501
 
         :param results_lf_framerail: The results_lf_framerail of this OSSScan.  # noqa: E501
         :type: float
@@ -983,6 +1035,7 @@ class OSSScan(object):
     def limits_lr_framerail_min(self):
         """Gets the limits_lr_framerail_min of this OSSScan.  # noqa: E501
 
+        Left rear framerail minimum  # noqa: E501
 
         :return: The limits_lr_framerail_min of this OSSScan.  # noqa: E501
         :rtype: float
@@ -993,6 +1046,7 @@ class OSSScan(object):
     def limits_lr_framerail_min(self, limits_lr_framerail_min):
         """Sets the limits_lr_framerail_min of this OSSScan.
 
+        Left rear framerail minimum  # noqa: E501
 
         :param limits_lr_framerail_min: The limits_lr_framerail_min of this OSSScan.  # noqa: E501
         :type: float
@@ -1004,6 +1058,7 @@ class OSSScan(object):
     def limits_lr_framerail_max(self):
         """Gets the limits_lr_framerail_max of this OSSScan.  # noqa: E501
 
+        Left rear framerail maximum  # noqa: E501
 
         :return: The limits_lr_framerail_max of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1014,6 +1069,7 @@ class OSSScan(object):
     def limits_lr_framerail_max(self, limits_lr_framerail_max):
         """Sets the limits_lr_framerail_max of this OSSScan.
 
+        Left rear framerail maximum  # noqa: E501
 
         :param limits_lr_framerail_max: The limits_lr_framerail_max of this OSSScan.  # noqa: E501
         :type: float
@@ -1025,6 +1081,7 @@ class OSSScan(object):
     def passfails_lr_framerail(self):
         """Gets the passfails_lr_framerail of this OSSScan.  # noqa: E501
 
+        Left rear framerail pass/fails  # noqa: E501
 
         :return: The passfails_lr_framerail of this OSSScan.  # noqa: E501
         :rtype: bool
@@ -1035,6 +1092,7 @@ class OSSScan(object):
     def passfails_lr_framerail(self, passfails_lr_framerail):
         """Sets the passfails_lr_framerail of this OSSScan.
 
+        Left rear framerail pass/fails  # noqa: E501
 
         :param passfails_lr_framerail: The passfails_lr_framerail of this OSSScan.  # noqa: E501
         :type: bool
@@ -1046,6 +1104,7 @@ class OSSScan(object):
     def results_lr_framerail(self):
         """Gets the results_lr_framerail of this OSSScan.  # noqa: E501
 
+        Left rear framerail results  # noqa: E501
 
         :return: The results_lr_framerail of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1056,6 +1115,7 @@ class OSSScan(object):
     def results_lr_framerail(self, results_lr_framerail):
         """Sets the results_lr_framerail of this OSSScan.
 
+        Left rear framerail results  # noqa: E501
 
         :param results_lr_framerail: The results_lr_framerail of this OSSScan.  # noqa: E501
         :type: float
@@ -1067,6 +1127,7 @@ class OSSScan(object):
     def limits_rf_framerail_min(self):
         """Gets the limits_rf_framerail_min of this OSSScan.  # noqa: E501
 
+        Right front framerail minimum  # noqa: E501
 
         :return: The limits_rf_framerail_min of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1077,6 +1138,7 @@ class OSSScan(object):
     def limits_rf_framerail_min(self, limits_rf_framerail_min):
         """Sets the limits_rf_framerail_min of this OSSScan.
 
+        Right front framerail minimum  # noqa: E501
 
         :param limits_rf_framerail_min: The limits_rf_framerail_min of this OSSScan.  # noqa: E501
         :type: float
@@ -1088,6 +1150,7 @@ class OSSScan(object):
     def limits_rf_framerail_max(self):
         """Gets the limits_rf_framerail_max of this OSSScan.  # noqa: E501
 
+        Right front framerail maximum  # noqa: E501
 
         :return: The limits_rf_framerail_max of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1098,6 +1161,7 @@ class OSSScan(object):
     def limits_rf_framerail_max(self, limits_rf_framerail_max):
         """Sets the limits_rf_framerail_max of this OSSScan.
 
+        Right front framerail maximum  # noqa: E501
 
         :param limits_rf_framerail_max: The limits_rf_framerail_max of this OSSScan.  # noqa: E501
         :type: float
@@ -1109,6 +1173,7 @@ class OSSScan(object):
     def passfails_rf_framerail(self):
         """Gets the passfails_rf_framerail of this OSSScan.  # noqa: E501
 
+        Right front framerail pass/fails  # noqa: E501
 
         :return: The passfails_rf_framerail of this OSSScan.  # noqa: E501
         :rtype: bool
@@ -1119,6 +1184,7 @@ class OSSScan(object):
     def passfails_rf_framerail(self, passfails_rf_framerail):
         """Sets the passfails_rf_framerail of this OSSScan.
 
+        Right front framerail pass/fails  # noqa: E501
 
         :param passfails_rf_framerail: The passfails_rf_framerail of this OSSScan.  # noqa: E501
         :type: bool
@@ -1130,6 +1196,7 @@ class OSSScan(object):
     def results_rf_framerail(self):
         """Gets the results_rf_framerail of this OSSScan.  # noqa: E501
 
+        Right front framerail results  # noqa: E501
 
         :return: The results_rf_framerail of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1140,6 +1207,7 @@ class OSSScan(object):
     def results_rf_framerail(self, results_rf_framerail):
         """Sets the results_rf_framerail of this OSSScan.
 
+        Right front framerail results  # noqa: E501
 
         :param results_rf_framerail: The results_rf_framerail of this OSSScan.  # noqa: E501
         :type: float
@@ -1151,6 +1219,7 @@ class OSSScan(object):
     def limits_rh_location_left_min(self):
         """Gets the limits_rh_location_left_min of this OSSScan.  # noqa: E501
 
+        Right hand left minimum  # noqa: E501
 
         :return: The limits_rh_location_left_min of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1161,6 +1230,7 @@ class OSSScan(object):
     def limits_rh_location_left_min(self, limits_rh_location_left_min):
         """Sets the limits_rh_location_left_min of this OSSScan.
 
+        Right hand left minimum  # noqa: E501
 
         :param limits_rh_location_left_min: The limits_rh_location_left_min of this OSSScan.  # noqa: E501
         :type: float
@@ -1172,6 +1242,7 @@ class OSSScan(object):
     def limits_rh_location_left_max(self):
         """Gets the limits_rh_location_left_max of this OSSScan.  # noqa: E501
 
+        Right hand left maximum  # noqa: E501
 
         :return: The limits_rh_location_left_max of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1182,6 +1253,7 @@ class OSSScan(object):
     def limits_rh_location_left_max(self, limits_rh_location_left_max):
         """Sets the limits_rh_location_left_max of this OSSScan.
 
+        Right hand left maximum  # noqa: E501
 
         :param limits_rh_location_left_max: The limits_rh_location_left_max of this OSSScan.  # noqa: E501
         :type: float
@@ -1193,6 +1265,7 @@ class OSSScan(object):
     def passfails_rh_location_left(self):
         """Gets the passfails_rh_location_left of this OSSScan.  # noqa: E501
 
+        Right hand left pass/fails  # noqa: E501
 
         :return: The passfails_rh_location_left of this OSSScan.  # noqa: E501
         :rtype: bool
@@ -1203,6 +1276,7 @@ class OSSScan(object):
     def passfails_rh_location_left(self, passfails_rh_location_left):
         """Sets the passfails_rh_location_left of this OSSScan.
 
+        Right hand left pass/fails  # noqa: E501
 
         :param passfails_rh_location_left: The passfails_rh_location_left of this OSSScan.  # noqa: E501
         :type: bool
@@ -1214,6 +1288,7 @@ class OSSScan(object):
     def results_rh_location_left(self):
         """Gets the results_rh_location_left of this OSSScan.  # noqa: E501
 
+        Right hand left results  # noqa: E501
 
         :return: The results_rh_location_left of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1224,6 +1299,7 @@ class OSSScan(object):
     def results_rh_location_left(self, results_rh_location_left):
         """Sets the results_rh_location_left of this OSSScan.
 
+        Right hand left results  # noqa: E501
 
         :param results_rh_location_left: The results_rh_location_left of this OSSScan.  # noqa: E501
         :type: float
@@ -1235,6 +1311,7 @@ class OSSScan(object):
     def limits_rh_location_right_min(self):
         """Gets the limits_rh_location_right_min of this OSSScan.  # noqa: E501
 
+        Right hand right min  # noqa: E501
 
         :return: The limits_rh_location_right_min of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1245,6 +1322,7 @@ class OSSScan(object):
     def limits_rh_location_right_min(self, limits_rh_location_right_min):
         """Sets the limits_rh_location_right_min of this OSSScan.
 
+        Right hand right min  # noqa: E501
 
         :param limits_rh_location_right_min: The limits_rh_location_right_min of this OSSScan.  # noqa: E501
         :type: float
@@ -1256,6 +1334,7 @@ class OSSScan(object):
     def limits_rh_location_right_max(self):
         """Gets the limits_rh_location_right_max of this OSSScan.  # noqa: E501
 
+        Right hand right max  # noqa: E501
 
         :return: The limits_rh_location_right_max of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1266,6 +1345,7 @@ class OSSScan(object):
     def limits_rh_location_right_max(self, limits_rh_location_right_max):
         """Sets the limits_rh_location_right_max of this OSSScan.
 
+        Right hand right max  # noqa: E501
 
         :param limits_rh_location_right_max: The limits_rh_location_right_max of this OSSScan.  # noqa: E501
         :type: float
@@ -1277,6 +1357,7 @@ class OSSScan(object):
     def passfails_rh_location_right(self):
         """Gets the passfails_rh_location_right of this OSSScan.  # noqa: E501
 
+        Right hand right pass/fails  # noqa: E501
 
         :return: The passfails_rh_location_right of this OSSScan.  # noqa: E501
         :rtype: bool
@@ -1287,6 +1368,7 @@ class OSSScan(object):
     def passfails_rh_location_right(self, passfails_rh_location_right):
         """Sets the passfails_rh_location_right of this OSSScan.
 
+        Right hand right pass/fails  # noqa: E501
 
         :param passfails_rh_location_right: The passfails_rh_location_right of this OSSScan.  # noqa: E501
         :type: bool
@@ -1298,6 +1380,7 @@ class OSSScan(object):
     def results_rh_location_right(self):
         """Gets the results_rh_location_right of this OSSScan.  # noqa: E501
 
+        Right hand right results  # noqa: E501
 
         :return: The results_rh_location_right of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1308,6 +1391,7 @@ class OSSScan(object):
     def results_rh_location_right(self, results_rh_location_right):
         """Sets the results_rh_location_right of this OSSScan.
 
+        Right hand right results  # noqa: E501
 
         :param results_rh_location_right: The results_rh_location_right of this OSSScan.  # noqa: E501
         :type: float
@@ -1319,6 +1403,7 @@ class OSSScan(object):
     def limits_rh_skew_min(self):
         """Gets the limits_rh_skew_min of this OSSScan.  # noqa: E501
 
+        Right right skew minimum  # noqa: E501
 
         :return: The limits_rh_skew_min of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1329,6 +1414,7 @@ class OSSScan(object):
     def limits_rh_skew_min(self, limits_rh_skew_min):
         """Sets the limits_rh_skew_min of this OSSScan.
 
+        Right right skew minimum  # noqa: E501
 
         :param limits_rh_skew_min: The limits_rh_skew_min of this OSSScan.  # noqa: E501
         :type: float
@@ -1340,6 +1426,7 @@ class OSSScan(object):
     def limits_rh_skew_max(self):
         """Gets the limits_rh_skew_max of this OSSScan.  # noqa: E501
 
+        Right hand skew maximum  # noqa: E501
 
         :return: The limits_rh_skew_max of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1350,6 +1437,7 @@ class OSSScan(object):
     def limits_rh_skew_max(self, limits_rh_skew_max):
         """Sets the limits_rh_skew_max of this OSSScan.
 
+        Right hand skew maximum  # noqa: E501
 
         :param limits_rh_skew_max: The limits_rh_skew_max of this OSSScan.  # noqa: E501
         :type: float
@@ -1361,6 +1449,7 @@ class OSSScan(object):
     def passfails_rh_skew(self):
         """Gets the passfails_rh_skew of this OSSScan.  # noqa: E501
 
+        Right hand skew pass/fails  # noqa: E501
 
         :return: The passfails_rh_skew of this OSSScan.  # noqa: E501
         :rtype: bool
@@ -1371,6 +1460,7 @@ class OSSScan(object):
     def passfails_rh_skew(self, passfails_rh_skew):
         """Sets the passfails_rh_skew of this OSSScan.
 
+        Right hand skew pass/fails  # noqa: E501
 
         :param passfails_rh_skew: The passfails_rh_skew of this OSSScan.  # noqa: E501
         :type: bool
@@ -1382,6 +1472,7 @@ class OSSScan(object):
     def results_rh_skew(self):
         """Gets the results_rh_skew of this OSSScan.  # noqa: E501
 
+        Right hand skew results  # noqa: E501
 
         :return: The results_rh_skew of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1392,6 +1483,7 @@ class OSSScan(object):
     def results_rh_skew(self, results_rh_skew):
         """Sets the results_rh_skew of this OSSScan.
 
+        Right hand skew results  # noqa: E501
 
         :param results_rh_skew: The results_rh_skew of this OSSScan.  # noqa: E501
         :type: float
@@ -1403,6 +1495,7 @@ class OSSScan(object):
     def limits_rr_framerail_min(self):
         """Gets the limits_rr_framerail_min of this OSSScan.  # noqa: E501
 
+        Right rear framerail minimum  # noqa: E501
 
         :return: The limits_rr_framerail_min of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1413,6 +1506,7 @@ class OSSScan(object):
     def limits_rr_framerail_min(self, limits_rr_framerail_min):
         """Sets the limits_rr_framerail_min of this OSSScan.
 
+        Right rear framerail minimum  # noqa: E501
 
         :param limits_rr_framerail_min: The limits_rr_framerail_min of this OSSScan.  # noqa: E501
         :type: float
@@ -1424,6 +1518,7 @@ class OSSScan(object):
     def limits_rr_framerail_max(self):
         """Gets the limits_rr_framerail_max of this OSSScan.  # noqa: E501
 
+        Right rear framerail maximum  # noqa: E501
 
         :return: The limits_rr_framerail_max of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1434,6 +1529,7 @@ class OSSScan(object):
     def limits_rr_framerail_max(self, limits_rr_framerail_max):
         """Sets the limits_rr_framerail_max of this OSSScan.
 
+        Right rear framerail maximum  # noqa: E501
 
         :param limits_rr_framerail_max: The limits_rr_framerail_max of this OSSScan.  # noqa: E501
         :type: float
@@ -1445,6 +1541,7 @@ class OSSScan(object):
     def passfails_rr_framerail(self):
         """Gets the passfails_rr_framerail of this OSSScan.  # noqa: E501
 
+        Right rear framerail pass/fails  # noqa: E501
 
         :return: The passfails_rr_framerail of this OSSScan.  # noqa: E501
         :rtype: bool
@@ -1455,6 +1552,7 @@ class OSSScan(object):
     def passfails_rr_framerail(self, passfails_rr_framerail):
         """Sets the passfails_rr_framerail of this OSSScan.
 
+        Right rear framerail pass/fails  # noqa: E501
 
         :param passfails_rr_framerail: The passfails_rr_framerail of this OSSScan.  # noqa: E501
         :type: bool
@@ -1466,6 +1564,7 @@ class OSSScan(object):
     def results_rr_framerail(self):
         """Gets the results_rr_framerail of this OSSScan.  # noqa: E501
 
+        Right rear framerail results  # noqa: E501
 
         :return: The results_rr_framerail of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1476,6 +1575,7 @@ class OSSScan(object):
     def results_rr_framerail(self, results_rr_framerail):
         """Sets the results_rr_framerail of this OSSScan.
 
+        Right rear framerail results  # noqa: E501
 
         :param results_rr_framerail: The results_rr_framerail of this OSSScan.  # noqa: E501
         :type: float
@@ -1487,6 +1587,7 @@ class OSSScan(object):
     def limits_right_parallel_min(self):
         """Gets the limits_right_parallel_min of this OSSScan.  # noqa: E501
 
+        Right parallel minimum  # noqa: E501
 
         :return: The limits_right_parallel_min of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1497,6 +1598,7 @@ class OSSScan(object):
     def limits_right_parallel_min(self, limits_right_parallel_min):
         """Sets the limits_right_parallel_min of this OSSScan.
 
+        Right parallel minimum  # noqa: E501
 
         :param limits_right_parallel_min: The limits_right_parallel_min of this OSSScan.  # noqa: E501
         :type: float
@@ -1508,6 +1610,7 @@ class OSSScan(object):
     def limits_right_parallel_max(self):
         """Gets the limits_right_parallel_max of this OSSScan.  # noqa: E501
 
+        Right parallel maximum  # noqa: E501
 
         :return: The limits_right_parallel_max of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1518,6 +1621,7 @@ class OSSScan(object):
     def limits_right_parallel_max(self, limits_right_parallel_max):
         """Sets the limits_right_parallel_max of this OSSScan.
 
+        Right parallel maximum  # noqa: E501
 
         :param limits_right_parallel_max: The limits_right_parallel_max of this OSSScan.  # noqa: E501
         :type: float
@@ -1529,6 +1633,7 @@ class OSSScan(object):
     def passfails_right_parallel(self):
         """Gets the passfails_right_parallel of this OSSScan.  # noqa: E501
 
+        Right parallel pass/fails  # noqa: E501
 
         :return: The passfails_right_parallel of this OSSScan.  # noqa: E501
         :rtype: bool
@@ -1539,6 +1644,7 @@ class OSSScan(object):
     def passfails_right_parallel(self, passfails_right_parallel):
         """Sets the passfails_right_parallel of this OSSScan.
 
+        Right parallel pass/fails  # noqa: E501
 
         :param passfails_right_parallel: The passfails_right_parallel of this OSSScan.  # noqa: E501
         :type: bool
@@ -1550,6 +1656,7 @@ class OSSScan(object):
     def results_right_parallel(self):
         """Gets the results_right_parallel of this OSSScan.  # noqa: E501
 
+        Right parallel results  # noqa: E501
 
         :return: The results_right_parallel of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1560,6 +1667,7 @@ class OSSScan(object):
     def results_right_parallel(self, results_right_parallel):
         """Sets the results_right_parallel of this OSSScan.
 
+        Right parallel results  # noqa: E501
 
         :param results_right_parallel: The results_right_parallel of this OSSScan.  # noqa: E501
         :type: float
@@ -1571,6 +1679,7 @@ class OSSScan(object):
     def limits_treadwidth_front_min(self):
         """Gets the limits_treadwidth_front_min of this OSSScan.  # noqa: E501
 
+        Front treadwidth minimum  # noqa: E501
 
         :return: The limits_treadwidth_front_min of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1581,6 +1690,7 @@ class OSSScan(object):
     def limits_treadwidth_front_min(self, limits_treadwidth_front_min):
         """Sets the limits_treadwidth_front_min of this OSSScan.
 
+        Front treadwidth minimum  # noqa: E501
 
         :param limits_treadwidth_front_min: The limits_treadwidth_front_min of this OSSScan.  # noqa: E501
         :type: float
@@ -1592,6 +1702,7 @@ class OSSScan(object):
     def limits_treadwidth_front_max(self):
         """Gets the limits_treadwidth_front_max of this OSSScan.  # noqa: E501
 
+        Front treadwidth maximum  # noqa: E501
 
         :return: The limits_treadwidth_front_max of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1602,6 +1713,7 @@ class OSSScan(object):
     def limits_treadwidth_front_max(self, limits_treadwidth_front_max):
         """Sets the limits_treadwidth_front_max of this OSSScan.
 
+        Front treadwidth maximum  # noqa: E501
 
         :param limits_treadwidth_front_max: The limits_treadwidth_front_max of this OSSScan.  # noqa: E501
         :type: float
@@ -1613,6 +1725,7 @@ class OSSScan(object):
     def passfails_treadwidth_front(self):
         """Gets the passfails_treadwidth_front of this OSSScan.  # noqa: E501
 
+        Front treadwidth pass/fails  # noqa: E501
 
         :return: The passfails_treadwidth_front of this OSSScan.  # noqa: E501
         :rtype: bool
@@ -1623,6 +1736,7 @@ class OSSScan(object):
     def passfails_treadwidth_front(self, passfails_treadwidth_front):
         """Sets the passfails_treadwidth_front of this OSSScan.
 
+        Front treadwidth pass/fails  # noqa: E501
 
         :param passfails_treadwidth_front: The passfails_treadwidth_front of this OSSScan.  # noqa: E501
         :type: bool
@@ -1634,6 +1748,7 @@ class OSSScan(object):
     def results_treadwidth_front(self):
         """Gets the results_treadwidth_front of this OSSScan.  # noqa: E501
 
+        Front treadwidth results  # noqa: E501
 
         :return: The results_treadwidth_front of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1644,6 +1759,7 @@ class OSSScan(object):
     def results_treadwidth_front(self, results_treadwidth_front):
         """Sets the results_treadwidth_front of this OSSScan.
 
+        Front treadwidth results  # noqa: E501
 
         :param results_treadwidth_front: The results_treadwidth_front of this OSSScan.  # noqa: E501
         :type: float
@@ -1655,6 +1771,7 @@ class OSSScan(object):
     def limits_treadwidth_rear_min(self):
         """Gets the limits_treadwidth_rear_min of this OSSScan.  # noqa: E501
 
+        Rear treadwidth minimum  # noqa: E501
 
         :return: The limits_treadwidth_rear_min of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1665,6 +1782,7 @@ class OSSScan(object):
     def limits_treadwidth_rear_min(self, limits_treadwidth_rear_min):
         """Sets the limits_treadwidth_rear_min of this OSSScan.
 
+        Rear treadwidth minimum  # noqa: E501
 
         :param limits_treadwidth_rear_min: The limits_treadwidth_rear_min of this OSSScan.  # noqa: E501
         :type: float
@@ -1676,6 +1794,7 @@ class OSSScan(object):
     def limits_treadwidth_rear_max(self):
         """Gets the limits_treadwidth_rear_max of this OSSScan.  # noqa: E501
 
+        Rear treadwidth maximum  # noqa: E501
 
         :return: The limits_treadwidth_rear_max of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1686,6 +1805,7 @@ class OSSScan(object):
     def limits_treadwidth_rear_max(self, limits_treadwidth_rear_max):
         """Sets the limits_treadwidth_rear_max of this OSSScan.
 
+        Rear treadwidth maximum  # noqa: E501
 
         :param limits_treadwidth_rear_max: The limits_treadwidth_rear_max of this OSSScan.  # noqa: E501
         :type: float
@@ -1697,6 +1817,7 @@ class OSSScan(object):
     def passfails_treadwidth_rear(self):
         """Gets the passfails_treadwidth_rear of this OSSScan.  # noqa: E501
 
+        Rear treadwidth pass/fails  # noqa: E501
 
         :return: The passfails_treadwidth_rear of this OSSScan.  # noqa: E501
         :rtype: bool
@@ -1707,6 +1828,7 @@ class OSSScan(object):
     def passfails_treadwidth_rear(self, passfails_treadwidth_rear):
         """Sets the passfails_treadwidth_rear of this OSSScan.
 
+        Rear treadwidth pass/fails  # noqa: E501
 
         :param passfails_treadwidth_rear: The passfails_treadwidth_rear of this OSSScan.  # noqa: E501
         :type: bool
@@ -1718,6 +1840,7 @@ class OSSScan(object):
     def results_treadwidth_rear(self):
         """Gets the results_treadwidth_rear of this OSSScan.  # noqa: E501
 
+        Rear treadwidth results  # noqa: E501
 
         :return: The results_treadwidth_rear of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1728,6 +1851,7 @@ class OSSScan(object):
     def results_treadwidth_rear(self, results_treadwidth_rear):
         """Sets the results_treadwidth_rear of this OSSScan.
 
+        Rear treadwidth results  # noqa: E501
 
         :param results_treadwidth_rear: The results_treadwidth_rear of this OSSScan.  # noqa: E501
         :type: float
@@ -1739,6 +1863,7 @@ class OSSScan(object):
     def limits_wheelbase_left_min(self):
         """Gets the limits_wheelbase_left_min of this OSSScan.  # noqa: E501
 
+        Left wheelbase minimum  # noqa: E501
 
         :return: The limits_wheelbase_left_min of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1749,6 +1874,7 @@ class OSSScan(object):
     def limits_wheelbase_left_min(self, limits_wheelbase_left_min):
         """Sets the limits_wheelbase_left_min of this OSSScan.
 
+        Left wheelbase minimum  # noqa: E501
 
         :param limits_wheelbase_left_min: The limits_wheelbase_left_min of this OSSScan.  # noqa: E501
         :type: float
@@ -1760,6 +1886,7 @@ class OSSScan(object):
     def limits_wheelbase_left_max(self):
         """Gets the limits_wheelbase_left_max of this OSSScan.  # noqa: E501
 
+        Left wheelbase maximum  # noqa: E501
 
         :return: The limits_wheelbase_left_max of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1770,6 +1897,7 @@ class OSSScan(object):
     def limits_wheelbase_left_max(self, limits_wheelbase_left_max):
         """Sets the limits_wheelbase_left_max of this OSSScan.
 
+        Left wheelbase maximum  # noqa: E501
 
         :param limits_wheelbase_left_max: The limits_wheelbase_left_max of this OSSScan.  # noqa: E501
         :type: float
@@ -1781,6 +1909,7 @@ class OSSScan(object):
     def passfails_wheelbase_left(self):
         """Gets the passfails_wheelbase_left of this OSSScan.  # noqa: E501
 
+        Left wheelbase pass/fails  # noqa: E501
 
         :return: The passfails_wheelbase_left of this OSSScan.  # noqa: E501
         :rtype: bool
@@ -1791,6 +1920,7 @@ class OSSScan(object):
     def passfails_wheelbase_left(self, passfails_wheelbase_left):
         """Sets the passfails_wheelbase_left of this OSSScan.
 
+        Left wheelbase pass/fails  # noqa: E501
 
         :param passfails_wheelbase_left: The passfails_wheelbase_left of this OSSScan.  # noqa: E501
         :type: bool
@@ -1802,6 +1932,7 @@ class OSSScan(object):
     def results_wheelbase_left(self):
         """Gets the results_wheelbase_left of this OSSScan.  # noqa: E501
 
+        Left wheelbase results  # noqa: E501
 
         :return: The results_wheelbase_left of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1812,6 +1943,7 @@ class OSSScan(object):
     def results_wheelbase_left(self, results_wheelbase_left):
         """Sets the results_wheelbase_left of this OSSScan.
 
+        Left wheelbase results  # noqa: E501
 
         :param results_wheelbase_left: The results_wheelbase_left of this OSSScan.  # noqa: E501
         :type: float
@@ -1823,6 +1955,7 @@ class OSSScan(object):
     def limits_wheelbase_right_min(self):
         """Gets the limits_wheelbase_right_min of this OSSScan.  # noqa: E501
 
+        Right wheelbase minimum  # noqa: E501
 
         :return: The limits_wheelbase_right_min of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1833,6 +1966,7 @@ class OSSScan(object):
     def limits_wheelbase_right_min(self, limits_wheelbase_right_min):
         """Sets the limits_wheelbase_right_min of this OSSScan.
 
+        Right wheelbase minimum  # noqa: E501
 
         :param limits_wheelbase_right_min: The limits_wheelbase_right_min of this OSSScan.  # noqa: E501
         :type: float
@@ -1844,6 +1978,7 @@ class OSSScan(object):
     def limits_wheelbase_right_max(self):
         """Gets the limits_wheelbase_right_max of this OSSScan.  # noqa: E501
 
+        Right wheelbase maximum  # noqa: E501
 
         :return: The limits_wheelbase_right_max of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1854,6 +1989,7 @@ class OSSScan(object):
     def limits_wheelbase_right_max(self, limits_wheelbase_right_max):
         """Sets the limits_wheelbase_right_max of this OSSScan.
 
+        Right wheelbase maximum  # noqa: E501
 
         :param limits_wheelbase_right_max: The limits_wheelbase_right_max of this OSSScan.  # noqa: E501
         :type: float
@@ -1865,6 +2001,7 @@ class OSSScan(object):
     def passfails_wheelbase_right(self):
         """Gets the passfails_wheelbase_right of this OSSScan.  # noqa: E501
 
+        Right wheelbase pass/fails  # noqa: E501
 
         :return: The passfails_wheelbase_right of this OSSScan.  # noqa: E501
         :rtype: bool
@@ -1875,6 +2012,7 @@ class OSSScan(object):
     def passfails_wheelbase_right(self, passfails_wheelbase_right):
         """Sets the passfails_wheelbase_right of this OSSScan.
 
+        Right wheelbase pass/fails  # noqa: E501
 
         :param passfails_wheelbase_right: The passfails_wheelbase_right of this OSSScan.  # noqa: E501
         :type: bool
@@ -1886,6 +2024,7 @@ class OSSScan(object):
     def results_wheelbase_right(self):
         """Gets the results_wheelbase_right of this OSSScan.  # noqa: E501
 
+        Right wheelbase results  # noqa: E501
 
         :return: The results_wheelbase_right of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1896,6 +2035,7 @@ class OSSScan(object):
     def results_wheelbase_right(self, results_wheelbase_right):
         """Sets the results_wheelbase_right of this OSSScan.
 
+        Right wheelbase results  # noqa: E501
 
         :param results_wheelbase_right: The results_wheelbase_right of this OSSScan.  # noqa: E501
         :type: float
@@ -1907,6 +2047,7 @@ class OSSScan(object):
     def limits_toe_lr_min(self):
         """Gets the limits_toe_lr_min of this OSSScan.  # noqa: E501
 
+        Left rear toe minimum  # noqa: E501
 
         :return: The limits_toe_lr_min of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1917,6 +2058,7 @@ class OSSScan(object):
     def limits_toe_lr_min(self, limits_toe_lr_min):
         """Sets the limits_toe_lr_min of this OSSScan.
 
+        Left rear toe minimum  # noqa: E501
 
         :param limits_toe_lr_min: The limits_toe_lr_min of this OSSScan.  # noqa: E501
         :type: float
@@ -1928,6 +2070,7 @@ class OSSScan(object):
     def limits_toe_lr_max(self):
         """Gets the limits_toe_lr_max of this OSSScan.  # noqa: E501
 
+        Left rear toe maximum  # noqa: E501
 
         :return: The limits_toe_lr_max of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1938,6 +2081,7 @@ class OSSScan(object):
     def limits_toe_lr_max(self, limits_toe_lr_max):
         """Sets the limits_toe_lr_max of this OSSScan.
 
+        Left rear toe maximum  # noqa: E501
 
         :param limits_toe_lr_max: The limits_toe_lr_max of this OSSScan.  # noqa: E501
         :type: float
@@ -1949,6 +2093,7 @@ class OSSScan(object):
     def passfails_toe_lr(self):
         """Gets the passfails_toe_lr of this OSSScan.  # noqa: E501
 
+        Left rear toe pass/fails  # noqa: E501
 
         :return: The passfails_toe_lr of this OSSScan.  # noqa: E501
         :rtype: bool
@@ -1959,6 +2104,7 @@ class OSSScan(object):
     def passfails_toe_lr(self, passfails_toe_lr):
         """Sets the passfails_toe_lr of this OSSScan.
 
+        Left rear toe pass/fails  # noqa: E501
 
         :param passfails_toe_lr: The passfails_toe_lr of this OSSScan.  # noqa: E501
         :type: bool
@@ -1970,6 +2116,7 @@ class OSSScan(object):
     def results_toe_lr(self):
         """Gets the results_toe_lr of this OSSScan.  # noqa: E501
 
+        Left rear toe results  # noqa: E501
 
         :return: The results_toe_lr of this OSSScan.  # noqa: E501
         :rtype: float
@@ -1980,6 +2127,7 @@ class OSSScan(object):
     def results_toe_lr(self, results_toe_lr):
         """Sets the results_toe_lr of this OSSScan.
 
+        Left rear toe results  # noqa: E501
 
         :param results_toe_lr: The results_toe_lr of this OSSScan.  # noqa: E501
         :type: float
@@ -1991,6 +2139,7 @@ class OSSScan(object):
     def limits_toe_rr_min(self):
         """Gets the limits_toe_rr_min of this OSSScan.  # noqa: E501
 
+        Right rear toe minimum  # noqa: E501
 
         :return: The limits_toe_rr_min of this OSSScan.  # noqa: E501
         :rtype: float
@@ -2001,6 +2150,7 @@ class OSSScan(object):
     def limits_toe_rr_min(self, limits_toe_rr_min):
         """Sets the limits_toe_rr_min of this OSSScan.
 
+        Right rear toe minimum  # noqa: E501
 
         :param limits_toe_rr_min: The limits_toe_rr_min of this OSSScan.  # noqa: E501
         :type: float
@@ -2012,6 +2162,7 @@ class OSSScan(object):
     def limits_toe_rr_max(self):
         """Gets the limits_toe_rr_max of this OSSScan.  # noqa: E501
 
+        Right rear toe maximum  # noqa: E501
 
         :return: The limits_toe_rr_max of this OSSScan.  # noqa: E501
         :rtype: float
@@ -2022,6 +2173,7 @@ class OSSScan(object):
     def limits_toe_rr_max(self, limits_toe_rr_max):
         """Sets the limits_toe_rr_max of this OSSScan.
 
+        Right rear toe maximum  # noqa: E501
 
         :param limits_toe_rr_max: The limits_toe_rr_max of this OSSScan.  # noqa: E501
         :type: float
@@ -2033,6 +2185,7 @@ class OSSScan(object):
     def passfails_toe_rr(self):
         """Gets the passfails_toe_rr of this OSSScan.  # noqa: E501
 
+        Right rear pass/fails  # noqa: E501
 
         :return: The passfails_toe_rr of this OSSScan.  # noqa: E501
         :rtype: bool
@@ -2043,6 +2196,7 @@ class OSSScan(object):
     def passfails_toe_rr(self, passfails_toe_rr):
         """Sets the passfails_toe_rr of this OSSScan.
 
+        Right rear pass/fails  # noqa: E501
 
         :param passfails_toe_rr: The passfails_toe_rr of this OSSScan.  # noqa: E501
         :type: bool
@@ -2054,6 +2208,7 @@ class OSSScan(object):
     def results_toe_rr(self):
         """Gets the results_toe_rr of this OSSScan.  # noqa: E501
 
+        Right rear toe results  # noqa: E501
 
         :return: The results_toe_rr of this OSSScan.  # noqa: E501
         :rtype: float
@@ -2064,6 +2219,7 @@ class OSSScan(object):
     def results_toe_rr(self, results_toe_rr):
         """Sets the results_toe_rr of this OSSScan.
 
+        Right rear toe results  # noqa: E501
 
         :param results_toe_rr: The results_toe_rr of this OSSScan.  # noqa: E501
         :type: float
@@ -2075,6 +2231,7 @@ class OSSScan(object):
     def inspection_date(self):
         """Gets the inspection_date of this OSSScan.  # noqa: E501
 
+        Inspection date  # noqa: E501
 
         :return: The inspection_date of this OSSScan.  # noqa: E501
         :rtype: datetime
@@ -2085,6 +2242,7 @@ class OSSScan(object):
     def inspection_date(self, inspection_date):
         """Sets the inspection_date of this OSSScan.
 
+        Inspection date  # noqa: E501
 
         :param inspection_date: The inspection_date of this OSSScan.  # noqa: E501
         :type: datetime

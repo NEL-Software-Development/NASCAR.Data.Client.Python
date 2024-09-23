@@ -82,6 +82,7 @@ class RunEntry(object):
     def driver_name(self):
         """Gets the driver_name of this RunEntry.  # noqa: E501
 
+        Driver name  # noqa: E501
 
         :return: The driver_name of this RunEntry.  # noqa: E501
         :rtype: str
@@ -92,6 +93,7 @@ class RunEntry(object):
     def driver_name(self, driver_name):
         """Sets the driver_name of this RunEntry.
 
+        Driver name  # noqa: E501
 
         :param driver_name: The driver_name of this RunEntry.  # noqa: E501
         :type: str
@@ -103,6 +105,7 @@ class RunEntry(object):
     def driver_details(self):
         """Gets the driver_details of this RunEntry.  # noqa: E501
 
+        URL to driver details  # noqa: E501
 
         :return: The driver_details of this RunEntry.  # noqa: E501
         :rtype: str
@@ -113,6 +116,7 @@ class RunEntry(object):
     def driver_details(self, driver_details):
         """Sets the driver_details of this RunEntry.
 
+        URL to driver details  # noqa: E501
 
         :param driver_details: The driver_details of this RunEntry.  # noqa: E501
         :type: str
@@ -124,6 +128,7 @@ class RunEntry(object):
     def vehicle_number(self):
         """Gets the vehicle_number of this RunEntry.  # noqa: E501
 
+        Vehicle number  # noqa: E501
 
         :return: The vehicle_number of this RunEntry.  # noqa: E501
         :rtype: str
@@ -134,6 +139,7 @@ class RunEntry(object):
     def vehicle_number(self, vehicle_number):
         """Sets the vehicle_number of this RunEntry.
 
+        Vehicle number  # noqa: E501
 
         :param vehicle_number: The vehicle_number of this RunEntry.  # noqa: E501
         :type: str
@@ -145,6 +151,7 @@ class RunEntry(object):
     def vehicle_details(self):
         """Gets the vehicle_details of this RunEntry.  # noqa: E501
 
+        URL to vehicle details  # noqa: E501
 
         :return: The vehicle_details of this RunEntry.  # noqa: E501
         :rtype: str
@@ -155,6 +162,7 @@ class RunEntry(object):
     def vehicle_details(self, vehicle_details):
         """Sets the vehicle_details of this RunEntry.
 
+        URL to vehicle details  # noqa: E501
 
         :param vehicle_details: The vehicle_details of this RunEntry.  # noqa: E501
         :type: str
@@ -166,6 +174,7 @@ class RunEntry(object):
     def owner_name(self):
         """Gets the owner_name of this RunEntry.  # noqa: E501
 
+        Owner name  # noqa: E501
 
         :return: The owner_name of this RunEntry.  # noqa: E501
         :rtype: str
@@ -176,6 +185,7 @@ class RunEntry(object):
     def owner_name(self, owner_name):
         """Sets the owner_name of this RunEntry.
 
+        Owner name  # noqa: E501
 
         :param owner_name: The owner_name of this RunEntry.  # noqa: E501
         :type: str
@@ -187,6 +197,7 @@ class RunEntry(object):
     def crew_chief(self):
         """Gets the crew_chief of this RunEntry.  # noqa: E501
 
+        Crew chief name  # noqa: E501
 
         :return: The crew_chief of this RunEntry.  # noqa: E501
         :rtype: str
@@ -197,6 +208,7 @@ class RunEntry(object):
     def crew_chief(self, crew_chief):
         """Sets the crew_chief of this RunEntry.
 
+        Crew chief name  # noqa: E501
 
         :param crew_chief: The crew_chief of this RunEntry.  # noqa: E501
         :type: str
@@ -208,6 +220,7 @@ class RunEntry(object):
     def model_year(self):
         """Gets the model_year of this RunEntry.  # noqa: E501
 
+        Vehicle model year  # noqa: E501
 
         :return: The model_year of this RunEntry.  # noqa: E501
         :rtype: int
@@ -218,6 +231,7 @@ class RunEntry(object):
     def model_year(self, model_year):
         """Sets the model_year of this RunEntry.
 
+        Vehicle model year  # noqa: E501
 
         :param model_year: The model_year of this RunEntry.  # noqa: E501
         :type: int
@@ -229,6 +243,7 @@ class RunEntry(object):
     def model(self):
         """Gets the model of this RunEntry.  # noqa: E501
 
+        Vehicle model  # noqa: E501
 
         :return: The model of this RunEntry.  # noqa: E501
         :rtype: str
@@ -239,6 +254,7 @@ class RunEntry(object):
     def model(self, model):
         """Sets the model of this RunEntry.
 
+        Vehicle model  # noqa: E501
 
         :param model: The model of this RunEntry.  # noqa: E501
         :type: str

@@ -67,6 +67,7 @@ class DisciplineUpdate(object):
     def inspection_type(self):
         """Gets the inspection_type of this DisciplineUpdate.  # noqa: E501
 
+        The type of inspection  # noqa: E501
 
         :return: The inspection_type of this DisciplineUpdate.  # noqa: E501
         :rtype: str
@@ -77,6 +78,7 @@ class DisciplineUpdate(object):
     def inspection_type(self, inspection_type):
         """Sets the inspection_type of this DisciplineUpdate.
 
+        The type of inspection  # noqa: E501
 
         :param inspection_type: The inspection_type of this DisciplineUpdate.  # noqa: E501
         :type: str
@@ -88,6 +90,7 @@ class DisciplineUpdate(object):
     def discipline(self):
         """Gets the discipline of this DisciplineUpdate.  # noqa: E501
 
+        The inspection discipline  # noqa: E501
 
         :return: The discipline of this DisciplineUpdate.  # noqa: E501
         :rtype: str
@@ -98,6 +101,7 @@ class DisciplineUpdate(object):
     def discipline(self, discipline):
         """Sets the discipline of this DisciplineUpdate.
 
+        The inspection discipline  # noqa: E501
 
         :param discipline: The discipline of this DisciplineUpdate.  # noqa: E501
         :type: str
@@ -109,6 +113,7 @@ class DisciplineUpdate(object):
     def vehicle_number(self):
         """Gets the vehicle_number of this DisciplineUpdate.  # noqa: E501
 
+        The vehicle inspected  # noqa: E501
 
         :return: The vehicle_number of this DisciplineUpdate.  # noqa: E501
         :rtype: str
@@ -119,6 +124,7 @@ class DisciplineUpdate(object):
     def vehicle_number(self, vehicle_number):
         """Sets the vehicle_number of this DisciplineUpdate.
 
+        The vehicle inspected  # noqa: E501
 
         :param vehicle_number: The vehicle_number of this DisciplineUpdate.  # noqa: E501
         :type: str
@@ -130,6 +136,7 @@ class DisciplineUpdate(object):
     def chassis(self):
         """Gets the chassis of this DisciplineUpdate.  # noqa: E501
 
+        The chassis inspected  # noqa: E501
 
         :return: The chassis of this DisciplineUpdate.  # noqa: E501
         :rtype: str
@@ -140,6 +147,7 @@ class DisciplineUpdate(object):
     def chassis(self, chassis):
         """Sets the chassis of this DisciplineUpdate.
 
+        The chassis inspected  # noqa: E501
 
         :param chassis: The chassis of this DisciplineUpdate.  # noqa: E501
         :type: str
@@ -151,6 +159,7 @@ class DisciplineUpdate(object):
     def inspection_time(self):
         """Gets the inspection_time of this DisciplineUpdate.  # noqa: E501
 
+        The time of the inspection  # noqa: E501
 
         :return: The inspection_time of this DisciplineUpdate.  # noqa: E501
         :rtype: datetime
@@ -161,6 +170,7 @@ class DisciplineUpdate(object):
     def inspection_time(self, inspection_time):
         """Sets the inspection_time of this DisciplineUpdate.
 
+        The time of the inspection  # noqa: E501
 
         :param inspection_time: The inspection_time of this DisciplineUpdate.  # noqa: E501
         :type: datetime
