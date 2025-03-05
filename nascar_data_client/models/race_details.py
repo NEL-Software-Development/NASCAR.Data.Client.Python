@@ -30,6 +30,7 @@ class RaceDetails(object):
     """
     swagger_types = {
         'id': 'int',
+        'history_race_id': 'int',
         'series_id': 'int',
         'name': 'str',
         'promoter': 'str',
@@ -44,6 +45,9 @@ class RaceDetails(object):
         'pitstops': 'str',
         '_date': 'datetime',
         'comments': 'str',
+        'track_name': 'str',
+        'track_id': 'int',
+        'inspection_complete': 'bool',
         'entries': 'list[RunEntry]',
         'runs': 'list[RunDetails]',
         'schedule': 'list[WeekendSchedule]'
@@ -51,6 +55,7 @@ class RaceDetails(object):
 
     attribute_map = {
         'id': 'id',
+        'history_race_id': 'history_race_id',
         'series_id': 'series_id',
         'name': 'name',
         'promoter': 'promoter',
@@ -65,14 +70,18 @@ class RaceDetails(object):
         'pitstops': 'pitstops',
         '_date': 'date',
         'comments': 'comments',
+        'track_name': 'track_name',
+        'track_id': 'track_id',
+        'inspection_complete': 'inspection_complete',
         'entries': 'entries',
         'runs': 'runs',
         'schedule': 'schedule'
     }
 
-    def __init__(self, id=None, series_id=None, name=None, promoter=None, laps=None, distance=None, practice_results=None, qualifying_results=None, race_results=None, cautions=None, infractions=None, lap_leaders=None, pitstops=None, _date=None, comments=None, entries=None, runs=None, schedule=None):  # noqa: E501
+    def __init__(self, id=None, history_race_id=-1, series_id=None, name=None, promoter=None, laps=None, distance=None, practice_results=None, qualifying_results=None, race_results=None, cautions=None, infractions=None, lap_leaders=None, pitstops=None, _date=None, comments=None, track_name=None, track_id=None, inspection_complete=None, entries=None, runs=None, schedule=None):  # noqa: E501
         """RaceDetails - a model defined in Swagger"""  # noqa: E501
         self._id = None
+        self._history_race_id = None
         self._series_id = None
         self._name = None
         self._promoter = None
@@ -87,12 +96,17 @@ class RaceDetails(object):
         self._pitstops = None
         self.__date = None
         self._comments = None
+        self._track_name = None
+        self._track_id = None
+        self._inspection_complete = None
         self._entries = None
         self._runs = None
         self._schedule = None
         self.discriminator = None
         if id is not None:
             self.id = id
+        if history_race_id is not None:
+            self.history_race_id = history_race_id
         if series_id is not None:
             self.series_id = series_id
         if name is not None:
@@ -121,6 +135,12 @@ class RaceDetails(object):
             self._date = _date
         if comments is not None:
             self.comments = comments
+        if track_name is not None:
+            self.track_name = track_name
+        if track_id is not None:
+            self.track_id = track_id
+        if inspection_complete is not None:
+            self.inspection_complete = inspection_complete
         if entries is not None:
             self.entries = entries
         if runs is not None:
@@ -150,6 +170,29 @@ class RaceDetails(object):
         """
 
         self._id = id
+
+    @property
+    def history_race_id(self):
+        """Gets the history_race_id of this RaceDetails.  # noqa: E501
+
+        The race id from the history database  # noqa: E501
+
+        :return: The history_race_id of this RaceDetails.  # noqa: E501
+        :rtype: int
+        """
+        return self._history_race_id
+
+    @history_race_id.setter
+    def history_race_id(self, history_race_id):
+        """Sets the history_race_id of this RaceDetails.
+
+        The race id from the history database  # noqa: E501
+
+        :param history_race_id: The history_race_id of this RaceDetails.  # noqa: E501
+        :type: int
+        """
+
+        self._history_race_id = history_race_id
 
     @property
     def series_id(self):
@@ -472,6 +515,75 @@ class RaceDetails(object):
         """
 
         self._comments = comments
+
+    @property
+    def track_name(self):
+        """Gets the track_name of this RaceDetails.  # noqa: E501
+
+        Track Name  # noqa: E501
+
+        :return: The track_name of this RaceDetails.  # noqa: E501
+        :rtype: str
+        """
+        return self._track_name
+
+    @track_name.setter
+    def track_name(self, track_name):
+        """Sets the track_name of this RaceDetails.
+
+        Track Name  # noqa: E501
+
+        :param track_name: The track_name of this RaceDetails.  # noqa: E501
+        :type: str
+        """
+
+        self._track_name = track_name
+
+    @property
+    def track_id(self):
+        """Gets the track_id of this RaceDetails.  # noqa: E501
+
+        Track Id  # noqa: E501
+
+        :return: The track_id of this RaceDetails.  # noqa: E501
+        :rtype: int
+        """
+        return self._track_id
+
+    @track_id.setter
+    def track_id(self, track_id):
+        """Sets the track_id of this RaceDetails.
+
+        Track Id  # noqa: E501
+
+        :param track_id: The track_id of this RaceDetails.  # noqa: E501
+        :type: int
+        """
+
+        self._track_id = track_id
+
+    @property
+    def inspection_complete(self):
+        """Gets the inspection_complete of this RaceDetails.  # noqa: E501
+
+        Has inspection been completed  # noqa: E501
+
+        :return: The inspection_complete of this RaceDetails.  # noqa: E501
+        :rtype: bool
+        """
+        return self._inspection_complete
+
+    @inspection_complete.setter
+    def inspection_complete(self, inspection_complete):
+        """Sets the inspection_complete of this RaceDetails.
+
+        Has inspection been completed  # noqa: E501
+
+        :param inspection_complete: The inspection_complete of this RaceDetails.  # noqa: E501
+        :type: bool
+        """
+
+        self._inspection_complete = inspection_complete
 
     @property
     def entries(self):

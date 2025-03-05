@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** | The id of the race | [optional] 
+**history_race_id** | **int** | The race id from the history database | [optional] [default to -1]
 **series_id** | **int** | The series id of the race | [optional] 
 **name** | **str** | The race name | [optional] 
 **promoter** | **str** | The promoter of the race | [optional] 
@@ -18,6 +19,9 @@ Name | Type | Description | Notes
 **pitstops** | **str** | URL to race pitstops | [optional] 
 **_date** | **datetime** | Race date | [optional] 
 **comments** | **str** | Race Comments | [optional] 
+**track_name** | **str** | Track Name | [optional] 
+**track_id** | **int** | Track Id | [optional] 
+**inspection_complete** | **bool** | Has inspection been completed | [optional] 
 **entries** | [**list[RunEntry]**](RunEntry.md) | Race entries | [optional] 
 **runs** | [**list[RunDetails]**](RunDetails.md) | Runs | [optional] 
 **schedule** | [**list[WeekendSchedule]**](WeekendSchedule.md) | Weekend Schedule | [optional] 

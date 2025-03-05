@@ -1,6 +1,6 @@
 # nascar_data_client.DriverSummaryApi
 
-All URIs are relative to */api*
+All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

@@ -1,14 +1,14 @@
-# nascar_data_client.FeedbackApi
+# nascar_data_client.TracksApi
 
 All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**feedback_dev_notes_get**](FeedbackApi.md#feedback_dev_notes_get) | **GET** /feedback/dev-notes | 
-[**feedback_submit_feedback_post**](FeedbackApi.md#feedback_submit_feedback_post) | **POST** /feedback/submit-feedback | 
+[**track_details_get**](TracksApi.md#track_details_get) | **GET** /track-details | 
+[**tracks_get**](TracksApi.md#tracks_get) | **GET** /tracks | 
 
-# **feedback_dev_notes_get**
-> list[DevNote] feedback_dev_notes_get()
+# **track_details_get**
+> TrackDetails track_details_get(track_id=track_id)
 
 
 
@@ -22,21 +22,25 @@ from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = nascar_data_client.FeedbackApi(nascar_data_client.ApiClient(configuration))
+api_instance = nascar_data_client.TracksApi(nascar_data_client.ApiClient(configuration))
+track_id = 56 # int |  (optional)
 
 try:
-    api_response = api_instance.feedback_dev_notes_get()
+    api_response = api_instance.track_details_get(track_id=track_id)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling FeedbackApi->feedback_dev_notes_get: %s\n" % e)
+    print("Exception when calling TracksApi->track_details_get: %s\n" % e)
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **track_id** | **int**|  | [optional] 
 
 ### Return type
 
-[**list[DevNote]**](DevNote.md)
+[**TrackDetails**](TrackDetails.md)
 
 ### Authorization
 
@@ -49,8 +53,8 @@ This endpoint does not need any parameter.
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **feedback_submit_feedback_post**
-> feedback_submit_feedback_post(body=body)
+# **tracks_get**
+> Track tracks_get()
 
 
 
@@ -64,24 +68,21 @@ from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = nascar_data_client.FeedbackApi(nascar_data_client.ApiClient(configuration))
-body = nascar_data_client.Feedback() # Feedback |  (optional)
+api_instance = nascar_data_client.TracksApi(nascar_data_client.ApiClient(configuration))
 
 try:
-    api_instance.feedback_submit_feedback_post(body=body)
+    api_response = api_instance.tracks_get()
+    pprint(api_response)
 except ApiException as e:
-    print("Exception when calling FeedbackApi->feedback_submit_feedback_post: %s\n" % e)
+    print("Exception when calling TracksApi->tracks_get: %s\n" % e)
 ```
 
 ### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**Feedback**](Feedback.md)|  | [optional] 
+This endpoint does not need any parameter.
 
 ### Return type
 
-void (empty response body)
+[**Track**](Track.md)
 
 ### Authorization
 
@@ -89,8 +90,8 @@ void (empty response body)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/*+json
- - **Accept**: Not defined
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
