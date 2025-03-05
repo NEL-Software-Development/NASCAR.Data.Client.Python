@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **driver_name** | **str** | Driver name | [optional] 
 **driver_details** | **str** | URL to driver details | [optional] 
+**sponsor** | **str** | Sponsor | [optional] 
 **vehicle_number** | **str** | Vehicle number | [optional] 
 **vehicle_details** | **str** | URL to vehicle details | [optional] 
 **owner_name** | **str** | Owner name | [optional] 

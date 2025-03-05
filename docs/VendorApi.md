@@ -1,15 +1,15 @@
-# nascar_data_client.DriverApi
+# nascar_data_client.VendorApi
 
 All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**driver_get**](DriverApi.md#driver_get) | **GET** /driver | 
-[**driver_season_finishes_get**](DriverApi.md#driver_season_finishes_get) | **GET** /driver/season-finishes | 
-[**driver_season_get**](DriverApi.md#driver_season_get) | **GET** /driver/season | 
+[**vendor_crl_testresult_post**](VendorApi.md#vendor_crl_testresult_post) | **POST** /vendor/crl_testresult | 
+[**vendor_tires_post**](VendorApi.md#vendor_tires_post) | **POST** /vendor/tires | 
+[**vendor_utm_offsets_post**](VendorApi.md#vendor_utm_offsets_post) | **POST** /vendor/utm_offsets | 
 
-# **driver_get**
-> Driver driver_get(id=id)
+# **vendor_crl_testresult_post**
+> vendor_crl_testresult_post(body=body)
 
 
 
@@ -23,25 +23,24 @@ from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = nascar_data_client.DriverApi(nascar_data_client.ApiClient(configuration))
-id = 56 # int |  (optional)
+api_instance = nascar_data_client.VendorApi(nascar_data_client.ApiClient(configuration))
+body = nascar_data_client.CrlFormFoxResult() # CrlFormFoxResult |  (optional)
 
 try:
-    api_response = api_instance.driver_get(id=id)
-    pprint(api_response)
+    api_instance.vendor_crl_testresult_post(body=body)
 except ApiException as e:
-    print("Exception when calling DriverApi->driver_get: %s\n" % e)
+    print("Exception when calling VendorApi->vendor_crl_testresult_post: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**|  | [optional] 
+ **body** | [**CrlFormFoxResult**](CrlFormFoxResult.md)|  | [optional] 
 
 ### Return type
 
-[**Driver**](Driver.md)
+void (empty response body)
 
 ### Authorization
 
@@ -49,13 +48,59 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, text/json, application/*+json
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **vendor_tires_post**
+> TireListETLSaveResult vendor_tires_post(body=body)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import nascar_data_client
+from nascar_data_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = nascar_data_client.VendorApi(nascar_data_client.ApiClient(configuration))
+body = [nascar_data_client.Tire()] # list[Tire] |  (optional)
+
+try:
+    api_response = api_instance.vendor_tires_post(body=body)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling VendorApi->vendor_tires_post: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**list[Tire]**](Tire.md)|  | [optional] 
+
+### Return type
+
+[**TireListETLSaveResult**](TireListETLSaveResult.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, text/json, application/*+json
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **driver_season_finishes_get**
-> list[RaceResultSummary] driver_season_finishes_get(id=id, season=season, series_id=series_id)
+# **vendor_utm_offsets_post**
+> OpticalTrackingUTMOffsetListETLSaveResult vendor_utm_offsets_post(body=body)
 
 
 
@@ -69,29 +114,25 @@ from pprint import pprint
 
 
 # create an instance of the API class
-api_instance = nascar_data_client.DriverApi(nascar_data_client.ApiClient(configuration))
-id = 56 # int |  (optional)
-season = 56 # int |  (optional)
-series_id = 56 # int |  (optional)
+api_instance = nascar_data_client.VendorApi(nascar_data_client.ApiClient(configuration))
+body = [nascar_data_client.OpticalTrackingUTMOffset()] # list[OpticalTrackingUTMOffset] |  (optional)
 
 try:
-    api_response = api_instance.driver_season_finishes_get(id=id, season=season, series_id=series_id)
+    api_response = api_instance.vendor_utm_offsets_post(body=body)
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling DriverApi->driver_season_finishes_get: %s\n" % e)
+    print("Exception when calling VendorApi->vendor_utm_offsets_post: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**|  | [optional] 
- **season** | **int**|  | [optional] 
- **series_id** | **int**|  | [optional] 
+ **body** | [**list[OpticalTrackingUTMOffset]**](OpticalTrackingUTMOffset.md)|  | [optional] 
 
 ### Return type
 
-[**list[RaceResultSummary]**](RaceResultSummary.md)
+[**OpticalTrackingUTMOffsetListETLSaveResult**](OpticalTrackingUTMOffsetListETLSaveResult.md)
 
 ### Authorization
 
@@ -99,55 +140,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: text/plain, application/json, text/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **driver_season_get**
-> list[Driver] driver_season_get(season=season, series_id=series_id)
-
-
-
-### Example
-```python
-from __future__ import print_function
-import time
-import nascar_data_client
-from nascar_data_client.rest import ApiException
-from pprint import pprint
-
-
-# create an instance of the API class
-api_instance = nascar_data_client.DriverApi(nascar_data_client.ApiClient(configuration))
-season = 56 # int |  (optional)
-series_id = 56 # int |  (optional)
-
-try:
-    api_response = api_instance.driver_season_get(season=season, series_id=series_id)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling DriverApi->driver_season_get: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **season** | **int**|  | [optional] 
- **series_id** | **int**|  | [optional] 
-
-### Return type
-
-[**list[Driver]**](Driver.md)
-
-### Authorization
-
-[Bearer](../README.md#Bearer)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json, text/json, application/*+json
  - **Accept**: text/plain, application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
