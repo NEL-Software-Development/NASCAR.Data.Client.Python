@@ -31,6 +31,7 @@ class RunEntry(object):
     swagger_types = {
         'driver_name': 'str',
         'driver_details': 'str',
+        'sponsor': 'str',
         'vehicle_number': 'str',
         'vehicle_details': 'str',
         'owner_name': 'str',
@@ -42,6 +43,7 @@ class RunEntry(object):
     attribute_map = {
         'driver_name': 'driver_name',
         'driver_details': 'driver_details',
+        'sponsor': 'sponsor',
         'vehicle_number': 'vehicle_number',
         'vehicle_details': 'vehicle_details',
         'owner_name': 'owner_name',
@@ -50,10 +52,11 @@ class RunEntry(object):
         'model': 'model'
     }
 
-    def __init__(self, driver_name=None, driver_details=None, vehicle_number=None, vehicle_details=None, owner_name=None, crew_chief=None, model_year=None, model=None):  # noqa: E501
+    def __init__(self, driver_name=None, driver_details=None, sponsor=None, vehicle_number=None, vehicle_details=None, owner_name=None, crew_chief=None, model_year=None, model=None):  # noqa: E501
         """RunEntry - a model defined in Swagger"""  # noqa: E501
         self._driver_name = None
         self._driver_details = None
+        self._sponsor = None
         self._vehicle_number = None
         self._vehicle_details = None
         self._owner_name = None
@@ -65,6 +68,8 @@ class RunEntry(object):
             self.driver_name = driver_name
         if driver_details is not None:
             self.driver_details = driver_details
+        if sponsor is not None:
+            self.sponsor = sponsor
         if vehicle_number is not None:
             self.vehicle_number = vehicle_number
         if vehicle_details is not None:
@@ -123,6 +128,29 @@ class RunEntry(object):
         """
 
         self._driver_details = driver_details
+
+    @property
+    def sponsor(self):
+        """Gets the sponsor of this RunEntry.  # noqa: E501
+
+        Sponsor  # noqa: E501
+
+        :return: The sponsor of this RunEntry.  # noqa: E501
+        :rtype: str
+        """
+        return self._sponsor
+
+    @sponsor.setter
+    def sponsor(self, sponsor):
+        """Sets the sponsor of this RunEntry.
+
+        Sponsor  # noqa: E501
+
+        :param sponsor: The sponsor of this RunEntry.  # noqa: E501
+        :type: str
+        """
+
+        self._sponsor = sponsor
 
     @property
     def vehicle_number(self):
