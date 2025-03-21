@@ -1,0 +1,47 @@
+# EditorOwnerPoints
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**publish_state** | [**PublishState**](PublishState.md) |  | [optional] 
+**id** | **int** |  | [optional] 
+**tracking_id** | **str** |  | [optional] 
+**in_data_warehouse** | **bool** |  | [optional] 
+**manually_set** | **bool** |  | [optional] 
+**last_update** | **datetime** |  | [optional] 
+**last_updated_by** | **str** |  | [optional] 
+**nascar_one_race_id** | **int** |  | [optional] 
+**history_race_id** | **int** |  | [optional] 
+**owner_member_id** | **int** |  | [optional] 
+**position** | **int** |  | [optional] 
+**vehicle_number** | **str** |  | [optional] 
+**owner** | **str** |  | [optional] 
+**points** | **int** |  | [optional] 
+**playoff_points** | **int** |  | [optional] 
+**playoff_rank** | **int** |  | [optional] 
+**delta_leader** | **int** |  | [optional] 
+**delta_next** | **int** |  | [optional] 
+**starts** | **int** |  | [optional] 
+**poles** | **int** |  | [optional] 
+**wins** | **int** |  | [optional] 
+**stage1_wins** | **int** |  | [optional] 
+**stage2_wins** | **int** |  | [optional] 
+**stage3_wins** | **int** |  | [optional] 
+**stage_points** | **int** |  | [optional] 
+**playoff_race_wins** | **int** |  | [optional] 
+**playoff_stage_wins** | **int** |  | [optional] 
+**points_earned_this_race** | **int** |  | [optional] 
+**stage_points_earned_this_race** | **int** |  | [optional] 
+**playoff_points_earned_this_race** | **int** |  | [optional] 
+**points_penalized_this_race** | **int** |  | [optional] 
+**playoff_points_penalized_this_race** | **int** |  | [optional] 
+**top5** | **int** |  | [optional] 
+**top10** | **int** |  | [optional] 
+**laps_led** | **int** |  | [optional] 
+**dn_fs** | **int** |  | [optional] 
+**in_playoffs** | **bool** |  | [optional] 
+**made_playoffs** | **bool** |  | [optional] 
+**highest_round** | **int** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

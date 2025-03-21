@@ -1,0 +1,48 @@
+# VehicleWeightMapping
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**publish_state** | [**PublishState**](PublishState.md) |  | [optional] 
+**id** | **int** |  | [optional] 
+**tracking_id** | **str** |  | [optional] 
+**in_data_warehouse** | **bool** |  | [optional] 
+**manually_set** | **bool** |  | [optional] 
+**last_update** | **datetime** |  | [optional] 
+**last_updated_by** | **str** |  | [optional] 
+**inspection_type** | **str** |  | [optional] 
+**vehicle_number** | **str** |  | [optional] 
+**driver_name** | **str** |  | [optional] 
+**added_weight_total** | **int** |  | [optional] 
+**added_weight_left** | **int** |  | [optional] 
+**added_weight_right** | **int** |  | [optional] 
+**cross_weight** | **int** |  | [optional] 
+**cross_weight_min** | **int** |  | [optional] 
+**cross_weight_max** | **int** |  | [optional] 
+**failed_reason** | **str** |  | [optional] 
+**go_around_reason** | **str** |  | [optional] 
+**is_evc** | **bool** |  | [optional] 
+**is_flange_body** | **bool** |  | [optional] 
+**is_go_around** | **bool** |  | [optional] 
+**is_passed** | **bool** |  | [optional] 
+**left_front** | **int** |  | [optional] 
+**left_rear** | **int** |  | [optional] 
+**left_side_weight** | **int** |  | [optional] 
+**left_side_weight_max** | **int** |  | [optional] 
+**nose_weight** | **int** |  | [optional] 
+**pre_qualifying_weight** | **int** |  | [optional] 
+**qualifying_weight_allowance** | **int** |  | [optional] 
+**qualifying_weight_difference** | **int** |  | [optional] 
+**rear_weight** | **int** |  | [optional] 
+**rear_weight_max** | **int** |  | [optional] 
+**right_front** | **int** |  | [optional] 
+**right_rear** | **int** |  | [optional] 
+**right_side_weight** | **int** |  | [optional] 
+**total_weight** | **int** |  | [optional] 
+**total_weight_min** | **int** |  | [optional] 
+**weight_adjustment** | **int** |  | [optional] 
+**pk_vehicle_weight_id** | **int** |  | [optional] 
+**nascar_one_race_id** | **int** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
