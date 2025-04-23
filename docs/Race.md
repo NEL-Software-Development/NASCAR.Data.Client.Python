@@ -20,6 +20,7 @@ Name | Type | Description | Notes
 **infractions** | **str** | URL to race infractions | [optional] 
 **lap_leaders** | **str** | URL to race lap leaders | [optional] 
 **pitstops** | **str** | URL to race pitstops | [optional] 
+**stages** | **str** | URL to race stages | [optional] 
 **_date** | **datetime** | Race date | [optional] 
 **comments** | **str** | Race comments | [optional] 
 **history_track_id** | **int** | Track Id | [optional] 
