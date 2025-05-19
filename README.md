@@ -146,13 +146,3 @@ except ApiException as e:
  - [VehicleWeight](docs/VehicleWeight.md)
  - [WeekendSchedule](docs/WeekendSchedule.md)
 
-## Documentation For Authorization
-
-
-## Bearer
-
-
-
-## Author
-
-
