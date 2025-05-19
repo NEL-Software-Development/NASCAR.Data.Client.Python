@@ -46,6 +46,7 @@ class Race(object):
         'infractions': 'str',
         'lap_leaders': 'str',
         'pitstops': 'str',
+        'stages': 'str',
         '_date': 'datetime',
         'comments': 'str',
         'history_track_id': 'int'
@@ -69,12 +70,13 @@ class Race(object):
         'infractions': 'infractions',
         'lap_leaders': 'lap_leaders',
         'pitstops': 'pitstops',
+        'stages': 'stages',
         '_date': 'date',
         'comments': 'comments',
         'history_track_id': 'history_track_id'
     }
 
-    def __init__(self, id=None, principal_race_id=None, history_race_id=-1, raceweek_id=None, series_id=None, name=None, promoter=None, laps=None, distance=None, inspection_complete=None, practice_results=None, qualifying_results=None, race_results=None, cautions=None, infractions=None, lap_leaders=None, pitstops=None, _date=None, comments=None, history_track_id=None):  # noqa: E501
+    def __init__(self, id=None, principal_race_id=None, history_race_id=-1, raceweek_id=None, series_id=None, name=None, promoter=None, laps=None, distance=None, inspection_complete=None, practice_results=None, qualifying_results=None, race_results=None, cautions=None, infractions=None, lap_leaders=None, pitstops=None, stages=None, _date=None, comments=None, history_track_id=None):  # noqa: E501
         """Race - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._principal_race_id = None
@@ -93,6 +95,7 @@ class Race(object):
         self._infractions = None
         self._lap_leaders = None
         self._pitstops = None
+        self._stages = None
         self.__date = None
         self._comments = None
         self._history_track_id = None
@@ -131,6 +134,8 @@ class Race(object):
             self.lap_leaders = lap_leaders
         if pitstops is not None:
             self.pitstops = pitstops
+        if stages is not None:
+            self.stages = stages
         if _date is not None:
             self._date = _date
         if comments is not None:
@@ -528,6 +533,29 @@ class Race(object):
         """
 
         self._pitstops = pitstops
+
+    @property
+    def stages(self):
+        """Gets the stages of this Race.  # noqa: E501
+
+        URL to race stages  # noqa: E501
+
+        :return: The stages of this Race.  # noqa: E501
+        :rtype: str
+        """
+        return self._stages
+
+    @stages.setter
+    def stages(self, stages):
+        """Sets the stages of this Race.
+
+        URL to race stages  # noqa: E501
+
+        :param stages: The stages of this Race.  # noqa: E501
+        :type: str
+        """
+
+        self._stages = stages
 
     @property
     def _date(self):

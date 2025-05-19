@@ -58,6 +58,7 @@ from nascar_data_client.models.run_result import RunResult
 from nascar_data_client.models.run_state import RunState
 from nascar_data_client.models.run_type import RunType
 from nascar_data_client.models.series import Series
+from nascar_data_client.models.stage import Stage
 from nascar_data_client.models.stage_result import StageResult
 from nascar_data_client.models.stage_run_results import StageRunResults
 from nascar_data_client.models.team_roster import TeamRoster
