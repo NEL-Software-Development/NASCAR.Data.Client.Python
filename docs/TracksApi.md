@@ -1,6 +1,6 @@
 # nascar_data_client.TracksApi
 
-All URIs are relative to */*
+All URIs are relative to */api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
