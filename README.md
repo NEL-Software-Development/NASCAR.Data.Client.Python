@@ -60,10 +60,34 @@ except ApiException as e:
 ```
 
 ## Documentation for API Endpoints
+
+All URIs are relative to */api*
+
+Class | Method | HTTP request | Description
+------------ | ------------- | ------------- | -------------
+*AccountApi* | [**account_refresh_token_get**](docs/AccountApi.md#account_refresh_token_get) | **GET** /account/refresh-token | 
+*CompanyApi* | [**company_search_get**](docs/CompanyApi.md#company_search_get) | **GET** /company/search | 
+*DriverApi* | [**driver_get**](docs/DriverApi.md#driver_get) | **GET** /driver | 
+*DriverApi* | [**driver_season_finishes_get**](docs/DriverApi.md#driver_season_finishes_get) | **GET** /driver/season-finishes | 
+*DriverApi* | [**driver_season_get**](docs/DriverApi.md#driver_season_get) | **GET** /driver/season | 
+*DriverSummaryApi* | [**driver_summary_get**](docs/DriverSummaryApi.md#driver_summary_get) | **GET** /driver-summary | 
+*ERDPApi* | [**erdp_topics_get**](docs/ERDPApi.md#erdp_topics_get) | **GET** /erdp/topics | Get a users erdp topics.
+*FeedbackApi* | [**feedback_dev_notes_get**](docs/FeedbackApi.md#feedback_dev_notes_get) | **GET** /feedback/dev-notes | 
+*FeedbackApi* | [**feedback_submit_feedback_post**](docs/FeedbackApi.md#feedback_submit_feedback_post) | **POST** /feedback/submit-feedback | 
+*InspectionsApi* | [**inspections_oss_get**](docs/InspectionsApi.md#inspections_oss_get) | **GET** /inspections/oss | 
+*InspectionsApi* | [**inspections_vehicle_weights_get**](docs/InspectionsApi.md#inspections_vehicle_weights_get) | **GET** /inspections/vehicle-weights | 
+*JournalFilesApi* | [**journal_get**](docs/JournalFilesApi.md#journal_get) | **GET** /journal | 
+*OpticalTrackingApi* | [**optical_tracking_utm_offsets_get**](docs/OpticalTrackingApi.md#optical_tracking_utm_offsets_get) | **GET** /optical-tracking/utm-offsets | 
+*PointsApi* | [**points_driver_points_get**](docs/PointsApi.md#points_driver_points_get) | **GET** /points/driver-points | 
+*PointsApi* | [**points_manufacturer_points_get**](docs/PointsApi.md#points_manufacturer_points_get) | **GET** /points/manufacturer-points | 
+*PointsApi* | [**points_owner_points_get**](docs/PointsApi.md#points_owner_points_get) | **GET** /points/owner-points | 
+*RaceApi* | [**race_cautions_get**](docs/RaceApi.md#race_cautions_get) | **GET** /race/cautions | 
+*RaceApi* | [**race_discipline_updates_get**](docs/RaceApi.md#race_discipline_updates_get) | **GET** /race/discipline-updates | 
 *RaceApi* | [**race_entries_get**](docs/RaceApi.md#race_entries_get) | **GET** /race/entries | 
 *RaceApi* | [**race_get**](docs/RaceApi.md#race_get) | **GET** /race | 
 *RaceApi* | [**race_infractions_get**](docs/RaceApi.md#race_infractions_get) | **GET** /race/infractions | 
 *RaceApi* | [**race_lap_leaders_get**](docs/RaceApi.md#race_lap_leaders_get) | **GET** /race/lap-leaders | 
+*RaceApi* | [**race_lookup_get**](docs/RaceApi.md#race_lookup_get) | **GET** /race/lookup | 
 *RaceApi* | [**race_loop_stats_get**](docs/RaceApi.md#race_loop_stats_get) | **GET** /race/loop-stats | 
 *RaceApi* | [**race_pitstops_get**](docs/RaceApi.md#race_pitstops_get) | **GET** /race/pitstops | 
 *RaceApi* | [**race_practice_results_get**](docs/RaceApi.md#race_practice_results_get) | **GET** /race/practice-results | 
@@ -72,6 +96,7 @@ except ApiException as e:
 *RaceApi* | [**race_rosters_get**](docs/RaceApi.md#race_rosters_get) | **GET** /race/rosters | 
 *RaceApi* | [**race_season_get**](docs/RaceApi.md#race_season_get) | **GET** /race/season | 
 *RaceApi* | [**race_stage_results_get**](docs/RaceApi.md#race_stage_results_get) | **GET** /race/stage-results | 
+*RaceApi* | [**race_stages_get**](docs/RaceApi.md#race_stages_get) | **GET** /race/stages | 
 *RaceApi* | [**race_viewmodel_get**](docs/RaceApi.md#race_viewmodel_get) | **GET** /race/viewmodel | 
 *RaceApi* | [**race_weekend_schedule_get**](docs/RaceApi.md#race_weekend_schedule_get) | **GET** /race/weekend-schedule | 
 *RaceWeekApi* | [**race_week_details_get**](docs/RaceWeekApi.md#race_week_details_get) | **GET** /race-week/details | 
@@ -85,6 +110,7 @@ except ApiException as e:
 *VendorApi* | [**vendor_crl_testresult_post**](docs/VendorApi.md#vendor_crl_testresult_post) | **POST** /vendor/crl_testresult | 
 *VendorApi* | [**vendor_tires_post**](docs/VendorApi.md#vendor_tires_post) | **POST** /vendor/tires | 
 *VendorApi* | [**vendor_utm_offsets_post**](docs/VendorApi.md#vendor_utm_offsets_post) | **POST** /vendor/utm_offsets | 
+*VendorApi* | [**vendor_wicket_request_post**](docs/VendorApi.md#vendor_wicket_request_post) | **POST** /vendor/wicket_request | 
 
 ## Documentation For Models
 
@@ -103,6 +129,7 @@ except ApiException as e:
  - [DriverSummaryBySeason](docs/DriverSummaryBySeason.md)
  - [DriverSummaryByTrack](docs/DriverSummaryByTrack.md)
  - [DriverSummaryByTrackType](docs/DriverSummaryByTrackType.md)
+ - [FastestLapAwards](docs/FastestLapAwards.md)
  - [Feedback](docs/Feedback.md)
  - [Flag](docs/Flag.md)
  - [LapLeader](docs/LapLeader.md)
@@ -132,6 +159,7 @@ except ApiException as e:
  - [RunState](docs/RunState.md)
  - [RunType](docs/RunType.md)
  - [Series](docs/Series.md)
+ - [Stage](docs/Stage.md)
  - [StageResult](docs/StageResult.md)
  - [StageRunResults](docs/StageRunResults.md)
  - [TeamRoster](docs/TeamRoster.md)
@@ -145,4 +173,15 @@ except ApiException as e:
  - [VehicleDetails](docs/VehicleDetails.md)
  - [VehicleWeight](docs/VehicleWeight.md)
  - [WeekendSchedule](docs/WeekendSchedule.md)
+ - [WicketLinkedAccount](docs/WicketLinkedAccount.md)
+ - [WicketRequest](docs/WicketRequest.md)
+ - [WicketResponse](docs/WicketResponse.md)
 
+## Documentation For Authorization
+
+
+## Bearer
+
+
+
+## Author
