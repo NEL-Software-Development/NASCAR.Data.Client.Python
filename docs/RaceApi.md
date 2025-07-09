@@ -1,6 +1,6 @@
 # nascar_data_client.RaceApi
 
-All URIs are relative to */*
+All URIs are relative to */api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,6 +10,8 @@ Method | HTTP request | Description
 [**race_get**](RaceApi.md#race_get) | **GET** /race | 
 [**race_infractions_get**](RaceApi.md#race_infractions_get) | **GET** /race/infractions | 
 [**race_lap_leaders_get**](RaceApi.md#race_lap_leaders_get) | **GET** /race/lap-leaders | 
+[**race_live_session_get**](RaceApi.md#race_live_session_get) | **GET** /race/live-session | 
+[**race_lookup_get**](RaceApi.md#race_lookup_get) | **GET** /race/lookup | 
 [**race_loop_stats_get**](RaceApi.md#race_loop_stats_get) | **GET** /race/loop-stats | 
 [**race_pitstops_get**](RaceApi.md#race_pitstops_get) | **GET** /race/pitstops | 
 [**race_practice_results_get**](RaceApi.md#race_practice_results_get) | **GET** /race/practice-results | 
@@ -18,6 +20,7 @@ Method | HTTP request | Description
 [**race_rosters_get**](RaceApi.md#race_rosters_get) | **GET** /race/rosters | 
 [**race_season_get**](RaceApi.md#race_season_get) | **GET** /race/season | 
 [**race_stage_results_get**](RaceApi.md#race_stage_results_get) | **GET** /race/stage-results | 
+[**race_stages_get**](RaceApi.md#race_stages_get) | **GET** /race/stages | 
 [**race_viewmodel_get**](RaceApi.md#race_viewmodel_get) | **GET** /race/viewmodel | 
 [**race_weekend_schedule_get**](RaceApi.md#race_weekend_schedule_get) | **GET** /race/weekend-schedule | 
 
@@ -285,6 +288,98 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**list[LapLeader]**](LapLeader.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **race_live_session_get**
+> ActiveRun race_live_session_get()
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import nascar_data_client
+from nascar_data_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configuration))
+
+try:
+    api_response = api_instance.race_live_session_get()
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling RaceApi->race_live_session_get: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+[**ActiveRun**](ActiveRun.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **race_lookup_get**
+> list[RaceDetails] race_lookup_get(history_race_id=history_race_id, date_start=date_start, date_end=date_end)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import nascar_data_client
+from nascar_data_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configuration))
+history_race_id = 56 # int |  (optional)
+date_start = '2013-10-20' # date | enter date_start in yyyy-mm-dd format (optional)
+date_end = '2013-10-20' # date | enter date_end in yyyy-mm-dd format (optional)
+
+try:
+    api_response = api_instance.race_lookup_get(history_race_id=history_race_id, date_start=date_start, date_end=date_end)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling RaceApi->race_lookup_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **history_race_id** | **int**|  | [optional] 
+ **date_start** | **date**| enter date_start in yyyy-mm-dd format | [optional] 
+ **date_end** | **date**| enter date_end in yyyy-mm-dd format | [optional] 
+
+### Return type
+
+[**list[RaceDetails]**](RaceDetails.md)
 
 ### Authorization
 
@@ -655,6 +750,52 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**list[StageRunResults]**](StageRunResults.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **race_stages_get**
+> list[Stage] race_stages_get(race_id=race_id)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import nascar_data_client
+from nascar_data_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configuration))
+race_id = 56 # int |  (optional)
+
+try:
+    api_response = api_instance.race_stages_get(race_id=race_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling RaceApi->race_stages_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **race_id** | **int**|  | [optional] 
+
+### Return type
+
+[**list[Stage]**](Stage.md)
 
 ### Authorization
 

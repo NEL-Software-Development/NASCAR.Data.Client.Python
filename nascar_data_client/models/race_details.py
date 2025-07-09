@@ -50,7 +50,8 @@ class RaceDetails(object):
         'inspection_complete': 'bool',
         'entries': 'list[RunEntry]',
         'runs': 'list[RunDetails]',
-        'schedule': 'list[WeekendSchedule]'
+        'schedule': 'list[WeekendSchedule]',
+        'fastest_lap_award': 'FastestLapAwards'
     }
 
     attribute_map = {
@@ -75,10 +76,11 @@ class RaceDetails(object):
         'inspection_complete': 'inspection_complete',
         'entries': 'entries',
         'runs': 'runs',
-        'schedule': 'schedule'
+        'schedule': 'schedule',
+        'fastest_lap_award': 'fastest_lap_award'
     }
 
-    def __init__(self, id=None, history_race_id=-1, series_id=None, name=None, promoter=None, laps=None, distance=None, practice_results=None, qualifying_results=None, race_results=None, cautions=None, infractions=None, lap_leaders=None, pitstops=None, _date=None, comments=None, track_name=None, track_id=None, inspection_complete=None, entries=None, runs=None, schedule=None):  # noqa: E501
+    def __init__(self, id=None, history_race_id=-1, series_id=None, name=None, promoter=None, laps=None, distance=None, practice_results=None, qualifying_results=None, race_results=None, cautions=None, infractions=None, lap_leaders=None, pitstops=None, _date=None, comments=None, track_name=None, track_id=None, inspection_complete=None, entries=None, runs=None, schedule=None, fastest_lap_award=None):  # noqa: E501
         """RaceDetails - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._history_race_id = None
@@ -102,6 +104,7 @@ class RaceDetails(object):
         self._entries = None
         self._runs = None
         self._schedule = None
+        self._fastest_lap_award = None
         self.discriminator = None
         if id is not None:
             self.id = id
@@ -147,6 +150,8 @@ class RaceDetails(object):
             self.runs = runs
         if schedule is not None:
             self.schedule = schedule
+        if fastest_lap_award is not None:
+            self.fastest_lap_award = fastest_lap_award
 
     @property
     def id(self):
@@ -653,6 +658,27 @@ class RaceDetails(object):
         """
 
         self._schedule = schedule
+
+    @property
+    def fastest_lap_award(self):
+        """Gets the fastest_lap_award of this RaceDetails.  # noqa: E501
+
+
+        :return: The fastest_lap_award of this RaceDetails.  # noqa: E501
+        :rtype: FastestLapAwards
+        """
+        return self._fastest_lap_award
+
+    @fastest_lap_award.setter
+    def fastest_lap_award(self, fastest_lap_award):
+        """Sets the fastest_lap_award of this RaceDetails.
+
+
+        :param fastest_lap_award: The fastest_lap_award of this RaceDetails.  # noqa: E501
+        :type: FastestLapAwards
+        """
+
+        self._fastest_lap_award = fastest_lap_award
 
     def to_dict(self):
         """Returns the model properties as a dict"""

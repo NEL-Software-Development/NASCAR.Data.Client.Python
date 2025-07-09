@@ -25,6 +25,7 @@ Name | Type | Description | Notes
 **entries** | [**list[RunEntry]**](RunEntry.md) | Race entries | [optional] 
 **runs** | [**list[RunDetails]**](RunDetails.md) | Runs | [optional] 
 **schedule** | [**list[WeekendSchedule]**](WeekendSchedule.md) | Weekend Schedule | [optional] 
+**fastest_lap_award** | [**FastestLapAwards**](FastestLapAwards.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
