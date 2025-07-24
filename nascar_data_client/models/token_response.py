@@ -31,20 +31,23 @@ class TokenResponse(object):
     swagger_types = {
         'access_token': 'str',
         'refresh_token': 'str',
-        'token_type': 'str'
+        'token_type': 'str',
+        'message': 'Status'
     }
 
     attribute_map = {
         'access_token': 'access_token',
         'refresh_token': 'refresh_token',
-        'token_type': 'token_type'
+        'token_type': 'token_type',
+        'message': 'message'
     }
 
-    def __init__(self, access_token=None, refresh_token=None, token_type=None):  # noqa: E501
+    def __init__(self, access_token=None, refresh_token=None, token_type=None, message=None):  # noqa: E501
         """TokenResponse - a model defined in Swagger"""  # noqa: E501
         self._access_token = None
         self._refresh_token = None
         self._token_type = None
+        self._message = None
         self.discriminator = None
         if access_token is not None:
             self.access_token = access_token
@@ -52,6 +55,8 @@ class TokenResponse(object):
             self.refresh_token = refresh_token
         if token_type is not None:
             self.token_type = token_type
+        if message is not None:
+            self.message = message
 
     @property
     def access_token(self):
@@ -115,6 +120,27 @@ class TokenResponse(object):
         """
 
         self._token_type = token_type
+
+    @property
+    def message(self):
+        """Gets the message of this TokenResponse.  # noqa: E501
+
+
+        :return: The message of this TokenResponse.  # noqa: E501
+        :rtype: Status
+        """
+        return self._message
+
+    @message.setter
+    def message(self, message):
+        """Sets the message of this TokenResponse.
+
+
+        :param message: The message of this TokenResponse.  # noqa: E501
+        :type: Status
+        """
+
+        self._message = message
 
     def to_dict(self):
         """Returns the model properties as a dict"""

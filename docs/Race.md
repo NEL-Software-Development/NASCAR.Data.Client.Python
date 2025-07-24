@@ -20,9 +20,11 @@ Name | Type | Description | Notes
 **infractions** | **str** | URL to race infractions | [optional] 
 **lap_leaders** | **str** | URL to race lap leaders | [optional] 
 **pitstops** | **str** | URL to race pitstops | [optional] 
+**stages** | **str** | URL to race stages | [optional] 
 **_date** | **datetime** | Race date | [optional] 
 **comments** | **str** | Race comments | [optional] 
 **history_track_id** | **int** | Track Id | [optional] 
+**fastest_lap_award** | [**FastestLapAwards**](FastestLapAwards.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
