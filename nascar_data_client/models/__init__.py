@@ -14,6 +14,9 @@
 from __future__ import absolute_import
 
 # import models into model package
+from nascar_data_client.models.active_run import ActiveRun
+from nascar_data_client.models.available_report import AvailableReport
+from nascar_data_client.models.available_reports import AvailableReports
 from nascar_data_client.models.caution import Caution
 from nascar_data_client.models.client_erdp_datapoint import ClientERDPDatapoint
 from nascar_data_client.models.client_erdp_source import ClientERDPSource
@@ -29,9 +32,11 @@ from nascar_data_client.models.driver_summary_by_principal_race_id import Driver
 from nascar_data_client.models.driver_summary_by_season import DriverSummaryBySeason
 from nascar_data_client.models.driver_summary_by_track import DriverSummaryByTrack
 from nascar_data_client.models.driver_summary_by_track_type import DriverSummaryByTrackType
+from nascar_data_client.models.fastest_lap_awards import FastestLapAwards
 from nascar_data_client.models.feedback import Feedback
 from nascar_data_client.models.flag import Flag
 from nascar_data_client.models.lap_leader import LapLeader
+from nascar_data_client.models.live_driver_points import LiveDriverPoints
 from nascar_data_client.models.loop_stat import LoopStat
 from nascar_data_client.models.manufacturer_point import ManufacturerPoint
 from nascar_data_client.models.oss_scan import OSSScan
@@ -58,8 +63,10 @@ from nascar_data_client.models.run_result import RunResult
 from nascar_data_client.models.run_state import RunState
 from nascar_data_client.models.run_type import RunType
 from nascar_data_client.models.series import Series
+from nascar_data_client.models.stage import Stage
 from nascar_data_client.models.stage_result import StageResult
 from nascar_data_client.models.stage_run_results import StageRunResults
+from nascar_data_client.models.status import Status
 from nascar_data_client.models.team_roster import TeamRoster
 from nascar_data_client.models.tire import Tire
 from nascar_data_client.models.tire_list_etl_save_result import TireListETLSaveResult
@@ -71,3 +78,6 @@ from nascar_data_client.models.track_path import TrackPath
 from nascar_data_client.models.vehicle_details import VehicleDetails
 from nascar_data_client.models.vehicle_weight import VehicleWeight
 from nascar_data_client.models.weekend_schedule import WeekendSchedule
+from nascar_data_client.models.wicket_account_ids import WicketAccountIds
+from nascar_data_client.models.wicket_request import WicketRequest
+from nascar_data_client.models.wicket_response import WicketResponse

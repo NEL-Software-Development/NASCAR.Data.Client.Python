@@ -5,6 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** | Gets or sets the unique identifier for the track configuration. | [optional] 
 **track_id** | **int** | Gets or sets the unique identifier for the track. | [optional] 
+**history_track_configuration_id** | **int** | Gets or sets the historical identifier for the track configuration. | [optional] 
 **track_name** | **str** | Gets or sets the name of the track. | [optional] 
 **altitude** | **float** | Gets or sets the altitude of the track. | [optional] 
 **northwest_latitude** | **float** | Gets or sets the northwest latitude of the track boundary. | [optional] 

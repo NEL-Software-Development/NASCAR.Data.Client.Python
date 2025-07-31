@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **history_track_id** | **int** | History track id | [optional] 
 **name** | **str** | The name of the track | [optional] 
 **owner** | **str** | The owner of the track | [optional] 
+**sponsor_name** | **str** | The name of the track sponsor | [optional] 
 **surface** | **str** | The type of track surface | [optional] 
 **type** | **str** | The type of track | [optional] 
 **banking** | **str** | Track banking | [optional] 
