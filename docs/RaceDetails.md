@@ -20,11 +20,13 @@ Name | Type | Description | Notes
 **_date** | **datetime** | Race date | [optional] 
 **comments** | **str** | Race Comments | [optional] 
 **track_name** | **str** | Track Name | [optional] 
+**track_sponsor** | **str** | The name of the track sponsor | [optional] 
 **track_id** | **int** | Track Id | [optional] 
 **inspection_complete** | **bool** | Has inspection been completed | [optional] 
 **entries** | [**list[RunEntry]**](RunEntry.md) | Race entries | [optional] 
 **runs** | [**list[RunDetails]**](RunDetails.md) | Runs | [optional] 
 **schedule** | [**list[WeekendSchedule]**](WeekendSchedule.md) | Weekend Schedule | [optional] 
+**fastest_lap_award** | [**FastestLapAwards**](FastestLapAwards.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

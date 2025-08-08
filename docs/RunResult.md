@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **delta_leader_time** | **int** | Number of milliseconds behind the leader | [optional] 
 **delta_leader_laps** | **int** | Number of laps behind the leader | [optional] 
 **on_track** | **bool** | Is on track | [optional] 
-**status** | **str** | Status | [optional] 
+**status** | **str** | Vehicle Status (0&#x3D;None, 1&#x3D;Active, 2&#x3D;DNS, 3&#x3D;DNF, 4&#x3D;DQ, 5&#x3D;Pace Car, 6&#x3D;Garage | [optional] 
 **comment** | **str** | Comment | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

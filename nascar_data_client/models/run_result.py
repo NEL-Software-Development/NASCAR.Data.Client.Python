@@ -416,7 +416,7 @@ class RunResult(object):
     def status(self):
         """Gets the status of this RunResult.  # noqa: E501
 
-        Status  # noqa: E501
+        Vehicle Status (0=None, 1=Active, 2=DNS, 3=DNF, 4=DQ, 5=Pace Car, 6=Garage  # noqa: E501
 
         :return: The status of this RunResult.  # noqa: E501
         :rtype: str
@@ -427,7 +427,7 @@ class RunResult(object):
     def status(self, status):
         """Sets the status of this RunResult.
 
-        Status  # noqa: E501
+        Vehicle Status (0=None, 1=Active, 2=DNS, 3=DNF, 4=DQ, 5=Pace Car, 6=Garage  # noqa: E501
 
         :param status: The status of this RunResult.  # noqa: E501
         :type: str

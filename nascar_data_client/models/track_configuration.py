@@ -31,6 +31,7 @@ class TrackConfiguration(object):
     swagger_types = {
         'id': 'int',
         'track_id': 'int',
+        'history_track_configuration_id': 'int',
         'track_name': 'str',
         'altitude': 'float',
         'northwest_latitude': 'float',
@@ -49,6 +50,7 @@ class TrackConfiguration(object):
     attribute_map = {
         'id': 'id',
         'track_id': 'track_id',
+        'history_track_configuration_id': 'history_track_configuration_id',
         'track_name': 'track_name',
         'altitude': 'altitude',
         'northwest_latitude': 'northwest_latitude',
@@ -64,10 +66,11 @@ class TrackConfiguration(object):
         'pit_finish_line_translate_y': 'pit_finish_line_translate_y'
     }
 
-    def __init__(self, id=None, track_id=None, track_name=None, altitude=None, northwest_latitude=None, northwest_longitude=None, southeast_latitude=None, southeast_longitude=None, heading=None, finish_line_rotation=None, finish_line_translate_x=None, finish_line_translate_y=None, pit_finish_line_rotation=None, pit_finish_line_translate_x=None, pit_finish_line_translate_y=None):  # noqa: E501
+    def __init__(self, id=None, track_id=None, history_track_configuration_id=None, track_name=None, altitude=None, northwest_latitude=None, northwest_longitude=None, southeast_latitude=None, southeast_longitude=None, heading=None, finish_line_rotation=None, finish_line_translate_x=None, finish_line_translate_y=None, pit_finish_line_rotation=None, pit_finish_line_translate_x=None, pit_finish_line_translate_y=None):  # noqa: E501
         """TrackConfiguration - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._track_id = None
+        self._history_track_configuration_id = None
         self._track_name = None
         self._altitude = None
         self._northwest_latitude = None
@@ -86,6 +89,8 @@ class TrackConfiguration(object):
             self.id = id
         if track_id is not None:
             self.track_id = track_id
+        if history_track_configuration_id is not None:
+            self.history_track_configuration_id = history_track_configuration_id
         if track_name is not None:
             self.track_name = track_name
         if altitude is not None:
@@ -158,6 +163,29 @@ class TrackConfiguration(object):
         """
 
         self._track_id = track_id
+
+    @property
+    def history_track_configuration_id(self):
+        """Gets the history_track_configuration_id of this TrackConfiguration.  # noqa: E501
+
+        Gets or sets the historical identifier for the track configuration.  # noqa: E501
+
+        :return: The history_track_configuration_id of this TrackConfiguration.  # noqa: E501
+        :rtype: int
+        """
+        return self._history_track_configuration_id
+
+    @history_track_configuration_id.setter
+    def history_track_configuration_id(self, history_track_configuration_id):
+        """Sets the history_track_configuration_id of this TrackConfiguration.
+
+        Gets or sets the historical identifier for the track configuration.  # noqa: E501
+
+        :param history_track_configuration_id: The history_track_configuration_id of this TrackConfiguration.  # noqa: E501
+        :type: int
+        """
+
+        self._history_track_configuration_id = history_track_configuration_id
 
     @property
     def track_name(self):

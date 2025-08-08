@@ -46,11 +46,13 @@ class RaceDetails(object):
         '_date': 'datetime',
         'comments': 'str',
         'track_name': 'str',
+        'track_sponsor': 'str',
         'track_id': 'int',
         'inspection_complete': 'bool',
         'entries': 'list[RunEntry]',
         'runs': 'list[RunDetails]',
-        'schedule': 'list[WeekendSchedule]'
+        'schedule': 'list[WeekendSchedule]',
+        'fastest_lap_award': 'FastestLapAwards'
     }
 
     attribute_map = {
@@ -71,14 +73,16 @@ class RaceDetails(object):
         '_date': 'date',
         'comments': 'comments',
         'track_name': 'track_name',
+        'track_sponsor': 'track_sponsor',
         'track_id': 'track_id',
         'inspection_complete': 'inspection_complete',
         'entries': 'entries',
         'runs': 'runs',
-        'schedule': 'schedule'
+        'schedule': 'schedule',
+        'fastest_lap_award': 'fastest_lap_award'
     }
 
-    def __init__(self, id=None, history_race_id=-1, series_id=None, name=None, promoter=None, laps=None, distance=None, practice_results=None, qualifying_results=None, race_results=None, cautions=None, infractions=None, lap_leaders=None, pitstops=None, _date=None, comments=None, track_name=None, track_id=None, inspection_complete=None, entries=None, runs=None, schedule=None):  # noqa: E501
+    def __init__(self, id=None, history_race_id=-1, series_id=None, name=None, promoter=None, laps=None, distance=None, practice_results=None, qualifying_results=None, race_results=None, cautions=None, infractions=None, lap_leaders=None, pitstops=None, _date=None, comments=None, track_name=None, track_sponsor=None, track_id=None, inspection_complete=None, entries=None, runs=None, schedule=None, fastest_lap_award=None):  # noqa: E501
         """RaceDetails - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._history_race_id = None
@@ -97,11 +101,13 @@ class RaceDetails(object):
         self.__date = None
         self._comments = None
         self._track_name = None
+        self._track_sponsor = None
         self._track_id = None
         self._inspection_complete = None
         self._entries = None
         self._runs = None
         self._schedule = None
+        self._fastest_lap_award = None
         self.discriminator = None
         if id is not None:
             self.id = id
@@ -137,6 +143,8 @@ class RaceDetails(object):
             self.comments = comments
         if track_name is not None:
             self.track_name = track_name
+        if track_sponsor is not None:
+            self.track_sponsor = track_sponsor
         if track_id is not None:
             self.track_id = track_id
         if inspection_complete is not None:
@@ -147,6 +155,8 @@ class RaceDetails(object):
             self.runs = runs
         if schedule is not None:
             self.schedule = schedule
+        if fastest_lap_award is not None:
+            self.fastest_lap_award = fastest_lap_award
 
     @property
     def id(self):
@@ -540,6 +550,29 @@ class RaceDetails(object):
         self._track_name = track_name
 
     @property
+    def track_sponsor(self):
+        """Gets the track_sponsor of this RaceDetails.  # noqa: E501
+
+        The name of the track sponsor  # noqa: E501
+
+        :return: The track_sponsor of this RaceDetails.  # noqa: E501
+        :rtype: str
+        """
+        return self._track_sponsor
+
+    @track_sponsor.setter
+    def track_sponsor(self, track_sponsor):
+        """Sets the track_sponsor of this RaceDetails.
+
+        The name of the track sponsor  # noqa: E501
+
+        :param track_sponsor: The track_sponsor of this RaceDetails.  # noqa: E501
+        :type: str
+        """
+
+        self._track_sponsor = track_sponsor
+
+    @property
     def track_id(self):
         """Gets the track_id of this RaceDetails.  # noqa: E501
 
@@ -653,6 +686,27 @@ class RaceDetails(object):
         """
 
         self._schedule = schedule
+
+    @property
+    def fastest_lap_award(self):
+        """Gets the fastest_lap_award of this RaceDetails.  # noqa: E501
+
+
+        :return: The fastest_lap_award of this RaceDetails.  # noqa: E501
+        :rtype: FastestLapAwards
+        """
+        return self._fastest_lap_award
+
+    @fastest_lap_award.setter
+    def fastest_lap_award(self, fastest_lap_award):
+        """Sets the fastest_lap_award of this RaceDetails.
+
+
+        :param fastest_lap_award: The fastest_lap_award of this RaceDetails.  # noqa: E501
+        :type: FastestLapAwards
+        """
+
+        self._fastest_lap_award = fastest_lap_award
 
     def to_dict(self):
         """Returns the model properties as a dict"""
