@@ -33,6 +33,7 @@ class Track(object):
         'history_track_id': 'int',
         'name': 'str',
         'owner': 'str',
+        'sponsor_name': 'str',
         'surface': 'str',
         'type': 'str',
         'banking': 'str',
@@ -52,6 +53,7 @@ class Track(object):
         'history_track_id': 'history_track_id',
         'name': 'name',
         'owner': 'owner',
+        'sponsor_name': 'sponsor_name',
         'surface': 'surface',
         'type': 'type',
         'banking': 'banking',
@@ -66,12 +68,13 @@ class Track(object):
         'logo': 'logo'
     }
 
-    def __init__(self, id=None, history_track_id=None, name=None, owner=None, surface=None, type=None, banking=None, description=None, city=None, state=None, frontstretch_length=None, backstretch_length=None, year_built=None, length=None, caution_car_speed=None, logo=None):  # noqa: E501
+    def __init__(self, id=None, history_track_id=None, name=None, owner=None, sponsor_name=None, surface=None, type=None, banking=None, description=None, city=None, state=None, frontstretch_length=None, backstretch_length=None, year_built=None, length=None, caution_car_speed=None, logo=None):  # noqa: E501
         """Track - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._history_track_id = None
         self._name = None
         self._owner = None
+        self._sponsor_name = None
         self._surface = None
         self._type = None
         self._banking = None
@@ -93,6 +96,8 @@ class Track(object):
             self.name = name
         if owner is not None:
             self.owner = owner
+        if sponsor_name is not None:
+            self.sponsor_name = sponsor_name
         if surface is not None:
             self.surface = surface
         if type is not None:
@@ -207,6 +212,29 @@ class Track(object):
         """
 
         self._owner = owner
+
+    @property
+    def sponsor_name(self):
+        """Gets the sponsor_name of this Track.  # noqa: E501
+
+        The name of the track sponsor  # noqa: E501
+
+        :return: The sponsor_name of this Track.  # noqa: E501
+        :rtype: str
+        """
+        return self._sponsor_name
+
+    @sponsor_name.setter
+    def sponsor_name(self, sponsor_name):
+        """Sets the sponsor_name of this Track.
+
+        The name of the track sponsor  # noqa: E501
+
+        :param sponsor_name: The sponsor_name of this Track.  # noqa: E501
+        :type: str
+        """
+
+        self._sponsor_name = sponsor_name
 
     @property
     def surface(self):
