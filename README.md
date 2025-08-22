@@ -80,6 +80,7 @@ Class | Method | HTTP request | Description
 *JournalFilesApi* | [**journal_get**](docs/JournalFilesApi.md#journal_get) | **GET** /journal | 
 *OpticalTrackingApi* | [**optical_tracking_utm_offsets_get**](docs/OpticalTrackingApi.md#optical_tracking_utm_offsets_get) | **GET** /optical-tracking/utm-offsets | 
 *PointsApi* | [**points_driver_points_get**](docs/PointsApi.md#points_driver_points_get) | **GET** /points/driver-points | 
+*PointsApi* | [**points_driverpoints_get**](docs/PointsApi.md#points_driverpoints_get) | **GET** /points/driverpoints | 
 *PointsApi* | [**points_live_driver_points_get**](docs/PointsApi.md#points_live_driver_points_get) | **GET** /points/live-driver-points | 
 *PointsApi* | [**points_manufacturer_points_get**](docs/PointsApi.md#points_manufacturer_points_get) | **GET** /points/manufacturer-points | 
 *PointsApi* | [**points_owner_points_get**](docs/PointsApi.md#points_owner_points_get) | **GET** /points/owner-points | 
@@ -132,6 +133,7 @@ Class | Method | HTTP request | Description
  - [DisciplineUpdate](docs/DisciplineUpdate.md)
  - [Driver](docs/Driver.md)
  - [DriverPoint](docs/DriverPoint.md)
+ - [DriverPointsView](docs/DriverPointsView.md)
  - [DriverSummary](docs/DriverSummary.md)
  - [DriverSummaryByPrincipalRaceID](docs/DriverSummaryByPrincipalRaceID.md)
  - [DriverSummaryBySeason](docs/DriverSummaryBySeason.md)
@@ -141,7 +143,7 @@ Class | Method | HTTP request | Description
  - [Feedback](docs/Feedback.md)
  - [Flag](docs/Flag.md)
  - [LapLeader](docs/LapLeader.md)
- - [LiveDriverPoints](docs/LiveDriverPoints.md)
+ - [LiveDriverPointsSlim](docs/LiveDriverPointsSlim.md)
  - [LoopStat](docs/LoopStat.md)
  - [ManufacturerPoint](docs/ManufacturerPoint.md)
  - [OSSScan](docs/OSSScan.md)
@@ -187,32 +189,11 @@ Class | Method | HTTP request | Description
  - [WicketRequest](docs/WicketRequest.md)
  - [WicketResponse](docs/WicketResponse.md)
 
-## Authorization
-To access the NASCAR Data API using the SDK, you must authenticate using a Bearer Token. This token is typically issued by NASCAR's identity provider and grants access to protected endpoints.
+## Documentation For Authorization
 
-### Steps to Authenticate
-1. **Obtain a Bearer Token** You’ll need a valid token from NASCAR’s authentication system. This is usually provided via a secure login or issued by an admin.
 
-2. **Configure the SDK Client**
-Set the API host and attach the token to the request headers:
-```python
-import nascar_data_client
-from nascar_data_client.rest import ApiException
+## Bearer
 
-# Create and configure the SDK client
-config = nascar_data_client.Configuration()
-config.host = "https://datatest.nascar.com/api"
 
-# Instantiate the API client
-api_client = nascar_data_client.ApiClient(config)
 
-# Add the Bearer token to the Authorization header
-api_client.default_headers["Authorization"] = "Bearer YOUR-TOKEN-HERE"
-```
-3. **Use the API** Once authenicated, you can interact with any of the available API classes. For example:
-```python
-company_api = nascar_data_client.CompanyApi(api_client)
-companies = company_api.company_search_get(search_term="n")
-print(companies)
-```
 ## Author
