@@ -187,32 +187,11 @@ Class | Method | HTTP request | Description
  - [WicketRequest](docs/WicketRequest.md)
  - [WicketResponse](docs/WicketResponse.md)
 
-## Authorization
-To access the NASCAR Data API using the SDK, you must authenticate using a Bearer Token. This token is typically issued by NASCAR's identity provider and grants access to protected endpoints.
+## Documentation For Authorization
 
-### Steps to Authenticate
-1. **Obtain a Bearer Token** You’ll need a valid token from NASCAR’s authentication system. This is usually provided via a secure login or issued by an admin.
 
-2. **Configure the SDK Client**
-Set the API host and attach the token to the request headers:
-```python
-import nascar_data_client
-from nascar_data_client.rest import ApiException
+## Bearer
 
-# Create and configure the SDK client
-config = nascar_data_client.Configuration()
-config.host = "https://datatest.nascar.com/api"
 
-# Instantiate the API client
-api_client = nascar_data_client.ApiClient(config)
 
-# Add the Bearer token to the Authorization header
-api_client.default_headers["Authorization"] = "Bearer YOUR-TOKEN-HERE"
-```
-3. **Use the API** Once authenicated, you can interact with any of the available API classes. For example:
-```python
-company_api = nascar_data_client.CompanyApi(api_client)
-companies = company_api.company_search_get(search_term="n")
-print(companies)
-```
 ## Author
