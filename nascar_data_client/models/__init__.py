@@ -27,6 +27,7 @@ from nascar_data_client.models.dev_note import DevNote
 from nascar_data_client.models.discipline_update import DisciplineUpdate
 from nascar_data_client.models.driver import Driver
 from nascar_data_client.models.driver_point import DriverPoint
+from nascar_data_client.models.driver_points_view import DriverPointsView
 from nascar_data_client.models.driver_summary import DriverSummary
 from nascar_data_client.models.driver_summary_by_principal_race_id import DriverSummaryByPrincipalRaceID
 from nascar_data_client.models.driver_summary_by_season import DriverSummaryBySeason
@@ -36,7 +37,7 @@ from nascar_data_client.models.fastest_lap_awards import FastestLapAwards
 from nascar_data_client.models.feedback import Feedback
 from nascar_data_client.models.flag import Flag
 from nascar_data_client.models.lap_leader import LapLeader
-from nascar_data_client.models.live_driver_points import LiveDriverPoints
+from nascar_data_client.models.live_driver_points_slim import LiveDriverPointsSlim
 from nascar_data_client.models.loop_stat import LoopStat
 from nascar_data_client.models.manufacturer_point import ManufacturerPoint
 from nascar_data_client.models.oss_scan import OSSScan
