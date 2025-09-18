@@ -27,6 +27,7 @@ from nascar_data_client.models.dev_note import DevNote
 from nascar_data_client.models.discipline_update import DisciplineUpdate
 from nascar_data_client.models.driver import Driver
 from nascar_data_client.models.driver_point import DriverPoint
+from nascar_data_client.models.driver_points_view import DriverPointsView
 from nascar_data_client.models.driver_summary import DriverSummary
 from nascar_data_client.models.driver_summary_by_principal_race_id import DriverSummaryByPrincipalRaceID
 from nascar_data_client.models.driver_summary_by_season import DriverSummaryBySeason
@@ -36,7 +37,7 @@ from nascar_data_client.models.fastest_lap_awards import FastestLapAwards
 from nascar_data_client.models.feedback import Feedback
 from nascar_data_client.models.flag import Flag
 from nascar_data_client.models.lap_leader import LapLeader
-from nascar_data_client.models.live_driver_points import LiveDriverPoints
+from nascar_data_client.models.live_driver_points_slim import LiveDriverPointsSlim
 from nascar_data_client.models.loop_stat import LoopStat
 from nascar_data_client.models.manufacturer_point import ManufacturerPoint
 from nascar_data_client.models.oss_scan import OSSScan
@@ -56,10 +57,12 @@ from nascar_data_client.models.race_run_results import RaceRunResults
 from nascar_data_client.models.race_view_model import RaceViewModel
 from nascar_data_client.models.race_week import RaceWeek
 from nascar_data_client.models.race_week_details import RaceWeekDetails
+from nascar_data_client.models.result import Result
 from nascar_data_client.models.roster_member import RosterMember
 from nascar_data_client.models.run_details import RunDetails
 from nascar_data_client.models.run_entry import RunEntry
 from nascar_data_client.models.run_result import RunResult
+from nascar_data_client.models.run_results import RunResults
 from nascar_data_client.models.run_state import RunState
 from nascar_data_client.models.run_type import RunType
 from nascar_data_client.models.series import Series
