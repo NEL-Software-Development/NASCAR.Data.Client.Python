@@ -48,6 +48,7 @@ class RaceDetails(object):
         'track_name': 'str',
         'track_sponsor': 'str',
         'track_id': 'int',
+        'history_track_id': 'int',
         'inspection_complete': 'bool',
         'entries': 'list[RunEntry]',
         'runs': 'list[RunDetails]',
@@ -75,6 +76,7 @@ class RaceDetails(object):
         'track_name': 'track_name',
         'track_sponsor': 'track_sponsor',
         'track_id': 'track_id',
+        'history_track_id': 'history_track_id',
         'inspection_complete': 'inspection_complete',
         'entries': 'entries',
         'runs': 'runs',
@@ -82,7 +84,7 @@ class RaceDetails(object):
         'fastest_lap_award': 'fastest_lap_award'
     }
 
-    def __init__(self, id=None, history_race_id=-1, series_id=None, name=None, promoter=None, laps=None, distance=None, practice_results=None, qualifying_results=None, race_results=None, cautions=None, infractions=None, lap_leaders=None, pitstops=None, _date=None, comments=None, track_name=None, track_sponsor=None, track_id=None, inspection_complete=None, entries=None, runs=None, schedule=None, fastest_lap_award=None):  # noqa: E501
+    def __init__(self, id=None, history_race_id=-1, series_id=None, name=None, promoter=None, laps=None, distance=None, practice_results=None, qualifying_results=None, race_results=None, cautions=None, infractions=None, lap_leaders=None, pitstops=None, _date=None, comments=None, track_name=None, track_sponsor=None, track_id=None, history_track_id=None, inspection_complete=None, entries=None, runs=None, schedule=None, fastest_lap_award=None):  # noqa: E501
         """RaceDetails - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._history_race_id = None
@@ -103,6 +105,7 @@ class RaceDetails(object):
         self._track_name = None
         self._track_sponsor = None
         self._track_id = None
+        self._history_track_id = None
         self._inspection_complete = None
         self._entries = None
         self._runs = None
@@ -147,6 +150,8 @@ class RaceDetails(object):
             self.track_sponsor = track_sponsor
         if track_id is not None:
             self.track_id = track_id
+        if history_track_id is not None:
+            self.history_track_id = history_track_id
         if inspection_complete is not None:
             self.inspection_complete = inspection_complete
         if entries is not None:
@@ -594,6 +599,29 @@ class RaceDetails(object):
         """
 
         self._track_id = track_id
+
+    @property
+    def history_track_id(self):
+        """Gets the history_track_id of this RaceDetails.  # noqa: E501
+
+        History Track Id  # noqa: E501
+
+        :return: The history_track_id of this RaceDetails.  # noqa: E501
+        :rtype: int
+        """
+        return self._history_track_id
+
+    @history_track_id.setter
+    def history_track_id(self, history_track_id):
+        """Sets the history_track_id of this RaceDetails.
+
+        History Track Id  # noqa: E501
+
+        :param history_track_id: The history_track_id of this RaceDetails.  # noqa: E501
+        :type: int
+        """
+
+        self._history_track_id = history_track_id
 
     @property
     def inspection_complete(self):
