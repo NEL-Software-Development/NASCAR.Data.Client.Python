@@ -18,6 +18,7 @@ Method | HTTP request | Description
 [**race_qualifying_results_get**](RaceApi.md#race_qualifying_results_get) | **GET** /race/qualifying-results | 
 [**race_race_results_get**](RaceApi.md#race_race_results_get) | **GET** /race/race-results | 
 [**race_report_get**](RaceApi.md#race_report_get) | **GET** /race/report | 
+[**race_results_get**](RaceApi.md#race_results_get) | **GET** /race/results | 
 [**race_rosters_get**](RaceApi.md#race_rosters_get) | **GET** /race/rosters | 
 [**race_season_get**](RaceApi.md#race_season_get) | **GET** /race/season | 
 [**race_stage_results_get**](RaceApi.md#race_stage_results_get) | **GET** /race/stage-results | 
@@ -658,6 +659,54 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**AvailableReports**](AvailableReports.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **race_results_get**
+> RunResults race_results_get(race_id=race_id, timing_run_id=timing_run_id)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import nascar_data_client
+from nascar_data_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configuration))
+race_id = 56 # int |  (optional)
+timing_run_id = 56 # int |  (optional)
+
+try:
+    api_response = api_instance.race_results_get(race_id=race_id, timing_run_id=timing_run_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling RaceApi->race_results_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **race_id** | **int**|  | [optional] 
+ **timing_run_id** | **int**|  | [optional] 
+
+### Return type
+
+[**RunResults**](RunResults.md)
 
 ### Authorization
 

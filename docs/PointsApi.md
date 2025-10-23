@@ -5,6 +5,7 @@ All URIs are relative to */api*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**points_driver_points_get**](PointsApi.md#points_driver_points_get) | **GET** /points/driver-points | 
+[**points_driverpoints_get**](PointsApi.md#points_driverpoints_get) | **GET** /points/driverpoints | 
 [**points_live_driver_points_get**](PointsApi.md#points_live_driver_points_get) | **GET** /points/live-driver-points | 
 [**points_manufacturer_points_get**](PointsApi.md#points_manufacturer_points_get) | **GET** /points/manufacturer-points | 
 [**points_owner_points_get**](PointsApi.md#points_owner_points_get) | **GET** /points/owner-points | 
@@ -59,8 +60,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **points_live_driver_points_get**
-> list[LiveDriverPoints] points_live_driver_points_get()
+# **points_driverpoints_get**
+> list[DriverPointsView] points_driverpoints_get(race_id=race_id)
 
 
 
@@ -75,16 +76,66 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = nascar_data_client.PointsApi(nascar_data_client.ApiClient(configuration))
+race_id = 56 # int |  (optional)
 
 try:
-    api_response = api_instance.points_live_driver_points_get()
+    api_response = api_instance.points_driverpoints_get(race_id=race_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling PointsApi->points_driverpoints_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **race_id** | **int**|  | [optional] 
+
+### Return type
+
+[**list[DriverPointsView]**](DriverPointsView.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **points_live_driver_points_get**
+> list[LiveDriverPoints] points_live_driver_points_get(race_id=race_id)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import nascar_data_client
+from nascar_data_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = nascar_data_client.PointsApi(nascar_data_client.ApiClient(configuration))
+race_id = 56 # int |  (optional)
+
+try:
+    api_response = api_instance.points_live_driver_points_get(race_id=race_id)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PointsApi->points_live_driver_points_get: %s\n" % e)
 ```
 
 ### Parameters
-This endpoint does not need any parameter.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **race_id** | **int**|  | [optional] 
 
 ### Return type
 
