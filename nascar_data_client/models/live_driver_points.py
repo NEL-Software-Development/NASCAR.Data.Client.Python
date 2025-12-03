@@ -47,7 +47,7 @@ class LiveDriverPoints(object):
         'playoff_points': 'int',
         'delta_leader': 'int',
         'delta_next': 'int',
-        'is_in_chase': 'bool',
+        'in_playoffs': 'bool',
         'is_points_eligible': 'bool',
         'is_post_entry': 'bool',
         'is_cutline': 'bool',
@@ -63,8 +63,8 @@ class LiveDriverPoints(object):
         'top_5': 'int',
         'top_10': 'int',
         'series_id': 'int',
-        'race_id': 'int',
-        'run_id': 'int',
+        'history_race_id': 'int',
+        'timing_run_id': 'int',
         'playoff_round_number': 'int'
     }
 
@@ -87,7 +87,7 @@ class LiveDriverPoints(object):
         'playoff_points': 'playoff_points',
         'delta_leader': 'delta_leader',
         'delta_next': 'delta_next',
-        'is_in_chase': 'is_in_chase',
+        'in_playoffs': 'in_playoffs',
         'is_points_eligible': 'is_points_eligible',
         'is_post_entry': 'is_post_entry',
         'is_cutline': 'is_cutline',
@@ -103,12 +103,12 @@ class LiveDriverPoints(object):
         'top_5': 'top_5',
         'top_10': 'top_10',
         'series_id': 'series_id',
-        'race_id': 'race_id',
-        'run_id': 'run_id',
+        'history_race_id': 'history_race_id',
+        'timing_run_id': 'timing_run_id',
         'playoff_round_number': 'playoff_round_number'
     }
 
-    def __init__(self, points_position=None, driver_id=None, driver=None, driver_abbrev=None, car_number=None, race_pos=None, stage_1_position=None, stage_1_points=None, stage_2_position=None, stage_2_points=None, stage_3_position=None, stage_3_points=None, finish_points=None, race_points=None, points=None, playoff_points=None, delta_leader=None, delta_next=None, is_in_chase=None, is_points_eligible=None, is_post_entry=None, is_cutline=None, is_locked=None, is_playoff_eligible=None, tv_sort_order=None, playoff_round_race_wins=None, cutline_points_delta=None, stage_wins=None, poles=None, attempts=None, wins=None, top_5=None, top_10=None, series_id=None, race_id=None, run_id=None, playoff_round_number=None):  # noqa: E501
+    def __init__(self, points_position=None, driver_id=None, driver=None, driver_abbrev=None, car_number=None, race_pos=None, stage_1_position=None, stage_1_points=None, stage_2_position=None, stage_2_points=None, stage_3_position=None, stage_3_points=None, finish_points=None, race_points=None, points=None, playoff_points=None, delta_leader=None, delta_next=None, in_playoffs=None, is_points_eligible=None, is_post_entry=None, is_cutline=None, is_locked=None, is_playoff_eligible=None, tv_sort_order=None, playoff_round_race_wins=None, cutline_points_delta=None, stage_wins=None, poles=None, attempts=None, wins=None, top_5=None, top_10=None, series_id=None, history_race_id=None, timing_run_id=None, playoff_round_number=None):  # noqa: E501
         """LiveDriverPoints - a model defined in Swagger"""  # noqa: E501
         self._points_position = None
         self._driver_id = None
@@ -128,7 +128,7 @@ class LiveDriverPoints(object):
         self._playoff_points = None
         self._delta_leader = None
         self._delta_next = None
-        self._is_in_chase = None
+        self._in_playoffs = None
         self._is_points_eligible = None
         self._is_post_entry = None
         self._is_cutline = None
@@ -144,8 +144,8 @@ class LiveDriverPoints(object):
         self._top_5 = None
         self._top_10 = None
         self._series_id = None
-        self._race_id = None
-        self._run_id = None
+        self._history_race_id = None
+        self._timing_run_id = None
         self._playoff_round_number = None
         self.discriminator = None
         if points_position is not None:
@@ -184,8 +184,8 @@ class LiveDriverPoints(object):
             self.delta_leader = delta_leader
         if delta_next is not None:
             self.delta_next = delta_next
-        if is_in_chase is not None:
-            self.is_in_chase = is_in_chase
+        if in_playoffs is not None:
+            self.in_playoffs = in_playoffs
         if is_points_eligible is not None:
             self.is_points_eligible = is_points_eligible
         if is_post_entry is not None:
@@ -216,10 +216,10 @@ class LiveDriverPoints(object):
             self.top_10 = top_10
         if series_id is not None:
             self.series_id = series_id
-        if race_id is not None:
-            self.race_id = race_id
-        if run_id is not None:
-            self.run_id = run_id
+        if history_race_id is not None:
+            self.history_race_id = history_race_id
+        if timing_run_id is not None:
+            self.timing_run_id = timing_run_id
         if playoff_round_number is not None:
             self.playoff_round_number = playoff_round_number
 
@@ -227,6 +227,7 @@ class LiveDriverPoints(object):
     def points_position(self):
         """Gets the points_position of this LiveDriverPoints.  # noqa: E501
 
+        Overall points rank for season  # noqa: E501
 
         :return: The points_position of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -237,6 +238,7 @@ class LiveDriverPoints(object):
     def points_position(self, points_position):
         """Sets the points_position of this LiveDriverPoints.
 
+        Overall points rank for season  # noqa: E501
 
         :param points_position: The points_position of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -248,6 +250,7 @@ class LiveDriverPoints(object):
     def driver_id(self):
         """Gets the driver_id of this LiveDriverPoints.  # noqa: E501
 
+        Unique NASCAR ID given for each driver  # noqa: E501
 
         :return: The driver_id of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -258,6 +261,7 @@ class LiveDriverPoints(object):
     def driver_id(self, driver_id):
         """Sets the driver_id of this LiveDriverPoints.
 
+        Unique NASCAR ID given for each driver  # noqa: E501
 
         :param driver_id: The driver_id of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -269,6 +273,7 @@ class LiveDriverPoints(object):
     def driver(self):
         """Gets the driver of this LiveDriverPoints.  # noqa: E501
 
+        Driver full name  # noqa: E501
 
         :return: The driver of this LiveDriverPoints.  # noqa: E501
         :rtype: str
@@ -279,6 +284,7 @@ class LiveDriverPoints(object):
     def driver(self, driver):
         """Sets the driver of this LiveDriverPoints.
 
+        Driver full name  # noqa: E501
 
         :param driver: The driver of this LiveDriverPoints.  # noqa: E501
         :type: str
@@ -290,6 +296,7 @@ class LiveDriverPoints(object):
     def driver_abbrev(self):
         """Gets the driver_abbrev of this LiveDriverPoints.  # noqa: E501
 
+        Abbreviated driver name  # noqa: E501
 
         :return: The driver_abbrev of this LiveDriverPoints.  # noqa: E501
         :rtype: str
@@ -300,6 +307,7 @@ class LiveDriverPoints(object):
     def driver_abbrev(self, driver_abbrev):
         """Sets the driver_abbrev of this LiveDriverPoints.
 
+        Abbreviated driver name  # noqa: E501
 
         :param driver_abbrev: The driver_abbrev of this LiveDriverPoints.  # noqa: E501
         :type: str
@@ -311,6 +319,7 @@ class LiveDriverPoints(object):
     def car_number(self):
         """Gets the car_number of this LiveDriverPoints.  # noqa: E501
 
+        Corresponding car number for this driver during this run  # noqa: E501
 
         :return: The car_number of this LiveDriverPoints.  # noqa: E501
         :rtype: str
@@ -321,6 +330,7 @@ class LiveDriverPoints(object):
     def car_number(self, car_number):
         """Sets the car_number of this LiveDriverPoints.
 
+        Corresponding car number for this driver during this run  # noqa: E501
 
         :param car_number: The car_number of this LiveDriverPoints.  # noqa: E501
         :type: str
@@ -332,6 +342,7 @@ class LiveDriverPoints(object):
     def race_pos(self):
         """Gets the race_pos of this LiveDriverPoints.  # noqa: E501
 
+        Position of vehicle in current run  # noqa: E501
 
         :return: The race_pos of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -342,6 +353,7 @@ class LiveDriverPoints(object):
     def race_pos(self, race_pos):
         """Sets the race_pos of this LiveDriverPoints.
 
+        Position of vehicle in current run  # noqa: E501
 
         :param race_pos: The race_pos of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -353,6 +365,7 @@ class LiveDriverPoints(object):
     def stage_1_position(self):
         """Gets the stage_1_position of this LiveDriverPoints.  # noqa: E501
 
+        Finish position of vehicle for stage 1  # noqa: E501
 
         :return: The stage_1_position of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -363,6 +376,7 @@ class LiveDriverPoints(object):
     def stage_1_position(self, stage_1_position):
         """Sets the stage_1_position of this LiveDriverPoints.
 
+        Finish position of vehicle for stage 1  # noqa: E501
 
         :param stage_1_position: The stage_1_position of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -374,6 +388,7 @@ class LiveDriverPoints(object):
     def stage_1_points(self):
         """Gets the stage_1_points of this LiveDriverPoints.  # noqa: E501
 
+        Stage points earned for vehicle for stage 1  # noqa: E501
 
         :return: The stage_1_points of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -384,6 +399,7 @@ class LiveDriverPoints(object):
     def stage_1_points(self, stage_1_points):
         """Sets the stage_1_points of this LiveDriverPoints.
 
+        Stage points earned for vehicle for stage 1  # noqa: E501
 
         :param stage_1_points: The stage_1_points of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -395,6 +411,7 @@ class LiveDriverPoints(object):
     def stage_2_position(self):
         """Gets the stage_2_position of this LiveDriverPoints.  # noqa: E501
 
+        Finish position of vehicle for stage 2  # noqa: E501
 
         :return: The stage_2_position of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -405,6 +422,7 @@ class LiveDriverPoints(object):
     def stage_2_position(self, stage_2_position):
         """Sets the stage_2_position of this LiveDriverPoints.
 
+        Finish position of vehicle for stage 2  # noqa: E501
 
         :param stage_2_position: The stage_2_position of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -416,6 +434,7 @@ class LiveDriverPoints(object):
     def stage_2_points(self):
         """Gets the stage_2_points of this LiveDriverPoints.  # noqa: E501
 
+        Stage points earned for vehicle for stage 2  # noqa: E501
 
         :return: The stage_2_points of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -426,6 +445,7 @@ class LiveDriverPoints(object):
     def stage_2_points(self, stage_2_points):
         """Sets the stage_2_points of this LiveDriverPoints.
 
+        Stage points earned for vehicle for stage 2  # noqa: E501
 
         :param stage_2_points: The stage_2_points of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -437,6 +457,7 @@ class LiveDriverPoints(object):
     def stage_3_position(self):
         """Gets the stage_3_position of this LiveDriverPoints.  # noqa: E501
 
+        Finish position of vehicle for stage 3  # noqa: E501
 
         :return: The stage_3_position of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -447,6 +468,7 @@ class LiveDriverPoints(object):
     def stage_3_position(self, stage_3_position):
         """Sets the stage_3_position of this LiveDriverPoints.
 
+        Finish position of vehicle for stage 3  # noqa: E501
 
         :param stage_3_position: The stage_3_position of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -458,6 +480,7 @@ class LiveDriverPoints(object):
     def stage_3_points(self):
         """Gets the stage_3_points of this LiveDriverPoints.  # noqa: E501
 
+        Stage points earned for vehicle for stage 3  # noqa: E501
 
         :return: The stage_3_points of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -468,6 +491,7 @@ class LiveDriverPoints(object):
     def stage_3_points(self, stage_3_points):
         """Sets the stage_3_points of this LiveDriverPoints.
 
+        Stage points earned for vehicle for stage 3  # noqa: E501
 
         :param stage_3_points: The stage_3_points of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -479,6 +503,7 @@ class LiveDriverPoints(object):
     def finish_points(self):
         """Gets the finish_points of this LiveDriverPoints.  # noqa: E501
 
+        Number of points earned based on finish position for this race  # noqa: E501
 
         :return: The finish_points of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -489,6 +514,7 @@ class LiveDriverPoints(object):
     def finish_points(self, finish_points):
         """Sets the finish_points of this LiveDriverPoints.
 
+        Number of points earned based on finish position for this race  # noqa: E501
 
         :param finish_points: The finish_points of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -500,6 +526,7 @@ class LiveDriverPoints(object):
     def race_points(self):
         """Gets the race_points of this LiveDriverPoints.  # noqa: E501
 
+        Number of total points earned based on finish position and stage points for this race  # noqa: E501
 
         :return: The race_points of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -510,6 +537,7 @@ class LiveDriverPoints(object):
     def race_points(self, race_points):
         """Sets the race_points of this LiveDriverPoints.
 
+        Number of total points earned based on finish position and stage points for this race  # noqa: E501
 
         :param race_points: The race_points of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -521,6 +549,7 @@ class LiveDriverPoints(object):
     def points(self):
         """Gets the points of this LiveDriverPoints.  # noqa: E501
 
+        Total regular season points  # noqa: E501
 
         :return: The points of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -531,6 +560,7 @@ class LiveDriverPoints(object):
     def points(self, points):
         """Sets the points of this LiveDriverPoints.
 
+        Total regular season points  # noqa: E501
 
         :param points: The points of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -542,6 +572,7 @@ class LiveDriverPoints(object):
     def playoff_points(self):
         """Gets the playoff_points of this LiveDriverPoints.  # noqa: E501
 
+        Total playoff Points  # noqa: E501
 
         :return: The playoff_points of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -552,6 +583,7 @@ class LiveDriverPoints(object):
     def playoff_points(self, playoff_points):
         """Sets the playoff_points of this LiveDriverPoints.
 
+        Total playoff Points  # noqa: E501
 
         :param playoff_points: The playoff_points of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -563,6 +595,7 @@ class LiveDriverPoints(object):
     def delta_leader(self):
         """Gets the delta_leader of this LiveDriverPoints.  # noqa: E501
 
+        Number of points behind the leader  # noqa: E501
 
         :return: The delta_leader of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -573,6 +606,7 @@ class LiveDriverPoints(object):
     def delta_leader(self, delta_leader):
         """Sets the delta_leader of this LiveDriverPoints.
 
+        Number of points behind the leader  # noqa: E501
 
         :param delta_leader: The delta_leader of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -584,6 +618,7 @@ class LiveDriverPoints(object):
     def delta_next(self):
         """Gets the delta_next of this LiveDriverPoints.  # noqa: E501
 
+        Number of points behind the next driver  # noqa: E501
 
         :return: The delta_next of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -594,6 +629,7 @@ class LiveDriverPoints(object):
     def delta_next(self, delta_next):
         """Sets the delta_next of this LiveDriverPoints.
 
+        Number of points behind the next driver  # noqa: E501
 
         :param delta_next: The delta_next of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -602,30 +638,33 @@ class LiveDriverPoints(object):
         self._delta_next = delta_next
 
     @property
-    def is_in_chase(self):
-        """Gets the is_in_chase of this LiveDriverPoints.  # noqa: E501
+    def in_playoffs(self):
+        """Gets the in_playoffs of this LiveDriverPoints.  # noqa: E501
 
+        Is this driver in the Playoffs (true or false)  # noqa: E501
 
-        :return: The is_in_chase of this LiveDriverPoints.  # noqa: E501
+        :return: The in_playoffs of this LiveDriverPoints.  # noqa: E501
         :rtype: bool
         """
-        return self._is_in_chase
+        return self._in_playoffs
 
-    @is_in_chase.setter
-    def is_in_chase(self, is_in_chase):
-        """Sets the is_in_chase of this LiveDriverPoints.
+    @in_playoffs.setter
+    def in_playoffs(self, in_playoffs):
+        """Sets the in_playoffs of this LiveDriverPoints.
 
+        Is this driver in the Playoffs (true or false)  # noqa: E501
 
-        :param is_in_chase: The is_in_chase of this LiveDriverPoints.  # noqa: E501
+        :param in_playoffs: The in_playoffs of this LiveDriverPoints.  # noqa: E501
         :type: bool
         """
 
-        self._is_in_chase = is_in_chase
+        self._in_playoffs = in_playoffs
 
     @property
     def is_points_eligible(self):
         """Gets the is_points_eligible of this LiveDriverPoints.  # noqa: E501
 
+        Is driver points eligible for the series (true or false)  # noqa: E501
 
         :return: The is_points_eligible of this LiveDriverPoints.  # noqa: E501
         :rtype: bool
@@ -636,6 +675,7 @@ class LiveDriverPoints(object):
     def is_points_eligible(self, is_points_eligible):
         """Sets the is_points_eligible of this LiveDriverPoints.
 
+        Is driver points eligible for the series (true or false)  # noqa: E501
 
         :param is_points_eligible: The is_points_eligible of this LiveDriverPoints.  # noqa: E501
         :type: bool
@@ -647,6 +687,7 @@ class LiveDriverPoints(object):
     def is_post_entry(self):
         """Gets the is_post_entry of this LiveDriverPoints.  # noqa: E501
 
+        Is the driver a post-entry for this race  # noqa: E501
 
         :return: The is_post_entry of this LiveDriverPoints.  # noqa: E501
         :rtype: bool
@@ -657,6 +698,7 @@ class LiveDriverPoints(object):
     def is_post_entry(self, is_post_entry):
         """Sets the is_post_entry of this LiveDriverPoints.
 
+        Is the driver a post-entry for this race  # noqa: E501
 
         :param is_post_entry: The is_post_entry of this LiveDriverPoints.  # noqa: E501
         :type: bool
@@ -668,6 +710,7 @@ class LiveDriverPoints(object):
     def is_cutline(self):
         """Gets the is_cutline of this LiveDriverPoints.  # noqa: E501
 
+        Cut line below this driver, true for only one record  # noqa: E501
 
         :return: The is_cutline of this LiveDriverPoints.  # noqa: E501
         :rtype: bool
@@ -678,6 +721,7 @@ class LiveDriverPoints(object):
     def is_cutline(self, is_cutline):
         """Sets the is_cutline of this LiveDriverPoints.
 
+        Cut line below this driver, true for only one record  # noqa: E501
 
         :param is_cutline: The is_cutline of this LiveDriverPoints.  # noqa: E501
         :type: bool
@@ -689,6 +733,7 @@ class LiveDriverPoints(object):
     def is_locked(self):
         """Gets the is_locked of this LiveDriverPoints.  # noqa: E501
 
+        Locked into the next round of playoffs  # noqa: E501
 
         :return: The is_locked of this LiveDriverPoints.  # noqa: E501
         :rtype: bool
@@ -699,6 +744,7 @@ class LiveDriverPoints(object):
     def is_locked(self, is_locked):
         """Sets the is_locked of this LiveDriverPoints.
 
+        Locked into the next round of playoffs  # noqa: E501
 
         :param is_locked: The is_locked of this LiveDriverPoints.  # noqa: E501
         :type: bool
@@ -710,6 +756,7 @@ class LiveDriverPoints(object):
     def is_playoff_eligible(self):
         """Gets the is_playoff_eligible of this LiveDriverPoints.  # noqa: E501
 
+        Is eligible for the Playoffs  # noqa: E501
 
         :return: The is_playoff_eligible of this LiveDriverPoints.  # noqa: E501
         :rtype: bool
@@ -720,6 +767,7 @@ class LiveDriverPoints(object):
     def is_playoff_eligible(self, is_playoff_eligible):
         """Sets the is_playoff_eligible of this LiveDriverPoints.
 
+        Is eligible for the Playoffs  # noqa: E501
 
         :param is_playoff_eligible: The is_playoff_eligible of this LiveDriverPoints.  # noqa: E501
         :type: bool
@@ -731,6 +779,7 @@ class LiveDriverPoints(object):
     def tv_sort_order(self):
         """Gets the tv_sort_order of this LiveDriverPoints.  # noqa: E501
 
+        The order displayed on TV (locked drivers sorted by wins desc, then current leader, then all else sorted by total points)  # noqa: E501
 
         :return: The tv_sort_order of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -741,6 +790,7 @@ class LiveDriverPoints(object):
     def tv_sort_order(self, tv_sort_order):
         """Sets the tv_sort_order of this LiveDriverPoints.
 
+        The order displayed on TV (locked drivers sorted by wins desc, then current leader, then all else sorted by total points)  # noqa: E501
 
         :param tv_sort_order: The tv_sort_order of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -752,6 +802,7 @@ class LiveDriverPoints(object):
     def playoff_round_race_wins(self):
         """Gets the playoff_round_race_wins of this LiveDriverPoints.  # noqa: E501
 
+        Wins in current round of playoffs (round 0, etc.)  # noqa: E501
 
         :return: The playoff_round_race_wins of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -762,6 +813,7 @@ class LiveDriverPoints(object):
     def playoff_round_race_wins(self, playoff_round_race_wins):
         """Sets the playoff_round_race_wins of this LiveDriverPoints.
 
+        Wins in current round of playoffs (round 0, etc.)  # noqa: E501
 
         :param playoff_round_race_wins: The playoff_round_race_wins of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -773,6 +825,7 @@ class LiveDriverPoints(object):
     def cutline_points_delta(self):
         """Gets the cutline_points_delta of this LiveDriverPoints.  # noqa: E501
 
+        Difference to cutline adjacent driver (last driver locked below, and first driver out above)  # noqa: E501
 
         :return: The cutline_points_delta of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -783,6 +836,7 @@ class LiveDriverPoints(object):
     def cutline_points_delta(self, cutline_points_delta):
         """Sets the cutline_points_delta of this LiveDriverPoints.
 
+        Difference to cutline adjacent driver (last driver locked below, and first driver out above)  # noqa: E501
 
         :param cutline_points_delta: The cutline_points_delta of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -794,6 +848,7 @@ class LiveDriverPoints(object):
     def stage_wins(self):
         """Gets the stage_wins of this LiveDriverPoints.  # noqa: E501
 
+        Stage wins for current season  # noqa: E501
 
         :return: The stage_wins of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -804,6 +859,7 @@ class LiveDriverPoints(object):
     def stage_wins(self, stage_wins):
         """Sets the stage_wins of this LiveDriverPoints.
 
+        Stage wins for current season  # noqa: E501
 
         :param stage_wins: The stage_wins of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -815,6 +871,7 @@ class LiveDriverPoints(object):
     def poles(self):
         """Gets the poles of this LiveDriverPoints.  # noqa: E501
 
+        Number of poles for current season  # noqa: E501
 
         :return: The poles of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -825,6 +882,7 @@ class LiveDriverPoints(object):
     def poles(self, poles):
         """Sets the poles of this LiveDriverPoints.
 
+        Number of poles for current season  # noqa: E501
 
         :param poles: The poles of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -836,6 +894,7 @@ class LiveDriverPoints(object):
     def attempts(self):
         """Gets the attempts of this LiveDriverPoints.  # noqa: E501
 
+        Number of attempts to qualify for current season  # noqa: E501
 
         :return: The attempts of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -846,6 +905,7 @@ class LiveDriverPoints(object):
     def attempts(self, attempts):
         """Sets the attempts of this LiveDriverPoints.
 
+        Number of attempts to qualify for current season  # noqa: E501
 
         :param attempts: The attempts of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -857,6 +917,7 @@ class LiveDriverPoints(object):
     def wins(self):
         """Gets the wins of this LiveDriverPoints.  # noqa: E501
 
+        Number of wins for current season  # noqa: E501
 
         :return: The wins of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -867,6 +928,7 @@ class LiveDriverPoints(object):
     def wins(self, wins):
         """Sets the wins of this LiveDriverPoints.
 
+        Number of wins for current season  # noqa: E501
 
         :param wins: The wins of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -878,6 +940,7 @@ class LiveDriverPoints(object):
     def top_5(self):
         """Gets the top_5 of this LiveDriverPoints.  # noqa: E501
 
+        Number of top 5 finishes for current season  # noqa: E501
 
         :return: The top_5 of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -888,6 +951,7 @@ class LiveDriverPoints(object):
     def top_5(self, top_5):
         """Sets the top_5 of this LiveDriverPoints.
 
+        Number of top 5 finishes for current season  # noqa: E501
 
         :param top_5: The top_5 of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -899,6 +963,7 @@ class LiveDriverPoints(object):
     def top_10(self):
         """Gets the top_10 of this LiveDriverPoints.  # noqa: E501
 
+        Number of top 10 finishes for current season  # noqa: E501
 
         :return: The top_10 of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -909,6 +974,7 @@ class LiveDriverPoints(object):
     def top_10(self, top_10):
         """Sets the top_10 of this LiveDriverPoints.
 
+        Number of top 10 finishes for current season  # noqa: E501
 
         :param top_10: The top_10 of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -920,6 +986,7 @@ class LiveDriverPoints(object):
     def series_id(self):
         """Gets the series_id of this LiveDriverPoints.  # noqa: E501
 
+        Series ID for current run (1-Cup, 2-O'Reily(Xfinity), 3-Truck)  # noqa: E501
 
         :return: The series_id of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -930,6 +997,7 @@ class LiveDriverPoints(object):
     def series_id(self, series_id):
         """Sets the series_id of this LiveDriverPoints.
 
+        Series ID for current run (1-Cup, 2-O'Reily(Xfinity), 3-Truck)  # noqa: E501
 
         :param series_id: The series_id of this LiveDriverPoints.  # noqa: E501
         :type: int
@@ -938,51 +1006,56 @@ class LiveDriverPoints(object):
         self._series_id = series_id
 
     @property
-    def race_id(self):
-        """Gets the race_id of this LiveDriverPoints.  # noqa: E501
+    def history_race_id(self):
+        """Gets the history_race_id of this LiveDriverPoints.  # noqa: E501
 
+        Unique race ID for the current run  # noqa: E501
 
-        :return: The race_id of this LiveDriverPoints.  # noqa: E501
+        :return: The history_race_id of this LiveDriverPoints.  # noqa: E501
         :rtype: int
         """
-        return self._race_id
+        return self._history_race_id
 
-    @race_id.setter
-    def race_id(self, race_id):
-        """Sets the race_id of this LiveDriverPoints.
+    @history_race_id.setter
+    def history_race_id(self, history_race_id):
+        """Sets the history_race_id of this LiveDriverPoints.
 
+        Unique race ID for the current run  # noqa: E501
 
-        :param race_id: The race_id of this LiveDriverPoints.  # noqa: E501
+        :param history_race_id: The history_race_id of this LiveDriverPoints.  # noqa: E501
         :type: int
         """
 
-        self._race_id = race_id
+        self._history_race_id = history_race_id
 
     @property
-    def run_id(self):
-        """Gets the run_id of this LiveDriverPoints.  # noqa: E501
+    def timing_run_id(self):
+        """Gets the timing_run_id of this LiveDriverPoints.  # noqa: E501
 
+        Unique (in weekend) run ID for the current run  # noqa: E501
 
-        :return: The run_id of this LiveDriverPoints.  # noqa: E501
+        :return: The timing_run_id of this LiveDriverPoints.  # noqa: E501
         :rtype: int
         """
-        return self._run_id
+        return self._timing_run_id
 
-    @run_id.setter
-    def run_id(self, run_id):
-        """Sets the run_id of this LiveDriverPoints.
+    @timing_run_id.setter
+    def timing_run_id(self, timing_run_id):
+        """Sets the timing_run_id of this LiveDriverPoints.
 
+        Unique (in weekend) run ID for the current run  # noqa: E501
 
-        :param run_id: The run_id of this LiveDriverPoints.  # noqa: E501
+        :param timing_run_id: The timing_run_id of this LiveDriverPoints.  # noqa: E501
         :type: int
         """
 
-        self._run_id = run_id
+        self._timing_run_id = timing_run_id
 
     @property
     def playoff_round_number(self):
         """Gets the playoff_round_number of this LiveDriverPoints.  # noqa: E501
 
+        Current playoff round number (0 before the playoffs begin)  # noqa: E501
 
         :return: The playoff_round_number of this LiveDriverPoints.  # noqa: E501
         :rtype: int
@@ -993,6 +1066,7 @@ class LiveDriverPoints(object):
     def playoff_round_number(self, playoff_round_number):
         """Sets the playoff_round_number of this LiveDriverPoints.
 
+        Current playoff round number (0 before the playoffs begin)  # noqa: E501
 
         :param playoff_round_number: The playoff_round_number of this LiveDriverPoints.  # noqa: E501
         :type: int
