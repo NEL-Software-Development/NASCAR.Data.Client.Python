@@ -22,6 +22,7 @@ Name | Type | Description | Notes
 **track_name** | **str** | Track Name | [optional] 
 **track_sponsor** | **str** | The name of the track sponsor | [optional] 
 **track_id** | **int** | Track Id | [optional] 
+**history_track_id** | **int** | History Track Id | [optional] 
 **inspection_complete** | **bool** | Has inspection been completed | [optional] 
 **entries** | [**list[RunEntry]**](RunEntry.md) | Race entries | [optional] 
 **runs** | [**list[RunDetails]**](RunDetails.md) | Runs | [optional] 
