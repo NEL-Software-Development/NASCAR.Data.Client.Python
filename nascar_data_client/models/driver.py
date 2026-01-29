@@ -112,7 +112,7 @@ class Driver(object):
     def id(self):
         """Gets the id of this Driver.  # noqa: E501
 
-        Id  # noqa: E501
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
 
         :return: The id of this Driver.  # noqa: E501
         :rtype: int
@@ -123,7 +123,7 @@ class Driver(object):
     def id(self, id):
         """Sets the id of this Driver.
 
-        Id  # noqa: E501
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
 
         :param id: The id of this Driver.  # noqa: E501
         :type: int

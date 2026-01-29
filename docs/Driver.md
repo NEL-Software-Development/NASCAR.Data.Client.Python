@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **int** | Id | [optional] 
+**id** | **int** | Unique identifier given and used by the NASCAR Data API | [optional] 
 **name** | **str** | Name | [optional] 
 **date_of_birth** | **datetime** | Date of birth | [optional] 
 **date_of_death** | **datetime** | Date of death | [optional] 

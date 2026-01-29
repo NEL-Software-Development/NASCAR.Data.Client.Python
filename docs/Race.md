@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **int** | The id of the race | [optional] 
+**id** | **int** | Unique identifier given and used by the NASCAR Data API | [optional] 
 **principal_race_id** | **int** | The principal race id of the race | [optional] 
 **history_race_id** | **int** | The race id from the history database | [optional] [default to -1]
 **raceweek_id** | **int** | The race | [optional] 
@@ -23,7 +23,8 @@ Name | Type | Description | Notes
 **stages** | **str** | URL to race stages | [optional] 
 **_date** | **datetime** | Race date | [optional] 
 **comments** | **str** | Race comments | [optional] 
-**history_track_id** | **int** | Track Id | [optional] 
+**history_track_id** | **int** | History Track Id | [optional] 
+**track_id** | **int** | Track Id | [optional] 
 **fastest_lap_award** | [**FastestLapAwards**](FastestLapAwards.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
