@@ -122,7 +122,7 @@ class TrackConfiguration(object):
     def id(self):
         """Gets the id of this TrackConfiguration.  # noqa: E501
 
-        Gets or sets the unique identifier for the track configuration.  # noqa: E501
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
 
         :return: The id of this TrackConfiguration.  # noqa: E501
         :rtype: int
@@ -133,7 +133,7 @@ class TrackConfiguration(object):
     def id(self, id):
         """Sets the id of this TrackConfiguration.
 
-        Gets or sets the unique identifier for the track configuration.  # noqa: E501
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
 
         :param id: The id of this TrackConfiguration.  # noqa: E501
         :type: int

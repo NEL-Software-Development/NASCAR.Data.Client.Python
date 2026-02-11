@@ -35,6 +35,8 @@ class Race(object):
         'raceweek_id': 'int',
         'series_id': 'int',
         'name': 'str',
+        'race_type_id': 'int',
+        'total_race_time': 'str',
         'promoter': 'str',
         'laps': 'int',
         'distance': 'float',
@@ -50,6 +52,7 @@ class Race(object):
         '_date': 'datetime',
         'comments': 'str',
         'history_track_id': 'int',
+        'track_id': 'int',
         'fastest_lap_award': 'FastestLapAwards'
     }
 
@@ -60,6 +63,8 @@ class Race(object):
         'raceweek_id': 'raceweek_id',
         'series_id': 'series_id',
         'name': 'name',
+        'race_type_id': 'race_type_id',
+        'total_race_time': 'total_race_time',
         'promoter': 'promoter',
         'laps': 'laps',
         'distance': 'distance',
@@ -75,10 +80,11 @@ class Race(object):
         '_date': 'date',
         'comments': 'comments',
         'history_track_id': 'history_track_id',
+        'track_id': 'track_id',
         'fastest_lap_award': 'fastest_lap_award'
     }
 
-    def __init__(self, id=None, principal_race_id=None, history_race_id=-1, raceweek_id=None, series_id=None, name=None, promoter=None, laps=None, distance=None, inspection_complete=None, practice_results=None, qualifying_results=None, race_results=None, cautions=None, infractions=None, lap_leaders=None, pitstops=None, stages=None, _date=None, comments=None, history_track_id=None, fastest_lap_award=None):  # noqa: E501
+    def __init__(self, id=None, principal_race_id=None, history_race_id=-1, raceweek_id=None, series_id=None, name=None, race_type_id=None, total_race_time=None, promoter=None, laps=None, distance=None, inspection_complete=None, practice_results=None, qualifying_results=None, race_results=None, cautions=None, infractions=None, lap_leaders=None, pitstops=None, stages=None, _date=None, comments=None, history_track_id=None, track_id=None, fastest_lap_award=None):  # noqa: E501
         """Race - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._principal_race_id = None
@@ -86,6 +92,8 @@ class Race(object):
         self._raceweek_id = None
         self._series_id = None
         self._name = None
+        self._race_type_id = None
+        self._total_race_time = None
         self._promoter = None
         self._laps = None
         self._distance = None
@@ -101,6 +109,7 @@ class Race(object):
         self.__date = None
         self._comments = None
         self._history_track_id = None
+        self._track_id = None
         self._fastest_lap_award = None
         self.discriminator = None
         if id is not None:
@@ -115,6 +124,10 @@ class Race(object):
             self.series_id = series_id
         if name is not None:
             self.name = name
+        if race_type_id is not None:
+            self.race_type_id = race_type_id
+        if total_race_time is not None:
+            self.total_race_time = total_race_time
         if promoter is not None:
             self.promoter = promoter
         if laps is not None:
@@ -145,6 +158,8 @@ class Race(object):
             self.comments = comments
         if history_track_id is not None:
             self.history_track_id = history_track_id
+        if track_id is not None:
+            self.track_id = track_id
         if fastest_lap_award is not None:
             self.fastest_lap_award = fastest_lap_award
 
@@ -152,7 +167,7 @@ class Race(object):
     def id(self):
         """Gets the id of this Race.  # noqa: E501
 
-        The id of the race  # noqa: E501
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
 
         :return: The id of this Race.  # noqa: E501
         :rtype: int
@@ -163,7 +178,7 @@ class Race(object):
     def id(self, id):
         """Sets the id of this Race.
 
-        The id of the race  # noqa: E501
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
 
         :param id: The id of this Race.  # noqa: E501
         :type: int
@@ -285,6 +300,52 @@ class Race(object):
         """
 
         self._name = name
+
+    @property
+    def race_type_id(self):
+        """Gets the race_type_id of this Race.  # noqa: E501
+
+        Race Type Identifier (1-Race, 2-Duel, 3-Heat, 4-Exhibition)  # noqa: E501
+
+        :return: The race_type_id of this Race.  # noqa: E501
+        :rtype: int
+        """
+        return self._race_type_id
+
+    @race_type_id.setter
+    def race_type_id(self, race_type_id):
+        """Sets the race_type_id of this Race.
+
+        Race Type Identifier (1-Race, 2-Duel, 3-Heat, 4-Exhibition)  # noqa: E501
+
+        :param race_type_id: The race_type_id of this Race.  # noqa: E501
+        :type: int
+        """
+
+        self._race_type_id = race_type_id
+
+    @property
+    def total_race_time(self):
+        """Gets the total_race_time of this Race.  # noqa: E501
+
+        String formatted representation of the total time of race HH:MM:SS  # noqa: E501
+
+        :return: The total_race_time of this Race.  # noqa: E501
+        :rtype: str
+        """
+        return self._total_race_time
+
+    @total_race_time.setter
+    def total_race_time(self, total_race_time):
+        """Sets the total_race_time of this Race.
+
+        String formatted representation of the total time of race HH:MM:SS  # noqa: E501
+
+        :param total_race_time: The total_race_time of this Race.  # noqa: E501
+        :type: str
+        """
+
+        self._total_race_time = total_race_time
 
     @property
     def promoter(self):
@@ -612,7 +673,7 @@ class Race(object):
     def history_track_id(self):
         """Gets the history_track_id of this Race.  # noqa: E501
 
-        Track Id  # noqa: E501
+        History Track Id  # noqa: E501
 
         :return: The history_track_id of this Race.  # noqa: E501
         :rtype: int
@@ -623,13 +684,36 @@ class Race(object):
     def history_track_id(self, history_track_id):
         """Sets the history_track_id of this Race.
 
-        Track Id  # noqa: E501
+        History Track Id  # noqa: E501
 
         :param history_track_id: The history_track_id of this Race.  # noqa: E501
         :type: int
         """
 
         self._history_track_id = history_track_id
+
+    @property
+    def track_id(self):
+        """Gets the track_id of this Race.  # noqa: E501
+
+        Track Id  # noqa: E501
+
+        :return: The track_id of this Race.  # noqa: E501
+        :rtype: int
+        """
+        return self._track_id
+
+    @track_id.setter
+    def track_id(self, track_id):
+        """Sets the track_id of this Race.
+
+        Track Id  # noqa: E501
+
+        :param track_id: The track_id of this Race.  # noqa: E501
+        :type: int
+        """
+
+        self._track_id = track_id
 
     @property
     def fastest_lap_award(self):
