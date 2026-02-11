@@ -31,6 +31,7 @@ class TrackPath(object):
     swagger_types = {
         'id': 'int',
         'track_configuration_id': 'int',
+        'history_track_path_id': 'int',
         'track_id': 'int',
         'name': 'str',
         'ordinal_sort_order': 'int',
@@ -41,6 +42,7 @@ class TrackPath(object):
     attribute_map = {
         'id': 'id',
         'track_configuration_id': 'track_configuration_id',
+        'history_track_path_id': 'history_track_path_id',
         'track_id': 'track_id',
         'name': 'name',
         'ordinal_sort_order': 'ordinal_sort_order',
@@ -48,10 +50,11 @@ class TrackPath(object):
         'length': 'length'
     }
 
-    def __init__(self, id=None, track_configuration_id=None, track_id=None, name=None, ordinal_sort_order=None, path_data=None, length=None):  # noqa: E501
+    def __init__(self, id=None, track_configuration_id=None, history_track_path_id=None, track_id=None, name=None, ordinal_sort_order=None, path_data=None, length=None):  # noqa: E501
         """TrackPath - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._track_configuration_id = None
+        self._history_track_path_id = None
         self._track_id = None
         self._name = None
         self._ordinal_sort_order = None
@@ -62,6 +65,8 @@ class TrackPath(object):
             self.id = id
         if track_configuration_id is not None:
             self.track_configuration_id = track_configuration_id
+        if history_track_path_id is not None:
+            self.history_track_path_id = history_track_path_id
         if track_id is not None:
             self.track_id = track_id
         if name is not None:
@@ -77,7 +82,7 @@ class TrackPath(object):
     def id(self):
         """Gets the id of this TrackPath.  # noqa: E501
 
-        Gets or sets the unique identifier for the track path.  # noqa: E501
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
 
         :return: The id of this TrackPath.  # noqa: E501
         :rtype: int
@@ -88,7 +93,7 @@ class TrackPath(object):
     def id(self, id):
         """Sets the id of this TrackPath.
 
-        Gets or sets the unique identifier for the track path.  # noqa: E501
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
 
         :param id: The id of this TrackPath.  # noqa: E501
         :type: int
@@ -118,6 +123,29 @@ class TrackPath(object):
         """
 
         self._track_configuration_id = track_configuration_id
+
+    @property
+    def history_track_path_id(self):
+        """Gets the history_track_path_id of this TrackPath.  # noqa: E501
+
+        The unique identifier for this track path in History.  # noqa: E501
+
+        :return: The history_track_path_id of this TrackPath.  # noqa: E501
+        :rtype: int
+        """
+        return self._history_track_path_id
+
+    @history_track_path_id.setter
+    def history_track_path_id(self, history_track_path_id):
+        """Sets the history_track_path_id of this TrackPath.
+
+        The unique identifier for this track path in History.  # noqa: E501
+
+        :param history_track_path_id: The history_track_path_id of this TrackPath.  # noqa: E501
+        :type: int
+        """
+
+        self._history_track_path_id = history_track_path_id
 
     @property
     def track_id(self):

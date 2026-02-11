@@ -29,7 +29,6 @@ class Company(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'int',
         'name': 'str',
         'abbreviation': 'str',
         'alias': 'str',
@@ -38,7 +37,6 @@ class Company(object):
     }
 
     attribute_map = {
-        'id': 'id',
         'name': 'name',
         'abbreviation': 'abbreviation',
         'alias': 'alias',
@@ -46,17 +44,14 @@ class Company(object):
         'category_name': 'category_name'
     }
 
-    def __init__(self, id=None, name=None, abbreviation=None, alias=None, category_id=None, category_name=None):  # noqa: E501
+    def __init__(self, name=None, abbreviation=None, alias=None, category_id=None, category_name=None):  # noqa: E501
         """Company - a model defined in Swagger"""  # noqa: E501
-        self._id = None
         self._name = None
         self._abbreviation = None
         self._alias = None
         self._category_id = None
         self._category_name = None
         self.discriminator = None
-        if id is not None:
-            self.id = id
         if name is not None:
             self.name = name
         if abbreviation is not None:
@@ -67,29 +62,6 @@ class Company(object):
             self.category_id = category_id
         if category_name is not None:
             self.category_name = category_name
-
-    @property
-    def id(self):
-        """Gets the id of this Company.  # noqa: E501
-
-        Company Id  # noqa: E501
-
-        :return: The id of this Company.  # noqa: E501
-        :rtype: int
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this Company.
-
-        Company Id  # noqa: E501
-
-        :param id: The id of this Company.  # noqa: E501
-        :type: int
-        """
-
-        self._id = id
 
     @property
     def name(self):
