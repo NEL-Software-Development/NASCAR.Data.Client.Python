@@ -7,9 +7,11 @@ Method | HTTP request | Description
 [**race_cautions_get**](RaceApi.md#race_cautions_get) | **GET** /race/cautions | 
 [**race_discipline_updates_get**](RaceApi.md#race_discipline_updates_get) | **GET** /race/discipline-updates | 
 [**race_entries_get**](RaceApi.md#race_entries_get) | **GET** /race/entries | 
+[**race_fastest_laps_get**](RaceApi.md#race_fastest_laps_get) | **GET** /race/fastest-laps | 
 [**race_get**](RaceApi.md#race_get) | **GET** /race | 
 [**race_infractions_get**](RaceApi.md#race_infractions_get) | **GET** /race/infractions | 
 [**race_lap_leaders_get**](RaceApi.md#race_lap_leaders_get) | **GET** /race/lap-leaders | 
+[**race_lapchart_get**](RaceApi.md#race_lapchart_get) | **GET** /race/lapchart | 
 [**race_live_session_get**](RaceApi.md#race_live_session_get) | **GET** /race/live-session | 
 [**race_lookup_get**](RaceApi.md#race_lookup_get) | **GET** /race/lookup | 
 [**race_loop_stats_get**](RaceApi.md#race_loop_stats_get) | **GET** /race/loop-stats | 
@@ -18,6 +20,7 @@ Method | HTTP request | Description
 [**race_qualifying_results_get**](RaceApi.md#race_qualifying_results_get) | **GET** /race/qualifying-results | 
 [**race_race_results_get**](RaceApi.md#race_race_results_get) | **GET** /race/race-results | 
 [**race_report_get**](RaceApi.md#race_report_get) | **GET** /race/report | 
+[**race_results_get**](RaceApi.md#race_results_get) | **GET** /race/results | 
 [**race_rosters_get**](RaceApi.md#race_rosters_get) | **GET** /race/rosters | 
 [**race_season_get**](RaceApi.md#race_season_get) | **GET** /race/season | 
 [**race_stage_results_get**](RaceApi.md#race_stage_results_get) | **GET** /race/stage-results | 
@@ -164,6 +167,52 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+# **race_fastest_laps_get**
+> FastestLapResult race_fastest_laps_get(race_id=race_id)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import nascar_data_client
+from nascar_data_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configuration))
+race_id = 56 # int |  (optional)
+
+try:
+    api_response = api_instance.race_fastest_laps_get(race_id=race_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling RaceApi->race_fastest_laps_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **race_id** | **int**|  | [optional] 
+
+### Return type
+
+[**FastestLapResult**](FastestLapResult.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 # **race_get**
 > RaceDetails race_get(race_id=race_id)
 
@@ -290,6 +339,52 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**list[LapLeader]**](LapLeader.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **race_lapchart_get**
+> LapChartResult race_lapchart_get(race_id=race_id)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import nascar_data_client
+from nascar_data_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configuration))
+race_id = 56 # int |  (optional)
+
+try:
+    api_response = api_instance.race_lapchart_get(race_id=race_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling RaceApi->race_lapchart_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **race_id** | **int**|  | [optional] 
+
+### Return type
+
+[**LapChartResult**](LapChartResult.md)
 
 ### Authorization
 
@@ -658,6 +753,54 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**AvailableReports**](AvailableReports.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **race_results_get**
+> RunResults race_results_get(race_id=race_id, timing_run_id=timing_run_id)
+
+
+
+### Example
+```python
+from __future__ import print_function
+import time
+import nascar_data_client
+from nascar_data_client.rest import ApiException
+from pprint import pprint
+
+
+# create an instance of the API class
+api_instance = nascar_data_client.RaceApi(nascar_data_client.ApiClient(configuration))
+race_id = 56 # int |  (optional)
+timing_run_id = 56 # int |  (optional)
+
+try:
+    api_response = api_instance.race_results_get(race_id=race_id, timing_run_id=timing_run_id)
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling RaceApi->race_results_get: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **race_id** | **int**|  | [optional] 
+ **timing_run_id** | **int**|  | [optional] 
+
+### Return type
+
+[**RunResults**](RunResults.md)
 
 ### Authorization
 
