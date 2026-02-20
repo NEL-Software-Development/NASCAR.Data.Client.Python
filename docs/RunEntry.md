@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **driver_name** | **str** | Driver name | [optional] 
+**driver_id** | **int** | Driver ID | [optional] 
 **driver_details** | **str** | URL to driver details | [optional] 
 **sponsor** | **str** | Sponsor | [optional] 
 **vehicle_number** | **str** | Vehicle number | [optional] 
@@ -12,6 +13,8 @@ Name | Type | Description | Notes
 **crew_chief** | **str** | Crew chief name | [optional] 
 **model_year** | **int** | Vehicle model year | [optional] 
 **model** | **str** | Vehicle model | [optional] 
+**team_name** | **str** | Team name | [optional] 
+**last_modified** | **datetime** | Date and time the entry was last modified | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
