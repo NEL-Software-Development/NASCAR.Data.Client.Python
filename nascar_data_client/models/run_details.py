@@ -34,6 +34,7 @@ class RunDetails(object):
         'run_state': 'RunState',
         'run_type': 'RunType',
         'duration': 'int',
+        'timing_run_id': 'int',
         'flag_state': 'str',
         'flags': 'list[Flag]'
     }
@@ -44,17 +45,19 @@ class RunDetails(object):
         'run_state': 'run_state',
         'run_type': 'run_type',
         'duration': 'duration',
+        'timing_run_id': 'timing_run_id',
         'flag_state': 'flag_state',
         'flags': 'flags'
     }
 
-    def __init__(self, name=None, start_time=None, run_state=None, run_type=None, duration=None, flag_state=None, flags=None):  # noqa: E501
+    def __init__(self, name=None, start_time=None, run_state=None, run_type=None, duration=None, timing_run_id=None, flag_state=None, flags=None):  # noqa: E501
         """RunDetails - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._start_time = None
         self._run_state = None
         self._run_type = None
         self._duration = None
+        self._timing_run_id = None
         self._flag_state = None
         self._flags = None
         self.discriminator = None
@@ -68,6 +71,8 @@ class RunDetails(object):
             self.run_type = run_type
         if duration is not None:
             self.duration = duration
+        if timing_run_id is not None:
+            self.timing_run_id = timing_run_id
         if flag_state is not None:
             self.flag_state = flag_state
         if flags is not None:
@@ -183,6 +188,27 @@ class RunDetails(object):
         """
 
         self._duration = duration
+
+    @property
+    def timing_run_id(self):
+        """Gets the timing_run_id of this RunDetails.  # noqa: E501
+
+
+        :return: The timing_run_id of this RunDetails.  # noqa: E501
+        :rtype: int
+        """
+        return self._timing_run_id
+
+    @timing_run_id.setter
+    def timing_run_id(self, timing_run_id):
+        """Sets the timing_run_id of this RunDetails.
+
+
+        :param timing_run_id: The timing_run_id of this RunDetails.  # noqa: E501
+        :type: int
+        """
+
+        self._timing_run_id = timing_run_id
 
     @property
     def flag_state(self):

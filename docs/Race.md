@@ -3,12 +3,14 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **int** | The id of the race | [optional] 
+**id** | **int** | Unique identifier given and used by the NASCAR Data API | [optional] 
 **principal_race_id** | **int** | The principal race id of the race | [optional] 
 **history_race_id** | **int** | The race id from the history database | [optional] [default to -1]
 **raceweek_id** | **int** | The race | [optional] 
 **series_id** | **int** | The series id of the race | [optional] 
 **name** | **str** | The race name | [optional] 
+**race_type_id** | **int** | Race Type Identifier (1-Race, 2-Duel, 3-Heat, 4-Exhibition) | [optional] 
+**total_race_time** | **str** | String formatted representation of the total time of race HH:MM:SS | [optional] 
 **promoter** | **str** | The promoter of the race | [optional] 
 **laps** | **int** | Laps | [optional] 
 **distance** | **float** | Race distance | [optional] 
@@ -23,7 +25,8 @@ Name | Type | Description | Notes
 **stages** | **str** | URL to race stages | [optional] 
 **_date** | **datetime** | Race date | [optional] 
 **comments** | **str** | Race comments | [optional] 
-**history_track_id** | **int** | Track Id | [optional] 
+**history_track_id** | **int** | History Track Id | [optional] 
+**track_id** | **int** | Track Id | [optional] 
 **fastest_lap_award** | [**FastestLapAwards**](FastestLapAwards.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

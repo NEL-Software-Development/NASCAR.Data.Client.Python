@@ -29,29 +29,55 @@ class Stage(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'etl_stage_id': 'int',
         'stage_number': 'int',
         'laps': 'int',
         'stage_name': 'str'
     }
 
     attribute_map = {
+        'etl_stage_id': 'etl_stage_id',
         'stage_number': 'stage_number',
         'laps': 'laps',
         'stage_name': 'stage_name'
     }
 
-    def __init__(self, stage_number=None, laps=None, stage_name=None):  # noqa: E501
+    def __init__(self, etl_stage_id=None, stage_number=None, laps=None, stage_name=None):  # noqa: E501
         """Stage - a model defined in Swagger"""  # noqa: E501
+        self._etl_stage_id = None
         self._stage_number = None
         self._laps = None
         self._stage_name = None
         self.discriminator = None
+        if etl_stage_id is not None:
+            self.etl_stage_id = etl_stage_id
         if stage_number is not None:
             self.stage_number = stage_number
         if laps is not None:
             self.laps = laps
         if stage_name is not None:
             self.stage_name = stage_name
+
+    @property
+    def etl_stage_id(self):
+        """Gets the etl_stage_id of this Stage.  # noqa: E501
+
+
+        :return: The etl_stage_id of this Stage.  # noqa: E501
+        :rtype: int
+        """
+        return self._etl_stage_id
+
+    @etl_stage_id.setter
+    def etl_stage_id(self, etl_stage_id):
+        """Sets the etl_stage_id of this Stage.
+
+
+        :param etl_stage_id: The etl_stage_id of this Stage.  # noqa: E501
+        :type: int
+        """
+
+        self._etl_stage_id = etl_stage_id
 
     @property
     def stage_number(self):
