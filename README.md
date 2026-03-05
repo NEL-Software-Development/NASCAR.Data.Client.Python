@@ -73,22 +73,21 @@ Class | Method | HTTP request | Description
 *DriverApi* | [**driver_season_get**](docs/DriverApi.md#driver_season_get) | **GET** /driver/season | 
 *DriverSummaryApi* | [**driver_summary_get**](docs/DriverSummaryApi.md#driver_summary_get) | **GET** /driver-summary | 
 *ERDPApi* | [**erdp_topics_get**](docs/ERDPApi.md#erdp_topics_get) | **GET** /erdp/topics | Get a users erdp topics.
-*FeedbackApi* | [**feedback_dev_notes_get**](docs/FeedbackApi.md#feedback_dev_notes_get) | **GET** /feedback/dev-notes | 
-*FeedbackApi* | [**feedback_submit_feedback_post**](docs/FeedbackApi.md#feedback_submit_feedback_post) | **POST** /feedback/submit-feedback | 
 *InspectionsApi* | [**inspections_oss_get**](docs/InspectionsApi.md#inspections_oss_get) | **GET** /inspections/oss | 
 *InspectionsApi* | [**inspections_vehicle_weights_get**](docs/InspectionsApi.md#inspections_vehicle_weights_get) | **GET** /inspections/vehicle-weights | 
 *JournalFilesApi* | [**journal_get**](docs/JournalFilesApi.md#journal_get) | **GET** /journal | 
 *OpticalTrackingApi* | [**optical_tracking_utm_offsets_get**](docs/OpticalTrackingApi.md#optical_tracking_utm_offsets_get) | **GET** /optical-tracking/utm-offsets | 
 *PointsApi* | [**points_driver_points_get**](docs/PointsApi.md#points_driver_points_get) | **GET** /points/driver-points | 
-*PointsApi* | [**points_live_driver_points_get**](docs/PointsApi.md#points_live_driver_points_get) | **GET** /points/live-driver-points | 
 *PointsApi* | [**points_manufacturer_points_get**](docs/PointsApi.md#points_manufacturer_points_get) | **GET** /points/manufacturer-points | 
 *PointsApi* | [**points_owner_points_get**](docs/PointsApi.md#points_owner_points_get) | **GET** /points/owner-points | 
 *RaceApi* | [**race_cautions_get**](docs/RaceApi.md#race_cautions_get) | **GET** /race/cautions | 
 *RaceApi* | [**race_discipline_updates_get**](docs/RaceApi.md#race_discipline_updates_get) | **GET** /race/discipline-updates | 
 *RaceApi* | [**race_entries_get**](docs/RaceApi.md#race_entries_get) | **GET** /race/entries | 
+*RaceApi* | [**race_fastest_laps_get**](docs/RaceApi.md#race_fastest_laps_get) | **GET** /race/fastest-laps | 
 *RaceApi* | [**race_get**](docs/RaceApi.md#race_get) | **GET** /race | 
 *RaceApi* | [**race_infractions_get**](docs/RaceApi.md#race_infractions_get) | **GET** /race/infractions | 
 *RaceApi* | [**race_lap_leaders_get**](docs/RaceApi.md#race_lap_leaders_get) | **GET** /race/lap-leaders | 
+*RaceApi* | [**race_lapchart_get**](docs/RaceApi.md#race_lapchart_get) | **GET** /race/lapchart | 
 *RaceApi* | [**race_live_session_get**](docs/RaceApi.md#race_live_session_get) | **GET** /race/live-session | 
 *RaceApi* | [**race_lookup_get**](docs/RaceApi.md#race_lookup_get) | **GET** /race/lookup | 
 *RaceApi* | [**race_loop_stats_get**](docs/RaceApi.md#race_loop_stats_get) | **GET** /race/loop-stats | 
@@ -97,6 +96,7 @@ Class | Method | HTTP request | Description
 *RaceApi* | [**race_qualifying_results_get**](docs/RaceApi.md#race_qualifying_results_get) | **GET** /race/qualifying-results | 
 *RaceApi* | [**race_race_results_get**](docs/RaceApi.md#race_race_results_get) | **GET** /race/race-results | 
 *RaceApi* | [**race_report_get**](docs/RaceApi.md#race_report_get) | **GET** /race/report | 
+*RaceApi* | [**race_results_get**](docs/RaceApi.md#race_results_get) | **GET** /race/results | 
 *RaceApi* | [**race_rosters_get**](docs/RaceApi.md#race_rosters_get) | **GET** /race/rosters | 
 *RaceApi* | [**race_season_get**](docs/RaceApi.md#race_season_get) | **GET** /race/season | 
 *RaceApi* | [**race_stage_results_get**](docs/RaceApi.md#race_stage_results_get) | **GET** /race/stage-results | 
@@ -108,10 +108,15 @@ Class | Method | HTTP request | Description
 *RaceWeekApi* | [**race_week_live_get**](docs/RaceWeekApi.md#race_week_live_get) | **GET** /race-week/live | 
 *RaceWeekApi* | [**race_week_season_get**](docs/RaceWeekApi.md#race_week_season_get) | **GET** /race-week/season | 
 *SeriesApi* | [**series_get**](docs/SeriesApi.md#series_get) | **GET** /series | 
+*StatsApi* | [**stats_loop_stats_get**](docs/StatsApi.md#stats_loop_stats_get) | **GET** /stats/loop-stats | 
+*StatsApi* | [**stats_report_get**](docs/StatsApi.md#stats_report_get) | **GET** /stats/report | 
+*StatsApi* | [**stats_reports_get**](docs/StatsApi.md#stats_reports_get) | **GET** /stats/reports | 
+*StatsApi* | [**stats_season_get**](docs/StatsApi.md#stats_season_get) | **GET** /stats/season | 
 *TracksApi* | [**track_details_get**](docs/TracksApi.md#track_details_get) | **GET** /track-details | 
 *TracksApi* | [**tracks_get**](docs/TracksApi.md#tracks_get) | **GET** /tracks | 
 *VehicleApi* | [**vehicle_get**](docs/VehicleApi.md#vehicle_get) | **GET** /vehicle | 
 *VehicleApi* | [**vehicle_season_finishes_get**](docs/VehicleApi.md#vehicle_season_finishes_get) | **GET** /vehicle/season-finishes | 
+*VendorApi* | [**vendor_cone_coordinates_post**](docs/VendorApi.md#vendor_cone_coordinates_post) | **POST** /vendor/cone-coordinates | 
 *VendorApi* | [**vendor_crl_testresult_post**](docs/VendorApi.md#vendor_crl_testresult_post) | **POST** /vendor/crl_testresult | 
 *VendorApi* | [**vendor_tires_post**](docs/VendorApi.md#vendor_tires_post) | **POST** /vendor/tires | 
 *VendorApi* | [**vendor_utm_offsets_post**](docs/VendorApi.md#vendor_utm_offsets_post) | **POST** /vendor/utm_offsets | 
@@ -127,21 +132,26 @@ Class | Method | HTTP request | Description
  - [ClientERDPSource](docs/ClientERDPSource.md)
  - [ClientERDPTopic](docs/ClientERDPTopic.md)
  - [Company](docs/Company.md)
+ - [ConeCoordinates](docs/ConeCoordinates.md)
+ - [ConeCoordinatesIngest](docs/ConeCoordinatesIngest.md)
+ - [ConeCoordinatesListETLSaveResult](docs/ConeCoordinatesListETLSaveResult.md)
+ - [Coordinate](docs/Coordinate.md)
  - [CrlFormFoxResult](docs/CrlFormFoxResult.md)
- - [DevNote](docs/DevNote.md)
  - [DisciplineUpdate](docs/DisciplineUpdate.md)
  - [Driver](docs/Driver.md)
- - [DriverPoint](docs/DriverPoint.md)
+ - [DriverPointsSlim](docs/DriverPointsSlim.md)
+ - [DriverPointsView](docs/DriverPointsView.md)
  - [DriverSummary](docs/DriverSummary.md)
  - [DriverSummaryByPrincipalRaceID](docs/DriverSummaryByPrincipalRaceID.md)
  - [DriverSummaryBySeason](docs/DriverSummaryBySeason.md)
  - [DriverSummaryByTrack](docs/DriverSummaryByTrack.md)
  - [DriverSummaryByTrackType](docs/DriverSummaryByTrackType.md)
  - [FastestLapAwards](docs/FastestLapAwards.md)
- - [Feedback](docs/Feedback.md)
+ - [FastestLapResult](docs/FastestLapResult.md)
  - [Flag](docs/Flag.md)
+ - [LapChart](docs/LapChart.md)
+ - [LapChartResult](docs/LapChartResult.md)
  - [LapLeader](docs/LapLeader.md)
- - [LiveDriverPoints](docs/LiveDriverPoints.md)
  - [LoopStat](docs/LoopStat.md)
  - [ManufacturerPoint](docs/ManufacturerPoint.md)
  - [OSSScan](docs/OSSScan.md)
@@ -161,12 +171,15 @@ Class | Method | HTTP request | Description
  - [RaceViewModel](docs/RaceViewModel.md)
  - [RaceWeek](docs/RaceWeek.md)
  - [RaceWeekDetails](docs/RaceWeekDetails.md)
+ - [Result](docs/Result.md)
  - [RosterMember](docs/RosterMember.md)
  - [RunDetails](docs/RunDetails.md)
  - [RunEntry](docs/RunEntry.md)
  - [RunResult](docs/RunResult.md)
+ - [RunResults](docs/RunResults.md)
  - [RunState](docs/RunState.md)
  - [RunType](docs/RunType.md)
+ - [SeasonStat](docs/SeasonStat.md)
  - [Series](docs/Series.md)
  - [Stage](docs/Stage.md)
  - [StageResult](docs/StageResult.md)
@@ -187,32 +200,11 @@ Class | Method | HTTP request | Description
  - [WicketRequest](docs/WicketRequest.md)
  - [WicketResponse](docs/WicketResponse.md)
 
-## Authorization
-To access the NASCAR Data API using the SDK, you must authenticate using a Bearer Token. This token is typically issued by NASCAR's identity provider and grants access to protected endpoints.
+## Documentation For Authorization
 
-### Steps to Authenticate
-1. **Obtain a Bearer Token** You’ll need a valid token from NASCAR’s authentication system. This is usually provided via a secure login or issued by an admin.
 
-2. **Configure the SDK Client**
-Set the API host and attach the token to the request headers:
-```python
-import nascar_data_client
-from nascar_data_client.rest import ApiException
+## Bearer
 
-# Create and configure the SDK client
-config = nascar_data_client.Configuration()
-config.host = "https://datatest.nascar.com/api"
 
-# Instantiate the API client
-api_client = nascar_data_client.ApiClient(config)
 
-# Add the Bearer token to the Authorization header
-api_client.default_headers["Authorization"] = "Bearer YOUR-TOKEN-HERE"
-```
-3. **Use the API** Once authenicated, you can interact with any of the available API classes. For example:
-```python
-company_api = nascar_data_client.CompanyApi(api_client)
-companies = company_api.company_search_get(search_term="n")
-print(companies)
-```
 ## Author

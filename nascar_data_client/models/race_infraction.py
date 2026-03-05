@@ -32,6 +32,8 @@ class RaceInfraction(object):
         'flag_state': 'str',
         'infraction': 'str',
         'vehicle_number': 'str',
+        'driver_id': 'int',
+        'driver_details': 'str',
         'lap': 'int',
         'lap_assessed': 'int',
         'time_of_race': 'datetime',
@@ -43,6 +45,8 @@ class RaceInfraction(object):
         'flag_state': 'flag_state',
         'infraction': 'infraction',
         'vehicle_number': 'vehicle_number',
+        'driver_id': 'driver_id',
+        'driver_details': 'driver_details',
         'lap': 'lap',
         'lap_assessed': 'lap_assessed',
         'time_of_race': 'time_of_race',
@@ -50,11 +54,13 @@ class RaceInfraction(object):
         'notes': 'notes'
     }
 
-    def __init__(self, flag_state=None, infraction=None, vehicle_number=None, lap=None, lap_assessed=None, time_of_race=None, penalty=None, notes=None):  # noqa: E501
+    def __init__(self, flag_state=None, infraction=None, vehicle_number=None, driver_id=None, driver_details=None, lap=None, lap_assessed=None, time_of_race=None, penalty=None, notes=None):  # noqa: E501
         """RaceInfraction - a model defined in Swagger"""  # noqa: E501
         self._flag_state = None
         self._infraction = None
         self._vehicle_number = None
+        self._driver_id = None
+        self._driver_details = None
         self._lap = None
         self._lap_assessed = None
         self._time_of_race = None
@@ -67,6 +73,10 @@ class RaceInfraction(object):
             self.infraction = infraction
         if vehicle_number is not None:
             self.vehicle_number = vehicle_number
+        if driver_id is not None:
+            self.driver_id = driver_id
+        if driver_details is not None:
+            self.driver_details = driver_details
         if lap is not None:
             self.lap = lap
         if lap_assessed is not None:
@@ -146,6 +156,52 @@ class RaceInfraction(object):
         """
 
         self._vehicle_number = vehicle_number
+
+    @property
+    def driver_id(self):
+        """Gets the driver_id of this RaceInfraction.  # noqa: E501
+
+        Nascar Data Driver Id  # noqa: E501
+
+        :return: The driver_id of this RaceInfraction.  # noqa: E501
+        :rtype: int
+        """
+        return self._driver_id
+
+    @driver_id.setter
+    def driver_id(self, driver_id):
+        """Sets the driver_id of this RaceInfraction.
+
+        Nascar Data Driver Id  # noqa: E501
+
+        :param driver_id: The driver_id of this RaceInfraction.  # noqa: E501
+        :type: int
+        """
+
+        self._driver_id = driver_id
+
+    @property
+    def driver_details(self):
+        """Gets the driver_details of this RaceInfraction.  # noqa: E501
+
+        URL to driver details  # noqa: E501
+
+        :return: The driver_details of this RaceInfraction.  # noqa: E501
+        :rtype: str
+        """
+        return self._driver_details
+
+    @driver_details.setter
+    def driver_details(self, driver_details):
+        """Sets the driver_details of this RaceInfraction.
+
+        URL to driver details  # noqa: E501
+
+        :param driver_details: The driver_details of this RaceInfraction.  # noqa: E501
+        :type: str
+        """
+
+        self._driver_details = driver_details
 
     @property
     def lap(self):
