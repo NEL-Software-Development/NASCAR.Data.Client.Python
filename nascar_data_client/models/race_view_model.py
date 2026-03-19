@@ -34,6 +34,8 @@ class RaceViewModel(object):
         'promoter': 'str',
         'laps': 'int',
         'distance': 'float',
+        'race_type_id': 'int',
+        'total_race_time': 'str',
         '_date': 'datetime',
         'comments': 'str',
         'cautions': 'list[Caution]',
@@ -56,6 +58,8 @@ class RaceViewModel(object):
         'promoter': 'promoter',
         'laps': 'laps',
         'distance': 'distance',
+        'race_type_id': 'race_type_id',
+        'total_race_time': 'total_race_time',
         '_date': 'date',
         'comments': 'comments',
         'cautions': 'cautions',
@@ -72,13 +76,15 @@ class RaceViewModel(object):
         'schedule': 'schedule'
     }
 
-    def __init__(self, series_id=None, name=None, promoter=None, laps=None, distance=None, _date=None, comments=None, cautions=None, entries=None, infractions=None, lap_leaders=None, loop_stats=None, pitstops=None, practice_results=None, qualifying_results=None, race_results=None, runs=None, stage_results=None, schedule=None):  # noqa: E501
+    def __init__(self, series_id=None, name=None, promoter=None, laps=None, distance=None, race_type_id=None, total_race_time=None, _date=None, comments=None, cautions=None, entries=None, infractions=None, lap_leaders=None, loop_stats=None, pitstops=None, practice_results=None, qualifying_results=None, race_results=None, runs=None, stage_results=None, schedule=None):  # noqa: E501
         """RaceViewModel - a model defined in Swagger"""  # noqa: E501
         self._series_id = None
         self._name = None
         self._promoter = None
         self._laps = None
         self._distance = None
+        self._race_type_id = None
+        self._total_race_time = None
         self.__date = None
         self._comments = None
         self._cautions = None
@@ -104,6 +110,10 @@ class RaceViewModel(object):
             self.laps = laps
         if distance is not None:
             self.distance = distance
+        if race_type_id is not None:
+            self.race_type_id = race_type_id
+        if total_race_time is not None:
+            self.total_race_time = total_race_time
         if _date is not None:
             self._date = _date
         if comments is not None:
@@ -247,6 +257,52 @@ class RaceViewModel(object):
         """
 
         self._distance = distance
+
+    @property
+    def race_type_id(self):
+        """Gets the race_type_id of this RaceViewModel.  # noqa: E501
+
+        Race Type Identifier (1-Race, 2-Duel, 3-Heat, 4-Exhibition)  # noqa: E501
+
+        :return: The race_type_id of this RaceViewModel.  # noqa: E501
+        :rtype: int
+        """
+        return self._race_type_id
+
+    @race_type_id.setter
+    def race_type_id(self, race_type_id):
+        """Sets the race_type_id of this RaceViewModel.
+
+        Race Type Identifier (1-Race, 2-Duel, 3-Heat, 4-Exhibition)  # noqa: E501
+
+        :param race_type_id: The race_type_id of this RaceViewModel.  # noqa: E501
+        :type: int
+        """
+
+        self._race_type_id = race_type_id
+
+    @property
+    def total_race_time(self):
+        """Gets the total_race_time of this RaceViewModel.  # noqa: E501
+
+        String formatted representation of the total time of race HH:MM:SS  # noqa: E501
+
+        :return: The total_race_time of this RaceViewModel.  # noqa: E501
+        :rtype: str
+        """
+        return self._total_race_time
+
+    @total_race_time.setter
+    def total_race_time(self, total_race_time):
+        """Sets the total_race_time of this RaceViewModel.
+
+        String formatted representation of the total time of race HH:MM:SS  # noqa: E501
+
+        :param total_race_time: The total_race_time of this RaceViewModel.  # noqa: E501
+        :type: str
+        """
+
+        self._total_race_time = total_race_time
 
     @property
     def _date(self):

@@ -31,6 +31,7 @@ class Track(object):
     swagger_types = {
         'id': 'int',
         'history_track_id': 'int',
+        'nascarone_track_id': 'int',
         'name': 'str',
         'owner': 'str',
         'sponsor_name': 'str',
@@ -51,6 +52,7 @@ class Track(object):
     attribute_map = {
         'id': 'id',
         'history_track_id': 'history_track_id',
+        'nascarone_track_id': 'nascarone_track_id',
         'name': 'name',
         'owner': 'owner',
         'sponsor_name': 'sponsor_name',
@@ -68,10 +70,11 @@ class Track(object):
         'logo': 'logo'
     }
 
-    def __init__(self, id=None, history_track_id=None, name=None, owner=None, sponsor_name=None, surface=None, type=None, banking=None, description=None, city=None, state=None, frontstretch_length=None, backstretch_length=None, year_built=None, length=None, caution_car_speed=None, logo=None):  # noqa: E501
+    def __init__(self, id=None, history_track_id=None, nascarone_track_id=None, name=None, owner=None, sponsor_name=None, surface=None, type=None, banking=None, description=None, city=None, state=None, frontstretch_length=None, backstretch_length=None, year_built=None, length=None, caution_car_speed=None, logo=None):  # noqa: E501
         """Track - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._history_track_id = None
+        self._nascarone_track_id = None
         self._name = None
         self._owner = None
         self._sponsor_name = None
@@ -92,6 +95,8 @@ class Track(object):
             self.id = id
         if history_track_id is not None:
             self.history_track_id = history_track_id
+        if nascarone_track_id is not None:
+            self.nascarone_track_id = nascarone_track_id
         if name is not None:
             self.name = name
         if owner is not None:
@@ -127,6 +132,7 @@ class Track(object):
     def id(self):
         """Gets the id of this Track.  # noqa: E501
 
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
 
         :return: The id of this Track.  # noqa: E501
         :rtype: int
@@ -137,6 +143,7 @@ class Track(object):
     def id(self, id):
         """Sets the id of this Track.
 
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
 
         :param id: The id of this Track.  # noqa: E501
         :type: int
@@ -166,6 +173,27 @@ class Track(object):
         """
 
         self._history_track_id = history_track_id
+
+    @property
+    def nascarone_track_id(self):
+        """Gets the nascarone_track_id of this Track.  # noqa: E501
+
+
+        :return: The nascarone_track_id of this Track.  # noqa: E501
+        :rtype: int
+        """
+        return self._nascarone_track_id
+
+    @nascarone_track_id.setter
+    def nascarone_track_id(self, nascarone_track_id):
+        """Sets the nascarone_track_id of this Track.
+
+
+        :param nascarone_track_id: The nascarone_track_id of this Track.  # noqa: E501
+        :type: int
+        """
+
+        self._nascarone_track_id = nascarone_track_id
 
     @property
     def name(self):
