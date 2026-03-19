@@ -3,8 +3,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **int** |  | [optional] 
+**id** | **int** | Unique identifier given and used by the NASCAR Data API | [optional] 
 **history_track_id** | **int** | History track id | [optional] 
+**nascarone_track_id** | **int** |  | [optional] 
 **name** | **str** | The name of the track | [optional] 
 **owner** | **str** | The owner of the track | [optional] 
 **sponsor_name** | **str** | The name of the track sponsor | [optional] 
