@@ -52,7 +52,7 @@ class RaceWeekDetails(object):
     def id(self):
         """Gets the id of this RaceWeekDetails.  # noqa: E501
 
-        Raceweek Id  # noqa: E501
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
 
         :return: The id of this RaceWeekDetails.  # noqa: E501
         :rtype: int
@@ -63,7 +63,7 @@ class RaceWeekDetails(object):
     def id(self, id):
         """Sets the id of this RaceWeekDetails.
 
-        Raceweek Id  # noqa: E501
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
 
         :param id: The id of this RaceWeekDetails.  # noqa: E501
         :type: int

@@ -44,7 +44,9 @@ class RaceResult(object):
         'on_track': 'bool',
         'status': 'str',
         'comment': 'str',
-        'start_position': 'int'
+        'start_position': 'int',
+        'pit_box': 'int',
+        'disqualified': 'bool'
     }
 
     attribute_map = {
@@ -63,10 +65,12 @@ class RaceResult(object):
         'on_track': 'on_track',
         'status': 'status',
         'comment': 'comment',
-        'start_position': 'start_position'
+        'start_position': 'start_position',
+        'pit_box': 'pit_box',
+        'disqualified': 'disqualified'
     }
 
-    def __init__(self, finish_position=None, driver_name=None, vehicle_number=None, laps=None, best_time=None, best_speed=None, best_lap=None, last_lap_time=None, delta_next_time=None, delta_next_laps=None, delta_leader_time=None, delta_leader_laps=None, on_track=None, status=None, comment=None, start_position=None):  # noqa: E501
+    def __init__(self, finish_position=None, driver_name=None, vehicle_number=None, laps=None, best_time=None, best_speed=None, best_lap=None, last_lap_time=None, delta_next_time=None, delta_next_laps=None, delta_leader_time=None, delta_leader_laps=None, on_track=None, status=None, comment=None, start_position=None, pit_box=None, disqualified=None):  # noqa: E501
         """RaceResult - a model defined in Swagger"""  # noqa: E501
         self._finish_position = None
         self._driver_name = None
@@ -84,6 +88,8 @@ class RaceResult(object):
         self._status = None
         self._comment = None
         self._start_position = None
+        self._pit_box = None
+        self._disqualified = None
         self.discriminator = None
         if finish_position is not None:
             self.finish_position = finish_position
@@ -117,6 +123,10 @@ class RaceResult(object):
             self.comment = comment
         if start_position is not None:
             self.start_position = start_position
+        if pit_box is not None:
+            self.pit_box = pit_box
+        if disqualified is not None:
+            self.disqualified = disqualified
 
     @property
     def finish_position(self):
@@ -485,6 +495,52 @@ class RaceResult(object):
         """
 
         self._start_position = start_position
+
+    @property
+    def pit_box(self):
+        """Gets the pit_box of this RaceResult.  # noqa: E501
+
+        Pit box  # noqa: E501
+
+        :return: The pit_box of this RaceResult.  # noqa: E501
+        :rtype: int
+        """
+        return self._pit_box
+
+    @pit_box.setter
+    def pit_box(self, pit_box):
+        """Sets the pit_box of this RaceResult.
+
+        Pit box  # noqa: E501
+
+        :param pit_box: The pit_box of this RaceResult.  # noqa: E501
+        :type: int
+        """
+
+        self._pit_box = pit_box
+
+    @property
+    def disqualified(self):
+        """Gets the disqualified of this RaceResult.  # noqa: E501
+
+        Disqualified  # noqa: E501
+
+        :return: The disqualified of this RaceResult.  # noqa: E501
+        :rtype: bool
+        """
+        return self._disqualified
+
+    @disqualified.setter
+    def disqualified(self, disqualified):
+        """Sets the disqualified of this RaceResult.
+
+        Disqualified  # noqa: E501
+
+        :param disqualified: The disqualified of this RaceResult.  # noqa: E501
+        :type: bool
+        """
+
+        self._disqualified = disqualified
 
     def to_dict(self):
         """Returns the model properties as a dict"""
