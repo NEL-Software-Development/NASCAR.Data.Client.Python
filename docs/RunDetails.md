@@ -3,11 +3,13 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**run_id** | **int** | Unique identifier given and used by the NASCAR Data API | [optional] 
 **name** | **str** | The name of the run | [optional] 
 **start_time** | **datetime** | Scheduled start time | [optional] 
 **run_state** | [**RunState**](RunState.md) |  | [optional] 
 **run_type** | [**RunType**](RunType.md) |  | [optional] 
 **duration** | **int** | The scheduled duration of the run in seconds | [optional] 
+**timing_run_id** | **int** |  | [optional] 
 **flag_state** | **str** | Flag state:  (Inactive, Active, Completed) | [optional] 
 **flags** | [**list[Flag]**](Flag.md) | Flags associated with this run | [optional] 
 

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **int** | Id | [optional] 
+**id** | **int** | Unique identifier given and used by the NASCAR Data API | [optional] 
 **season** | **int** | Race season | [default to 0]
 **venue** | **str** | Venue | [default to '']
 **running_series** | **str** | List of series running at this event | [default to '']
