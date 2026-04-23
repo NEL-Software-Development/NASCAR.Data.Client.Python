@@ -19,6 +19,8 @@ Name | Type | Description | Notes
 **status** | **str** | Vehicle Status (0&#x3D;None, 1&#x3D;Active, 2&#x3D;DNS, 3&#x3D;DNF, 4&#x3D;DQ, 5&#x3D;Pace Car, 6&#x3D;Garage | [optional] 
 **comment** | **str** | Comment | [optional] 
 **start_position** | **int** | Start position | [optional] 
+**pit_box** | **int** | Pit box | [optional] 
+**disqualified** | **bool** | Disqualified | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

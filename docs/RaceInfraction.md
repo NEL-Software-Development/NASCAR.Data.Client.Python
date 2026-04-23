@@ -6,6 +6,8 @@ Name | Type | Description | Notes
 **flag_state** | **str** | Flag state at the time of the infraction: (W,G,G/Y,R,Y) | [optional] 
 **infraction** | **str** | Description of the infraction | [optional] 
 **vehicle_number** | **str** | Vehicle number | [optional] 
+**driver_id** | **int** | Nascar Data Driver Id | [optional] 
+**driver_details** | **str** | URL to driver details | [optional] 
 **lap** | **int** | Lap of infraction | [optional] 
 **lap_assessed** | **int** | Lap infraction was assessed | [optional] 
 **time_of_race** | **datetime** | Time of race the infraction occurred | [optional] 
