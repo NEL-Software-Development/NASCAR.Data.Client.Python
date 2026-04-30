@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **int** | The series id | [optional] 
+**id** | **int** | Unique identifier given and used by the NASCAR Data API | [optional] 
 **short_name** | **str** | Series short name | [optional] 
 **name** | **str** | Series full name | [optional] 
 **abbreviation** | **str** | Series abbreviation | [optional] 

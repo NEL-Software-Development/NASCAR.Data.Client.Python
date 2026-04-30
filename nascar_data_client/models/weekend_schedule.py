@@ -31,20 +31,23 @@ class WeekendSchedule(object):
     swagger_types = {
         'activity': 'str',
         'start_time': 'datetime',
-        'end_time': 'datetime'
+        'end_time': 'datetime',
+        'notes': 'str'
     }
 
     attribute_map = {
         'activity': 'activity',
         'start_time': 'start_time',
-        'end_time': 'end_time'
+        'end_time': 'end_time',
+        'notes': 'notes'
     }
 
-    def __init__(self, activity=None, start_time=None, end_time=None):  # noqa: E501
+    def __init__(self, activity=None, start_time=None, end_time=None, notes=None):  # noqa: E501
         """WeekendSchedule - a model defined in Swagger"""  # noqa: E501
         self._activity = None
         self._start_time = None
         self._end_time = None
+        self._notes = None
         self.discriminator = None
         if activity is not None:
             self.activity = activity
@@ -52,6 +55,8 @@ class WeekendSchedule(object):
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
+        if notes is not None:
+            self.notes = notes
 
     @property
     def activity(self):
@@ -121,6 +126,29 @@ class WeekendSchedule(object):
         """
 
         self._end_time = end_time
+
+    @property
+    def notes(self):
+        """Gets the notes of this WeekendSchedule.  # noqa: E501
+
+        Additional notes  # noqa: E501
+
+        :return: The notes of this WeekendSchedule.  # noqa: E501
+        :rtype: str
+        """
+        return self._notes
+
+    @notes.setter
+    def notes(self, notes):
+        """Sets the notes of this WeekendSchedule.
+
+        Additional notes  # noqa: E501
+
+        :param notes: The notes of this WeekendSchedule.  # noqa: E501
+        :type: str
+        """
+
+        self._notes = notes
 
     def to_dict(self):
         """Returns the model properties as a dict"""
