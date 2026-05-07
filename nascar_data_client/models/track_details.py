@@ -104,6 +104,7 @@ class TrackDetails(object):
     def track_paths(self):
         """Gets the track_paths of this TrackDetails.  # noqa: E501
 
+        Track paths associated with the track configuration  # noqa: E501
 
         :return: The track_paths of this TrackDetails.  # noqa: E501
         :rtype: list[TrackPath]
@@ -114,6 +115,7 @@ class TrackDetails(object):
     def track_paths(self, track_paths):
         """Sets the track_paths of this TrackDetails.
 
+        Track paths associated with the track configuration  # noqa: E501
 
         :param track_paths: The track_paths of this TrackDetails.  # noqa: E501
         :type: list[TrackPath]
@@ -125,6 +127,7 @@ class TrackDetails(object):
     def pit_paths(self):
         """Gets the pit_paths of this TrackDetails.  # noqa: E501
 
+        Pit paths associated with the track configuration  # noqa: E501
 
         :return: The pit_paths of this TrackDetails.  # noqa: E501
         :rtype: list[PitPath]
@@ -135,6 +138,7 @@ class TrackDetails(object):
     def pit_paths(self, pit_paths):
         """Sets the pit_paths of this TrackDetails.
 
+        Pit paths associated with the track configuration  # noqa: E501
 
         :param pit_paths: The pit_paths of this TrackDetails.  # noqa: E501
         :type: list[PitPath]

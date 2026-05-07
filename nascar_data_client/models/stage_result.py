@@ -57,7 +57,7 @@ class StageResult(object):
     def finish_position(self):
         """Gets the finish_position of this StageResult.  # noqa: E501
 
-        Finish position in stage  # noqa: E501
+        Finish position in the stage  # noqa: E501
 
         :return: The finish_position of this StageResult.  # noqa: E501
         :rtype: int
@@ -68,7 +68,7 @@ class StageResult(object):
     def finish_position(self, finish_position):
         """Sets the finish_position of this StageResult.
 
-        Finish position in stage  # noqa: E501
+        Finish position in the stage  # noqa: E501
 
         :param finish_position: The finish_position of this StageResult.  # noqa: E501
         :type: int

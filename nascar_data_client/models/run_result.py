@@ -186,7 +186,7 @@ class RunResult(object):
     def laps(self):
         """Gets the laps of this RunResult.  # noqa: E501
 
-        Number of laps  # noqa: E501
+        Total number of laps  # noqa: E501
 
         :return: The laps of this RunResult.  # noqa: E501
         :rtype: int
@@ -197,7 +197,7 @@ class RunResult(object):
     def laps(self, laps):
         """Sets the laps of this RunResult.
 
-        Number of laps  # noqa: E501
+        Total number of laps  # noqa: E501
 
         :param laps: The laps of this RunResult.  # noqa: E501
         :type: int
@@ -278,7 +278,7 @@ class RunResult(object):
     def last_lap_time(self):
         """Gets the last_lap_time of this RunResult.  # noqa: E501
 
-        Last lap time  # noqa: E501
+        Last lap time in milliseconds  # noqa: E501
 
         :return: The last_lap_time of this RunResult.  # noqa: E501
         :rtype: int
@@ -289,7 +289,7 @@ class RunResult(object):
     def last_lap_time(self, last_lap_time):
         """Sets the last_lap_time of this RunResult.
 
-        Last lap time  # noqa: E501
+        Last lap time in milliseconds  # noqa: E501
 
         :param last_lap_time: The last_lap_time of this RunResult.  # noqa: E501
         :type: int
@@ -393,7 +393,7 @@ class RunResult(object):
     def on_track(self):
         """Gets the on_track of this RunResult.  # noqa: E501
 
-        Is on track  # noqa: E501
+        Indicates whether the vehicle is currently on track  # noqa: E501
 
         :return: The on_track of this RunResult.  # noqa: E501
         :rtype: bool
@@ -404,7 +404,7 @@ class RunResult(object):
     def on_track(self, on_track):
         """Sets the on_track of this RunResult.
 
-        Is on track  # noqa: E501
+        Indicates whether the vehicle is currently on track  # noqa: E501
 
         :param on_track: The on_track of this RunResult.  # noqa: E501
         :type: bool
@@ -416,7 +416,7 @@ class RunResult(object):
     def status(self):
         """Gets the status of this RunResult.  # noqa: E501
 
-        Vehicle Status (0=None, 1=Active, 2=DNS, 3=DNF, 4=DQ, 5=Pace Car, 6=Garage  # noqa: E501
+        Vehicle status (0=None, 1=Active, 2=DNS, 3=DNF, 4=DQ, 5=Pace Car, 6=Garage)  # noqa: E501
 
         :return: The status of this RunResult.  # noqa: E501
         :rtype: str
@@ -427,7 +427,7 @@ class RunResult(object):
     def status(self, status):
         """Sets the status of this RunResult.
 
-        Vehicle Status (0=None, 1=Active, 2=DNS, 3=DNF, 4=DQ, 5=Pace Car, 6=Garage  # noqa: E501
+        Vehicle status (0=None, 1=Active, 2=DNS, 3=DNF, 4=DQ, 5=Pace Car, 6=Garage)  # noqa: E501
 
         :param status: The status of this RunResult.  # noqa: E501
         :type: str
@@ -439,7 +439,7 @@ class RunResult(object):
     def comment(self):
         """Gets the comment of this RunResult.  # noqa: E501
 
-        Comment  # noqa: E501
+        Comment associated with the result  # noqa: E501
 
         :return: The comment of this RunResult.  # noqa: E501
         :rtype: str
@@ -450,7 +450,7 @@ class RunResult(object):
     def comment(self, comment):
         """Sets the comment of this RunResult.
 
-        Comment  # noqa: E501
+        Comment associated with the result  # noqa: E501
 
         :param comment: The comment of this RunResult.  # noqa: E501
         :type: str
