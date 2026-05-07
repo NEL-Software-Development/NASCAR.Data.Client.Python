@@ -52,6 +52,7 @@ class WicketResponse(object):
     def success(self):
         """Gets the success of this WicketResponse.  # noqa: E501
 
+        Indicates whether the Wicket request was successful  # noqa: E501
 
         :return: The success of this WicketResponse.  # noqa: E501
         :rtype: bool
@@ -62,6 +63,7 @@ class WicketResponse(object):
     def success(self, success):
         """Sets the success of this WicketResponse.
 
+        Indicates whether the Wicket request was successful  # noqa: E501
 
         :param success: The success of this WicketResponse.  # noqa: E501
         :type: bool
@@ -73,6 +75,7 @@ class WicketResponse(object):
     def message(self):
         """Gets the message of this WicketResponse.  # noqa: E501
 
+        Message providing additional information about the response  # noqa: E501
 
         :return: The message of this WicketResponse.  # noqa: E501
         :rtype: str
@@ -83,6 +86,7 @@ class WicketResponse(object):
     def message(self, message):
         """Sets the message of this WicketResponse.
 
+        Message providing additional information about the response  # noqa: E501
 
         :param message: The message of this WicketResponse.  # noqa: E501
         :type: str

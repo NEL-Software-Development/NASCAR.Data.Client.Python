@@ -72,6 +72,7 @@ class Tire(object):
     def epc(self):
         """Gets the epc of this Tire.  # noqa: E501
 
+        Electronic Product Code for the tire  # noqa: E501
 
         :return: The epc of this Tire.  # noqa: E501
         :rtype: str
@@ -82,6 +83,7 @@ class Tire(object):
     def epc(self, epc):
         """Sets the epc of this Tire.
 
+        Electronic Product Code for the tire  # noqa: E501
 
         :param epc: The epc of this Tire.  # noqa: E501
         :type: str
@@ -93,6 +95,7 @@ class Tire(object):
     def d_number(self):
         """Gets the d_number of this Tire.  # noqa: E501
 
+        D-number identifier for the tire  # noqa: E501
 
         :return: The d_number of this Tire.  # noqa: E501
         :rtype: str
@@ -103,6 +106,7 @@ class Tire(object):
     def d_number(self, d_number):
         """Sets the d_number of this Tire.
 
+        D-number identifier for the tire  # noqa: E501
 
         :param d_number: The d_number of this Tire.  # noqa: E501
         :type: str
@@ -114,6 +118,7 @@ class Tire(object):
     def sequence(self):
         """Gets the sequence of this Tire.  # noqa: E501
 
+        Sequence identifier for the tire  # noqa: E501
 
         :return: The sequence of this Tire.  # noqa: E501
         :rtype: str
@@ -124,6 +129,7 @@ class Tire(object):
     def sequence(self, sequence):
         """Sets the sequence of this Tire.
 
+        Sequence identifier for the tire  # noqa: E501
 
         :param sequence: The sequence of this Tire.  # noqa: E501
         :type: str
@@ -135,6 +141,7 @@ class Tire(object):
     def tire_type(self):
         """Gets the tire_type of this Tire.  # noqa: E501
 
+        Type of tire  # noqa: E501
 
         :return: The tire_type of this Tire.  # noqa: E501
         :rtype: str
@@ -145,6 +152,7 @@ class Tire(object):
     def tire_type(self, tire_type):
         """Sets the tire_type of this Tire.
 
+        Type of tire  # noqa: E501
 
         :param tire_type: The tire_type of this Tire.  # noqa: E501
         :type: str
@@ -156,6 +164,7 @@ class Tire(object):
     def side_code(self):
         """Gets the side_code of this Tire.  # noqa: E501
 
+        Side code indicating tire placement (R=Right, L=Left, E=Either)  # noqa: E501
 
         :return: The side_code of this Tire.  # noqa: E501
         :rtype: str
@@ -166,6 +175,7 @@ class Tire(object):
     def side_code(self, side_code):
         """Sets the side_code of this Tire.
 
+        Side code indicating tire placement (R=Right, L=Left, E=Either)  # noqa: E501
 
         :param side_code: The side_code of this Tire.  # noqa: E501
         :type: str
@@ -177,6 +187,7 @@ class Tire(object):
     def car_number(self):
         """Gets the car_number of this Tire.  # noqa: E501
 
+        Car number the tire is assigned to  # noqa: E501
 
         :return: The car_number of this Tire.  # noqa: E501
         :rtype: str
@@ -187,6 +198,7 @@ class Tire(object):
     def car_number(self, car_number):
         """Sets the car_number of this Tire.
 
+        Car number the tire is assigned to  # noqa: E501
 
         :param car_number: The car_number of this Tire.  # noqa: E501
         :type: str

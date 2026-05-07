@@ -206,7 +206,7 @@ class DriverSummaryByPrincipalRaceID(object):
     def driver_id(self):
         """Gets the driver_id of this DriverSummaryByPrincipalRaceID.  # noqa: E501
 
-        Driver Id  # noqa: E501
+        Driver identifier  # noqa: E501
 
         :return: The driver_id of this DriverSummaryByPrincipalRaceID.  # noqa: E501
         :rtype: int
@@ -217,7 +217,7 @@ class DriverSummaryByPrincipalRaceID(object):
     def driver_id(self, driver_id):
         """Sets the driver_id of this DriverSummaryByPrincipalRaceID.
 
-        Driver Id  # noqa: E501
+        Driver identifier  # noqa: E501
 
         :param driver_id: The driver_id of this DriverSummaryByPrincipalRaceID.  # noqa: E501
         :type: int
@@ -367,7 +367,7 @@ class DriverSummaryByPrincipalRaceID(object):
     def series_id(self):
         """Gets the series_id of this DriverSummaryByPrincipalRaceID.  # noqa: E501
 
-        Series ID  # noqa: E501
+        Series identifier  # noqa: E501
 
         :return: The series_id of this DriverSummaryByPrincipalRaceID.  # noqa: E501
         :rtype: int
@@ -378,7 +378,7 @@ class DriverSummaryByPrincipalRaceID(object):
     def series_id(self, series_id):
         """Sets the series_id of this DriverSummaryByPrincipalRaceID.
 
-        Series ID  # noqa: E501
+        Series identifier  # noqa: E501
 
         :param series_id: The series_id of this DriverSummaryByPrincipalRaceID.  # noqa: E501
         :type: int
@@ -482,7 +482,7 @@ class DriverSummaryByPrincipalRaceID(object):
     def principal_race_id(self):
         """Gets the principal_race_id of this DriverSummaryByPrincipalRaceID.  # noqa: E501
 
-        Principal race id  # noqa: E501
+        Principal race identifier  # noqa: E501
 
         :return: The principal_race_id of this DriverSummaryByPrincipalRaceID.  # noqa: E501
         :rtype: int
@@ -493,7 +493,7 @@ class DriverSummaryByPrincipalRaceID(object):
     def principal_race_id(self, principal_race_id):
         """Sets the principal_race_id of this DriverSummaryByPrincipalRaceID.
 
-        Principal race id  # noqa: E501
+        Principal race identifier  # noqa: E501
 
         :param principal_race_id: The principal_race_id of this DriverSummaryByPrincipalRaceID.  # noqa: E501
         :type: int

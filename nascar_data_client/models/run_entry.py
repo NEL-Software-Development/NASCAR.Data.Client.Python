@@ -30,6 +30,7 @@ class RunEntry(object):
     """
     swagger_types = {
         'driver_name': 'str',
+        'driver_id': 'int',
         'driver_details': 'str',
         'sponsor': 'str',
         'vehicle_number': 'str',
@@ -37,11 +38,14 @@ class RunEntry(object):
         'owner_name': 'str',
         'crew_chief': 'str',
         'model_year': 'int',
-        'model': 'str'
+        'model': 'str',
+        'team_name': 'str',
+        'last_modified': 'datetime'
     }
 
     attribute_map = {
         'driver_name': 'driver_name',
+        'driver_id': 'driver_id',
         'driver_details': 'driver_details',
         'sponsor': 'sponsor',
         'vehicle_number': 'vehicle_number',
@@ -49,12 +53,15 @@ class RunEntry(object):
         'owner_name': 'owner_name',
         'crew_chief': 'crew_chief',
         'model_year': 'model_year',
-        'model': 'model'
+        'model': 'model',
+        'team_name': 'team_name',
+        'last_modified': 'last_modified'
     }
 
-    def __init__(self, driver_name=None, driver_details=None, sponsor=None, vehicle_number=None, vehicle_details=None, owner_name=None, crew_chief=None, model_year=None, model=None):  # noqa: E501
+    def __init__(self, driver_name=None, driver_id=None, driver_details=None, sponsor=None, vehicle_number=None, vehicle_details=None, owner_name=None, crew_chief=None, model_year=None, model=None, team_name=None, last_modified=None):  # noqa: E501
         """RunEntry - a model defined in Swagger"""  # noqa: E501
         self._driver_name = None
+        self._driver_id = None
         self._driver_details = None
         self._sponsor = None
         self._vehicle_number = None
@@ -63,9 +70,13 @@ class RunEntry(object):
         self._crew_chief = None
         self._model_year = None
         self._model = None
+        self._team_name = None
+        self._last_modified = None
         self.discriminator = None
         if driver_name is not None:
             self.driver_name = driver_name
+        if driver_id is not None:
+            self.driver_id = driver_id
         if driver_details is not None:
             self.driver_details = driver_details
         if sponsor is not None:
@@ -82,6 +93,10 @@ class RunEntry(object):
             self.model_year = model_year
         if model is not None:
             self.model = model
+        if team_name is not None:
+            self.team_name = team_name
+        if last_modified is not None:
+            self.last_modified = last_modified
 
     @property
     def driver_name(self):
@@ -105,6 +120,29 @@ class RunEntry(object):
         """
 
         self._driver_name = driver_name
+
+    @property
+    def driver_id(self):
+        """Gets the driver_id of this RunEntry.  # noqa: E501
+
+        Driver identifier  # noqa: E501
+
+        :return: The driver_id of this RunEntry.  # noqa: E501
+        :rtype: int
+        """
+        return self._driver_id
+
+    @driver_id.setter
+    def driver_id(self, driver_id):
+        """Sets the driver_id of this RunEntry.
+
+        Driver identifier  # noqa: E501
+
+        :param driver_id: The driver_id of this RunEntry.  # noqa: E501
+        :type: int
+        """
+
+        self._driver_id = driver_id
 
     @property
     def driver_details(self):
@@ -133,7 +171,7 @@ class RunEntry(object):
     def sponsor(self):
         """Gets the sponsor of this RunEntry.  # noqa: E501
 
-        Sponsor  # noqa: E501
+        Sponsor name  # noqa: E501
 
         :return: The sponsor of this RunEntry.  # noqa: E501
         :rtype: str
@@ -144,7 +182,7 @@ class RunEntry(object):
     def sponsor(self, sponsor):
         """Sets the sponsor of this RunEntry.
 
-        Sponsor  # noqa: E501
+        Sponsor name  # noqa: E501
 
         :param sponsor: The sponsor of this RunEntry.  # noqa: E501
         :type: str
@@ -289,6 +327,52 @@ class RunEntry(object):
         """
 
         self._model = model
+
+    @property
+    def team_name(self):
+        """Gets the team_name of this RunEntry.  # noqa: E501
+
+        Team name  # noqa: E501
+
+        :return: The team_name of this RunEntry.  # noqa: E501
+        :rtype: str
+        """
+        return self._team_name
+
+    @team_name.setter
+    def team_name(self, team_name):
+        """Sets the team_name of this RunEntry.
+
+        Team name  # noqa: E501
+
+        :param team_name: The team_name of this RunEntry.  # noqa: E501
+        :type: str
+        """
+
+        self._team_name = team_name
+
+    @property
+    def last_modified(self):
+        """Gets the last_modified of this RunEntry.  # noqa: E501
+
+        Date and time the entry was last modified  # noqa: E501
+
+        :return: The last_modified of this RunEntry.  # noqa: E501
+        :rtype: datetime
+        """
+        return self._last_modified
+
+    @last_modified.setter
+    def last_modified(self, last_modified):
+        """Sets the last_modified of this RunEntry.
+
+        Date and time the entry was last modified  # noqa: E501
+
+        :param last_modified: The last_modified of this RunEntry.  # noqa: E501
+        :type: datetime
+        """
+
+        self._last_modified = last_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

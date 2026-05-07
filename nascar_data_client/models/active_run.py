@@ -198,6 +198,7 @@ class ActiveRun(object):
     def flag_state(self):
         """Gets the flag_state of this ActiveRun.  # noqa: E501
 
+        Current flag state (NONE, WARMUP, GREEN, YELLOW, RED, WHITE, FINISH, EXTRA)  # noqa: E501
 
         :return: The flag_state of this ActiveRun.  # noqa: E501
         :rtype: str
@@ -208,6 +209,7 @@ class ActiveRun(object):
     def flag_state(self, flag_state):
         """Sets the flag_state of this ActiveRun.
 
+        Current flag state (NONE, WARMUP, GREEN, YELLOW, RED, WHITE, FINISH, EXTRA)  # noqa: E501
 
         :param flag_state: The flag_state of this ActiveRun.  # noqa: E501
         :type: str
@@ -242,6 +244,7 @@ class ActiveRun(object):
     def entries(self):
         """Gets the entries of this ActiveRun.  # noqa: E501
 
+        Run entries (vehicles and drivers participating in this run)  # noqa: E501
 
         :return: The entries of this ActiveRun.  # noqa: E501
         :rtype: list[RunEntry]
@@ -252,6 +255,7 @@ class ActiveRun(object):
     def entries(self, entries):
         """Sets the entries of this ActiveRun.
 
+        Run entries (vehicles and drivers participating in this run)  # noqa: E501
 
         :param entries: The entries of this ActiveRun.  # noqa: E501
         :type: list[RunEntry]
@@ -263,6 +267,7 @@ class ActiveRun(object):
     def results(self):
         """Gets the results of this ActiveRun.  # noqa: E501
 
+        Current results for this run  # noqa: E501
 
         :return: The results of this ActiveRun.  # noqa: E501
         :rtype: list[RunResult]
@@ -273,6 +278,7 @@ class ActiveRun(object):
     def results(self, results):
         """Sets the results of this ActiveRun.
 
+        Current results for this run  # noqa: E501
 
         :param results: The results of this ActiveRun.  # noqa: E501
         :type: list[RunResult]

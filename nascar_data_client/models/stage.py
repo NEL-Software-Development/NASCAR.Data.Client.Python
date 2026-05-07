@@ -29,23 +29,28 @@ class Stage(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'etl_stage_id': 'int',
         'stage_number': 'int',
         'laps': 'int',
         'stage_name': 'str'
     }
 
     attribute_map = {
+        'etl_stage_id': 'etl_stage_id',
         'stage_number': 'stage_number',
         'laps': 'laps',
         'stage_name': 'stage_name'
     }
 
-    def __init__(self, stage_number=None, laps=None, stage_name=None):  # noqa: E501
+    def __init__(self, etl_stage_id=None, stage_number=None, laps=None, stage_name=None):  # noqa: E501
         """Stage - a model defined in Swagger"""  # noqa: E501
+        self._etl_stage_id = None
         self._stage_number = None
         self._laps = None
         self._stage_name = None
         self.discriminator = None
+        if etl_stage_id is not None:
+            self.etl_stage_id = etl_stage_id
         if stage_number is not None:
             self.stage_number = stage_number
         if laps is not None:
@@ -54,10 +59,33 @@ class Stage(object):
             self.stage_name = stage_name
 
     @property
+    def etl_stage_id(self):
+        """Gets the etl_stage_id of this Stage.  # noqa: E501
+
+        ETL stage identifier  # noqa: E501
+
+        :return: The etl_stage_id of this Stage.  # noqa: E501
+        :rtype: int
+        """
+        return self._etl_stage_id
+
+    @etl_stage_id.setter
+    def etl_stage_id(self, etl_stage_id):
+        """Sets the etl_stage_id of this Stage.
+
+        ETL stage identifier  # noqa: E501
+
+        :param etl_stage_id: The etl_stage_id of this Stage.  # noqa: E501
+        :type: int
+        """
+
+        self._etl_stage_id = etl_stage_id
+
+    @property
     def stage_number(self):
         """Gets the stage_number of this Stage.  # noqa: E501
 
-        The stage number.  # noqa: E501
+        Stage number  # noqa: E501
 
         :return: The stage_number of this Stage.  # noqa: E501
         :rtype: int
@@ -68,7 +96,7 @@ class Stage(object):
     def stage_number(self, stage_number):
         """Sets the stage_number of this Stage.
 
-        The stage number.  # noqa: E501
+        Stage number  # noqa: E501
 
         :param stage_number: The stage_number of this Stage.  # noqa: E501
         :type: int
@@ -80,7 +108,7 @@ class Stage(object):
     def laps(self):
         """Gets the laps of this Stage.  # noqa: E501
 
-        The total number of laps in the stage.  # noqa: E501
+        Total number of laps in the stage  # noqa: E501
 
         :return: The laps of this Stage.  # noqa: E501
         :rtype: int
@@ -91,7 +119,7 @@ class Stage(object):
     def laps(self, laps):
         """Sets the laps of this Stage.
 
-        The total number of laps in the stage.  # noqa: E501
+        Total number of laps in the stage  # noqa: E501
 
         :param laps: The laps of this Stage.  # noqa: E501
         :type: int
@@ -103,7 +131,7 @@ class Stage(object):
     def stage_name(self):
         """Gets the stage_name of this Stage.  # noqa: E501
 
-        The name of the stage (if given).  # noqa: E501
+        Name of the stage  # noqa: E501
 
         :return: The stage_name of this Stage.  # noqa: E501
         :rtype: str
@@ -114,7 +142,7 @@ class Stage(object):
     def stage_name(self, stage_name):
         """Sets the stage_name of this Stage.
 
-        The name of the stage (if given).  # noqa: E501
+        Name of the stage  # noqa: E501
 
         :param stage_name: The stage_name of this Stage.  # noqa: E501
         :type: str
