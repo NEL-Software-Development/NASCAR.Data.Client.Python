@@ -191,7 +191,7 @@ class DriverSummaryByTrackType(object):
     def driver_id(self):
         """Gets the driver_id of this DriverSummaryByTrackType.  # noqa: E501
 
-        Driver Id  # noqa: E501
+        Driver identifier  # noqa: E501
 
         :return: The driver_id of this DriverSummaryByTrackType.  # noqa: E501
         :rtype: int
@@ -202,7 +202,7 @@ class DriverSummaryByTrackType(object):
     def driver_id(self, driver_id):
         """Sets the driver_id of this DriverSummaryByTrackType.
 
-        Driver Id  # noqa: E501
+        Driver identifier  # noqa: E501
 
         :param driver_id: The driver_id of this DriverSummaryByTrackType.  # noqa: E501
         :type: int
@@ -352,7 +352,7 @@ class DriverSummaryByTrackType(object):
     def series_id(self):
         """Gets the series_id of this DriverSummaryByTrackType.  # noqa: E501
 
-        Series ID  # noqa: E501
+        Series identifier  # noqa: E501
 
         :return: The series_id of this DriverSummaryByTrackType.  # noqa: E501
         :rtype: int
@@ -363,7 +363,7 @@ class DriverSummaryByTrackType(object):
     def series_id(self, series_id):
         """Sets the series_id of this DriverSummaryByTrackType.
 
-        Series ID  # noqa: E501
+        Series identifier  # noqa: E501
 
         :param series_id: The series_id of this DriverSummaryByTrackType.  # noqa: E501
         :type: int

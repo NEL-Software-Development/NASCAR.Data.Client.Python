@@ -33,7 +33,7 @@ class TracksApi(object):
         self.api_client = api_client
 
     def track_details_get(self, **kwargs):  # noqa: E501
-        """track_details_get  # noqa: E501
+        """Retrieves detailed information about a specific track, including its history, notable events, and other relevant data, given the track's unique identifier from /tracks.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -41,7 +41,7 @@ class TracksApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int track_id:
+        :param int track_id: The unique identifier of the track.
         :return: TrackDetails
                  If the method is called asynchronously,
                  returns the request thread.
@@ -54,7 +54,7 @@ class TracksApi(object):
             return data
 
     def track_details_get_with_http_info(self, **kwargs):  # noqa: E501
-        """track_details_get  # noqa: E501
+        """Retrieves detailed information about a specific track, including its history, notable events, and other relevant data, given the track's unique identifier from /tracks.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -62,7 +62,7 @@ class TracksApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int track_id:
+        :param int track_id: The unique identifier of the track.
         :return: TrackDetails
                  If the method is called asynchronously,
                  returns the request thread.
@@ -122,7 +122,7 @@ class TracksApi(object):
             collection_formats=collection_formats)
 
     def tracks_get(self, **kwargs):  # noqa: E501
-        """tracks_get  # noqa: E501
+        """Retrieves a list of all tracks in the NASCAR database, including basic information such as track name, location, and type.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -142,7 +142,7 @@ class TracksApi(object):
             return data
 
     def tracks_get_with_http_info(self, **kwargs):  # noqa: E501
-        """tracks_get  # noqa: E501
+        """Retrieves a list of all tracks in the NASCAR database, including basic information such as track name, location, and type.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
