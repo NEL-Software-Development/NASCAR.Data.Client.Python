@@ -32,6 +32,7 @@ class LapLeader(object):
         'start_lap': 'int',
         'end_lap': 'int',
         'laps_led': 'int',
+        'times_led': 'int',
         'vehicle_number': 'str'
     }
 
@@ -39,14 +40,16 @@ class LapLeader(object):
         'start_lap': 'start_lap',
         'end_lap': 'end_lap',
         'laps_led': 'laps_led',
+        'times_led': 'times_led',
         'vehicle_number': 'vehicle_number'
     }
 
-    def __init__(self, start_lap=None, end_lap=None, laps_led=None, vehicle_number=None):  # noqa: E501
+    def __init__(self, start_lap=None, end_lap=None, laps_led=None, times_led=None, vehicle_number=None):  # noqa: E501
         """LapLeader - a model defined in Swagger"""  # noqa: E501
         self._start_lap = None
         self._end_lap = None
         self._laps_led = None
+        self._times_led = None
         self._vehicle_number = None
         self.discriminator = None
         if start_lap is not None:
@@ -55,6 +58,8 @@ class LapLeader(object):
             self.end_lap = end_lap
         if laps_led is not None:
             self.laps_led = laps_led
+        if times_led is not None:
+            self.times_led = times_led
         if vehicle_number is not None:
             self.vehicle_number = vehicle_number
 
@@ -126,6 +131,29 @@ class LapLeader(object):
         """
 
         self._laps_led = laps_led
+
+    @property
+    def times_led(self):
+        """Gets the times_led of this LapLeader.  # noqa: E501
+
+        Number of distinct times this vehicle led during this race  # noqa: E501
+
+        :return: The times_led of this LapLeader.  # noqa: E501
+        :rtype: int
+        """
+        return self._times_led
+
+    @times_led.setter
+    def times_led(self, times_led):
+        """Sets the times_led of this LapLeader.
+
+        Number of distinct times this vehicle led during this race  # noqa: E501
+
+        :param times_led: The times_led of this LapLeader.  # noqa: E501
+        :type: int
+        """
+
+        self._times_led = times_led
 
     @property
     def vehicle_number(self):

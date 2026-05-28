@@ -4,13 +4,13 @@ All URIs are relative to */api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**inspections_oss_get**](InspectionsApi.md#inspections_oss_get) | **GET** /inspections/oss | 
-[**inspections_vehicle_weights_get**](InspectionsApi.md#inspections_vehicle_weights_get) | **GET** /inspections/vehicle-weights | 
+[**inspections_oss_get**](InspectionsApi.md#inspections_oss_get) | **GET** /inspections/oss | Retrieves a list of OSS scans for a specific race.
+[**inspections_vehicle_weights_get**](InspectionsApi.md#inspections_vehicle_weights_get) | **GET** /inspections/vehicle-weights | Retrieves a list of vehicle weights for a specific race.
 
 # **inspections_oss_get**
 > list[OSSScan] inspections_oss_get(race_id=race_id)
 
-
+Retrieves a list of OSS scans for a specific race.
 
 ### Example
 ```python
@@ -23,9 +23,10 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = nascar_data_client.InspectionsApi(nascar_data_client.ApiClient(configuration))
-race_id = 56 # int |  (optional)
+race_id = 56 # int | Unique race identifier. (optional)
 
 try:
+    # Retrieves a list of OSS scans for a specific race.
     api_response = api_instance.inspections_oss_get(race_id=race_id)
     pprint(api_response)
 except ApiException as e:
@@ -36,7 +37,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **race_id** | **int**|  | [optional] 
+ **race_id** | **int**| Unique race identifier. | [optional] 
 
 ### Return type
 
@@ -56,7 +57,7 @@ Name | Type | Description  | Notes
 # **inspections_vehicle_weights_get**
 > list[VehicleWeight] inspections_vehicle_weights_get(race_id=race_id)
 
-
+Retrieves a list of vehicle weights for a specific race.
 
 ### Example
 ```python
@@ -69,9 +70,10 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = nascar_data_client.InspectionsApi(nascar_data_client.ApiClient(configuration))
-race_id = 56 # int |  (optional)
+race_id = 56 # int | Unique race identifier. (optional)
 
 try:
+    # Retrieves a list of vehicle weights for a specific race.
     api_response = api_instance.inspections_vehicle_weights_get(race_id=race_id)
     pprint(api_response)
 except ApiException as e:
@@ -82,7 +84,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **race_id** | **int**|  | [optional] 
+ **race_id** | **int**| Unique race identifier. | [optional] 
 
 ### Return type
 

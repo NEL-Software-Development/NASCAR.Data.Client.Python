@@ -52,6 +52,7 @@ class WicketAccountIds(object):
     def gap(self):
         """Gets the gap of this WicketAccountIds.  # noqa: E501
 
+        GAP account identifier  # noqa: E501
 
         :return: The gap of this WicketAccountIds.  # noqa: E501
         :rtype: str
@@ -62,6 +63,7 @@ class WicketAccountIds(object):
     def gap(self, gap):
         """Sets the gap of this WicketAccountIds.
 
+        GAP account identifier  # noqa: E501
 
         :param gap: The gap of this WicketAccountIds.  # noqa: E501
         :type: str
@@ -73,6 +75,7 @@ class WicketAccountIds(object):
     def ndl(self):
         """Gets the ndl of this WicketAccountIds.  # noqa: E501
 
+        NDL account identifier  # noqa: E501
 
         :return: The ndl of this WicketAccountIds.  # noqa: E501
         :rtype: str
@@ -83,6 +86,7 @@ class WicketAccountIds(object):
     def ndl(self, ndl):
         """Sets the ndl of this WicketAccountIds.
 
+        NDL account identifier  # noqa: E501
 
         :param ndl: The ndl of this WicketAccountIds.  # noqa: E501
         :type: str

@@ -33,7 +33,7 @@ class InspectionsApi(object):
         self.api_client = api_client
 
     def inspections_oss_get(self, **kwargs):  # noqa: E501
-        """inspections_oss_get  # noqa: E501
+        """Retrieves a list of OSS scans for a specific race.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -41,7 +41,7 @@ class InspectionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int race_id:
+        :param int race_id: Unique race identifier.
         :return: list[OSSScan]
                  If the method is called asynchronously,
                  returns the request thread.
@@ -54,7 +54,7 @@ class InspectionsApi(object):
             return data
 
     def inspections_oss_get_with_http_info(self, **kwargs):  # noqa: E501
-        """inspections_oss_get  # noqa: E501
+        """Retrieves a list of OSS scans for a specific race.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -62,7 +62,7 @@ class InspectionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int race_id:
+        :param int race_id: Unique race identifier.
         :return: list[OSSScan]
                  If the method is called asynchronously,
                  returns the request thread.
@@ -122,7 +122,7 @@ class InspectionsApi(object):
             collection_formats=collection_formats)
 
     def inspections_vehicle_weights_get(self, **kwargs):  # noqa: E501
-        """inspections_vehicle_weights_get  # noqa: E501
+        """Retrieves a list of vehicle weights for a specific race.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -130,7 +130,7 @@ class InspectionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int race_id:
+        :param int race_id: Unique race identifier.
         :return: list[VehicleWeight]
                  If the method is called asynchronously,
                  returns the request thread.
@@ -143,7 +143,7 @@ class InspectionsApi(object):
             return data
 
     def inspections_vehicle_weights_get_with_http_info(self, **kwargs):  # noqa: E501
-        """inspections_vehicle_weights_get  # noqa: E501
+        """Retrieves a list of vehicle weights for a specific race.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -151,7 +151,7 @@ class InspectionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int race_id:
+        :param int race_id: Unique race identifier.
         :return: list[VehicleWeight]
                  If the method is called asynchronously,
                  returns the request thread.

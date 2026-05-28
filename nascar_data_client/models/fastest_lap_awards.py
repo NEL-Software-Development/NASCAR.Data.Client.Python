@@ -57,6 +57,7 @@ class FastestLapAwards(object):
     def lap_time(self):
         """Gets the lap_time of this FastestLapAwards.  # noqa: E501
 
+        The fastest lap time recorded  # noqa: E501
 
         :return: The lap_time of this FastestLapAwards.  # noqa: E501
         :rtype: int
@@ -67,6 +68,7 @@ class FastestLapAwards(object):
     def lap_time(self, lap_time):
         """Sets the lap_time of this FastestLapAwards.
 
+        The fastest lap time recorded  # noqa: E501
 
         :param lap_time: The lap_time of this FastestLapAwards.  # noqa: E501
         :type: int
@@ -78,6 +80,7 @@ class FastestLapAwards(object):
     def car_number(self):
         """Gets the car_number of this FastestLapAwards.  # noqa: E501
 
+        The car number that recorded the fastest lap  # noqa: E501
 
         :return: The car_number of this FastestLapAwards.  # noqa: E501
         :rtype: str
@@ -88,6 +91,7 @@ class FastestLapAwards(object):
     def car_number(self, car_number):
         """Sets the car_number of this FastestLapAwards.
 
+        The car number that recorded the fastest lap  # noqa: E501
 
         :param car_number: The car_number of this FastestLapAwards.  # noqa: E501
         :type: str
@@ -99,6 +103,7 @@ class FastestLapAwards(object):
     def lap(self):
         """Gets the lap of this FastestLapAwards.  # noqa: E501
 
+        The lap number on which the fastest time was recorded  # noqa: E501
 
         :return: The lap of this FastestLapAwards.  # noqa: E501
         :rtype: int
@@ -109,6 +114,7 @@ class FastestLapAwards(object):
     def lap(self, lap):
         """Sets the lap of this FastestLapAwards.
 
+        The lap number on which the fastest time was recorded  # noqa: E501
 
         :param lap: The lap of this FastestLapAwards.  # noqa: E501
         :type: int
