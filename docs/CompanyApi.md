@@ -4,13 +4,13 @@ All URIs are relative to */api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**company_get**](CompanyApi.md#company_get) | **GET** /company | 
-[**company_search_get**](CompanyApi.md#company_search_get) | **GET** /company/search | 
+[**company_get**](CompanyApi.md#company_get) | **GET** /company | Retrieves a single company by ID.
+[**company_search_get**](CompanyApi.md#company_search_get) | **GET** /company/search | Searches for companies by name or keyword.
 
 # **company_get**
-> list[Company] company_get(id=id)
+> Company company_get(id=id)
 
-
+Retrieves a single company by ID.
 
 ### Example
 ```python
@@ -23,9 +23,10 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = nascar_data_client.CompanyApi(nascar_data_client.ApiClient(configuration))
-id = 56 # int |  (optional)
+id = 56 # int | Unique company identifier. (optional)
 
 try:
+    # Retrieves a single company by ID.
     api_response = api_instance.company_get(id=id)
     pprint(api_response)
 except ApiException as e:
@@ -36,11 +37,11 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **int**|  | [optional] 
+ **id** | **int**| Unique company identifier. | [optional] 
 
 ### Return type
 
-[**list[Company]**](Company.md)
+[**Company**](Company.md)
 
 ### Authorization
 
@@ -56,7 +57,7 @@ Name | Type | Description  | Notes
 # **company_search_get**
 > list[Company] company_search_get(search_term=search_term)
 
-
+Searches for companies by name or keyword.
 
 ### Example
 ```python
@@ -69,9 +70,10 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = nascar_data_client.CompanyApi(nascar_data_client.ApiClient(configuration))
-search_term = 'search_term_example' # str |  (optional)
+search_term = 'search_term_example' # str | Partial or full company name to search for (e.g. \"Daytona\"). (optional)
 
 try:
+    # Searches for companies by name or keyword.
     api_response = api_instance.company_search_get(search_term=search_term)
     pprint(api_response)
 except ApiException as e:
@@ -82,7 +84,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **search_term** | **str**|  | [optional] 
+ **search_term** | **str**| Partial or full company name to search for (e.g. \&quot;Daytona\&quot;). | [optional] 
 
 ### Return type
 

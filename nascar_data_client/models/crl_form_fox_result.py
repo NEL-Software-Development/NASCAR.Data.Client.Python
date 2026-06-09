@@ -57,6 +57,7 @@ class CrlFormFoxResult(object):
     def id(self):
         """Gets the id of this CrlFormFoxResult.  # noqa: E501
 
+        Unique identifier for the FormFox result  # noqa: E501
 
         :return: The id of this CrlFormFoxResult.  # noqa: E501
         :rtype: str
@@ -67,6 +68,7 @@ class CrlFormFoxResult(object):
     def id(self, id):
         """Sets the id of this CrlFormFoxResult.
 
+        Unique identifier for the FormFox result  # noqa: E501
 
         :param id: The id of this CrlFormFoxResult.  # noqa: E501
         :type: str
@@ -78,6 +80,7 @@ class CrlFormFoxResult(object):
     def status(self):
         """Gets the status of this CrlFormFoxResult.  # noqa: E501
 
+        Current status of the FormFox request  # noqa: E501
 
         :return: The status of this CrlFormFoxResult.  # noqa: E501
         :rtype: str
@@ -88,6 +91,7 @@ class CrlFormFoxResult(object):
     def status(self, status):
         """Sets the status of this CrlFormFoxResult.
 
+        Current status of the FormFox request  # noqa: E501
 
         :param status: The status of this CrlFormFoxResult.  # noqa: E501
         :type: str
@@ -99,6 +103,7 @@ class CrlFormFoxResult(object):
     def url(self):
         """Gets the url of this CrlFormFoxResult.  # noqa: E501
 
+        URL associated with the FormFox result  # noqa: E501
 
         :return: The url of this CrlFormFoxResult.  # noqa: E501
         :rtype: str
@@ -109,6 +114,7 @@ class CrlFormFoxResult(object):
     def url(self, url):
         """Sets the url of this CrlFormFoxResult.
 
+        URL associated with the FormFox result  # noqa: E501
 
         :param url: The url of this CrlFormFoxResult.  # noqa: E501
         :type: str

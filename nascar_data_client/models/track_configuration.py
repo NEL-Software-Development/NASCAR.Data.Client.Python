@@ -122,7 +122,7 @@ class TrackConfiguration(object):
     def id(self):
         """Gets the id of this TrackConfiguration.  # noqa: E501
 
-        Gets or sets the unique identifier for the track configuration.  # noqa: E501
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
 
         :return: The id of this TrackConfiguration.  # noqa: E501
         :rtype: int
@@ -133,7 +133,7 @@ class TrackConfiguration(object):
     def id(self, id):
         """Sets the id of this TrackConfiguration.
 
-        Gets or sets the unique identifier for the track configuration.  # noqa: E501
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
 
         :param id: The id of this TrackConfiguration.  # noqa: E501
         :type: int
@@ -145,7 +145,7 @@ class TrackConfiguration(object):
     def track_id(self):
         """Gets the track_id of this TrackConfiguration.  # noqa: E501
 
-        Gets or sets the unique identifier for the track.  # noqa: E501
+        Track identifier  # noqa: E501
 
         :return: The track_id of this TrackConfiguration.  # noqa: E501
         :rtype: int
@@ -156,7 +156,7 @@ class TrackConfiguration(object):
     def track_id(self, track_id):
         """Sets the track_id of this TrackConfiguration.
 
-        Gets or sets the unique identifier for the track.  # noqa: E501
+        Track identifier  # noqa: E501
 
         :param track_id: The track_id of this TrackConfiguration.  # noqa: E501
         :type: int
@@ -168,7 +168,7 @@ class TrackConfiguration(object):
     def history_track_configuration_id(self):
         """Gets the history_track_configuration_id of this TrackConfiguration.  # noqa: E501
 
-        Gets or sets the historical identifier for the track configuration.  # noqa: E501
+        Historical track configuration identifier  # noqa: E501
 
         :return: The history_track_configuration_id of this TrackConfiguration.  # noqa: E501
         :rtype: int
@@ -179,7 +179,7 @@ class TrackConfiguration(object):
     def history_track_configuration_id(self, history_track_configuration_id):
         """Sets the history_track_configuration_id of this TrackConfiguration.
 
-        Gets or sets the historical identifier for the track configuration.  # noqa: E501
+        Historical track configuration identifier  # noqa: E501
 
         :param history_track_configuration_id: The history_track_configuration_id of this TrackConfiguration.  # noqa: E501
         :type: int
@@ -191,7 +191,7 @@ class TrackConfiguration(object):
     def track_name(self):
         """Gets the track_name of this TrackConfiguration.  # noqa: E501
 
-        Gets or sets the name of the track.  # noqa: E501
+        Track name  # noqa: E501
 
         :return: The track_name of this TrackConfiguration.  # noqa: E501
         :rtype: str
@@ -202,7 +202,7 @@ class TrackConfiguration(object):
     def track_name(self, track_name):
         """Sets the track_name of this TrackConfiguration.
 
-        Gets or sets the name of the track.  # noqa: E501
+        Track name  # noqa: E501
 
         :param track_name: The track_name of this TrackConfiguration.  # noqa: E501
         :type: str
@@ -214,7 +214,7 @@ class TrackConfiguration(object):
     def altitude(self):
         """Gets the altitude of this TrackConfiguration.  # noqa: E501
 
-        Gets or sets the altitude of the track.  # noqa: E501
+        Altitude of the track  # noqa: E501
 
         :return: The altitude of this TrackConfiguration.  # noqa: E501
         :rtype: float
@@ -225,7 +225,7 @@ class TrackConfiguration(object):
     def altitude(self, altitude):
         """Sets the altitude of this TrackConfiguration.
 
-        Gets or sets the altitude of the track.  # noqa: E501
+        Altitude of the track  # noqa: E501
 
         :param altitude: The altitude of this TrackConfiguration.  # noqa: E501
         :type: float
@@ -237,7 +237,7 @@ class TrackConfiguration(object):
     def northwest_latitude(self):
         """Gets the northwest_latitude of this TrackConfiguration.  # noqa: E501
 
-        Gets or sets the northwest latitude of the track boundary.  # noqa: E501
+        Northwest latitude of the track boundary  # noqa: E501
 
         :return: The northwest_latitude of this TrackConfiguration.  # noqa: E501
         :rtype: float
@@ -248,7 +248,7 @@ class TrackConfiguration(object):
     def northwest_latitude(self, northwest_latitude):
         """Sets the northwest_latitude of this TrackConfiguration.
 
-        Gets or sets the northwest latitude of the track boundary.  # noqa: E501
+        Northwest latitude of the track boundary  # noqa: E501
 
         :param northwest_latitude: The northwest_latitude of this TrackConfiguration.  # noqa: E501
         :type: float
@@ -260,7 +260,7 @@ class TrackConfiguration(object):
     def northwest_longitude(self):
         """Gets the northwest_longitude of this TrackConfiguration.  # noqa: E501
 
-        Gets or sets the northwest longitude of the track boundary.  # noqa: E501
+        Northwest longitude of the track boundary  # noqa: E501
 
         :return: The northwest_longitude of this TrackConfiguration.  # noqa: E501
         :rtype: float
@@ -271,7 +271,7 @@ class TrackConfiguration(object):
     def northwest_longitude(self, northwest_longitude):
         """Sets the northwest_longitude of this TrackConfiguration.
 
-        Gets or sets the northwest longitude of the track boundary.  # noqa: E501
+        Northwest longitude of the track boundary  # noqa: E501
 
         :param northwest_longitude: The northwest_longitude of this TrackConfiguration.  # noqa: E501
         :type: float
@@ -283,7 +283,7 @@ class TrackConfiguration(object):
     def southeast_latitude(self):
         """Gets the southeast_latitude of this TrackConfiguration.  # noqa: E501
 
-        Gets or sets the southeast latitude of the track boundary.  # noqa: E501
+        Southeast latitude of the track boundary  # noqa: E501
 
         :return: The southeast_latitude of this TrackConfiguration.  # noqa: E501
         :rtype: float
@@ -294,7 +294,7 @@ class TrackConfiguration(object):
     def southeast_latitude(self, southeast_latitude):
         """Sets the southeast_latitude of this TrackConfiguration.
 
-        Gets or sets the southeast latitude of the track boundary.  # noqa: E501
+        Southeast latitude of the track boundary  # noqa: E501
 
         :param southeast_latitude: The southeast_latitude of this TrackConfiguration.  # noqa: E501
         :type: float
@@ -306,7 +306,7 @@ class TrackConfiguration(object):
     def southeast_longitude(self):
         """Gets the southeast_longitude of this TrackConfiguration.  # noqa: E501
 
-        Gets or sets the southeast longitude of the track boundary.  # noqa: E501
+        Southeast longitude of the track boundary  # noqa: E501
 
         :return: The southeast_longitude of this TrackConfiguration.  # noqa: E501
         :rtype: float
@@ -317,7 +317,7 @@ class TrackConfiguration(object):
     def southeast_longitude(self, southeast_longitude):
         """Sets the southeast_longitude of this TrackConfiguration.
 
-        Gets or sets the southeast longitude of the track boundary.  # noqa: E501
+        Southeast longitude of the track boundary  # noqa: E501
 
         :param southeast_longitude: The southeast_longitude of this TrackConfiguration.  # noqa: E501
         :type: float
@@ -329,7 +329,7 @@ class TrackConfiguration(object):
     def heading(self):
         """Gets the heading of this TrackConfiguration.  # noqa: E501
 
-        Gets or sets the heading direction of the track.  # noqa: E501
+        Heading direction of the track  # noqa: E501
 
         :return: The heading of this TrackConfiguration.  # noqa: E501
         :rtype: float
@@ -340,7 +340,7 @@ class TrackConfiguration(object):
     def heading(self, heading):
         """Sets the heading of this TrackConfiguration.
 
-        Gets or sets the heading direction of the track.  # noqa: E501
+        Heading direction of the track  # noqa: E501
 
         :param heading: The heading of this TrackConfiguration.  # noqa: E501
         :type: float
@@ -352,7 +352,7 @@ class TrackConfiguration(object):
     def finish_line_rotation(self):
         """Gets the finish_line_rotation of this TrackConfiguration.  # noqa: E501
 
-        Gets or sets the rotation of the finish line.  # noqa: E501
+        Rotation of the finish line  # noqa: E501
 
         :return: The finish_line_rotation of this TrackConfiguration.  # noqa: E501
         :rtype: float
@@ -363,7 +363,7 @@ class TrackConfiguration(object):
     def finish_line_rotation(self, finish_line_rotation):
         """Sets the finish_line_rotation of this TrackConfiguration.
 
-        Gets or sets the rotation of the finish line.  # noqa: E501
+        Rotation of the finish line  # noqa: E501
 
         :param finish_line_rotation: The finish_line_rotation of this TrackConfiguration.  # noqa: E501
         :type: float
@@ -375,7 +375,7 @@ class TrackConfiguration(object):
     def finish_line_translate_x(self):
         """Gets the finish_line_translate_x of this TrackConfiguration.  # noqa: E501
 
-        Gets or sets the X-axis translation of the finish line.  # noqa: E501
+        X-axis translation of the finish line  # noqa: E501
 
         :return: The finish_line_translate_x of this TrackConfiguration.  # noqa: E501
         :rtype: float
@@ -386,7 +386,7 @@ class TrackConfiguration(object):
     def finish_line_translate_x(self, finish_line_translate_x):
         """Sets the finish_line_translate_x of this TrackConfiguration.
 
-        Gets or sets the X-axis translation of the finish line.  # noqa: E501
+        X-axis translation of the finish line  # noqa: E501
 
         :param finish_line_translate_x: The finish_line_translate_x of this TrackConfiguration.  # noqa: E501
         :type: float
@@ -398,7 +398,7 @@ class TrackConfiguration(object):
     def finish_line_translate_y(self):
         """Gets the finish_line_translate_y of this TrackConfiguration.  # noqa: E501
 
-        Gets or sets the Y-axis translation of the finish line.  # noqa: E501
+        Y-axis translation of the finish line  # noqa: E501
 
         :return: The finish_line_translate_y of this TrackConfiguration.  # noqa: E501
         :rtype: float
@@ -409,7 +409,7 @@ class TrackConfiguration(object):
     def finish_line_translate_y(self, finish_line_translate_y):
         """Sets the finish_line_translate_y of this TrackConfiguration.
 
-        Gets or sets the Y-axis translation of the finish line.  # noqa: E501
+        Y-axis translation of the finish line  # noqa: E501
 
         :param finish_line_translate_y: The finish_line_translate_y of this TrackConfiguration.  # noqa: E501
         :type: float
@@ -421,7 +421,7 @@ class TrackConfiguration(object):
     def pit_finish_line_rotation(self):
         """Gets the pit_finish_line_rotation of this TrackConfiguration.  # noqa: E501
 
-        Gets or sets the rotation of the pit finish line.  # noqa: E501
+        Rotation of the pit finish line  # noqa: E501
 
         :return: The pit_finish_line_rotation of this TrackConfiguration.  # noqa: E501
         :rtype: float
@@ -432,7 +432,7 @@ class TrackConfiguration(object):
     def pit_finish_line_rotation(self, pit_finish_line_rotation):
         """Sets the pit_finish_line_rotation of this TrackConfiguration.
 
-        Gets or sets the rotation of the pit finish line.  # noqa: E501
+        Rotation of the pit finish line  # noqa: E501
 
         :param pit_finish_line_rotation: The pit_finish_line_rotation of this TrackConfiguration.  # noqa: E501
         :type: float
@@ -444,7 +444,7 @@ class TrackConfiguration(object):
     def pit_finish_line_translate_x(self):
         """Gets the pit_finish_line_translate_x of this TrackConfiguration.  # noqa: E501
 
-        Gets or sets the X-axis translation of the pit finish line.  # noqa: E501
+        X-axis translation of the pit finish line  # noqa: E501
 
         :return: The pit_finish_line_translate_x of this TrackConfiguration.  # noqa: E501
         :rtype: float
@@ -455,7 +455,7 @@ class TrackConfiguration(object):
     def pit_finish_line_translate_x(self, pit_finish_line_translate_x):
         """Sets the pit_finish_line_translate_x of this TrackConfiguration.
 
-        Gets or sets the X-axis translation of the pit finish line.  # noqa: E501
+        X-axis translation of the pit finish line  # noqa: E501
 
         :param pit_finish_line_translate_x: The pit_finish_line_translate_x of this TrackConfiguration.  # noqa: E501
         :type: float
@@ -467,7 +467,7 @@ class TrackConfiguration(object):
     def pit_finish_line_translate_y(self):
         """Gets the pit_finish_line_translate_y of this TrackConfiguration.  # noqa: E501
 
-        Gets or sets the Y-axis translation of the pit finish line.  # noqa: E501
+        Y-axis translation of the pit finish line  # noqa: E501
 
         :return: The pit_finish_line_translate_y of this TrackConfiguration.  # noqa: E501
         :rtype: float
@@ -478,7 +478,7 @@ class TrackConfiguration(object):
     def pit_finish_line_translate_y(self, pit_finish_line_translate_y):
         """Sets the pit_finish_line_translate_y of this TrackConfiguration.
 
-        Gets or sets the Y-axis translation of the pit finish line.  # noqa: E501
+        Y-axis translation of the pit finish line  # noqa: E501
 
         :param pit_finish_line_translate_y: The pit_finish_line_translate_y of this TrackConfiguration.  # noqa: E501
         :type: float
