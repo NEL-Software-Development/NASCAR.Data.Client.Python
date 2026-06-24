@@ -31,20 +31,29 @@ class WeekendSchedule(object):
     swagger_types = {
         'activity': 'str',
         'start_time': 'datetime',
-        'end_time': 'datetime'
+        'end_time': 'datetime',
+        'notes': 'str',
+        'is_postponed': 'bool',
+        'is_cancelled': 'bool'
     }
 
     attribute_map = {
         'activity': 'activity',
         'start_time': 'start_time',
-        'end_time': 'end_time'
+        'end_time': 'end_time',
+        'notes': 'notes',
+        'is_postponed': 'is_postponed',
+        'is_cancelled': 'is_cancelled'
     }
 
-    def __init__(self, activity=None, start_time=None, end_time=None):  # noqa: E501
+    def __init__(self, activity=None, start_time=None, end_time=None, notes=None, is_postponed=None, is_cancelled=None):  # noqa: E501
         """WeekendSchedule - a model defined in Swagger"""  # noqa: E501
         self._activity = None
         self._start_time = None
         self._end_time = None
+        self._notes = None
+        self._is_postponed = None
+        self._is_cancelled = None
         self.discriminator = None
         if activity is not None:
             self.activity = activity
@@ -52,12 +61,18 @@ class WeekendSchedule(object):
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
+        if notes is not None:
+            self.notes = notes
+        if is_postponed is not None:
+            self.is_postponed = is_postponed
+        if is_cancelled is not None:
+            self.is_cancelled = is_cancelled
 
     @property
     def activity(self):
         """Gets the activity of this WeekendSchedule.  # noqa: E501
 
-        The name of the activity  # noqa: E501
+        Name of the scheduled activity  # noqa: E501
 
         :return: The activity of this WeekendSchedule.  # noqa: E501
         :rtype: str
@@ -68,7 +83,7 @@ class WeekendSchedule(object):
     def activity(self, activity):
         """Sets the activity of this WeekendSchedule.
 
-        The name of the activity  # noqa: E501
+        Name of the scheduled activity  # noqa: E501
 
         :param activity: The activity of this WeekendSchedule.  # noqa: E501
         :type: str
@@ -103,7 +118,7 @@ class WeekendSchedule(object):
     def end_time(self):
         """Gets the end_time of this WeekendSchedule.  # noqa: E501
 
-        Scheduled end time (if any)  # noqa: E501
+        Scheduled end time  # noqa: E501
 
         :return: The end_time of this WeekendSchedule.  # noqa: E501
         :rtype: datetime
@@ -114,13 +129,82 @@ class WeekendSchedule(object):
     def end_time(self, end_time):
         """Sets the end_time of this WeekendSchedule.
 
-        Scheduled end time (if any)  # noqa: E501
+        Scheduled end time  # noqa: E501
 
         :param end_time: The end_time of this WeekendSchedule.  # noqa: E501
         :type: datetime
         """
 
         self._end_time = end_time
+
+    @property
+    def notes(self):
+        """Gets the notes of this WeekendSchedule.  # noqa: E501
+
+        Additional notes for the scheduled activity  # noqa: E501
+
+        :return: The notes of this WeekendSchedule.  # noqa: E501
+        :rtype: str
+        """
+        return self._notes
+
+    @notes.setter
+    def notes(self, notes):
+        """Sets the notes of this WeekendSchedule.
+
+        Additional notes for the scheduled activity  # noqa: E501
+
+        :param notes: The notes of this WeekendSchedule.  # noqa: E501
+        :type: str
+        """
+
+        self._notes = notes
+
+    @property
+    def is_postponed(self):
+        """Gets the is_postponed of this WeekendSchedule.  # noqa: E501
+
+        True if the scheduled activity has been postponed, false otherwise  # noqa: E501
+
+        :return: The is_postponed of this WeekendSchedule.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_postponed
+
+    @is_postponed.setter
+    def is_postponed(self, is_postponed):
+        """Sets the is_postponed of this WeekendSchedule.
+
+        True if the scheduled activity has been postponed, false otherwise  # noqa: E501
+
+        :param is_postponed: The is_postponed of this WeekendSchedule.  # noqa: E501
+        :type: bool
+        """
+
+        self._is_postponed = is_postponed
+
+    @property
+    def is_cancelled(self):
+        """Gets the is_cancelled of this WeekendSchedule.  # noqa: E501
+
+        True if the scheduled activity has been cancelled, false otherwise  # noqa: E501
+
+        :return: The is_cancelled of this WeekendSchedule.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_cancelled
+
+    @is_cancelled.setter
+    def is_cancelled(self, is_cancelled):
+        """Sets the is_cancelled of this WeekendSchedule.
+
+        True if the scheduled activity has been cancelled, false otherwise  # noqa: E501
+
+        :param is_cancelled: The is_cancelled of this WeekendSchedule.  # noqa: E501
+        :type: bool
+        """
+
+        self._is_cancelled = is_cancelled
 
     def to_dict(self):
         """Returns the model properties as a dict"""

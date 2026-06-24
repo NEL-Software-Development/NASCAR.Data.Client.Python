@@ -34,8 +34,28 @@ class RaceDetails(object):
         'series_id': 'int',
         'name': 'str',
         'promoter': 'str',
+        'restrictor_plate': 'bool',
         'laps': 'int',
+        'actual_laps': 'int',
         'distance': 'float',
+        'actual_distance': 'float',
+        'race_type_id': 'int',
+        'total_race_time': 'str',
+        'number_of_cars_in_field': 'int',
+        'pole_winner_driver_id': 'int',
+        'pole_winner_speed': 'float',
+        'number_of_lead_changes': 'int',
+        'number_of_leaders': 'int',
+        'average_speed': 'float',
+        'margin_of_victory': 'str',
+        'radio_broadcaster': 'str',
+        'television_broadcaster': 'str',
+        'satellite_radio_broadcaster': 'str',
+        'playoff_round': 'int',
+        'is_qualifying_race': 'bool',
+        'qualifying_race_no': 'int',
+        'qualifying_race_id': 'int',
+        'has_qualifying': 'bool',
         'practice_results': 'str',
         'qualifying_results': 'str',
         'race_results': 'str',
@@ -44,10 +64,13 @@ class RaceDetails(object):
         'lap_leaders': 'str',
         'pitstops': 'str',
         '_date': 'datetime',
+        'tunein_date': 'datetime',
+        'qualifying_date': 'datetime',
         'comments': 'str',
         'track_name': 'str',
         'track_sponsor': 'str',
         'track_id': 'int',
+        'history_track_id': 'int',
         'inspection_complete': 'bool',
         'entries': 'list[RunEntry]',
         'runs': 'list[RunDetails]',
@@ -61,8 +84,28 @@ class RaceDetails(object):
         'series_id': 'series_id',
         'name': 'name',
         'promoter': 'promoter',
+        'restrictor_plate': 'restrictor_plate',
         'laps': 'laps',
+        'actual_laps': 'actual_laps',
         'distance': 'distance',
+        'actual_distance': 'actual_distance',
+        'race_type_id': 'race_type_id',
+        'total_race_time': 'total_race_time',
+        'number_of_cars_in_field': 'number_of_cars_in_field',
+        'pole_winner_driver_id': 'pole_winner_driver_id',
+        'pole_winner_speed': 'pole_winner_speed',
+        'number_of_lead_changes': 'number_of_lead_changes',
+        'number_of_leaders': 'number_of_leaders',
+        'average_speed': 'average_speed',
+        'margin_of_victory': 'margin_of_victory',
+        'radio_broadcaster': 'radio_broadcaster',
+        'television_broadcaster': 'television_broadcaster',
+        'satellite_radio_broadcaster': 'satellite_radio_broadcaster',
+        'playoff_round': 'playoff_round',
+        'is_qualifying_race': 'is_qualifying_race',
+        'qualifying_race_no': 'qualifying_race_no',
+        'qualifying_race_id': 'qualifying_race_id',
+        'has_qualifying': 'has_qualifying',
         'practice_results': 'practice_results',
         'qualifying_results': 'qualifying_results',
         'race_results': 'race_results',
@@ -71,10 +114,13 @@ class RaceDetails(object):
         'lap_leaders': 'lap_leaders',
         'pitstops': 'pitstops',
         '_date': 'date',
+        'tunein_date': 'tunein_date',
+        'qualifying_date': 'qualifying_date',
         'comments': 'comments',
         'track_name': 'track_name',
         'track_sponsor': 'track_sponsor',
         'track_id': 'track_id',
+        'history_track_id': 'history_track_id',
         'inspection_complete': 'inspection_complete',
         'entries': 'entries',
         'runs': 'runs',
@@ -82,15 +128,35 @@ class RaceDetails(object):
         'fastest_lap_award': 'fastest_lap_award'
     }
 
-    def __init__(self, id=None, history_race_id=-1, series_id=None, name=None, promoter=None, laps=None, distance=None, practice_results=None, qualifying_results=None, race_results=None, cautions=None, infractions=None, lap_leaders=None, pitstops=None, _date=None, comments=None, track_name=None, track_sponsor=None, track_id=None, inspection_complete=None, entries=None, runs=None, schedule=None, fastest_lap_award=None):  # noqa: E501
+    def __init__(self, id=None, history_race_id=-1, series_id=None, name=None, promoter=None, restrictor_plate=None, laps=None, actual_laps=None, distance=None, actual_distance=None, race_type_id=None, total_race_time=None, number_of_cars_in_field=None, pole_winner_driver_id=None, pole_winner_speed=None, number_of_lead_changes=None, number_of_leaders=None, average_speed=None, margin_of_victory=None, radio_broadcaster=None, television_broadcaster=None, satellite_radio_broadcaster=None, playoff_round=None, is_qualifying_race=None, qualifying_race_no=None, qualifying_race_id=None, has_qualifying=None, practice_results=None, qualifying_results=None, race_results=None, cautions=None, infractions=None, lap_leaders=None, pitstops=None, _date=None, tunein_date=None, qualifying_date=None, comments=None, track_name=None, track_sponsor=None, track_id=None, history_track_id=None, inspection_complete=None, entries=None, runs=None, schedule=None, fastest_lap_award=None):  # noqa: E501
         """RaceDetails - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._history_race_id = None
         self._series_id = None
         self._name = None
         self._promoter = None
+        self._restrictor_plate = None
         self._laps = None
+        self._actual_laps = None
         self._distance = None
+        self._actual_distance = None
+        self._race_type_id = None
+        self._total_race_time = None
+        self._number_of_cars_in_field = None
+        self._pole_winner_driver_id = None
+        self._pole_winner_speed = None
+        self._number_of_lead_changes = None
+        self._number_of_leaders = None
+        self._average_speed = None
+        self._margin_of_victory = None
+        self._radio_broadcaster = None
+        self._television_broadcaster = None
+        self._satellite_radio_broadcaster = None
+        self._playoff_round = None
+        self._is_qualifying_race = None
+        self._qualifying_race_no = None
+        self._qualifying_race_id = None
+        self._has_qualifying = None
         self._practice_results = None
         self._qualifying_results = None
         self._race_results = None
@@ -99,10 +165,13 @@ class RaceDetails(object):
         self._lap_leaders = None
         self._pitstops = None
         self.__date = None
+        self._tunein_date = None
+        self._qualifying_date = None
         self._comments = None
         self._track_name = None
         self._track_sponsor = None
         self._track_id = None
+        self._history_track_id = None
         self._inspection_complete = None
         self._entries = None
         self._runs = None
@@ -119,10 +188,50 @@ class RaceDetails(object):
             self.name = name
         if promoter is not None:
             self.promoter = promoter
+        if restrictor_plate is not None:
+            self.restrictor_plate = restrictor_plate
         if laps is not None:
             self.laps = laps
+        if actual_laps is not None:
+            self.actual_laps = actual_laps
         if distance is not None:
             self.distance = distance
+        if actual_distance is not None:
+            self.actual_distance = actual_distance
+        if race_type_id is not None:
+            self.race_type_id = race_type_id
+        if total_race_time is not None:
+            self.total_race_time = total_race_time
+        if number_of_cars_in_field is not None:
+            self.number_of_cars_in_field = number_of_cars_in_field
+        if pole_winner_driver_id is not None:
+            self.pole_winner_driver_id = pole_winner_driver_id
+        if pole_winner_speed is not None:
+            self.pole_winner_speed = pole_winner_speed
+        if number_of_lead_changes is not None:
+            self.number_of_lead_changes = number_of_lead_changes
+        if number_of_leaders is not None:
+            self.number_of_leaders = number_of_leaders
+        if average_speed is not None:
+            self.average_speed = average_speed
+        if margin_of_victory is not None:
+            self.margin_of_victory = margin_of_victory
+        if radio_broadcaster is not None:
+            self.radio_broadcaster = radio_broadcaster
+        if television_broadcaster is not None:
+            self.television_broadcaster = television_broadcaster
+        if satellite_radio_broadcaster is not None:
+            self.satellite_radio_broadcaster = satellite_radio_broadcaster
+        if playoff_round is not None:
+            self.playoff_round = playoff_round
+        if is_qualifying_race is not None:
+            self.is_qualifying_race = is_qualifying_race
+        if qualifying_race_no is not None:
+            self.qualifying_race_no = qualifying_race_no
+        if qualifying_race_id is not None:
+            self.qualifying_race_id = qualifying_race_id
+        if has_qualifying is not None:
+            self.has_qualifying = has_qualifying
         if practice_results is not None:
             self.practice_results = practice_results
         if qualifying_results is not None:
@@ -139,6 +248,10 @@ class RaceDetails(object):
             self.pitstops = pitstops
         if _date is not None:
             self._date = _date
+        if tunein_date is not None:
+            self.tunein_date = tunein_date
+        if qualifying_date is not None:
+            self.qualifying_date = qualifying_date
         if comments is not None:
             self.comments = comments
         if track_name is not None:
@@ -147,6 +260,8 @@ class RaceDetails(object):
             self.track_sponsor = track_sponsor
         if track_id is not None:
             self.track_id = track_id
+        if history_track_id is not None:
+            self.history_track_id = history_track_id
         if inspection_complete is not None:
             self.inspection_complete = inspection_complete
         if entries is not None:
@@ -162,7 +277,7 @@ class RaceDetails(object):
     def id(self):
         """Gets the id of this RaceDetails.  # noqa: E501
 
-        The id of the race  # noqa: E501
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
 
         :return: The id of this RaceDetails.  # noqa: E501
         :rtype: int
@@ -173,7 +288,7 @@ class RaceDetails(object):
     def id(self, id):
         """Sets the id of this RaceDetails.
 
-        The id of the race  # noqa: E501
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
 
         :param id: The id of this RaceDetails.  # noqa: E501
         :type: int
@@ -185,7 +300,7 @@ class RaceDetails(object):
     def history_race_id(self):
         """Gets the history_race_id of this RaceDetails.  # noqa: E501
 
-        The race id from the history database  # noqa: E501
+        Historical race identifier  # noqa: E501
 
         :return: The history_race_id of this RaceDetails.  # noqa: E501
         :rtype: int
@@ -196,7 +311,7 @@ class RaceDetails(object):
     def history_race_id(self, history_race_id):
         """Sets the history_race_id of this RaceDetails.
 
-        The race id from the history database  # noqa: E501
+        Historical race identifier  # noqa: E501
 
         :param history_race_id: The history_race_id of this RaceDetails.  # noqa: E501
         :type: int
@@ -208,7 +323,7 @@ class RaceDetails(object):
     def series_id(self):
         """Gets the series_id of this RaceDetails.  # noqa: E501
 
-        The series id of the race  # noqa: E501
+        Series identifier  # noqa: E501
 
         :return: The series_id of this RaceDetails.  # noqa: E501
         :rtype: int
@@ -219,7 +334,7 @@ class RaceDetails(object):
     def series_id(self, series_id):
         """Sets the series_id of this RaceDetails.
 
-        The series id of the race  # noqa: E501
+        Series identifier  # noqa: E501
 
         :param series_id: The series_id of this RaceDetails.  # noqa: E501
         :type: int
@@ -231,7 +346,7 @@ class RaceDetails(object):
     def name(self):
         """Gets the name of this RaceDetails.  # noqa: E501
 
-        The race name  # noqa: E501
+        Race name  # noqa: E501
 
         :return: The name of this RaceDetails.  # noqa: E501
         :rtype: str
@@ -242,7 +357,7 @@ class RaceDetails(object):
     def name(self, name):
         """Sets the name of this RaceDetails.
 
-        The race name  # noqa: E501
+        Race name  # noqa: E501
 
         :param name: The name of this RaceDetails.  # noqa: E501
         :type: str
@@ -254,7 +369,7 @@ class RaceDetails(object):
     def promoter(self):
         """Gets the promoter of this RaceDetails.  # noqa: E501
 
-        The promoter of the race  # noqa: E501
+        Promoter of the race  # noqa: E501
 
         :return: The promoter of this RaceDetails.  # noqa: E501
         :rtype: str
@@ -265,7 +380,7 @@ class RaceDetails(object):
     def promoter(self, promoter):
         """Sets the promoter of this RaceDetails.
 
-        The promoter of the race  # noqa: E501
+        Promoter of the race  # noqa: E501
 
         :param promoter: The promoter of this RaceDetails.  # noqa: E501
         :type: str
@@ -274,10 +389,33 @@ class RaceDetails(object):
         self._promoter = promoter
 
     @property
+    def restrictor_plate(self):
+        """Gets the restrictor_plate of this RaceDetails.  # noqa: E501
+
+        Indicates whether restrictor plates are required for this race  # noqa: E501
+
+        :return: The restrictor_plate of this RaceDetails.  # noqa: E501
+        :rtype: bool
+        """
+        return self._restrictor_plate
+
+    @restrictor_plate.setter
+    def restrictor_plate(self, restrictor_plate):
+        """Sets the restrictor_plate of this RaceDetails.
+
+        Indicates whether restrictor plates are required for this race  # noqa: E501
+
+        :param restrictor_plate: The restrictor_plate of this RaceDetails.  # noqa: E501
+        :type: bool
+        """
+
+        self._restrictor_plate = restrictor_plate
+
+    @property
     def laps(self):
         """Gets the laps of this RaceDetails.  # noqa: E501
 
-        Laps  # noqa: E501
+        Total number of laps  # noqa: E501
 
         :return: The laps of this RaceDetails.  # noqa: E501
         :rtype: int
@@ -288,13 +426,36 @@ class RaceDetails(object):
     def laps(self, laps):
         """Sets the laps of this RaceDetails.
 
-        Laps  # noqa: E501
+        Total number of laps  # noqa: E501
 
         :param laps: The laps of this RaceDetails.  # noqa: E501
         :type: int
         """
 
         self._laps = laps
+
+    @property
+    def actual_laps(self):
+        """Gets the actual_laps of this RaceDetails.  # noqa: E501
+
+        Actual number of laps for this race  # noqa: E501
+
+        :return: The actual_laps of this RaceDetails.  # noqa: E501
+        :rtype: int
+        """
+        return self._actual_laps
+
+    @actual_laps.setter
+    def actual_laps(self, actual_laps):
+        """Sets the actual_laps of this RaceDetails.
+
+        Actual number of laps for this race  # noqa: E501
+
+        :param actual_laps: The actual_laps of this RaceDetails.  # noqa: E501
+        :type: int
+        """
+
+        self._actual_laps = actual_laps
 
     @property
     def distance(self):
@@ -318,6 +479,420 @@ class RaceDetails(object):
         """
 
         self._distance = distance
+
+    @property
+    def actual_distance(self):
+        """Gets the actual_distance of this RaceDetails.  # noqa: E501
+
+        Actual distance for this race in miles  # noqa: E501
+
+        :return: The actual_distance of this RaceDetails.  # noqa: E501
+        :rtype: float
+        """
+        return self._actual_distance
+
+    @actual_distance.setter
+    def actual_distance(self, actual_distance):
+        """Sets the actual_distance of this RaceDetails.
+
+        Actual distance for this race in miles  # noqa: E501
+
+        :param actual_distance: The actual_distance of this RaceDetails.  # noqa: E501
+        :type: float
+        """
+
+        self._actual_distance = actual_distance
+
+    @property
+    def race_type_id(self):
+        """Gets the race_type_id of this RaceDetails.  # noqa: E501
+
+        Race Type Identifier (1-Race, 2-Duel, 3-Heat, 4-Exhibition)  # noqa: E501
+
+        :return: The race_type_id of this RaceDetails.  # noqa: E501
+        :rtype: int
+        """
+        return self._race_type_id
+
+    @race_type_id.setter
+    def race_type_id(self, race_type_id):
+        """Sets the race_type_id of this RaceDetails.
+
+        Race Type Identifier (1-Race, 2-Duel, 3-Heat, 4-Exhibition)  # noqa: E501
+
+        :param race_type_id: The race_type_id of this RaceDetails.  # noqa: E501
+        :type: int
+        """
+
+        self._race_type_id = race_type_id
+
+    @property
+    def total_race_time(self):
+        """Gets the total_race_time of this RaceDetails.  # noqa: E501
+
+        Total race time formatted as HH:MM:SS  # noqa: E501
+
+        :return: The total_race_time of this RaceDetails.  # noqa: E501
+        :rtype: str
+        """
+        return self._total_race_time
+
+    @total_race_time.setter
+    def total_race_time(self, total_race_time):
+        """Sets the total_race_time of this RaceDetails.
+
+        Total race time formatted as HH:MM:SS  # noqa: E501
+
+        :param total_race_time: The total_race_time of this RaceDetails.  # noqa: E501
+        :type: str
+        """
+
+        self._total_race_time = total_race_time
+
+    @property
+    def number_of_cars_in_field(self):
+        """Gets the number_of_cars_in_field of this RaceDetails.  # noqa: E501
+
+        Number of cars in this race  # noqa: E501
+
+        :return: The number_of_cars_in_field of this RaceDetails.  # noqa: E501
+        :rtype: int
+        """
+        return self._number_of_cars_in_field
+
+    @number_of_cars_in_field.setter
+    def number_of_cars_in_field(self, number_of_cars_in_field):
+        """Sets the number_of_cars_in_field of this RaceDetails.
+
+        Number of cars in this race  # noqa: E501
+
+        :param number_of_cars_in_field: The number_of_cars_in_field of this RaceDetails.  # noqa: E501
+        :type: int
+        """
+
+        self._number_of_cars_in_field = number_of_cars_in_field
+
+    @property
+    def pole_winner_driver_id(self):
+        """Gets the pole_winner_driver_id of this RaceDetails.  # noqa: E501
+
+        API Driver ID for the driver who won the pole for this race  # noqa: E501
+
+        :return: The pole_winner_driver_id of this RaceDetails.  # noqa: E501
+        :rtype: int
+        """
+        return self._pole_winner_driver_id
+
+    @pole_winner_driver_id.setter
+    def pole_winner_driver_id(self, pole_winner_driver_id):
+        """Sets the pole_winner_driver_id of this RaceDetails.
+
+        API Driver ID for the driver who won the pole for this race  # noqa: E501
+
+        :param pole_winner_driver_id: The pole_winner_driver_id of this RaceDetails.  # noqa: E501
+        :type: int
+        """
+
+        self._pole_winner_driver_id = pole_winner_driver_id
+
+    @property
+    def pole_winner_speed(self):
+        """Gets the pole_winner_speed of this RaceDetails.  # noqa: E501
+
+        Lap speed for the pole winner  # noqa: E501
+
+        :return: The pole_winner_speed of this RaceDetails.  # noqa: E501
+        :rtype: float
+        """
+        return self._pole_winner_speed
+
+    @pole_winner_speed.setter
+    def pole_winner_speed(self, pole_winner_speed):
+        """Sets the pole_winner_speed of this RaceDetails.
+
+        Lap speed for the pole winner  # noqa: E501
+
+        :param pole_winner_speed: The pole_winner_speed of this RaceDetails.  # noqa: E501
+        :type: float
+        """
+
+        self._pole_winner_speed = pole_winner_speed
+
+    @property
+    def number_of_lead_changes(self):
+        """Gets the number_of_lead_changes of this RaceDetails.  # noqa: E501
+
+        Number of times the leader changed (Start Finish based) for this race  # noqa: E501
+
+        :return: The number_of_lead_changes of this RaceDetails.  # noqa: E501
+        :rtype: int
+        """
+        return self._number_of_lead_changes
+
+    @number_of_lead_changes.setter
+    def number_of_lead_changes(self, number_of_lead_changes):
+        """Sets the number_of_lead_changes of this RaceDetails.
+
+        Number of times the leader changed (Start Finish based) for this race  # noqa: E501
+
+        :param number_of_lead_changes: The number_of_lead_changes of this RaceDetails.  # noqa: E501
+        :type: int
+        """
+
+        self._number_of_lead_changes = number_of_lead_changes
+
+    @property
+    def number_of_leaders(self):
+        """Gets the number_of_leaders of this RaceDetails.  # noqa: E501
+
+        Number of distinct leaders (Start Finish based) for this race  # noqa: E501
+
+        :return: The number_of_leaders of this RaceDetails.  # noqa: E501
+        :rtype: int
+        """
+        return self._number_of_leaders
+
+    @number_of_leaders.setter
+    def number_of_leaders(self, number_of_leaders):
+        """Sets the number_of_leaders of this RaceDetails.
+
+        Number of distinct leaders (Start Finish based) for this race  # noqa: E501
+
+        :param number_of_leaders: The number_of_leaders of this RaceDetails.  # noqa: E501
+        :type: int
+        """
+
+        self._number_of_leaders = number_of_leaders
+
+    @property
+    def average_speed(self):
+        """Gets the average_speed of this RaceDetails.  # noqa: E501
+
+        Average speed of this race  # noqa: E501
+
+        :return: The average_speed of this RaceDetails.  # noqa: E501
+        :rtype: float
+        """
+        return self._average_speed
+
+    @average_speed.setter
+    def average_speed(self, average_speed):
+        """Sets the average_speed of this RaceDetails.
+
+        Average speed of this race  # noqa: E501
+
+        :param average_speed: The average_speed of this RaceDetails.  # noqa: E501
+        :type: float
+        """
+
+        self._average_speed = average_speed
+
+    @property
+    def margin_of_victory(self):
+        """Gets the margin_of_victory of this RaceDetails.  # noqa: E501
+
+        String representation of the margin of victory.  May be the time between 1st and 2nd place finishers or Caution if the race ended under caution.  # noqa: E501
+
+        :return: The margin_of_victory of this RaceDetails.  # noqa: E501
+        :rtype: str
+        """
+        return self._margin_of_victory
+
+    @margin_of_victory.setter
+    def margin_of_victory(self, margin_of_victory):
+        """Sets the margin_of_victory of this RaceDetails.
+
+        String representation of the margin of victory.  May be the time between 1st and 2nd place finishers or Caution if the race ended under caution.  # noqa: E501
+
+        :param margin_of_victory: The margin_of_victory of this RaceDetails.  # noqa: E501
+        :type: str
+        """
+
+        self._margin_of_victory = margin_of_victory
+
+    @property
+    def radio_broadcaster(self):
+        """Gets the radio_broadcaster of this RaceDetails.  # noqa: E501
+
+        Name of radio broadcaster for this race  # noqa: E501
+
+        :return: The radio_broadcaster of this RaceDetails.  # noqa: E501
+        :rtype: str
+        """
+        return self._radio_broadcaster
+
+    @radio_broadcaster.setter
+    def radio_broadcaster(self, radio_broadcaster):
+        """Sets the radio_broadcaster of this RaceDetails.
+
+        Name of radio broadcaster for this race  # noqa: E501
+
+        :param radio_broadcaster: The radio_broadcaster of this RaceDetails.  # noqa: E501
+        :type: str
+        """
+
+        self._radio_broadcaster = radio_broadcaster
+
+    @property
+    def television_broadcaster(self):
+        """Gets the television_broadcaster of this RaceDetails.  # noqa: E501
+
+        Name of television broadcaster for this race  # noqa: E501
+
+        :return: The television_broadcaster of this RaceDetails.  # noqa: E501
+        :rtype: str
+        """
+        return self._television_broadcaster
+
+    @television_broadcaster.setter
+    def television_broadcaster(self, television_broadcaster):
+        """Sets the television_broadcaster of this RaceDetails.
+
+        Name of television broadcaster for this race  # noqa: E501
+
+        :param television_broadcaster: The television_broadcaster of this RaceDetails.  # noqa: E501
+        :type: str
+        """
+
+        self._television_broadcaster = television_broadcaster
+
+    @property
+    def satellite_radio_broadcaster(self):
+        """Gets the satellite_radio_broadcaster of this RaceDetails.  # noqa: E501
+
+        Name of satellite radio broadcaster for this race  # noqa: E501
+
+        :return: The satellite_radio_broadcaster of this RaceDetails.  # noqa: E501
+        :rtype: str
+        """
+        return self._satellite_radio_broadcaster
+
+    @satellite_radio_broadcaster.setter
+    def satellite_radio_broadcaster(self, satellite_radio_broadcaster):
+        """Sets the satellite_radio_broadcaster of this RaceDetails.
+
+        Name of satellite radio broadcaster for this race  # noqa: E501
+
+        :param satellite_radio_broadcaster: The satellite_radio_broadcaster of this RaceDetails.  # noqa: E501
+        :type: str
+        """
+
+        self._satellite_radio_broadcaster = satellite_radio_broadcaster
+
+    @property
+    def playoff_round(self):
+        """Gets the playoff_round of this RaceDetails.  # noqa: E501
+
+        Round of the playoffs that this race is a part of, 0 for non-playoff races  # noqa: E501
+
+        :return: The playoff_round of this RaceDetails.  # noqa: E501
+        :rtype: int
+        """
+        return self._playoff_round
+
+    @playoff_round.setter
+    def playoff_round(self, playoff_round):
+        """Sets the playoff_round of this RaceDetails.
+
+        Round of the playoffs that this race is a part of, 0 for non-playoff races  # noqa: E501
+
+        :param playoff_round: The playoff_round of this RaceDetails.  # noqa: E501
+        :type: int
+        """
+
+        self._playoff_round = playoff_round
+
+    @property
+    def is_qualifying_race(self):
+        """Gets the is_qualifying_race of this RaceDetails.  # noqa: E501
+
+        Indicates when run is a qualifying race  # noqa: E501
+
+        :return: The is_qualifying_race of this RaceDetails.  # noqa: E501
+        :rtype: bool
+        """
+        return self._is_qualifying_race
+
+    @is_qualifying_race.setter
+    def is_qualifying_race(self, is_qualifying_race):
+        """Sets the is_qualifying_race of this RaceDetails.
+
+        Indicates when run is a qualifying race  # noqa: E501
+
+        :param is_qualifying_race: The is_qualifying_race of this RaceDetails.  # noqa: E501
+        :type: bool
+        """
+
+        self._is_qualifying_race = is_qualifying_race
+
+    @property
+    def qualifying_race_no(self):
+        """Gets the qualifying_race_no of this RaceDetails.  # noqa: E501
+
+        Sequence number of qualifying race  # noqa: E501
+
+        :return: The qualifying_race_no of this RaceDetails.  # noqa: E501
+        :rtype: int
+        """
+        return self._qualifying_race_no
+
+    @qualifying_race_no.setter
+    def qualifying_race_no(self, qualifying_race_no):
+        """Sets the qualifying_race_no of this RaceDetails.
+
+        Sequence number of qualifying race  # noqa: E501
+
+        :param qualifying_race_no: The qualifying_race_no of this RaceDetails.  # noqa: E501
+        :type: int
+        """
+
+        self._qualifying_race_no = qualifying_race_no
+
+    @property
+    def qualifying_race_id(self):
+        """Gets the qualifying_race_id of this RaceDetails.  # noqa: E501
+
+        ID of qualifying race  # noqa: E501
+
+        :return: The qualifying_race_id of this RaceDetails.  # noqa: E501
+        :rtype: int
+        """
+        return self._qualifying_race_id
+
+    @qualifying_race_id.setter
+    def qualifying_race_id(self, qualifying_race_id):
+        """Sets the qualifying_race_id of this RaceDetails.
+
+        ID of qualifying race  # noqa: E501
+
+        :param qualifying_race_id: The qualifying_race_id of this RaceDetails.  # noqa: E501
+        :type: int
+        """
+
+        self._qualifying_race_id = qualifying_race_id
+
+    @property
+    def has_qualifying(self):
+        """Gets the has_qualifying of this RaceDetails.  # noqa: E501
+
+        Indicates whether this race has qualifying  # noqa: E501
+
+        :return: The has_qualifying of this RaceDetails.  # noqa: E501
+        :rtype: bool
+        """
+        return self._has_qualifying
+
+    @has_qualifying.setter
+    def has_qualifying(self, has_qualifying):
+        """Sets the has_qualifying of this RaceDetails.
+
+        Indicates whether this race has qualifying  # noqa: E501
+
+        :param has_qualifying: The has_qualifying of this RaceDetails.  # noqa: E501
+        :type: bool
+        """
+
+        self._has_qualifying = has_qualifying
 
     @property
     def practice_results(self):
@@ -504,6 +1079,52 @@ class RaceDetails(object):
         self.__date = _date
 
     @property
+    def tunein_date(self):
+        """Gets the tunein_date of this RaceDetails.  # noqa: E501
+
+        Next scheduled start for a race, updated if race is delayed or rescheduled  # noqa: E501
+
+        :return: The tunein_date of this RaceDetails.  # noqa: E501
+        :rtype: datetime
+        """
+        return self._tunein_date
+
+    @tunein_date.setter
+    def tunein_date(self, tunein_date):
+        """Sets the tunein_date of this RaceDetails.
+
+        Next scheduled start for a race, updated if race is delayed or rescheduled  # noqa: E501
+
+        :param tunein_date: The tunein_date of this RaceDetails.  # noqa: E501
+        :type: datetime
+        """
+
+        self._tunein_date = tunein_date
+
+    @property
+    def qualifying_date(self):
+        """Gets the qualifying_date of this RaceDetails.  # noqa: E501
+
+        Date qualifying was held for this race  # noqa: E501
+
+        :return: The qualifying_date of this RaceDetails.  # noqa: E501
+        :rtype: datetime
+        """
+        return self._qualifying_date
+
+    @qualifying_date.setter
+    def qualifying_date(self, qualifying_date):
+        """Sets the qualifying_date of this RaceDetails.
+
+        Date qualifying was held for this race  # noqa: E501
+
+        :param qualifying_date: The qualifying_date of this RaceDetails.  # noqa: E501
+        :type: datetime
+        """
+
+        self._qualifying_date = qualifying_date
+
+    @property
     def comments(self):
         """Gets the comments of this RaceDetails.  # noqa: E501
 
@@ -553,7 +1174,7 @@ class RaceDetails(object):
     def track_sponsor(self):
         """Gets the track_sponsor of this RaceDetails.  # noqa: E501
 
-        The name of the track sponsor  # noqa: E501
+        Track sponsor name  # noqa: E501
 
         :return: The track_sponsor of this RaceDetails.  # noqa: E501
         :rtype: str
@@ -564,7 +1185,7 @@ class RaceDetails(object):
     def track_sponsor(self, track_sponsor):
         """Sets the track_sponsor of this RaceDetails.
 
-        The name of the track sponsor  # noqa: E501
+        Track sponsor name  # noqa: E501
 
         :param track_sponsor: The track_sponsor of this RaceDetails.  # noqa: E501
         :type: str
@@ -576,7 +1197,7 @@ class RaceDetails(object):
     def track_id(self):
         """Gets the track_id of this RaceDetails.  # noqa: E501
 
-        Track Id  # noqa: E501
+        Track identifier  # noqa: E501
 
         :return: The track_id of this RaceDetails.  # noqa: E501
         :rtype: int
@@ -587,7 +1208,7 @@ class RaceDetails(object):
     def track_id(self, track_id):
         """Sets the track_id of this RaceDetails.
 
-        Track Id  # noqa: E501
+        Track identifier  # noqa: E501
 
         :param track_id: The track_id of this RaceDetails.  # noqa: E501
         :type: int
@@ -596,10 +1217,33 @@ class RaceDetails(object):
         self._track_id = track_id
 
     @property
+    def history_track_id(self):
+        """Gets the history_track_id of this RaceDetails.  # noqa: E501
+
+        Historical track identifier  # noqa: E501
+
+        :return: The history_track_id of this RaceDetails.  # noqa: E501
+        :rtype: int
+        """
+        return self._history_track_id
+
+    @history_track_id.setter
+    def history_track_id(self, history_track_id):
+        """Sets the history_track_id of this RaceDetails.
+
+        Historical track identifier  # noqa: E501
+
+        :param history_track_id: The history_track_id of this RaceDetails.  # noqa: E501
+        :type: int
+        """
+
+        self._history_track_id = history_track_id
+
+    @property
     def inspection_complete(self):
         """Gets the inspection_complete of this RaceDetails.  # noqa: E501
 
-        Has inspection been completed  # noqa: E501
+        Indicates whether inspection has been completed  # noqa: E501
 
         :return: The inspection_complete of this RaceDetails.  # noqa: E501
         :rtype: bool
@@ -610,7 +1254,7 @@ class RaceDetails(object):
     def inspection_complete(self, inspection_complete):
         """Sets the inspection_complete of this RaceDetails.
 
-        Has inspection been completed  # noqa: E501
+        Indicates whether inspection has been completed  # noqa: E501
 
         :param inspection_complete: The inspection_complete of this RaceDetails.  # noqa: E501
         :type: bool
@@ -645,7 +1289,7 @@ class RaceDetails(object):
     def runs(self):
         """Gets the runs of this RaceDetails.  # noqa: E501
 
-        Runs  # noqa: E501
+        Runs associated with the race  # noqa: E501
 
         :return: The runs of this RaceDetails.  # noqa: E501
         :rtype: list[RunDetails]
@@ -656,7 +1300,7 @@ class RaceDetails(object):
     def runs(self, runs):
         """Sets the runs of this RaceDetails.
 
-        Runs  # noqa: E501
+        Runs associated with the race  # noqa: E501
 
         :param runs: The runs of this RaceDetails.  # noqa: E501
         :type: list[RunDetails]
@@ -668,7 +1312,7 @@ class RaceDetails(object):
     def schedule(self):
         """Gets the schedule of this RaceDetails.  # noqa: E501
 
-        Weekend Schedule  # noqa: E501
+        Weekend schedule entries for the race  # noqa: E501
 
         :return: The schedule of this RaceDetails.  # noqa: E501
         :rtype: list[WeekendSchedule]
@@ -679,7 +1323,7 @@ class RaceDetails(object):
     def schedule(self, schedule):
         """Sets the schedule of this RaceDetails.
 
-        Weekend Schedule  # noqa: E501
+        Weekend schedule entries for the race  # noqa: E501
 
         :param schedule: The schedule of this RaceDetails.  # noqa: E501
         :type: list[WeekendSchedule]

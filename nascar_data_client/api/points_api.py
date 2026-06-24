@@ -33,7 +33,7 @@ class PointsApi(object):
         self.api_client = api_client
 
     def points_driver_points_get(self, **kwargs):  # noqa: E501
-        """points_driver_points_get  # noqa: E501
+        """Retrieves driver points for a specific race.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -41,10 +41,8 @@ class PointsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int season:
-        :param int series_id:
-        :param int race_id:
-        :return: list[DriverPoint]
+        :param int race_id: Unique race identifier. If not provided, points for the most recent races will be returned.
+        :return: list[DriverPointsView]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -56,7 +54,7 @@ class PointsApi(object):
             return data
 
     def points_driver_points_get_with_http_info(self, **kwargs):  # noqa: E501
-        """points_driver_points_get  # noqa: E501
+        """Retrieves driver points for a specific race.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -64,15 +62,13 @@ class PointsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int season:
-        :param int series_id:
-        :param int race_id:
-        :return: list[DriverPoint]
+        :param int race_id: Unique race identifier. If not provided, points for the most recent races will be returned.
+        :return: list[DriverPointsView]
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['season', 'series_id', 'race_id']  # noqa: E501
+        all_params = ['race_id']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -93,10 +89,6 @@ class PointsApi(object):
         path_params = {}
 
         query_params = []
-        if 'season' in params:
-            query_params.append(('season', params['season']))  # noqa: E501
-        if 'series_id' in params:
-            query_params.append(('series_id', params['series_id']))  # noqa: E501
         if 'race_id' in params:
             query_params.append(('race_id', params['race_id']))  # noqa: E501
 
@@ -121,92 +113,7 @@ class PointsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[DriverPoint]',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def points_live_driver_points_get(self, **kwargs):  # noqa: E501
-        """points_live_driver_points_get  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.points_live_driver_points_get(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :return: list[LiveDriverPoints]
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.points_live_driver_points_get_with_http_info(**kwargs)  # noqa: E501
-        else:
-            (data) = self.points_live_driver_points_get_with_http_info(**kwargs)  # noqa: E501
-            return data
-
-    def points_live_driver_points_get_with_http_info(self, **kwargs):  # noqa: E501
-        """points_live_driver_points_get  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.points_live_driver_points_get_with_http_info(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :return: list[LiveDriverPoints]
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = []  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method points_live_driver_points_get" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['text/plain', 'application/json', 'text/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['Bearer']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/points/live-driver-points', 'GET',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='list[LiveDriverPoints]',  # noqa: E501
+            response_type='list[DriverPointsView]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -215,7 +122,7 @@ class PointsApi(object):
             collection_formats=collection_formats)
 
     def points_manufacturer_points_get(self, **kwargs):  # noqa: E501
-        """points_manufacturer_points_get  # noqa: E501
+        """Retrieves manufacturer points for a specific season, series, and optionally a specific race.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -223,9 +130,9 @@ class PointsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int season:
-        :param int series_id:
-        :param int race_id:
+        :param int season: Four-digit season year to query.
+        :param int series_id: Series identifier. Common values are 1 for Cup, 2 for O'Reilly, and 3 for Truck.
+        :param int race_id: Unique race identifier. If specified, the points will be limited to the given race. If not provided or set to 0, points for all races in the specified season and series will be returned.
         :return: list[ManufacturerPoint]
                  If the method is called asynchronously,
                  returns the request thread.
@@ -238,7 +145,7 @@ class PointsApi(object):
             return data
 
     def points_manufacturer_points_get_with_http_info(self, **kwargs):  # noqa: E501
-        """points_manufacturer_points_get  # noqa: E501
+        """Retrieves manufacturer points for a specific season, series, and optionally a specific race.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -246,9 +153,9 @@ class PointsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int season:
-        :param int series_id:
-        :param int race_id:
+        :param int season: Four-digit season year to query.
+        :param int series_id: Series identifier. Common values are 1 for Cup, 2 for O'Reilly, and 3 for Truck.
+        :param int race_id: Unique race identifier. If specified, the points will be limited to the given race. If not provided or set to 0, points for all races in the specified season and series will be returned.
         :return: list[ManufacturerPoint]
                  If the method is called asynchronously,
                  returns the request thread.
@@ -312,7 +219,7 @@ class PointsApi(object):
             collection_formats=collection_formats)
 
     def points_owner_points_get(self, **kwargs):  # noqa: E501
-        """points_owner_points_get  # noqa: E501
+        """Retrieves owner points for a specific season, series, and optionally a specific race.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -320,10 +227,8 @@ class PointsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int season:
-        :param int series_id:
-        :param int race_id:
-        :return: list[OwnerPoint]
+        :param int race_id: Unique race identifier. If specified, the points will be limited to the given race. If not provided or set to 0, points for all races in the specified season and series will be returned.
+        :return: list[OwnerPointsView]
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -335,7 +240,7 @@ class PointsApi(object):
             return data
 
     def points_owner_points_get_with_http_info(self, **kwargs):  # noqa: E501
-        """points_owner_points_get  # noqa: E501
+        """Retrieves owner points for a specific season, series, and optionally a specific race.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -343,15 +248,13 @@ class PointsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int season:
-        :param int series_id:
-        :param int race_id:
-        :return: list[OwnerPoint]
+        :param int race_id: Unique race identifier. If specified, the points will be limited to the given race. If not provided or set to 0, points for all races in the specified season and series will be returned.
+        :return: list[OwnerPointsView]
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['season', 'series_id', 'race_id']  # noqa: E501
+        all_params = ['race_id']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -372,10 +275,6 @@ class PointsApi(object):
         path_params = {}
 
         query_params = []
-        if 'season' in params:
-            query_params.append(('season', params['season']))  # noqa: E501
-        if 'series_id' in params:
-            query_params.append(('series_id', params['series_id']))  # noqa: E501
         if 'race_id' in params:
             query_params.append(('race_id', params['race_id']))  # noqa: E501
 
@@ -400,7 +299,7 @@ class PointsApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='list[OwnerPoint]',  # noqa: E501
+            response_type='list[OwnerPointsView]',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

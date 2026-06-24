@@ -32,8 +32,271 @@ class InspectionsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
+    def inspections_aim_id_get(self, id, **kwargs):  # noqa: E501
+        """For use by the AIM system  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.inspections_aim_id_get(id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str id: (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.inspections_aim_id_get_with_http_info(id, **kwargs)  # noqa: E501
+        else:
+            (data) = self.inspections_aim_id_get_with_http_info(id, **kwargs)  # noqa: E501
+            return data
+
+    def inspections_aim_id_get_with_http_info(self, id, **kwargs):  # noqa: E501
+        """For use by the AIM system  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.inspections_aim_id_get_with_http_info(id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param str id: (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['id']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method inspections_aim_id_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'id' is set
+        if ('id' not in params or
+                params['id'] is None):
+            raise ValueError("Missing the required parameter `id` when calling `inspections_aim_id_get`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in params:
+            path_params['id'] = params['id']  # noqa: E501
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # Authentication setting
+        auth_settings = ['Bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/inspections/aim/{id}', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def inspections_device_numbers_get(self, **kwargs):  # noqa: E501
+        """For use by the MLS system  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.inspections_device_numbers_get(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: list[InspectionResult]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.inspections_device_numbers_get_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.inspections_device_numbers_get_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def inspections_device_numbers_get_with_http_info(self, **kwargs):  # noqa: E501
+        """For use by the MLS system  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.inspections_device_numbers_get_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: list[InspectionResult]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = []  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method inspections_device_numbers_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['text/plain', 'application/json', 'text/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/inspections/device-numbers', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='list[InspectionResult]',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
+    def inspections_idr_get(self, **kwargs):  # noqa: E501
+        """For use by the AIM system  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.inspections_idr_get(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int idr_number: IDR number.
+        :return: list[InspectionResult]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.inspections_idr_get_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.inspections_idr_get_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def inspections_idr_get_with_http_info(self, **kwargs):  # noqa: E501
+        """For use by the AIM system  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.inspections_idr_get_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param int idr_number: IDR number.
+        :return: list[InspectionResult]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['idr_number']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method inspections_idr_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'idr_number' in params:
+            query_params.append(('idr_number', params['idr_number']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['text/plain', 'application/json', 'text/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/inspections/idr', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='list[InspectionResult]',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def inspections_oss_get(self, **kwargs):  # noqa: E501
-        """inspections_oss_get  # noqa: E501
+        """Retrieves a list of OSS scans for a specific race.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -41,7 +304,7 @@ class InspectionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int race_id:
+        :param int race_id: Unique race identifier.
         :return: list[OSSScan]
                  If the method is called asynchronously,
                  returns the request thread.
@@ -54,7 +317,7 @@ class InspectionsApi(object):
             return data
 
     def inspections_oss_get_with_http_info(self, **kwargs):  # noqa: E501
-        """inspections_oss_get  # noqa: E501
+        """Retrieves a list of OSS scans for a specific race.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -62,7 +325,7 @@ class InspectionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int race_id:
+        :param int race_id: Unique race identifier.
         :return: list[OSSScan]
                  If the method is called asynchronously,
                  returns the request thread.
@@ -121,8 +384,93 @@ class InspectionsApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
+    def inspections_submissions_technique_get(self, **kwargs):  # noqa: E501
+        """For use by Technique chassis builders to track submissions  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.inspections_submissions_technique_get(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: list[RepairSubmission]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.inspections_submissions_technique_get_with_http_info(**kwargs)  # noqa: E501
+        else:
+            (data) = self.inspections_submissions_technique_get_with_http_info(**kwargs)  # noqa: E501
+            return data
+
+    def inspections_submissions_technique_get_with_http_info(self, **kwargs):  # noqa: E501
+        """For use by Technique chassis builders to track submissions  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.inspections_submissions_technique_get_with_http_info(async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :return: list[RepairSubmission]
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = []  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method inspections_submissions_technique_get" % key
+                )
+            params[key] = val
+        del params['kwargs']
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        # HTTP header `Accept`
+        header_params['Accept'] = self.api_client.select_header_accept(
+            ['text/plain', 'application/json', 'text/json'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = ['Bearer']  # noqa: E501
+
+        return self.api_client.call_api(
+            '/inspections/submissions/technique', 'GET',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type='list[RepairSubmission]',  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def inspections_vehicle_weights_get(self, **kwargs):  # noqa: E501
-        """inspections_vehicle_weights_get  # noqa: E501
+        """Retrieves a list of vehicle weights for a specific race.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -130,7 +478,7 @@ class InspectionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int race_id:
+        :param int race_id: Unique race identifier.
         :return: list[VehicleWeight]
                  If the method is called asynchronously,
                  returns the request thread.
@@ -143,7 +491,7 @@ class InspectionsApi(object):
             return data
 
     def inspections_vehicle_weights_get_with_http_info(self, **kwargs):  # noqa: E501
-        """inspections_vehicle_weights_get  # noqa: E501
+        """Retrieves a list of vehicle weights for a specific race.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -151,7 +499,7 @@ class InspectionsApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int race_id:
+        :param int race_id: Unique race identifier.
         :return: list[VehicleWeight]
                  If the method is called asynchronously,
                  returns the request thread.

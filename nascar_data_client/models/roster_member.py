@@ -75,7 +75,7 @@ class RosterMember(object):
     def position(self):
         """Gets the position of this RosterMember.  # noqa: E501
 
-        Position  # noqa: E501
+        Team member position or role  # noqa: E501
 
         :return: The position of this RosterMember.  # noqa: E501
         :rtype: str
@@ -86,7 +86,7 @@ class RosterMember(object):
     def position(self, position):
         """Sets the position of this RosterMember.
 
-        Position  # noqa: E501
+        Team member position or role  # noqa: E501
 
         :param position: The position of this RosterMember.  # noqa: E501
         :type: str

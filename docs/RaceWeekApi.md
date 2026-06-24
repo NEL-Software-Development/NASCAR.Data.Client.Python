@@ -4,14 +4,14 @@ All URIs are relative to */api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**race_week_details_get**](RaceWeekApi.md#race_week_details_get) | **GET** /race-week/details | 
-[**race_week_live_get**](RaceWeekApi.md#race_week_live_get) | **GET** /race-week/live | 
-[**race_week_season_get**](RaceWeekApi.md#race_week_season_get) | **GET** /race-week/season | 
+[**race_week_details_get**](RaceWeekApi.md#race_week_details_get) | **GET** /race-week/details | Retrieves details for a specific race week event given its unique identifier.
+[**race_week_live_get**](RaceWeekApi.md#race_week_live_get) | **GET** /race-week/live | Retrieves a list of live race events
+[**race_week_season_get**](RaceWeekApi.md#race_week_season_get) | **GET** /race-week/season | Retrieves all race week events for a given season, ordered by start date. This includes both past and upcoming events within the specified season.
 
 # **race_week_details_get**
 > RaceWeekDetails race_week_details_get(id=id)
 
-
+Retrieves details for a specific race week event given its unique identifier.
 
 ### Example
 ```python
@@ -27,6 +27,7 @@ api_instance = nascar_data_client.RaceWeekApi(nascar_data_client.ApiClient(confi
 id = 56 # int |  (optional)
 
 try:
+    # Retrieves details for a specific race week event given its unique identifier.
     api_response = api_instance.race_week_details_get(id=id)
     pprint(api_response)
 except ApiException as e:
@@ -57,7 +58,7 @@ Name | Type | Description  | Notes
 # **race_week_live_get**
 > list[RaceWeek] race_week_live_get()
 
-
+Retrieves a list of live race events
 
 ### Example
 ```python
@@ -72,6 +73,7 @@ from pprint import pprint
 api_instance = nascar_data_client.RaceWeekApi(nascar_data_client.ApiClient(configuration))
 
 try:
+    # Retrieves a list of live race events
     api_response = api_instance.race_week_live_get()
     pprint(api_response)
 except ApiException as e:
@@ -99,7 +101,7 @@ This endpoint does not need any parameter.
 # **race_week_season_get**
 > list[RaceWeek] race_week_season_get(season=season)
 
-
+Retrieves all race week events for a given season, ordered by start date. This includes both past and upcoming events within the specified season.
 
 ### Example
 ```python
@@ -112,9 +114,10 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = nascar_data_client.RaceWeekApi(nascar_data_client.ApiClient(configuration))
-season = 56 # int |  (optional)
+season = 56 # int | The season for which to retrieve race week events. (optional)
 
 try:
+    # Retrieves all race week events for a given season, ordered by start date. This includes both past and upcoming events within the specified season.
     api_response = api_instance.race_week_season_get(season=season)
     pprint(api_response)
 except ApiException as e:
@@ -125,7 +128,7 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **season** | **int**|  | [optional] 
+ **season** | **int**| The season for which to retrieve race week events. | [optional] 
 
 ### Return type
 
