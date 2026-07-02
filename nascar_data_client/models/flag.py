@@ -220,7 +220,7 @@ class Flag(object):
     def flag_state(self):
         """Gets the flag_state of this Flag.  # noqa: E501
 
-        Flag stage:  (NONE, WARMUP, GREEN, YELLOW, RED, WHITE, FINISH, EXTRA)  # noqa: E501
+        Flag state:  (Green, Yellow, Red, Checkered, White, Stop, NoActiveFlag, Warm, Invalid)  # noqa: E501
 
         :return: The flag_state of this Flag.  # noqa: E501
         :rtype: str
@@ -231,7 +231,7 @@ class Flag(object):
     def flag_state(self, flag_state):
         """Sets the flag_state of this Flag.
 
-        Flag stage:  (NONE, WARMUP, GREEN, YELLOW, RED, WHITE, FINISH, EXTRA)  # noqa: E501
+        Flag state:  (Green, Yellow, Red, Checkered, White, Stop, NoActiveFlag, Warm, Invalid)  # noqa: E501
 
         :param flag_state: The flag_state of this Flag.  # noqa: E501
         :type: str

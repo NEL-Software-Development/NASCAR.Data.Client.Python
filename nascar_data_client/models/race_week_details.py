@@ -52,7 +52,7 @@ class RaceWeekDetails(object):
     def id(self):
         """Gets the id of this RaceWeekDetails.  # noqa: E501
 
-        Raceweek Id  # noqa: E501
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
 
         :return: The id of this RaceWeekDetails.  # noqa: E501
         :rtype: int
@@ -63,7 +63,7 @@ class RaceWeekDetails(object):
     def id(self, id):
         """Sets the id of this RaceWeekDetails.
 
-        Raceweek Id  # noqa: E501
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
 
         :param id: The id of this RaceWeekDetails.  # noqa: E501
         :type: int
@@ -75,7 +75,7 @@ class RaceWeekDetails(object):
     def races(self):
         """Gets the races of this RaceWeekDetails.  # noqa: E501
 
-        Raceweek race list  # noqa: E501
+        Collection of race details associated with the race week  # noqa: E501
 
         :return: The races of this RaceWeekDetails.  # noqa: E501
         :rtype: list[RaceDetails]
@@ -86,7 +86,7 @@ class RaceWeekDetails(object):
     def races(self, races):
         """Sets the races of this RaceWeekDetails.
 
-        Raceweek race list  # noqa: E501
+        Collection of race details associated with the race week  # noqa: E501
 
         :param races: The races of this RaceWeekDetails.  # noqa: E501
         :type: list[RaceDetails]
