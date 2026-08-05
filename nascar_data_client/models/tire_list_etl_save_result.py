@@ -57,6 +57,7 @@ class TireListETLSaveResult(object):
     def success(self):
         """Gets the success of this TireListETLSaveResult.  # noqa: E501
 
+        Indicates whether the save operation was successful  # noqa: E501
 
         :return: The success of this TireListETLSaveResult.  # noqa: E501
         :rtype: bool
@@ -67,6 +68,7 @@ class TireListETLSaveResult(object):
     def success(self, success):
         """Sets the success of this TireListETLSaveResult.
 
+        Indicates whether the save operation was successful  # noqa: E501
 
         :param success: The success of this TireListETLSaveResult.  # noqa: E501
         :type: bool
@@ -78,6 +80,7 @@ class TireListETLSaveResult(object):
     def message(self):
         """Gets the message of this TireListETLSaveResult.  # noqa: E501
 
+        Optional message providing additional information about the save operation result  # noqa: E501
 
         :return: The message of this TireListETLSaveResult.  # noqa: E501
         :rtype: str
@@ -88,6 +91,7 @@ class TireListETLSaveResult(object):
     def message(self, message):
         """Sets the message of this TireListETLSaveResult.
 
+        Optional message providing additional information about the save operation result  # noqa: E501
 
         :param message: The message of this TireListETLSaveResult.  # noqa: E501
         :type: str
@@ -99,6 +103,7 @@ class TireListETLSaveResult(object):
     def data(self):
         """Gets the data of this TireListETLSaveResult.  # noqa: E501
 
+        The data payload returned from the save operation  # noqa: E501
 
         :return: The data of this TireListETLSaveResult.  # noqa: E501
         :rtype: list[Tire]
@@ -109,6 +114,7 @@ class TireListETLSaveResult(object):
     def data(self, data):
         """Sets the data of this TireListETLSaveResult.
 
+        The data payload returned from the save operation  # noqa: E501
 
         :param data: The data of this TireListETLSaveResult.  # noqa: E501
         :type: list[Tire]

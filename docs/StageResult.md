@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**finish_position** | **int** | Finish position in stage | [optional] 
+**finish_position** | **int** | Finish position in the stage | [optional] 
 **driver_name** | **str** | Driver name | [optional] 
 **vehicle_number** | **str** | Vehicle number | [optional] 
 

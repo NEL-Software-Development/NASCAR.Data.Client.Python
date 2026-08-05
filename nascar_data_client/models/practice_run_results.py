@@ -108,7 +108,7 @@ class PracticeRunResults(object):
     def flag_state(self):
         """Gets the flag_state of this PracticeRunResults.  # noqa: E501
 
-        Flag state:  (NONE, WARMUP, GREEN, YELLOW, RED, WHITE, FINISH, EXTRA)  # noqa: E501
+        Flag state:  (Green, Yellow, Red, Checkered, White, Stop, NoActiveFlag, Warm, Invalid)  # noqa: E501
 
         :return: The flag_state of this PracticeRunResults.  # noqa: E501
         :rtype: str
@@ -119,7 +119,7 @@ class PracticeRunResults(object):
     def flag_state(self, flag_state):
         """Sets the flag_state of this PracticeRunResults.
 
-        Flag state:  (NONE, WARMUP, GREEN, YELLOW, RED, WHITE, FINISH, EXTRA)  # noqa: E501
+        Flag state:  (Green, Yellow, Red, Checkered, White, Stop, NoActiveFlag, Warm, Invalid)  # noqa: E501
 
         :param flag_state: The flag_state of this PracticeRunResults.  # noqa: E501
         :type: str
