@@ -57,7 +57,7 @@ class Stage(object):
     def stage_number(self):
         """Gets the stage_number of this Stage.  # noqa: E501
 
-        The stage number.  # noqa: E501
+        Stage number  # noqa: E501
 
         :return: The stage_number of this Stage.  # noqa: E501
         :rtype: int
@@ -68,7 +68,7 @@ class Stage(object):
     def stage_number(self, stage_number):
         """Sets the stage_number of this Stage.
 
-        The stage number.  # noqa: E501
+        Stage number  # noqa: E501
 
         :param stage_number: The stage_number of this Stage.  # noqa: E501
         :type: int
@@ -80,7 +80,7 @@ class Stage(object):
     def laps(self):
         """Gets the laps of this Stage.  # noqa: E501
 
-        The total number of laps in the stage.  # noqa: E501
+        Total number of laps in the stage  # noqa: E501
 
         :return: The laps of this Stage.  # noqa: E501
         :rtype: int
@@ -91,7 +91,7 @@ class Stage(object):
     def laps(self, laps):
         """Sets the laps of this Stage.
 
-        The total number of laps in the stage.  # noqa: E501
+        Total number of laps in the stage  # noqa: E501
 
         :param laps: The laps of this Stage.  # noqa: E501
         :type: int
@@ -103,7 +103,7 @@ class Stage(object):
     def stage_name(self):
         """Gets the stage_name of this Stage.  # noqa: E501
 
-        The name of the stage (if given).  # noqa: E501
+        Name of the stage  # noqa: E501
 
         :return: The stage_name of this Stage.  # noqa: E501
         :rtype: str
@@ -114,7 +114,7 @@ class Stage(object):
     def stage_name(self, stage_name):
         """Sets the stage_name of this Stage.
 
-        The name of the stage (if given).  # noqa: E501
+        Name of the stage  # noqa: E501
 
         :param stage_name: The stage_name of this Stage.  # noqa: E501
         :type: str

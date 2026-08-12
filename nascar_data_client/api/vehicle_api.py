@@ -33,7 +33,7 @@ class VehicleApi(object):
         self.api_client = api_client
 
     def vehicle_get(self, **kwargs):  # noqa: E501
-        """vehicle_get  # noqa: E501
+        """Retrieves detailed information about a specific vehicle, including its finishes, given the vehicle's unique identifier.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -41,7 +41,7 @@ class VehicleApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int id:
+        :param int id: The unique identifier of the vehicle.
         :return: VehicleDetails
                  If the method is called asynchronously,
                  returns the request thread.
@@ -54,7 +54,7 @@ class VehicleApi(object):
             return data
 
     def vehicle_get_with_http_info(self, **kwargs):  # noqa: E501
-        """vehicle_get  # noqa: E501
+        """Retrieves detailed information about a specific vehicle, including its finishes, given the vehicle's unique identifier.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -62,7 +62,7 @@ class VehicleApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int id:
+        :param int id: The unique identifier of the vehicle.
         :return: VehicleDetails
                  If the method is called asynchronously,
                  returns the request thread.
@@ -122,7 +122,7 @@ class VehicleApi(object):
             collection_formats=collection_formats)
 
     def vehicle_season_finishes_get(self, **kwargs):  # noqa: E501
-        """vehicle_season_finishes_get  # noqa: E501
+        """Retrieves a list of all finishes for a specific vehicle across an entire season, given the season, series, and vehicle number.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -130,9 +130,9 @@ class VehicleApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int season:
-        :param int series_id:
-        :param str vehicle:
+        :param int season: Four-digit season year to query
+        :param int series_id: Series identifier. Common values are 1 for Cup, 2 for O'Reilly, and 3 for Truck.
+        :param str vehicle: Vehicle number to query
         :return: list[RaceResultSummary]
                  If the method is called asynchronously,
                  returns the request thread.
@@ -145,7 +145,7 @@ class VehicleApi(object):
             return data
 
     def vehicle_season_finishes_get_with_http_info(self, **kwargs):  # noqa: E501
-        """vehicle_season_finishes_get  # noqa: E501
+        """Retrieves a list of all finishes for a specific vehicle across an entire season, given the season, series, and vehicle number.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -153,9 +153,9 @@ class VehicleApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int season:
-        :param int series_id:
-        :param str vehicle:
+        :param int season: Four-digit season year to query
+        :param int series_id: Series identifier. Common values are 1 for Cup, 2 for O'Reilly, and 3 for Truck.
+        :param str vehicle: Vehicle number to query
         :return: list[RaceResultSummary]
                  If the method is called asynchronously,
                  returns the request thread.

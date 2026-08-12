@@ -72,6 +72,7 @@ class WicketRequest(object):
     def operation(self):
         """Gets the operation of this WicketRequest.  # noqa: E501
 
+        Operation to be performed by the Wicket service  # noqa: E501
 
         :return: The operation of this WicketRequest.  # noqa: E501
         :rtype: str
@@ -82,6 +83,7 @@ class WicketRequest(object):
     def operation(self, operation):
         """Sets the operation of this WicketRequest.
 
+        Operation to be performed by the Wicket service  # noqa: E501
 
         :param operation: The operation of this WicketRequest.  # noqa: E501
         :type: str
@@ -93,6 +95,7 @@ class WicketRequest(object):
     def person_id(self):
         """Gets the person_id of this WicketRequest.  # noqa: E501
 
+        Person identifier associated with the request  # noqa: E501
 
         :return: The person_id of this WicketRequest.  # noqa: E501
         :rtype: str
@@ -103,6 +106,7 @@ class WicketRequest(object):
     def person_id(self, person_id):
         """Sets the person_id of this WicketRequest.
 
+        Person identifier associated with the request  # noqa: E501
 
         :param person_id: The person_id of this WicketRequest.  # noqa: E501
         :type: str
@@ -114,6 +118,7 @@ class WicketRequest(object):
     def device_id(self):
         """Gets the device_id of this WicketRequest.  # noqa: E501
 
+        Device identifier associated with the request  # noqa: E501
 
         :return: The device_id of this WicketRequest.  # noqa: E501
         :rtype: str
@@ -124,6 +129,7 @@ class WicketRequest(object):
     def device_id(self, device_id):
         """Sets the device_id of this WicketRequest.
 
+        Device identifier associated with the request  # noqa: E501
 
         :param device_id: The device_id of this WicketRequest.  # noqa: E501
         :type: str
@@ -135,6 +141,7 @@ class WicketRequest(object):
     def event_id(self):
         """Gets the event_id of this WicketRequest.  # noqa: E501
 
+        Event identifier associated with the request  # noqa: E501
 
         :return: The event_id of this WicketRequest.  # noqa: E501
         :rtype: str
@@ -145,6 +152,7 @@ class WicketRequest(object):
     def event_id(self, event_id):
         """Sets the event_id of this WicketRequest.
 
+        Event identifier associated with the request  # noqa: E501
 
         :param event_id: The event_id of this WicketRequest.  # noqa: E501
         :type: str
@@ -156,6 +164,7 @@ class WicketRequest(object):
     def date_time(self):
         """Gets the date_time of this WicketRequest.  # noqa: E501
 
+        Date and time of the request  # noqa: E501
 
         :return: The date_time of this WicketRequest.  # noqa: E501
         :rtype: datetime
@@ -166,6 +175,7 @@ class WicketRequest(object):
     def date_time(self, date_time):
         """Sets the date_time of this WicketRequest.
 
+        Date and time of the request  # noqa: E501
 
         :param date_time: The date_time of this WicketRequest.  # noqa: E501
         :type: datetime

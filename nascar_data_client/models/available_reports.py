@@ -47,6 +47,7 @@ class AvailableReports(object):
     def reports(self):
         """Gets the reports of this AvailableReports.  # noqa: E501
 
+        Collection of available reports  # noqa: E501
 
         :return: The reports of this AvailableReports.  # noqa: E501
         :rtype: list[AvailableReport]
@@ -57,6 +58,7 @@ class AvailableReports(object):
     def reports(self, reports):
         """Sets the reports of this AvailableReports.
 
+        Collection of available reports  # noqa: E501
 
         :param reports: The reports of this AvailableReports.  # noqa: E501
         :type: list[AvailableReport]
