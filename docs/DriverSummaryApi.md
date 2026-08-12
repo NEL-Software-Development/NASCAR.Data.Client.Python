@@ -4,12 +4,12 @@ All URIs are relative to */api*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**driver_summary_get**](DriverSummaryApi.md#driver_summary_get) | **GET** /driver-summary | 
+[**driver_summary_get**](DriverSummaryApi.md#driver_summary_get) | **GET** /driver-summary | Returns a summary of a driver&#x27;s performance for a given series and season, including statistics such as wins, top 5s, top 10s, poles, and more.
 
 # **driver_summary_get**
 > list[DriverSummary] driver_summary_get(series_id=series_id, season=season, driver_id=driver_id)
 
-
+Returns a summary of a driver's performance for a given series and season, including statistics such as wins, top 5s, top 10s, poles, and more.
 
 ### Example
 ```python
@@ -22,11 +22,12 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = nascar_data_client.DriverSummaryApi(nascar_data_client.ApiClient(configuration))
-series_id = 56 # int |  (optional)
-season = 56 # int |  (optional)
-driver_id = 0 # int |  (optional) (default to 0)
+series_id = 56 # int | Series identifier. Common values are 1 for Cup, 2 for O'Reilly, and 3 for Truck. (optional)
+season = 56 # int | Four-digit season year to query. (optional)
+driver_id = 0 # int | Unique driver identifier. If specified, the summary will be limited to the given driver. If not provided or set to 0, summaries for all drivers in the specified series and season will be returned. (optional) (default to 0)
 
 try:
+    # Returns a summary of a driver's performance for a given series and season, including statistics such as wins, top 5s, top 10s, poles, and more.
     api_response = api_instance.driver_summary_get(series_id=series_id, season=season, driver_id=driver_id)
     pprint(api_response)
 except ApiException as e:
@@ -37,9 +38,9 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **series_id** | **int**|  | [optional] 
- **season** | **int**|  | [optional] 
- **driver_id** | **int**|  | [optional] [default to 0]
+ **series_id** | **int**| Series identifier. Common values are 1 for Cup, 2 for O&#x27;Reilly, and 3 for Truck. | [optional] 
+ **season** | **int**| Four-digit season year to query. | [optional] 
+ **driver_id** | **int**| Unique driver identifier. If specified, the summary will be limited to the given driver. If not provided or set to 0, summaries for all drivers in the specified series and season will be returned. | [optional] [default to 0]
 
 ### Return type
 

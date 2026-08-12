@@ -33,6 +33,7 @@ class Driver(object):
         'name': 'str',
         'date_of_birth': 'datetime',
         'date_of_death': 'datetime',
+        'history_driver_id': 'int',
         'hometown_city': 'str',
         'hometown_state': 'str',
         'hometown_country': 'str',
@@ -50,6 +51,7 @@ class Driver(object):
         'name': 'name',
         'date_of_birth': 'date_of_birth',
         'date_of_death': 'date_of_death',
+        'history_driver_id': 'history_driver_id',
         'hometown_city': 'hometown_city',
         'hometown_state': 'hometown_state',
         'hometown_country': 'hometown_country',
@@ -62,12 +64,13 @@ class Driver(object):
         'hobbies': 'hobbies'
     }
 
-    def __init__(self, id=None, name=None, date_of_birth=None, date_of_death=None, hometown_city=None, hometown_state=None, hometown_country=None, resides_city=None, resides_state=None, resides_country=None, series_1_rookie_year=None, series_2_rookie_year=None, series_3_rookie_year=None, hobbies=None):  # noqa: E501
+    def __init__(self, id=None, name=None, date_of_birth=None, date_of_death=None, history_driver_id=None, hometown_city=None, hometown_state=None, hometown_country=None, resides_city=None, resides_state=None, resides_country=None, series_1_rookie_year=None, series_2_rookie_year=None, series_3_rookie_year=None, hobbies=None):  # noqa: E501
         """Driver - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._name = None
         self._date_of_birth = None
         self._date_of_death = None
+        self._history_driver_id = None
         self._hometown_city = None
         self._hometown_state = None
         self._hometown_country = None
@@ -87,6 +90,8 @@ class Driver(object):
             self.date_of_birth = date_of_birth
         if date_of_death is not None:
             self.date_of_death = date_of_death
+        if history_driver_id is not None:
+            self.history_driver_id = history_driver_id
         if hometown_city is not None:
             self.hometown_city = hometown_city
         if hometown_state is not None:
@@ -112,7 +117,7 @@ class Driver(object):
     def id(self):
         """Gets the id of this Driver.  # noqa: E501
 
-        Id  # noqa: E501
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
 
         :return: The id of this Driver.  # noqa: E501
         :rtype: int
@@ -123,7 +128,7 @@ class Driver(object):
     def id(self, id):
         """Sets the id of this Driver.
 
-        Id  # noqa: E501
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
 
         :param id: The id of this Driver.  # noqa: E501
         :type: int
@@ -201,10 +206,33 @@ class Driver(object):
         self._date_of_death = date_of_death
 
     @property
+    def history_driver_id(self):
+        """Gets the history_driver_id of this Driver.  # noqa: E501
+
+        Historical identifier for the driver  # noqa: E501
+
+        :return: The history_driver_id of this Driver.  # noqa: E501
+        :rtype: int
+        """
+        return self._history_driver_id
+
+    @history_driver_id.setter
+    def history_driver_id(self, history_driver_id):
+        """Sets the history_driver_id of this Driver.
+
+        Historical identifier for the driver  # noqa: E501
+
+        :param history_driver_id: The history_driver_id of this Driver.  # noqa: E501
+        :type: int
+        """
+
+        self._history_driver_id = history_driver_id
+
+    @property
     def hometown_city(self):
         """Gets the hometown_city of this Driver.  # noqa: E501
 
-        The driver's hometown  # noqa: E501
+        The driver's hometown city  # noqa: E501
 
         :return: The hometown_city of this Driver.  # noqa: E501
         :rtype: str
@@ -215,7 +243,7 @@ class Driver(object):
     def hometown_city(self, hometown_city):
         """Sets the hometown_city of this Driver.
 
-        The driver's hometown  # noqa: E501
+        The driver's hometown city  # noqa: E501
 
         :param hometown_city: The hometown_city of this Driver.  # noqa: E501
         :type: str

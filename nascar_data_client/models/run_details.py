@@ -29,35 +29,43 @@ class RunDetails(object):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'run_id': 'int',
         'name': 'str',
         'start_time': 'datetime',
         'run_state': 'RunState',
         'run_type': 'RunType',
         'duration': 'int',
+        'timing_run_id': 'int',
         'flag_state': 'str',
         'flags': 'list[Flag]'
     }
 
     attribute_map = {
+        'run_id': 'run_id',
         'name': 'name',
         'start_time': 'start_time',
         'run_state': 'run_state',
         'run_type': 'run_type',
         'duration': 'duration',
+        'timing_run_id': 'timing_run_id',
         'flag_state': 'flag_state',
         'flags': 'flags'
     }
 
-    def __init__(self, name=None, start_time=None, run_state=None, run_type=None, duration=None, flag_state=None, flags=None):  # noqa: E501
+    def __init__(self, run_id=None, name=None, start_time=None, run_state=None, run_type=None, duration=None, timing_run_id=None, flag_state=None, flags=None):  # noqa: E501
         """RunDetails - a model defined in Swagger"""  # noqa: E501
+        self._run_id = None
         self._name = None
         self._start_time = None
         self._run_state = None
         self._run_type = None
         self._duration = None
+        self._timing_run_id = None
         self._flag_state = None
         self._flags = None
         self.discriminator = None
+        if run_id is not None:
+            self.run_id = run_id
         if name is not None:
             self.name = name
         if start_time is not None:
@@ -68,10 +76,35 @@ class RunDetails(object):
             self.run_type = run_type
         if duration is not None:
             self.duration = duration
+        if timing_run_id is not None:
+            self.timing_run_id = timing_run_id
         if flag_state is not None:
             self.flag_state = flag_state
         if flags is not None:
             self.flags = flags
+
+    @property
+    def run_id(self):
+        """Gets the run_id of this RunDetails.  # noqa: E501
+
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
+
+        :return: The run_id of this RunDetails.  # noqa: E501
+        :rtype: int
+        """
+        return self._run_id
+
+    @run_id.setter
+    def run_id(self, run_id):
+        """Sets the run_id of this RunDetails.
+
+        Unique identifier given and used by the NASCAR Data API  # noqa: E501
+
+        :param run_id: The run_id of this RunDetails.  # noqa: E501
+        :type: int
+        """
+
+        self._run_id = run_id
 
     @property
     def name(self):
@@ -185,10 +218,33 @@ class RunDetails(object):
         self._duration = duration
 
     @property
+    def timing_run_id(self):
+        """Gets the timing_run_id of this RunDetails.  # noqa: E501
+
+        Timing system run identifier  # noqa: E501
+
+        :return: The timing_run_id of this RunDetails.  # noqa: E501
+        :rtype: int
+        """
+        return self._timing_run_id
+
+    @timing_run_id.setter
+    def timing_run_id(self, timing_run_id):
+        """Sets the timing_run_id of this RunDetails.
+
+        Timing system run identifier  # noqa: E501
+
+        :param timing_run_id: The timing_run_id of this RunDetails.  # noqa: E501
+        :type: int
+        """
+
+        self._timing_run_id = timing_run_id
+
+    @property
     def flag_state(self):
         """Gets the flag_state of this RunDetails.  # noqa: E501
 
-        Flag state:  (Inactive, Active, Completed)  # noqa: E501
+        Current flag state derived from the last flag in the run:  (NONE, WARMUP, GREEN, YELLOW, RED, WHITE, FINISH, EXTRA)  # noqa: E501
 
         :return: The flag_state of this RunDetails.  # noqa: E501
         :rtype: str
@@ -199,7 +255,7 @@ class RunDetails(object):
     def flag_state(self, flag_state):
         """Sets the flag_state of this RunDetails.
 
-        Flag state:  (Inactive, Active, Completed)  # noqa: E501
+        Current flag state derived from the last flag in the run:  (NONE, WARMUP, GREEN, YELLOW, RED, WHITE, FINISH, EXTRA)  # noqa: E501
 
         :param flag_state: The flag_state of this RunDetails.  # noqa: E501
         :type: str
