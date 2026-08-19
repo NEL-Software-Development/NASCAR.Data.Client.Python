@@ -33,7 +33,7 @@ class DriverSummaryApi(object):
         self.api_client = api_client
 
     def driver_summary_get(self, **kwargs):  # noqa: E501
-        """driver_summary_get  # noqa: E501
+        """Returns a summary of a driver's performance for a given series and season, including statistics such as wins, top 5s, top 10s, poles, and more.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -41,9 +41,9 @@ class DriverSummaryApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int series_id:
-        :param int season:
-        :param int driver_id:
+        :param int series_id: Series identifier. Common values are 1 for Cup, 2 for O'Reilly, and 3 for Truck.
+        :param int season: Four-digit season year to query.
+        :param int driver_id: Unique driver identifier. If specified, the summary will be limited to the given driver. If not provided or set to 0, summaries for all drivers in the specified series and season will be returned.
         :return: list[DriverSummary]
                  If the method is called asynchronously,
                  returns the request thread.
@@ -56,7 +56,7 @@ class DriverSummaryApi(object):
             return data
 
     def driver_summary_get_with_http_info(self, **kwargs):  # noqa: E501
-        """driver_summary_get  # noqa: E501
+        """Returns a summary of a driver's performance for a given series and season, including statistics such as wins, top 5s, top 10s, poles, and more.  # noqa: E501
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
@@ -64,9 +64,9 @@ class DriverSummaryApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :param int series_id:
-        :param int season:
-        :param int driver_id:
+        :param int series_id: Series identifier. Common values are 1 for Cup, 2 for O'Reilly, and 3 for Truck.
+        :param int season: Four-digit season year to query.
+        :param int driver_id: Unique driver identifier. If specified, the summary will be limited to the given driver. If not provided or set to 0, summaries for all drivers in the specified series and season will be returned.
         :return: list[DriverSummary]
                  If the method is called asynchronously,
                  returns the request thread.
