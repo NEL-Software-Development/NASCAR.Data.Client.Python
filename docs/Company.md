@@ -3,7 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **int** | Company Id | [optional] 
 **name** | **str** | The name of the company | [optional] 
 **abbreviation** | **str** | The company&#x27;s abbreviation | [optional] 
 **alias** | **str** | The company&#x27;s alias | [optional] 
