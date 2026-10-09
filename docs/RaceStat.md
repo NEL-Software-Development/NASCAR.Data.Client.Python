@@ -1,0 +1,45 @@
+# RaceStat
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**race_id** | **int** | NASCAR One/API race identifier, not the History race identifier. | [optional] 
+**history_race_id** | **int** |  | [optional] 
+**series_id** | **int** |  | [optional] 
+**season** | **int** |  | [optional] 
+**history_driver_id** | **int** |  | [optional] 
+**track_id** | **int** | NASCAR One/API track identifier. | [optional] 
+**driver_id** | **int** | API driver identifier; null when no API driver mapping exists. | [optional] 
+**race_name** | **str** |  | [optional] 
+**first_name** | **str** |  | [optional] 
+**nickname** | **str** |  | [optional] 
+**last_name** | **str** |  | [optional] 
+**suffix** | **str** |  | [optional] 
+**track** | **str** |  | [optional] 
+**vehicle_number** | **str** | Vehicle number as text, preserving leading zeroes. | [optional] 
+**scheduled_date** | **datetime** | Source local clock time; no UTC offset is supplied by the source. | [optional] 
+**actual_date** | **datetime** | Source local clock time; no UTC offset is supplied by the source. | [optional] 
+**track_length** | **float** |  | [optional] 
+**scheduled_laps** | **int** |  | [optional] 
+**actual_laps** | **int** |  | [optional] 
+**starting_position** | **int** |  | [optional] 
+**mid_race_position** | **int** |  | [optional] 
+**finishing_position** | **int** |  | [optional] 
+**closing_laps_position** | **int** |  | [optional] 
+**closing_laps_diff** | **int** |  | [optional] 
+**best_position** | **int** |  | [optional] 
+**worst_position** | **int** |  | [optional] 
+**green_flag_passes** | **int** |  | [optional] 
+**passing_differential** | **int** |  | [optional] 
+**green_flag_times_passed** | **int** |  | [optional] 
+**quality_passes** | **int** |  | [optional] 
+**fastest_laps** | **int** |  | [optional] 
+**laps_in_top15** | **int** |  | [optional] 
+**laps_led** | **int** |  | [optional] 
+**laps_completed** | **int** |  | [optional] 
+**average_running_position** | **float** |  | [optional] 
+**driver_rating** | **float** |  | [optional] 
+**last_update** | **datetime** | Time this record was last refreshed in the warehouse. | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
